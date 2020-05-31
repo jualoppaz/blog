@@ -1,0 +1,56 @@
+@import './variables.scss';
+
+.pointer{
+  cursor: pointer;
+}
+
+.fa-twitter {
+  color: $color-brand-twitter;
+}
+
+.fa-link{
+  color: $color-text-gray;
+}
+
+.fa-youtube{
+  color: $color-brand-youtube;
+}
+
+.fa-instagram{
+  color: $color-brand-instagram;
+}
+
+.fa-facebook {
+  color: $color-brand-facebook;
+}
+
+.social-networks {
+  text-align: center;
+
+  .networks-inline-list{
+    span{
+      margin: 10px;
+      cursor: pointer;
+
+      &:active, &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+
+a {
+  color: $color-text-black;
+  text-decoration: none;
+
+  &:hover{
+    color: $color-text-blue;
+  }
+}
+
+.container {
+  @media screen and (min-width: $lg-desktop-min-width) {
+    margin: 0 auto;
+    width: 1140px;
+  }
+}

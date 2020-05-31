@@ -1,55 +1,138 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="app">
+    <el-container id="layout">
+      <el-container id="content">
+        <el-header>
+          <Menu />
+        </el-header>
+
+        <el-main id="main">
+          <nuxt />
+        </el-main>
+
+        <el-footer>
+          <Footer />
+        </el-footer>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+import VueAdBlockDetect from 'vue-adblock-detect';
+import Menu from '../components/layout/Menu.vue';
+import Footer from '../components/layout/Footer.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Menu,
+    Footer,
+  },
+  mixins: [VueAdBlockDetect],
+  beforeMount() {
+    this.detectAdBlock().then((response) => {
+      if (response) {
+        this.$alert(this.$t('COMMON.ADBLOCK.TEXT'), this.$t('COMMON.ADBLOCK.TITLE'), {
+          showConfirmButton: false,
+          showClose: false,
+        });
+      }
+    });
+  },
+};
+</script>
+
+<style lang="scss">
+
+body{
   margin: 0;
-}
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+  #app {
+    #layout {
+      height:100vh;
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+      #content {
+        border-left: 1px solid #e6e6e6;
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
+        .el-header{
+          width: 100%;
+          padding: 0;
+          border-bottom: 1px solid $color-border-gray;
+        }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+        #main {
+          padding: $content-padding-default;
+
+          .banner {
+            h1 {
+              padding: 5px;
+              height: 75px;
+              line-height: 75px;
+              font-size: 20px;
+              text-align: center;
+              background: $color-text-blue; // #66b3ff;
+              box-shadow: inset 0 8px 8px -8px rgba(0,0,0,.3), inset 0 -8px 8px -8px rgba(0,0,0,.3);
+              color: $color-text-white;
+              margin: 0;
+
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+
+              @media screen and (min-width: $tablet-min-width){
+                height: 150px;
+                line-height: 150px;
+                font-size: 50px;
+              }
+            }
+          }
+
+          .wrapper {
+            padding: 20px;
+
+            @media screen and (min-width: $tablet-min-width){
+              padding: $content-padding-default;
+            }
+          }
+        }
+
+        .el-footer{
+          padding: 0;
+          height: 80px !important;
+
+          @media screen and (min-width: $tablet-min-width){
+            height: 60px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .el-menu--vertical {
+    ul{
+      &.el-menu--popup-right-start{
+        li {
+          padding: 0 !important;
+          > a {
+            color: #303133;
+            display: block;
+            text-decoration: none;
+            padding: 0 20px;
+
+            &.router-link-exact-active, &:focus{
+              color: #409EFF;
+
+              i {
+                color: #409EFF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>
