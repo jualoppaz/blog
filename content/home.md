@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Blog
 author: Juan Manuel López Pazos
 ---
 

@@ -4,14 +4,16 @@
       <i class="el-icon-date" /> {{ getArticleDate() }}
     </div>
     <h1>{{ doc.title }}</h1>
-    <div id="article-image">
-      <el-image
-        style="width: 450px; height: 450px"
-        :src="doc.image"
-        fit="contain"
-      />
-    </div>
-    <nuxt-content :document="doc" />
+    <el-card id="article-card" class="box-card">
+      <div id="article-image">
+        <el-image
+          style="width: 450px; height: 450px"
+          :src="doc.image"
+          fit="contain"
+        />
+      </div>
+      <nuxt-content :document="doc" />
+    </el-card>
   </div>
 </template>
 
@@ -24,7 +26,8 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles').fetch();
 
-    const path = params.slug ? `articles/${params.slug}` : 'home';
+    // const path = params.slug ? `articles/${params.slug}` : 'home';
+    const path = `articles/${params.slug}`;
     const doc = await $content(path).fetch();
 
     return {
@@ -68,8 +71,36 @@ export default {
     margin-top: 0;
   }
 
-  #article-image{
-    text-align: center;
+  #article-card{
+    padding: $content-padding-mobile;
+
+    @include for-tablet-up{
+      padding: $content-padding-tablet;
+    }
+
+    #article-image{
+      text-align: center;
+    }
+
+    .nuxt-content{
+      p{
+        //margin: 1.5em 0;
+        line-height: 1.6;
+        text-align: justify;
+
+        & + h3{
+          margin-top: 2em;
+        }
+      }
+
+      a{
+        color: $color-text-blue;
+
+        &:hover{
+          color: $color-text-orange;
+        }
+      }
+    }
   }
 }
 

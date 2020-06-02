@@ -4,28 +4,19 @@
     shadow="hover"
   >
     <el-row>
-      <el-col
-        :xs="24"
-        :sm="8"
-      >
-        <div class="image-container">
-          <el-image
-            style="height: 300px"
-            :src="article.image"
-            fit="contain"
-          />
-        </div>
-      </el-col>
-      <el-col
-        :xs="24"
-        :sm="16"
-      >
+      <div class="image-container">
+        <el-image
+          :src="article.image"
+          fit="contain"
+        />
+      </div>
+      <div class="article-card-info">
         <div class="title">
-          <nuxt-link :to="article.slug">
+          <nuxt-link :to="`/posts/${article.slug}`">
             {{ article.title }}
           </nuxt-link>
         </div>
-      </el-col>
+      </div>
     </el-row>
   </el-card>
 </template>
@@ -49,8 +40,15 @@ export default {
     padding: 0;
 
     .image-container{
+      @include for-tablet-up{
+        float: left;
+      }
+
       .el-image{
         display: block;
+        margin: auto;
+        width: 300px;
+        height: 300px;
       }
     }
   }

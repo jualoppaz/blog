@@ -124,6 +124,10 @@ body{
           padding: $content-padding-mobile;
 
           @include for-tablet-up{
+            padding: $content-padding-tablet;
+          }
+
+          @include for-desktop-up{
             padding: $content-padding-default;
           }
 
@@ -152,16 +156,26 @@ body{
           }
 
           .wrapper {
-            padding: 20px;
+            padding: $content-padding-mobile;
 
-            @media screen and (min-width: $tablet-min-width){
+            @include for-tablet-up{
+              padding: $content-padding-tablet;
+            }
+
+            @include for-desktop-up{
               padding: $content-padding-default;
             }
           }
         }
 
         #aside-column{
-          padding: $content-padding-default;
+          @include for-tablet-up{
+            padding: $content-padding-tablet;
+          }
+
+          @include for-desktop-up{
+            padding: $content-padding-default;
+          }
 
           &.hide{
             display: none;

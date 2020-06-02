@@ -64,7 +64,13 @@ body{
         }
 
         #main {
-          padding: $content-padding-default;
+          @include for-tablet-up{
+            padding: $content-padding-tablet;
+          }
+
+          @include for-desktop-up{
+            padding: $content-padding-default;
+          }
 
           .banner {
             h1 {
@@ -91,9 +97,13 @@ body{
           }
 
           .wrapper {
-            padding: 20px;
+            padding: $content-padding-mobile;
 
-            @media screen and (min-width: $tablet-min-width){
+            @include for-tablet-up{
+              padding: $content-padding-tablet;
+            }
+
+            @include for-desktop-up{
               padding: $content-padding-default;
             }
           }

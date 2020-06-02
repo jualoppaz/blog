@@ -1,10 +1,10 @@
 <template>
   <div id="blog">
-    <el-row>
+    <!--<el-row>
       <el-col>
         <nuxt-content :document="doc" />
       </el-col>
-    </el-row>
+    </el-row>-->
     <el-row
       id="articles-list"
     >
