@@ -35,7 +35,6 @@ export default {
   components: {},
   data() {
     return {
-      logoImageAlt: this.$t('MENU.LOGO.ALT'),
       homeItemText: this.$t('MENU.HOME.TEXT'),
       cvItemText: this.$t('MENU.CV.TEXT'),
       blogItemText: this.$t('MENU.BLOG.TEXT'),

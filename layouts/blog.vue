@@ -53,6 +53,8 @@ export default {
   data() {
     return {
       isMobile: false,
+      isTablet: false,
+      isDesktop: false,
       asideColumnWidth: '350px',
     };
   },
@@ -78,19 +80,25 @@ export default {
     handleResize() {
       if (utils.isMobile()) {
         this.isMobile = true;
+        this.isTablet = false;
+        this.isDesktop = false;
       } else if (utils.isTablet()) {
-        this.isMobile = false;
         this.asideColumnWidth = '200px';
+        this.isMobile = false;
+        this.isTablet = true;
+        this.isDesktop = false;
       } else {
         this.asideColumnWidth = '350px';
         this.isMobile = false;
+        this.isTablet = false;
+        this.isDesktop = true;
       }
     },
     showAsideColumn() {
-      return !this.isMobile;
+      return this.isDesktop;
     },
     showAsideRow() {
-      return this.isMobile;
+      return !this.isDesktop;
     },
   },
 };

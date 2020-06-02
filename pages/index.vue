@@ -1,21 +1,26 @@
 <template>
   <div id="blog">
-    <!--<el-row>
+    <el-row>
       <el-col>
         <nuxt-content :document="doc" />
       </el-col>
-    </el-row>-->
-    <el-row
+    </el-row>
+    <div
       id="articles-list"
     >
-      <el-col
+      <el-row
         v-for="article in articles"
         :key="article.slug"
-        :xs="24"
+        class="article-row"
       >
-        <ArticleCard :article="article" />
-      </el-col>
-    </el-row>
+        <el-col
+          :xs="24"
+          :lg="{ span: 18, offset: 3 }"
+        >
+          <ArticleCard :article="article" />
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -29,7 +34,9 @@ export default {
     ArticleCard,
   },
   async asyncData({ $content }) {
-    const articles = await $content('articles').fetch();
+    const articles = await $content('articles')
+      .where({ published: true })
+      .fetch();
 
     const path = 'home';
     const doc = await $content(path).fetch();
@@ -60,9 +67,11 @@ export default {
   #articles-list{
     margin: auto;
 
-    /* @media screen and (min-width: $lg-desktop-min-width) {
-      width: 80%;
-    } */
+    .article-row{
+      &:not(:first-child){
+        margin-top: 15px;
+      }
+    }
   }
 }
 

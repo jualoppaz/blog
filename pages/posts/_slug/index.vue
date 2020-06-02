@@ -23,12 +23,20 @@ export default {
   components: {
 
   },
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, error }) {
     const articles = await $content('articles').fetch();
 
     // const path = params.slug ? `articles/${params.slug}` : 'home';
     const path = `articles/${params.slug}`;
-    const doc = await $content(path).fetch();
+    const doc = await $content(path)
+      .where({ published: true })
+      .fetch()
+      .catch(() => {
+        error({
+          statusCode: 404,
+          message: 'No encontrado',
+        });
+      });
 
     return {
       articles,

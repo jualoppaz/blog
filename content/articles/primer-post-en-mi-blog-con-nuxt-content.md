@@ -1,9 +1,10 @@
 ---
 title: Mi primer post
-image: /images/2014_03_29-mi-primer-post-blog-con-nuxt.jpg
+image: /images/2020_06_01-mi-primer-post-blog-con-nuxt-content.jpg
 description: Este es el texto de la descripción
 tags: ['professional']
 metas: { author: 'Juan Manuel López Pazos' }
+published: true
 ---
 
 ## ¿Por qué este blog?

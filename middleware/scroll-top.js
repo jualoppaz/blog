@@ -1,5 +1,6 @@
 export default () => {
   if (!process.server) {
-    window.document.getElementById('main').scrollTop = 0;
+    const main = window.document.getElementById('main');
+    if (main) main.scrollTop = 0;
   }
 };

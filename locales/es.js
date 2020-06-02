@@ -12,9 +12,6 @@ export default
     },
   },
   MENU: {
-    LOGO: {
-      ALT: 'Logo de la serie española Aquí No Hay Quien Viva (ANHQV)',
-    },
     HOME: {
       TEXT: 'Inicio',
       LINK: {
