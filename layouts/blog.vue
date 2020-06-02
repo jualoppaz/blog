@@ -13,18 +13,16 @@
           </el-main>
         </el-container>
         <el-aside
+          v-if="showAsideColumn()"
           id="aside-column"
-          class="hidden-xs-only"
           :width="asideColumnWidth"
-          :class="{ hide: showAsideRow() }"
         >
           Barra lateral
         </el-aside>
       </el-container>
       <el-container
+        v-if="showAsideRow()"
         id="aside-row"
-        class="hidden-sm-and-up"
-        :class="{ hide: showAsideColumn() }"
       >
         Barra lateral versión mobile
       </el-container>
@@ -98,7 +96,7 @@ export default {
       return this.isDesktop;
     },
     showAsideRow() {
-      return !this.isDesktop;
+      return this.isMobile || this.isTablet;
     },
   },
 };
@@ -184,19 +182,11 @@ body{
           @include for-desktop-up{
             padding: $content-padding-default;
           }
-
-          &.hide{
-            display: none;
-          }
         }
       }
 
       #aside-row{
         padding: $content-padding-mobile;
-
-        &.hide{
-          display: none;
-        }
       }
 
       .el-footer{

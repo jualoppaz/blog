@@ -1,6 +1,7 @@
 ---
 title: Blog
 author: Juan Manuel López Pazos
+published: true
 ---
 
 # Bienvenido a mi blog

@@ -1,19 +1,19 @@
 <template>
   <el-card
-    class="article-card"
+    class="post-card"
     shadow="hover"
   >
     <el-row>
       <div class="image-container">
         <el-image
-          :src="article.image"
+          :src="post.image"
           fit="contain"
         />
       </div>
-      <div class="article-card-info">
+      <div class="post-card-info">
         <div class="title">
-          <nuxt-link :to="`/posts/${article.slug}`">
-            {{ article.title }}
+          <nuxt-link :to="`/posts/${post.slug}`">
+            {{ post.title }}
           </nuxt-link>
         </div>
       </div>
@@ -23,9 +23,9 @@
 
 <script>
 export default {
-  name: 'ArticleCard',
+  name: 'PostsCard',
   props: {
-    article: {
+    post: {
       type: Object,
       required: true,
     },
@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.article-card{
+.post-card{
   ::v-deep .el-card__body{
     padding: 0;
 

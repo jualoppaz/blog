@@ -5,19 +5,36 @@
         <nuxt-content :document="doc" />
       </el-col>
     </el-row>
+
     <div
-      id="articles-list"
+      id="posts-list"
     >
+      <div>
+        <el-tag
+          v-for="tag in tags"
+          :key="tag.name"
+          :style="{
+            'background-color': getTagBackgroundColor(tag),
+            'border-color': getTagBorderColor(tag),
+            color: getTagColor(tag),
+          }"
+          class="pointer"
+          @click="selectTag(tag)"
+        >
+          {{ tag.label }}
+        </el-tag>
+      </div>
+
       <el-row
-        v-for="article in articles"
-        :key="article.slug"
-        class="article-row"
+        v-for="post in posts"
+        :key="post.slug"
+        class="post-row"
       >
         <el-col
           :xs="24"
           :lg="{ span: 18, offset: 3 }"
         >
-          <ArticleCard :article="article" />
+          <PostCard :post="post" />
         </el-col>
       </el-row>
     </div>
@@ -26,37 +43,75 @@
 
 <script>
 
-import ArticleCard from '../components/ArticleCard.vue';
+import { mapState } from 'vuex';
+import { Loading } from 'element-ui';
+import PostCard from '../components/PostCard.vue';
+import utils from '../utils';
 
 export default {
   layout: 'blog',
   components: {
-    ArticleCard,
+    PostCard,
   },
-  async asyncData({ $content }) {
-    const articles = await $content('articles')
-      .where({ published: true })
-      .fetch();
+  async fetch() {
+    if (process.client) {
+      this.loadingInstance = Loading.service({
+        target: utils.LOADING.QUERY_SELECTOR,
+        background: 'rgba(0, 0, 0, 0.8)',
+      });
+    }
 
-    const path = 'home';
-    const doc = await $content(path).fetch();
+    return Promise.all([
+      this.$store.dispatch('posts/getAll'),
+      this.$store.dispatch('posts/getBySlug', {
+        slug: null,
+      }),
+    ])
+      .finally(() => {
+        if (this.loadingInstance) this.loadingInstance.close();
+      });
+  },
+  computed: {
+    ...mapState('posts', {
+      doc: 'current',
+    }),
+    ...mapState('posts', {
+      posts: 'all',
+    }),
+    ...mapState('tags', {
+      tags: 'all',
+    }),
+    ...mapState('tags', {
+      currentTag: 'current',
+    }),
+  },
+  methods: {
+    getTagBackgroundColor(tag) {
+      if (this.$store.getters['tags/isCurrentTag'](tag)) return tag.background_color.selected;
+      return tag.background_color.default;
+    },
+    getTagBorderColor(tag) {
+      if (this.$store.getters['tags/isCurrentTag'](tag)) return tag.border_color.selected;
+      return tag.border_color.default;
+    },
+    getTagColor(tag) {
+      if (this.$store.getters['tags/isCurrentTag'](tag)) return tag.color.selected;
+      return tag.color.default;
+    },
+    selectTag(tag) {
+      this.loadingInstance = Loading.service({
+        target: utils.LOADING.QUERY_SELECTOR,
+        background: 'rgba(0, 0, 0, 0.8)',
+      });
 
-    return {
-      articles,
-      doc,
-    };
+      this.$store.dispatch('tags/selectTag', tag);
+      this.$store.dispatch('posts/getAll', { tag: this.currentTag });
+
+      this.loadingInstance.close();
+    },
   },
   head() {
-    return {
-      title: this.doc.title,
-      meta: [
-        {
-          hid: 'author',
-          name: 'author',
-          content: this.doc.author,
-        },
-      ],
-    };
+    return utils.getCommonMetas(this.doc);
   },
 };
 </script>
@@ -64,10 +119,14 @@ export default {
 <style lang="scss" scoped>
 
 #blog{
-  #articles-list{
+  #posts-list{
     margin: auto;
+    .el-tag{
+      user-select: none;
+      margin: 0 5px;
+    }
 
-    .article-row{
+    .post-row{
       &:not(:first-child){
         margin-top: 15px;
       }

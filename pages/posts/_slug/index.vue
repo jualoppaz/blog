@@ -1,11 +1,11 @@
 <template>
-  <div id="article">
+  <div id="post">
     <div>
-      <i class="el-icon-date" /> {{ getArticleDate() }}
+      <i class="el-icon-date" /> {{ getPostDate() }}
     </div>
     <h1>{{ doc.title }}</h1>
-    <el-card id="article-card" class="box-card">
-      <div id="article-image">
+    <el-card id="post-card" class="box-card">
+      <div id="post-image">
         <el-image
           style="width: 450px; height: 450px"
           :src="doc.image"
@@ -24,10 +24,8 @@ export default {
 
   },
   async asyncData({ $content, params, error }) {
-    const articles = await $content('articles').fetch();
+    const path = `posts/${params.slug}`;
 
-    // const path = params.slug ? `articles/${params.slug}` : 'home';
-    const path = `articles/${params.slug}`;
     const doc = await $content(path)
       .where({ published: true })
       .fetch()
@@ -39,17 +37,16 @@ export default {
       });
 
     return {
-      articles,
       doc,
     };
   },
   methods: {
-    getArticleDate() {
+    getPostDate() {
       const day = this.$moment(this.doc.createdAt).date();
       const month = this.$moment(this.doc.createdAt).format('MMMM');
       const year = this.$moment(this.doc.createdAt).year();
 
-      return this.$t('VIEWS.ARTICLE.DATE', {
+      return this.$t('VIEWS.POST.DATE', {
         day,
         month,
         year,
@@ -73,20 +70,20 @@ export default {
 
 <style lang="scss" scoped>
 
-#article{
+#post{
   > h1{
     font-size: 50px;
     margin-top: 0;
   }
 
-  #article-card{
+  #post-card{
     padding: $content-padding-mobile;
 
     @include for-tablet-up{
       padding: $content-padding-tablet;
     }
 
-    #article-image{
+    #post-image{
       text-align: center;
     }
 

@@ -32,7 +32,7 @@ export default
     },
   },
   VIEWS: {
-    ARTICLE: {
+    POST: {
       DATE: '{day} de {month} de {year}',
     },
   },
