@@ -17,14 +17,14 @@
           id="aside-column"
           :width="asideColumnWidth"
         >
-          Barra lateral
+          <TagsFilter @tagChanged="goToBlog()" />
         </el-aside>
       </el-container>
       <el-container
         v-if="showAsideRow()"
         id="aside-row"
       >
-        Barra lateral versión mobile
+        <TagsFilter />
       </el-container>
       <el-footer>
         <Footer />
@@ -39,6 +39,8 @@ import VueAdBlockDetect from 'vue-adblock-detect';
 import Menu from '../components/layout/Menu.vue';
 import Footer from '../components/layout/Footer.vue';
 
+import TagsFilter from '../components/TagsFilter.vue';
+
 import utils from '../utils';
 
 export default {
@@ -46,6 +48,7 @@ export default {
   components: {
     Menu,
     Footer,
+    TagsFilter,
   },
   mixins: [VueAdBlockDetect],
   data() {
@@ -97,6 +100,11 @@ export default {
     },
     showAsideRow() {
       return this.isMobile || this.isTablet;
+    },
+    goToBlog() {
+      this.$router.push({
+        path: '/',
+      });
     },
   },
 };
@@ -175,18 +183,37 @@ body{
         }
 
         #aside-column{
-          @include for-tablet-up{
+          padding: 5px;
+          /* @include for-tablet-up{
             padding: $content-padding-tablet;
-          }
+          } */
 
-          @include for-desktop-up{
-            padding: $content-padding-default;
+          .tags-filter{
+            .el-tag{
+              user-select: none;
+              margin: 0 5px;
+            }
+
+            .secondary-tags{
+              margin-top: 15px;
+            }
           }
         }
       }
 
       #aside-row{
         padding: $content-padding-mobile;
+
+        .tags-filter{
+          .el-tag{
+            user-select: none;
+            margin: 0 5px;
+          }
+
+          .secondary-tags{
+            margin-top: 15px;
+          }
+        }
       }
 
       .el-footer{

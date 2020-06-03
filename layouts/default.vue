@@ -1,19 +1,21 @@
 <template>
   <div id="app">
     <el-container id="layout">
-      <el-container id="content">
-        <el-header>
+      <el-header id="header">
+        <div class="container">
           <Menu />
-        </el-header>
-
-        <el-main id="main">
-          <nuxt />
-        </el-main>
-
-        <el-footer>
-          <Footer />
-        </el-footer>
+        </div>
+      </el-header>
+      <el-container id="content">
+        <el-container>
+          <el-main id="main">
+            <nuxt />
+          </el-main>
+        </el-container>
       </el-container>
+      <el-footer>
+        <Footer />
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -31,6 +33,11 @@ export default {
     Footer,
   },
   mixins: [VueAdBlockDetect],
+  data() {
+    return {
+
+    };
+  },
   beforeMount() {
     this.detectAdBlock().then((response) => {
       if (response) {
@@ -41,6 +48,9 @@ export default {
       }
     });
   },
+  mounted() {},
+  beforeDestroy() {},
+  methods: {},
 };
 </script>
 
@@ -54,6 +64,11 @@ body{
     #layout {
       height:100vh;
 
+      #header{
+        padding: 0;
+        background-color: $color-background-black;
+      }
+
       #content {
         border-left: 1px solid #e6e6e6;
 
@@ -64,6 +79,8 @@ body{
         }
 
         #main {
+          padding: $content-padding-mobile;
+
           @include for-tablet-up{
             padding: $content-padding-tablet;
           }
@@ -108,38 +125,14 @@ body{
             }
           }
         }
-
-        .el-footer{
-          padding: 0;
-          height: 80px !important;
-
-          @media screen and (min-width: $tablet-min-width){
-            height: 60px !important;
-          }
-        }
       }
-    }
-  }
 
-  .el-menu--vertical {
-    ul{
-      &.el-menu--popup-right-start{
-        li {
-          padding: 0 !important;
-          > a {
-            color: #303133;
-            display: block;
-            text-decoration: none;
-            padding: 0 20px;
+      .el-footer{
+        padding: 0;
+        height: 80px !important;
 
-            &.router-link-exact-active, &:focus{
-              color: #409EFF;
-
-              i {
-                color: #409EFF;
-              }
-            }
-          }
+        @media screen and (min-width: $tablet-min-width){
+          height: 60px !important;
         }
       }
     }

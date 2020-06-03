@@ -17,7 +17,7 @@ export const actions = {
 
     let whereConditions = { published: true };
 
-    if (tag) {
+    if (tag && tag.name) {
       whereConditions = {
         ...whereConditions,
         tags: {

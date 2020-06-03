@@ -1,40 +1,7 @@
 import Vue from 'vue';
 
 export const state = () => ({
-  all: [
-    {
-      name: 'technologies',
-      label: 'tecnologías',
-      background_color: {
-        default: '#ffffff',
-        selected: '#303133',
-      },
-      border_color: {
-        default: '#303133',
-        selected: '#303133',
-      },
-      color: {
-        default: '#303133',
-        selected: '#ffffff',
-      },
-    },
-    {
-      name: 'esencia',
-      label: 'CCyTT Esencia',
-      background_color: {
-        default: '#ffffff',
-        selected: '#0B3B0B',
-      },
-      border_color: {
-        default: '#0B3B0B',
-        selected: '#0B3B0B',
-      },
-      color: {
-        default: '#0B3B0B',
-        selected: '#ffffff',
-      },
-    },
-  ],
+  all: [],
   current: {},
 });
 
@@ -42,19 +9,92 @@ export const getters = {
   isCurrentTag(state) {
     return (tag) => state.current && state.current.name === tag.name;
   },
+  getMainTags(state) {
+    return state.all.filter((tag) => tag.level === 1);
+  },
+  getSecondaryTags(state) {
+    return state.all.filter((tag) => tag.level === 2);
+  },
 };
 
 export const actions = {
-  selectTag({ state, commit }, tag) {
-    let nextTag;
+  loadAllTags({ commit }) {
+    const tags = [
+      {
+        name: null,
+        label: this.$i18n.t('COMPONENTS.TAGS_FILTER.TAGS.ALL.LABEL'),
+        level: 1,
+        background_color: {
+          default: '#ffffff',
+          selected: '#409eff',
+        },
+        border_color: {
+          default: '#409eff',
+          selected: '#409eff',
+        },
+        color: {
+          default: '#409eff',
+          selected: '#ffffff',
+        },
+      },
+      {
+        name: 'technologies',
+        label: this.$i18n.t('COMPONENTS.TAGS_FILTER.TAGS.TECHNOLOGIES.LABEL'),
+        level: 1,
+        background_color: {
+          default: '#ffffff',
+          selected: '#303133',
+        },
+        border_color: {
+          default: '#303133',
+          selected: '#303133',
+        },
+        color: {
+          default: '#303133',
+          selected: '#ffffff',
+        },
+      },
+      {
+        name: 'holy_week',
+        label: this.$i18n.t('COMPONENTS.TAGS_FILTER.TAGS.HOLY_WEEK.LABEL'),
+        level: 1,
+        background_color: {
+          default: '#ffffff',
+          selected: '#473371',
+        },
+        border_color: {
+          default: '#473371',
+          selected: '#473371',
+        },
+        color: {
+          default: '#473371',
+          selected: '#ffffff',
+        },
+      },
+      {
+        name: 'esencia',
+        label: this.$i18n.t('COMPONENTS.TAGS_FILTER.TAGS.ESENCIA.LABEL'),
+        level: 2,
+        background_color: {
+          default: '#ffffff',
+          selected: '#0B3B0B',
+        },
+        border_color: {
+          default: '#0B3B0B',
+          selected: '#0B3B0B',
+        },
+        color: {
+          default: '#0B3B0B',
+          selected: '#ffffff',
+        },
+      },
+    ];
 
-    if (getters.isCurrentTag(state)(tag)) {
-      nextTag = null;
-    } else {
-      nextTag = tag;
-    }
-
-    commit('setCurrent', nextTag);
+    commit('setAll', tags);
+  },
+  selectTag({ commit, dispatch }, tag) {
+    commit('setCurrent', tag);
+    return dispatch('posts/getAll', { tag }, { root: true });
   },
 };
 

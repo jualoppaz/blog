@@ -31,6 +31,25 @@ export default
       },
     },
   },
+  COMPONENTS: {
+    TAGS_FILTER: {
+      TITLE: 'Filtrar posts por etiqueta',
+      TAGS: {
+        ALL: {
+          LABEL: 'Mostrar todos',
+        },
+        TECHNOLOGIES: {
+          LABEL: 'Tecnologías',
+        },
+        HOLY_WEEK: {
+          LABEL: 'Semana Santa',
+        },
+        ESENCIA: {
+          LABEL: 'CCyTT Esencia',
+        },
+      },
+    },
+  },
   VIEWS: {
     POST: {
       DATE: '{day} de {month} de {year}',
