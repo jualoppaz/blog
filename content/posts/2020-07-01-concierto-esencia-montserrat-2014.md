@@ -4,7 +4,7 @@ image: /images/2014_03_29-cartel-concierto-montserrat.jpg
 description: Este es el texto de la descripción
 tags: ['holy_week', 'esencia']
 metas: { author: 'Juan Manuel López Pazos' }
-published: true 
+published: false 
 ---
 
 ## Concierto de Esencia

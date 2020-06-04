@@ -51,8 +51,16 @@ export default
     },
   },
   VIEWS: {
-    POST: {
-      DATE: '{day} de {month} de {year}',
+    POSTS: {
+      EMPTY: 'No hay posts con la etiqueta seleccionada.',
+      ITEM: {
+        DATE: '{day} de {month} de {year}',
+      },
+      DETAIL: {
+        POST: {
+          DATE: '{day} de {month} de {year}',
+        },
+      },
     },
   },
   FOOTER: {

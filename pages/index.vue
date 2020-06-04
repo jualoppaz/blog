@@ -16,6 +16,12 @@
           :lg="{ span: 8, offset: 8 }"
         >
           <TagsFilter />
+          <el-alert
+            v-if="!posts || posts.length === 0"
+            id="empty-message"
+            :title="emptyPostsListText"
+            type="warning"
+          />
         </el-col>
       </el-row>
       <el-row
@@ -68,6 +74,11 @@ export default {
         if (this.loadingInstance) this.loadingInstance.close();
       });
   },
+  data() {
+    return {
+      emptyPostsListText: this.$t('VIEWS.POSTS.EMPTY'),
+    };
+  },
   computed: {
     ...mapState('posts', {
       doc: 'current',
@@ -108,6 +119,11 @@ export default {
       ::v-deep .secondary-tags{
         margin-top: 15px;
       }
+
+    }
+
+    #empty-message{
+      margin-top: 15px;
     }
 
     .post-row{

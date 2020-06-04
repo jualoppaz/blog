@@ -59,16 +59,18 @@ Sin embargo no he tenido la misma suerte recientemente con otros vídeos con mar
 
 Ya hay que estar sordo para no distinguir a una banda de otra, pero peor aún considero que, después de las múltiples reclamaciones que realicé, la **discográfica** en cuestión continuara afirmando que la infracción de derechos existía. De hecho he intentado ponerme en contacto con ellos hasta en 2 ocasiones de forma directa, pero no he recibido respuesta alguna.
 
-Imaginemos un caso totalmente rocambolesco:
-- Un **autor** compone una **marcha**
-- Una **banda** monta y une a su repertorio dicha **marcha**
-- La **banda** decide grabar esa marcha en un **disco**
-- La **discográfica** produce y edita el disco y acuerda con la **banda** la adquisición de los **derechos de explotación** del **disco**
-- La **discográfica** registra el **disco** en **ContentID** y lo sube a **Youtube**
-- El **autor** decide subir una versión de su marcha a **Youtube** interpretada con violines
-- El **autor** recibe una reclamación de infracción de derechos de **¡¡SU MARCHA!!** editada en el disco de la **discográfica X**
+### ¿Por qué ContentID no funciona correctamente?
 
-¿Se entiende así el sinsentido del entramado que tiene formado **Youtube**? Entiendo que **Youtube** quiera asegurarse de que no se suba material a su plataforma que infrinja derechos de autor, pero esta política no funciona si se les da poder absoluto a las discográficas y editores y éstas no actúan debidamente cuando un usuario les demuestra que no existe tal infracción.
+Imaginemos un caso totalmente rocambolesco:
+1. Un **autor** compone una **marcha**
+1. Una **banda** monta y une a su repertorio dicha **marcha**
+1. La **banda** decide grabar esa marcha en un **disco**
+1. Una **discográfica** produce y edita el disco y acuerda con la **banda** la adquisición de los **derechos de explotación** del **disco**
+1. La **discográfica** registra el **disco** en **ContentID** y lo sube a **Youtube**
+1. El **autor** decide subir una versión de su marcha a **Youtube** interpretada con violines
+1. El **autor** recibe una reclamación de infracción de derechos de **¡¡SU MARCHA!!** editada en el **disco** producido por la **discográfica**
+
+¿Se entiende así el sinsentido del entramado que tiene formado **Youtube**? Entiendo que **Youtube** quiera asegurarse de que no se suba material a su plataforma que infrinja derechos de autor, pero esta política no funciona si se les da poder absoluto a las discográficas y editores y éstos no actúan debidamente cuando un usuario les demuestra que no existe tal infracción.
 
 Por tanto, después de darle vueltas y de explorar otras opciones, he decidido crear un [canal](https://www.dailymotion.com/jualoppaz) en **Dailymotion**, en el que iré subiendo progresivamente los vídeos que se encuentran en mi canal de **Youtube**.
 

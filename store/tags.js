@@ -15,6 +15,9 @@ export const getters = {
   getSecondaryTags(state) {
     return state.all.filter((tag) => tag.level === 2);
   },
+  getTagsInfo(state) {
+    return (tags) => state.all.filter((tag) => tags.includes(tag.name));
+  },
 };
 
 export const actions = {

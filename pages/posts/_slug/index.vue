@@ -1,9 +1,24 @@
 <template>
   <div id="post">
-    <div>
+    <div id="date">
       <i class="el-icon-date" /> {{ getPostDate() }}
     </div>
-    <h1>{{ doc.title }}</h1>
+    <h1 id="title">{{ doc.title }}</h1>
+    <div id="tags">
+      <el-tag
+        v-for="tag in tags"
+        :key="tag.name"
+        :style="{
+          'background-color': getTagBackgroundColor(tag),
+          'border-color': getTagBorderColor(tag),
+          color: getTagColor(tag),
+        }"
+        class="pointer"
+        @click="selectTag(tag)"
+      >
+        {{ tag.label }}
+      </el-tag>
+    </div>
     <el-card id="post-card" class="box-card">
       <div id="post-image">
         <el-image
@@ -40,17 +55,31 @@ export default {
       doc,
     };
   },
+  computed: {
+    tags() {
+      return this.$store.getters['tags/getTagsInfo'](this.doc.tags);
+    },
+  },
   methods: {
     getPostDate() {
       const day = this.$moment(this.doc.createdAt).date();
       const month = this.$moment(this.doc.createdAt).format('MMMM');
       const year = this.$moment(this.doc.createdAt).year();
 
-      return this.$t('VIEWS.POST.DATE', {
+      return this.$t('VIEWS.POSTS.DETAIL.POST.DATE', {
         day,
         month,
         year,
       });
+    },
+    getTagBackgroundColor(tag) {
+      return tag.background_color.selected;
+    },
+    getTagBorderColor(tag) {
+      return tag.border_color.selected;
+    },
+    getTagColor(tag) {
+      return tag.color.selected;
     },
   },
   head() {
@@ -71,12 +100,25 @@ export default {
 <style lang="scss" scoped>
 
 #post{
-  > h1{
+  #title{
     font-size: 50px;
-    margin-top: 0;
+    margin: 0;
+  }
+
+  #tags{
+    margin-top: 5px;
+
+    .el-tag{
+      margin: 0 5px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+    }
   }
 
   #post-card{
+    margin-top: 50px;
     padding: $content-padding-mobile;
 
     @include for-tablet-up{
@@ -103,6 +145,26 @@ export default {
 
         &:hover{
           color: $color-text-orange;
+        }
+      }
+
+      h2, h3{
+        &>a:before{
+          content: "#";
+          --text-opacity: 1;
+          color: #48bb78;
+          color: rgba(72,187,120,var(--text-opacity));
+          font-weight: 400;
+          margin-left: -1.25rem;
+          padding-right: .25rem;
+          position: absolute;
+          opacity: 1;
+        }
+      }
+
+      ol, ul {
+        li{
+          margin: 0 0 3px 0;
         }
       }
     }

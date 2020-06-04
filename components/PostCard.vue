@@ -11,10 +11,27 @@
         />
       </div>
       <div class="post-card-info">
+        <div class="date">
+          <span>{{ getPostDate() }}</span>
+        </div>
         <div class="title">
           <nuxt-link :to="`/posts/${post.slug}`">
             {{ post.title }}
           </nuxt-link>
+        </div>
+        <div class="tags">
+          <el-tag
+            v-for="tag in tags"
+            :key="tag.name"
+            :style="{
+              'background-color': getTagBackgroundColor(tag),
+              'border-color': getTagBorderColor(tag),
+              color: getTagColor(tag),
+            }"
+            class="default no-select"
+          >
+            {{ tag.label }}
+          </el-tag>
         </div>
       </div>
     </el-row>
@@ -30,6 +47,33 @@ export default {
       required: true,
     },
   },
+  computed: {
+    tags() {
+      return this.$store.getters['tags/getTagsInfo'](this.post.tags);
+    },
+  },
+  methods: {
+    getPostDate() {
+      const day = this.$moment(this.post.createdAt).date();
+      const month = this.$moment(this.post.createdAt).format('MMMM');
+      const year = this.$moment(this.post.createdAt).year();
+
+      return this.$t('VIEWS.POSTS.ITEM.DATE', {
+        day,
+        month,
+        year,
+      });
+    },
+    getTagBackgroundColor(tag) {
+      return tag.background_color.selected;
+    },
+    getTagBorderColor(tag) {
+      return tag.border_color.selected;
+    },
+    getTagColor(tag) {
+      return tag.color.selected;
+    },
+  },
 };
 </script>
 
@@ -42,6 +86,7 @@ export default {
     .image-container{
       @include for-tablet-up{
         float: left;
+        padding: 10px;
       }
 
       .el-image{
@@ -51,10 +96,34 @@ export default {
         height: 300px;
       }
     }
-  }
 
-  .title{
-    padding: 20px;
+    .post-card-info{
+      padding: $content-padding-mobile;
+
+      .date{
+        span {
+          line-height: 25px;
+          font-size: 16px;
+          color: $color-text-gray;
+        }
+      }
+
+      .title{
+        font-size: 35px;
+      }
+
+      .tags{
+        margin-top: 15px;
+
+        .el-tag{
+          margin: 0 5px;
+
+          &:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+    }
   }
 }
 

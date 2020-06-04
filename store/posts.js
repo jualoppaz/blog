@@ -27,7 +27,9 @@ export const actions = {
     }
 
     return query
-      .where(whereConditions).fetch()
+      .where(whereConditions)
+      .sortBy('createdAt', 'desc')
+      .fetch()
       .then((posts) => commit('setAll', posts));
   },
   getBySlug({ commit }, { slug }) {
