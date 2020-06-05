@@ -1,6 +1,23 @@
 ---
-title: Blog
-author: Juan Manuel López Pazos
+title: Blog personal de Juan Manuel López Pazos
+tags: []
+metas: {
+  description: "Bienvenido a mi Blog personal. Aquí encontrarás artículos interesantes relacionados con tecnologías y frameworks, así como vídeos cofrades con anécdotas musicales.",
+  author: Juan Manuel López Pazos,
+  keywords: blog,
+  canonical_url: http://blog.juanmanuellopezpazos.es/,
+  og_title: Blog personal de Juan Manuel López Pazos,
+  og_type: website,
+  og_image: http://blog.juanmanuellopezpazos.es/images/2020_06_01-mi-primer-post-blog-con-nuxt-content.jpg,
+  og_url: http://blog.juanmanuellopezpazos.es/,
+  og_description: "Bienvenido a mi Blog personal. Aquí encontrarás artículos interesantes relacionados con tecnologías y frameworks, así como vídeos cofrades con anécdotas musicales.",
+  og_site_name: BLOG - JMLP,
+  twitter_site: "@LopezPazos14",
+  twitter_card: summary,
+  twitter_image: http://blog.juanmanuellopezpazos.es/images/2020_06_01-mi-primer-post-blog-con-nuxt-content.jpg,
+  twitter_title: Blog personal de Juan Manuel López Pazos,
+  twitter_description: "Bienvenido a mi Blog personal. Aquí encontrarás artículos interesantes relacionados con tecnologías y frameworks, así como vídeos cofrades con anécdotas musicales."
+}
 published: true
 ---
 

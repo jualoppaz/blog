@@ -36,6 +36,14 @@
           <PostCard :post="post" />
         </el-col>
       </el-row>
+      <el-row
+        class="social-networks"
+      >
+        <social-share
+          :title="shareText"
+          :seo-config="doc.metas"
+        />
+      </el-row>
     </div>
   </div>
 </template>
@@ -46,6 +54,7 @@ import { mapState } from 'vuex';
 import { Loading } from 'element-ui';
 import PostCard from '../components/PostCard.vue';
 import TagsFilter from '../components/TagsFilter.vue';
+import SocialShare from '../components/SocialShare.vue';
 import utils from '../utils';
 
 export default {
@@ -53,6 +62,7 @@ export default {
   components: {
     PostCard,
     TagsFilter,
+    SocialShare,
   },
   async fetch() {
     if (process.client) {
@@ -77,6 +87,7 @@ export default {
   data() {
     return {
       emptyPostsListText: this.$t('VIEWS.POSTS.EMPTY'),
+      shareText: this.$t('COMMON.SOCIAL_SHARING.SHARE'),
     };
   },
   computed: {
@@ -86,6 +97,9 @@ export default {
     ...mapState('posts', {
       posts: 'all',
     }),
+  },
+  beforeDestroy() {
+    this.$store.dispatch('posts/destroyCurrent');
   },
   head() {
     return utils.getCommonMetas(this.doc);

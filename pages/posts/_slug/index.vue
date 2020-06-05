@@ -3,7 +3,9 @@
     <div id="date">
       <i class="el-icon-date" /> {{ getPostDate() }}
     </div>
-    <h1 id="title">{{ doc.title }}</h1>
+    <h1 id="title">
+      {{ doc.title }}
+    </h1>
     <div id="tags">
       <el-tag
         v-for="tag in tags"
@@ -20,8 +22,11 @@
       </el-tag>
     </div>
     <el-card id="post-card" class="box-card">
-      <div id="post-image">
+      <div
+        id="post-image"
+      >
         <el-image
+          v-if="doc.image"
           style="width: 450px; height: 450px"
           :src="doc.image"
           fit="contain"
@@ -29,36 +34,62 @@
       </div>
       <nuxt-content :document="doc" />
     </el-card>
+    <el-row
+      class="social-networks"
+    >
+      <social-share
+        :title="shareText"
+        :seo-config="doc.metas"
+      />
+    </el-row>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+import { Loading } from 'element-ui';
+
+import SocialShare from '../../../components/SocialShare.vue';
+
+import utils from '../../../utils';
+
 export default {
   layout: 'blog',
   components: {
-
+    SocialShare,
   },
-  async asyncData({ $content, params, error }) {
-    const path = `posts/${params.slug}`;
-
-    const doc = await $content(path)
-      .where({ published: true })
-      .fetch()
-      .catch(() => {
-        error({
-          statusCode: 404,
-          message: 'No encontrado',
-        });
+  async fetch() {
+    if (process.client) {
+      this.loadingInstance = Loading.service({
+        target: utils.LOADING.QUERY_SELECTOR,
+        background: 'rgba(0, 0, 0, 0.8)',
       });
+    }
 
+    return Promise.all([
+      this.$store.dispatch('posts/getBySlug', {
+        slug: this.$route.params.slug,
+      }),
+    ])
+      .finally(() => {
+        if (this.loadingInstance) this.loadingInstance.close();
+      });
+  },
+  data() {
     return {
-      doc,
+      shareText: this.$t('COMMON.SOCIAL_SHARING.SHARE'),
     };
   },
   computed: {
+    ...mapState('posts', {
+      doc: 'current',
+    }),
     tags() {
       return this.$store.getters['tags/getTagsInfo'](this.doc.tags);
     },
+  },
+  beforeDestroy() {
+    this.$store.dispatch('posts/destroyCurrent');
   },
   methods: {
     getPostDate() {
@@ -83,16 +114,7 @@ export default {
     },
   },
   head() {
-    return {
-      title: this.doc.title,
-      meta: [
-        {
-          hid: 'author',
-          name: 'author',
-          content: this.doc.author,
-        },
-      ],
-    };
+    return utils.getCommonMetas(this.doc);
   },
 };
 </script>

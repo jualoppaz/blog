@@ -16,7 +16,7 @@ export const getters = {
     return state.all.filter((tag) => tag.level === 2);
   },
   getTagsInfo(state) {
-    return (tags) => state.all.filter((tag) => tags.includes(tag.name));
+    return (tags) => state.all.filter((tag) => (tags ? tags.includes(tag.name) : false));
   },
 };
 

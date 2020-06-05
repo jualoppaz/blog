@@ -1,9 +1,24 @@
 ---
-title: "Mi primer post en el blog: @nuxt/content, Youtube y las discofráficas"
+title: "Mi primer post en el blog: @nuxt/content, Youtube y las discográficas"
 image: /images/2020_06_01-mi-primer-post-blog-con-nuxt-content.jpg
-description: Este es el texto de la descripción
 tags: ['technologies']
-metas: { author: 'Juan Manuel López Pazos' }
+metas: { 
+  description: "Ésta es la primera entrada del Blog de Juan Manuel López Pazos. Aquí explico por qué he decidido desarrollar este blog: Nuxt, Youtube... y las discográficas.",
+  author: 'Juan Manuel López Pazos',
+  keywords: "blog, youtube, nuxt, discográficas, content, esencia, tres caidas triana, triana, cristo del amor, conversión del buen ladrón, alberto escámez, julio vera",
+  canonical_url: "http://blog.juanmanuellopezpazos.es/2020_06_01-mi-primer-post-en-mi-blog-con-nuxt-content",
+  og_title: "Mi primer post en el blog: @nuxt/content, Youtube y las discográficas",
+  og_type: website,
+  og_image: "http://blog.juanmanuellopezpazos.es/images/2020_06_01-mi-primer-post-blog-con-nuxt-content.jpg",
+  og_url: "http://blog.juanmanuellopezpazos.es/2020_06_01-mi-primer-post-en-mi-blog-con-nuxt-content",
+  og_description: "Ésta es la primera entrada del Blog de Juan Manuel López Pazos. Aquí explico por qué he decidido desarrollar este blog: Nuxt, Youtube... y las discográficas.",
+  og_site_name: BLOG - JMLP,
+  twitter_site: "@LopezPazos14",
+  twitter_card: summary,
+  twitter_image: "http://blog.juanmanuellopezpazos.es/images/2020_06_01-mi-primer-post-blog-con-nuxt-content.jpg",
+  twitter_title: "Mi primer post en el blog: @nuxt/content, Youtube y las discográficas",
+  twitter_description: "Ésta es la primera entrada del Blog de Juan Manuel López Pazos. Aquí explico por qué he decidido desarrollar este blog: Nuxt, Youtube... y las discográficas."
+}
 published: true
 ---
 
@@ -55,7 +70,7 @@ Para quienes no lo sepan, en España las **discográficas** suelen adquirir los 
 
 Esto no significa que las **discográficas** sean las propietarias de las obras registradas, sino de las obras editadas: si yo subo a **Youtube** un vídeo de una marcha de Semana Santa interpretada en directo jamás puede estar sometida a **derechos de autor**, y menos aún reclamados por una **discográfica**. En todo caso, si alguien pudiera poner alguna pega sería el autor de la obra, pero no la **discográfica** que ha editado esa obra en un disco. La **discográfica** podría reclamar un vídeo en el que el sonido del mismo se corresponda con material editado por la misma, y no es el caso que estamos tratando.
 
-Sin embargo no he tenido la misma suerte recientemente con otros vídeos con marchas del mismo corte. Recientemente eliminaron de mi canal el vídeo en el que sonaba la marcha **Conversión del Buen Ladrón**: estaba interpretada por [Esencia](https://amigosdeesencia.com) en la Capilla de Montserrat en el año 2014, pero el algoritmo de [ContentID](https://support.google.com/youtube/answer/2797370?hl=es) identificó una infracción de derechos de la misma marcha grabada por la [Banda de las Tres Caídas de Triana](http://www.trescaidasdetriana.es).
+Sin embargo no he tenido la misma suerte recientemente con otros vídeos con marchas del mismo corte. Recientemente eliminaron de mi canal el vídeo en el que sonaba la marcha **Conversión del Buen Ladrón**, obra de **José Julio Vera Cuder** que data del año **1987**: estaba interpretada por [Esencia](https://amigosdeesencia.com) en la Capilla de Montserrat en el año 2014, pero el algoritmo de [ContentID](https://support.google.com/youtube/answer/2797370?hl=es) identificó una infracción de derechos de la misma marcha grabada por la [Banda de las Tres Caídas de Triana](http://www.trescaidasdetriana.es).
 
 Ya hay que estar sordo para no distinguir a una banda de otra, pero peor aún considero que, después de las múltiples reclamaciones que realicé, la **discográfica** en cuestión continuara afirmando que la infracción de derechos existía. De hecho he intentado ponerme en contacto con ellos hasta en 2 ocasiones de forma directa, pero no he recibido respuesta alguna.
 
