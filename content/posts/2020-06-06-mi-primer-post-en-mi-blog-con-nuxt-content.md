@@ -9,7 +9,7 @@ metas: {
   canonical_url: "http://blog.juanmanuellopezpazos.es/2020-06-06-mi-primer-post-en-mi-blog-con-nuxt-content",
   og_title: "Mi primer post en el blog: @nuxt/content, Youtube y las discográficas",
   og_type: website,
-  og_image: "http://blog.juanmanuellopezpazos.es/images/2020-06-01-mi-primer-post-blog-con-nuxt-content.jpg",
+  og_image: "http://blog.juanmanuellopezpazos.es/images/2020-06-06-mi-primer-post-blog-con-nuxt-content.jpg",
   og_url: "http://blog.juanmanuellopezpazos.es/2020-06-06-mi-primer-post-en-mi-blog-con-nuxt-content",
   og_description: "Ésta es la primera entrada del Blog de Juan Manuel López Pazos. Aquí explico por qué he decidido desarrollar este blog: Nuxt, Youtube... y las discográficas.",
   og_site_name: BLOG - JMLP,
