@@ -27,7 +27,6 @@
       >
         <el-image
           v-if="doc.image"
-          style="width: 450px; height: 450px"
           :src="doc.image"
           fit="contain"
         />
@@ -123,8 +122,12 @@ export default {
 
 #post{
   #title{
-    font-size: 50px;
     margin: 0;
+    font-size: 30px;
+
+    @include for-tablet-up{
+      font-size: 50px;
+    }
   }
 
   #tags{
@@ -149,6 +152,15 @@ export default {
 
     #post-image{
       text-align: center;
+
+      .el-image{
+        max-width: 100%;
+
+        @include for-tablet-up{
+          width: 450px;
+          height: 450px;
+        }
+      }
     }
 
     .nuxt-content{
@@ -188,6 +200,21 @@ export default {
         li{
           margin: 0 0 3px 0;
         }
+      }
+
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin: 50px 0;
+      }
+      .embed-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     }
   }

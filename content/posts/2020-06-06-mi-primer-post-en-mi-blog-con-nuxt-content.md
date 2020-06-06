@@ -36,7 +36,7 @@ Desde 2014 que empecé a desarrollar aplicaciones web en mi tiempo libre pensé 
 
 Este Blog no sólo me servirá para trabajar en mi Marca personal, sino que también me servirá para mejorar el posicionamiento de mi web personal.
 
-Muchas gente realiza sus blogs en **WordPress**, **BlogSpot**, y otras opciones ya conocidas. Sin embargo, yo siempre había querido desarrollar mi Blog yo mismo y, con él, poner en práctica mis conocimientos en lugar de dejar en manos de terceros el desarrollo del mismo.
+Mucha gente realiza sus blogs en **WordPress**, **BlogSpot**, y otras opciones ya conocidas. Sin embargo, yo siempre había querido desarrollar mi Blog yo mismo y, con él, poner en práctica mis conocimientos en lugar de dejar en manos de terceros el desarrollo del mismo.
 
 Mi descubrimiento de [Nuxt](https://nuxtjs.org/) ha sido todo un hallazgo, ya que no sólo permite un desarrollo ágil y sencillo de un Blog con [@nuxt/content](https://content.nuxtjs.org/), sino que además permite renderizar las páginas en servidor mediante el modo Universal.
 
@@ -58,9 +58,31 @@ Y a estos motivos hay que sumarle que las discográficas no ayudan puesto que, a
 
 Para poner un poco en contexto a aquellos que no sepan a lo que me refiero voy a comentar un caso muy particular. Me sucedió cuando publiqué este vídeo:
 
-<figure style="text-align: center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/gDvmniZglnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+<el-row>
+  <el-col
+    :xs="24"
+    :sm="24"
+    :md="{
+      span: 12,
+      offset: 6
+    }"
+    :lg="{
+      span: 12,
+      offset: 6
+    }"
+  >
+    <div
+      class="embed-container"
+    >
+      <iframe 
+        src="https://www.youtube.com/embed/gDvmniZglnA" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </el-col>
+</el-row>
 
 En este vídeo se puede escuchar a la [Banda de las Tres Caídas de Triana](http://www.trescaidasdetriana.es) interpretando la marcha **Cristo del Amor**, obra de **Alberto Escámez López (1896-1970)** que data del año **1944**.
 
