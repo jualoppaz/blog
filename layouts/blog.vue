@@ -24,7 +24,7 @@
         v-if="showAsideRow()"
         id="aside-row"
       >
-        <TagsFilter />
+        <TagsFilter @tagChanged="goToBlog()" />
       </el-container>
       <el-footer>
         <Footer />
