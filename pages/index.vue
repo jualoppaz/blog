@@ -112,6 +112,8 @@ export default {
 
 #blog{
   .nuxt-content{
+    text-align: justify;
+
     #bienvenido-a-mi-blog{
       font-size: 50px;
       margin: 0;
