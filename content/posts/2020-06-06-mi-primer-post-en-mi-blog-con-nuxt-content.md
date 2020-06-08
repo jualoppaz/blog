@@ -20,6 +20,7 @@ metas: {
   twitter_description: "Ésta es la primera entrada del Blog de Juan Manuel López Pazos. Aquí explico por qué he decidido desarrollar este blog: Nuxt, Youtube... y las discográficas."
 }
 published: true
+creationDate: '2020-06-06T21:40:15.000Z'
 ---
 
 ## ¿Por qué este blog?

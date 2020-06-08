@@ -28,7 +28,7 @@ export const actions = {
 
     return query
       .where(whereConditions)
-      .sortBy('createdAt', 'desc')
+      .sortBy('creationDate', 'desc')
       .fetch()
       .then((posts) => commit('setAll', posts));
   },

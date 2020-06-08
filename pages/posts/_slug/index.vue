@@ -92,9 +92,9 @@ export default {
   },
   methods: {
     getPostDate() {
-      const day = this.$moment(this.doc.createdAt).date();
-      const month = this.$moment(this.doc.createdAt).format('MMMM');
-      const year = this.$moment(this.doc.createdAt).year();
+      const day = this.$moment(this.doc.creationDate).date();
+      const month = this.$moment(this.doc.creationDate).format('MMMM');
+      const year = this.$moment(this.doc.creationDate).year();
 
       return this.$t('VIEWS.POSTS.DETAIL.POST.DATE', {
         day,

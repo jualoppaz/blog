@@ -54,9 +54,9 @@ export default {
   },
   methods: {
     getPostDate() {
-      const day = this.$moment(this.post.createdAt).date();
-      const month = this.$moment(this.post.createdAt).format('MMMM');
-      const year = this.$moment(this.post.createdAt).year();
+      const day = this.$moment(this.post.creationDate).date();
+      const month = this.$moment(this.post.creationDate).format('MMMM');
+      const year = this.$moment(this.post.creationDate).year();
 
       return this.$t('VIEWS.POSTS.ITEM.DATE', {
         day,
