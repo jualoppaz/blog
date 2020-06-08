@@ -19,6 +19,7 @@
           <el-alert
             v-if="!posts || posts.length === 0"
             id="empty-message"
+            :closable="false"
             :title="emptyPostsListText"
             type="warning"
           />
