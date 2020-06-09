@@ -85,7 +85,7 @@ Para poner un poco en contexto a aquellos que no sepan a lo que me refiero voy a
   </el-col>
 </el-row>
 
-En este vídeo se puede escuchar a la [Banda de las Tres Caídas de Triana](http://www.trescaidasdetriana.es) interpretando la marcha **Cristo del Amor**, obra de **Alberto Escámez López (1896-1970)** que data del año **1944**.
+En este vídeo se puede escuchar a la [⚓ Banda de las Tres Caídas de Triana](http://www.trescaidasdetriana.es) interpretando la marcha **Cristo del Amor**, obra de **Alberto Escámez López (1896-1970)** que data del año **1944**.
 
 Por tanto, al tratarse de una interpretación en DIRECTO de una obra de hace casi un siglo, no puede cometerse infracción de derechos alguna. Pues tuve que aguantar cómo el algoritmo de [ContentID](https://support.google.com/youtube/answer/2797370?hl=es) me indicó que infringí los derechos de autor de una **DISCOGRÁFICA**, aunque finalmente eliminaron dicha infracción de derechos. Dicha discográfica actuó de forma totalmente lógica: son conscientes de que dicho aviso de infracción registrado por **Youtube** fue erróneo, y procedieron a su eliminación.
 
@@ -93,7 +93,7 @@ Para quienes no lo sepan, en España las **discográficas** suelen adquirir los 
 
 Esto no significa que las **discográficas** sean las propietarias de las obras registradas, sino de las obras editadas: si yo subo a **Youtube** un vídeo de una marcha de Semana Santa interpretada en directo jamás puede estar sometida a **derechos de autor**, y menos aún reclamados por una **discográfica**. En todo caso, si alguien pudiera poner alguna pega sería el autor de la obra, pero no la **discográfica** que ha editado esa obra en un disco. La **discográfica** podría reclamar un vídeo en el que el sonido del mismo se corresponda con material editado por la misma, y no es el caso que estamos tratando.
 
-Sin embargo no he tenido la misma suerte recientemente con otros vídeos con marchas del mismo corte. Recientemente eliminaron de mi canal el vídeo en el que sonaba la marcha **Conversión del Buen Ladrón**, obra de **José Julio Vera Cuder** que data del año **1987**: estaba interpretada por [Esencia](https://amigosdeesencia.com) en la Capilla de Montserrat en el año 2014, pero el algoritmo de [ContentID](https://support.google.com/youtube/answer/2797370?hl=es) identificó una infracción de derechos de la misma marcha grabada por la [Banda de las Tres Caídas de Triana](http://www.trescaidasdetriana.es).
+Sin embargo no he tenido la misma suerte recientemente con otros vídeos con marchas del mismo corte. Recientemente eliminaron de mi canal el vídeo en el que sonaba la marcha **Conversión del Buen Ladrón**, obra de **José Julio Vera Cuder** que data del año **1987**: estaba interpretada por [Esencia](https://amigosdeesencia.com) en la Capilla de Montserrat en el año 2014, pero el algoritmo de [ContentID](https://support.google.com/youtube/answer/2797370?hl=es) identificó una infracción de derechos de la misma marcha grabada por la [⚓ Banda de las Tres Caídas de Triana](http://www.trescaidasdetriana.es).
 
 Ya hay que estar sordo para no distinguir a una banda de otra, pero peor aún considero que, después de las múltiples reclamaciones que realicé, la **discográfica** en cuestión continuara afirmando que la infracción de derechos existía. De hecho he intentado ponerme en contacto con ellos hasta en 2 ocasiones de forma directa, pero no he recibido respuesta alguna.
 

@@ -194,12 +194,20 @@ export default {
           position: absolute;
           opacity: 1;
         }
+
+        &:not(:first-of-type){
+          margin-top: 50px;
+        }
       }
 
       ol, ul {
         li{
           margin: 0 0 3px 0;
         }
+      }
+
+      .post-image{
+        margin: 50px 0;
       }
 
       .embed-container {
@@ -209,6 +217,7 @@ export default {
         overflow: hidden;
         margin: 50px 0;
       }
+
       .embed-container iframe {
         position: absolute;
         top:0;
