@@ -168,7 +168,7 @@ Sin embargo, en el caso de [Esencia](https://amigosdeesencia.com) la versión qu
 
 ### 3. La Lanzada (1947, de Ramón Montoya Molina)
 
-Recuerdo que en mi infancia confundía siempre esta marcha con **Cristo del Perdón**, ya que el final de ambas de ciertamente similar. Pero gracias a los avances de la tecnología y a la aparición de **Youtube** pude averiguar el nombre de esta marcha y aprendí a distinguirlas.
+Recuerdo que en mi infancia confundía siempre esta marcha con **Cristo del Perdón**, ya que el final de ambas es ciertamente similar. Pero gracias a los avances de la tecnología y a la aparición de **Youtube** pude averiguar el nombre de esta marcha y aprendí a distinguirlas.
 
 <el-row>
   <el-col
@@ -197,6 +197,8 @@ Recuerdo que en mi infancia confundía siempre esta marcha con **Cristo del Perd
 
 Esta marcha no recuerdo haberla escuchado nunca en mi infancia. Sin embargo, cuando entré en [Esencia](https://amigosdeesencia.com) allá por el mes de septiembre de 2011 y la escuché en un ensayo me resultó familiar. Era como si la hubiera tocado antes sin ser así.
 
+Fijaos si ha acabado resultándome familiar que la rufé en este concierto y también la he rufado en el reciente disco de **Esencia**: [La Oración](https://amigosdeesencia.com/disco-la-oracion-esencia-ya-a-la-venta).
+ 
 Esta composición fue un clásico de la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/). Desconozco cuántos años la mantendrían en su repertorio, pero siendo del año **1988** y al no haber muchos vídeos de los 90 de las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/) interpretándola, diría que no estuvo mucho tiempo en el mismo y, sinceramente, es una auténtica pena. Entiendo que por este motivo, entre otros, se decidió en [Esencia](https://amigosdeesencia.com) tener una marcha de estas características en el repertorio. Si nunca la has escuchado aquí la tienes:
 
 <el-row>
@@ -224,7 +226,7 @@ Esta composición fue un clásico de la [⚓ Banda del Stmo. Cristo de las Tres 
 
 ### 5. Evocación (1925, de Alberto Escámez López)
 
-Marcha estilo **Policía Armada** por excelencia. No es una marcha espectacular, y seguramente con el paso de las décadas se acabará perdiendo pero es una marcha que, tocada por derecho, es impactante y reclama tu atención desde la primera nota.
+Marcha estilo **Policía Armada** por excelencia. Seguramente no sea la mejor marcha del mundo, y probablemente con el paso de las décadas se acabará perdiendo pero es una marcha que, tocada por derecho, es impactante y reclama tu atención desde la primera nota.
 
 <el-row>
   <el-col
