@@ -110,6 +110,13 @@ function getCommonMetas(doc) {
       content: metas.article_published_time,
     });
   }
+  if (metas.article_author) {
+    obj.meta.push({
+      hid: 'article:author',
+      property: 'article:author',
+      content: metas.article_author,
+    });
+  }
   if (metas.og_image) {
     obj.meta.push({
       hid: 'og:image',

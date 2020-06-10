@@ -11,6 +11,7 @@ metas: {
   og_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
   og_type: "article",
   article_published_time: "2020-06-10T21:40:15.000Z",
+  article_author: "https://www.facebook.com/jualoppaz",
   og_image: "http://blog.juanmanuellopezpazos.es/images/2014-03-29-cartel-concierto-montserrat.jpg",
   og_url: "http://blog.juanmanuellopezpazos.es/posts/2020-06-10-concierto-esencia-montserrat-2014",
   og_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
