@@ -206,8 +206,13 @@ export default {
         }
       }
 
-      .post-image{
+      .post-image-container{
         margin: 50px 0;
+
+        .post-image-caption {
+          color: $color-text-gray;
+          text-align: justify;
+        }
       }
 
       .embed-container {
