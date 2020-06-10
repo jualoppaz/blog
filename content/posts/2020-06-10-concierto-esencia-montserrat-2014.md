@@ -5,12 +5,12 @@ description: Este es el texto de la descripción
 tags: ['holy_week', 'esencia']
 metas: { author: 'Juan Manuel López Pazos' }
 published: true
-creationDate: '2020-06-09T21:40:15.000Z'
+creationDate: '2020-06-10T21:40:15.000Z'
 ---
 
 ## Concierto de Esencia en la capilla de Montserrat (29/03/2014)
 
-En este post hablaremos de la actuación de la [Banda de Cornetas y Tambores Esencia](https://amigosdeesencia.com) en la capilla de Montserrat en el año 2014.
+En este post hablaremos de la actuación de la [Banda de Cornetas y Tambores Esencia](https://amigosdeesencia.com) en la capilla de **Montserrat** en el año 2014.
 
 ## Conversión del Buen Ladrón: el origen de todo
 
@@ -21,7 +21,7 @@ eliminación de uno de mis vídeos en mi [canal](https://www.youtube.com/c/JuanM
 
 La supuesta infracción de derechos no me impedía mantener el vídeo en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos), pero sí implicaba la desactivación de ciertas características del mismo como la posibilidad de monetización del vídeo.
 
-Al tener menos de **1000 suscriptores** en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) no me era posible monetizar vídeo alguno, pero al considerar injusta dicha notificación decidí reclamarla hasta en 3 ocasiones. Como la **discográfica** en cuestión continuó afirmando que la reclamación era válida el vídeo fue eliminado de mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos). Resulta irónico, ya que el sonido que contenía el vídeo no fue grabado ni siquiera por mí (yo estaba actuando con [Esencia](https://amigosdeesencia.com) en el mismo), sino que lo encontré de casualidad en la ya inexistente web **http://www.passionostra.blogspot.com.es**.
+Al tener menos de **1000 suscriptores** en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) no era apto para monetizar vídeo alguno, pero al considerar injusta dicha notificación decidí reclamarla hasta en 3 ocasiones. Como la **discográfica** en cuestión continuó afirmando que la reclamación era válida el vídeo fue eliminado de mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos). Resulta irónico, ya que el sonido que contenía el vídeo no fue grabado ni siquiera por mí (yo estaba actuando con [Esencia](https://amigosdeesencia.com) en el mismo), sino que lo encontré de casualidad en la ya inexistente web **http://www.passionostra.blogspot.com.es**.
 
 Pero bueno, mientras la política de **Youtube** no cambie mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) será historia y dará paso a mi nuevo [canal](https://www.dailymotion.com/jualoppaz) en **Dailymotion**. En el mismo ya están disponibles los vídeos del mismo.
 
@@ -41,15 +41,52 @@ Sin embargo, esa anécdota no empañó lo que iba a suceder a continuación. Yo 
       offset: 6
     }"
   >
-    <el-image
-      class="post-image"
-      src="http://localhost:3000/images/2014-03-29-foto-bateria-previa-al-concierto.jpg"
-      fit="contain"
-    />
+    <div class="post-image-container">
+      <el-image
+        class="post-image"
+        src="/images/2014-03-29-foto-bateria-previa-al-concierto.jpg"
+        fit="contain"
+        alt="Foto de la batería de Esencia instantes previos al concierto en la capilla de Montserrat (29/03/2014)"
+      ></el-image>
+      <div class="post-image-caption">
+        Foto de la batería de Esencia instantes previos al concierto en la capilla de Montserrat (29/03/2014)
+      </div>
+    </div>
   </el-col>
 </el-row>
 
+Ese año la batería de [Esencia](https://amigosdeesencia.com) llevó parches **azules** de la marca **Percussion**. Esos parches sonaban muy secos y tenían la peculiaridad de que, además de ser muy finos, eran transparentes. Esos parches se estrenaron en el concierto que dio la formación en la **Diputación provicinal de Sevilla** dentro del programa de actuaciones del **III Congreso Nacional de Bandas** que tuvo lugar en Sevilla.
+
+Inicialmente era algo que chocaba, ya que no es habitual que una banda de Cornetas y Tambores utilice parches transparentes. Era muy desconcertante mirar de reojo al parche y ver que no había fondo, no tenías la referencia de un parche blanco para saber a qué altura golpear, más aún en la oscuridad de un polígono como el **Parque Empresarial Torneo** o cualquier calle céntrica del **Casco Histórico** de Sevilla con poca iluminación. 
+
+Los primeros días ensayando con ellos costaba trabajo tocar con la misma soltura, pero he de reconocer que 
+esa dificultad precisaba de un extra de concentración por parte del músico, y te daba ese plus de técnica. Nada más que por eso me gustaría que volviéramos a utilizar ese tipo de parches alguna vez.
+
 ## Repertorio del concierto
+
+<el-row>
+  <el-col
+    :xs="24"
+    :sm="24"
+    :md="24"
+    :lg="{
+      span: 12,
+      offset: 6
+    }"
+  >
+    <div class="post-image-container">
+      <el-image
+        class="post-image"
+        src="/images/2014-03-29-foto-esencia-en-capilla-de-montserrat.jpg"
+        fit="contain"
+        alt="Foto de Esencia dentro de la capilla de Montserrat durante el concierto (29/03/2014)"
+      ></el-image>
+      <div class="post-image-caption">
+        Foto de Esencia dentro de la capilla de Montserrat durante el concierto (29/03/2014)
+      </div>
+    </div>
+  </el-col>
+</el-row>
 
 El repertorio de este concierto fue amplio y de tintes clásicos. Por todos es sabido que el repertorio que interpreta en su mayoría la banda que acompaña al **Stmo. Cristo de la Conversión del Buen Ladrón** cada **Viernes Santo**, la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/), es en su mayoría clásico. Dado que [Esencia](https://amigosdeesencia.com) es una formación clásica que tiene como clara referencia a la **Banda de la Policía Armada** y, además, por aquel entonces contaba con varias composiciones en su repertorio que sonaban cada **Viernes Santo** tras el titular de la [Hermandad de Montserrat](http://hermandaddemontserrat.org/), era un lugar idóneo para que [Esencia](https://amigosdeesencia.com) ofreciera un concierto en el que poner sus sones en plena **Cuaresma**.
 
@@ -256,7 +293,7 @@ Esta marcha sigue a día de hoy en el repertorio de las [⚓ Tres Caídas de Tri
 
 Para cerrar el concierto, como no podía ser de otra forma, sonó la Marcha real. Una cosa que tienen en común [Esencia](https://amigosdeesencia.com) y las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/) es que ambas interpretan la Marcha real en la llave **Re**, mientras que la extensa mayoría de formaciones del estilo de Cornetas y Tambores lo hacen en **Do**.
 
-Aún así se aprecian muchas diferencias entre la interpretación de una formación y otra, ya que hay muchos factores que entran en juego como afinación, instrumentos, etc. Pero sólo ese tema de para un post bien amplio y del que no tengo muchos conocimientos: eso se lo dejo a los expertos en la materia.
+Aún así se aprecian muchas diferencias entre la interpretación de una formación y otra, ya que hay muchos factores que entran en juego como afinación, instrumentos, etc. Pero sólo ese tema da para un post bien amplio y del que no tengo muchos conocimientos: eso se lo dejo a los expertos en la materia.
 
 <el-row>
   <el-col
@@ -280,3 +317,9 @@ Aún así se aprecian muchas diferencias entre la interpretación de una formaci
     </div>
   </el-col>
 </el-row>
+
+## Fotos del concierto
+
+Ese concierto fue ampliamente cubierto por **Francisco Javier Montiel**, fotógrafo habitual de [Artesacro](http://www.artesacro.org/). La galería de imágenes del mismo se encuentra en el siguiente enlace: [http://www.artesacro.org/Noticia.asp?idreg=93792](http://www.artesacro.org/Noticia.asp?idreg=93792).
+
+Si quieres ver más fotos de **Francisco Javier Montiel** síguelo en su cuenta de Twitter: <a href="https://twitter.com/fjmonrod" target="_blank">@fjmonrod</a>
