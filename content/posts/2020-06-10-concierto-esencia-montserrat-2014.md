@@ -3,7 +3,23 @@ title: Concierto de Esencia en la capilla de Montserrat (29/03/2014)
 image: /images/2014-03-29-cartel-concierto-montserrat.jpg
 description: Este es el texto de la descripción
 tags: ['holy_week', 'esencia']
-metas: { author: 'Juan Manuel López Pazos' }
+metas: { 
+  description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
+  author: "Juan Manuel López Pazos",
+  keywords: "blog, youtube, dailymotion, esencia, esencia sevilla, banda esencia, esencia montserrat, esencia concierto montserrat, tres caidas triana, triana, alberto escámez, alberto escámez lópez, julio vera, josé julio vera cuder, zueco ramos, pascual zueco ramos, ramón montoya, ramón montoya molina, bienvenido puelles, bienvenido puelles oliver, soledad de san pablo, cristo del amor, lanzada, caído vas por triana, evocación, virgen de la salud, conversión del buen ladrón, marcha real",
+  canonical_url: "http://blog.juanmanuellopezpazos.es/posts/2020-06-10-concierto-esencia-montserrat-2014",
+  og_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
+  og_type: website,
+  og_image: "http://blog.juanmanuellopezpazos.es/images/2014-03-29-cartel-concierto-montserrat.jpg",
+  og_url: "http://blog.juanmanuellopezpazos.es/posts/2020-06-10-concierto-esencia-montserrat-2014",
+  og_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
+  og_site_name: BLOG - JMLP,
+  twitter_site: "@LopezPazos14",
+  twitter_card: summary,
+  twitter_image: "http://blog.juanmanuellopezpazos.es/images/2014-03-29-cartel-concierto-montserrat.jpg",
+  twitter_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
+  twitter_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas."
+}
 published: true
 creationDate: '2020-06-10T21:40:15.000Z'
 ---
@@ -121,7 +137,7 @@ Fue la marcha que abrió el concierto. Es un clásico para [Esencia](https://ami
 
 ### 2. Cristo del Amor (1944, de Alberto Escámez López)
 
-Le siguió el clásico de los clásicos: Cristo del amor. A finales de los 90 y a principios de siglo, esta marcha solía ser la primera marcha interpretada por cada formación en cualquier cofradía nada más salir el paso por el dintel de la puerta de la capilla o iglesia. Hoy en día no se ve tanto esta estampa, pero en ciertas cofradías se sigue realizando de forma eventual.
+Le siguió el clásico de los clásicos: **Cristo del amor**. A finales de los 90 y a principios de siglo, esta marcha solía ser la primera marcha interpretada por cada formación en cualquier cofradía nada más salir el paso por el dintel de la puerta de la capilla o iglesia. Hoy en día no se ve tanto esta estampa, pero en ciertas cofradías se sigue realizando de forma eventual.
 
 La mayoría de bandas de **Cornetas y Tambores** interpretan esta marcha partiendo de una rearmonización que se hizo hace más de 30 años, siendo popularmente conocida la que se realizó desde la [Banda de Las Cigarreras](https://lascigarreras.net/). De hecho, en mi infancia siempre quedará el recuerdo de esas tardes tocando el típico tambor de cadete de 5 varillas sobre la cama mientras sonaba de fondo el disco **XX aniversario** de [Las Cigarreras](https://lascigarreras.net/).
 
