@@ -103,6 +103,13 @@ function getCommonMetas(doc) {
       content: metas.og_type,
     });
   }
+  if (metas.article_published_time) {
+    obj.meta.push({
+      hid: 'article:published_time',
+      property: 'article:published_time',
+      content: metas.article_published_time,
+    });
+  }
   if (metas.og_image) {
     obj.meta.push({
       hid: 'og:image',
