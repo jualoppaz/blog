@@ -39,7 +39,7 @@ La supuesta infracción de derechos no me impedía mantener el vídeo en mi [can
 
 Al tener menos de **1000 suscriptores** en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) no era apto para monetizar vídeo alguno, pero al considerar injusta dicha notificación decidí reclamarla hasta en 3 ocasiones. Como la **discográfica** en cuestión continuó afirmando que la reclamación era válida el vídeo fue eliminado de mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos). Resulta irónico, ya que el sonido que contenía el vídeo no fue grabado ni siquiera por mí (yo estaba actuando con [Esencia](https://amigosdeesencia.com) en el mismo), sino que lo encontré de casualidad en la ya inexistente web **http://www.passionostra.blogspot.com.es**.
 
-Pero bueno, mientras la política de **Youtube** no cambie mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) será historia y dará paso a mi nuevo [canal](https://www.dailymotion.com/jualoppaz) en **Dailymotion**. En el mismo ya están disponibles los vídeos del mismo.
+Pero bueno, mientras la política de **Youtube** no cambie mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) será historia y dará paso a mi nuevo [canal](https://www.dailymotion.com/jualoppaz) en **Dailymotion**. En el mismo ya están disponibles los vídeos del concierto.
 
 ## Citación para el concierto: Plaza de la Magdalena
 
