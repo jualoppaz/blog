@@ -1,38 +1,40 @@
 <template>
   <div id="post">
-    <div id="date">
-      <i class="el-icon-date" /> {{ getPostDate() }}
-    </div>
-    <h1 id="title">
-      {{ doc.title }}
-    </h1>
-    <div id="tags">
-      <el-tag
-        v-for="tag in tags"
-        :key="tag.name"
-        :style="{
-          'background-color': getTagBackgroundColor(tag),
-          'border-color': getTagBorderColor(tag),
-          color: getTagColor(tag),
-        }"
-        class="pointer"
-        @click="selectTag(tag)"
-      >
-        {{ tag.label }}
-      </el-tag>
-    </div>
-    <el-card id="post-card" class="box-card">
-      <div
-        id="post-image"
-      >
-        <el-image
-          v-if="doc.image"
-          :src="doc.image"
-          fit="contain"
-        />
+    <article>
+      <time id="date" :datetime="getPostDateFormated()">
+        <i class="el-icon-date" /> {{ getPostDate() }}
+      </time>
+      <h1 id="title">
+        {{ doc.title }}
+      </h1>
+      <div id="tags">
+        <el-tag
+          v-for="tag in tags"
+          :key="tag.name"
+          :style="{
+            'background-color': getTagBackgroundColor(tag),
+            'border-color': getTagBorderColor(tag),
+            color: getTagColor(tag),
+          }"
+          class="pointer"
+          @click="selectTag(tag)"
+        >
+          {{ tag.label }}
+        </el-tag>
       </div>
-      <nuxt-content :document="doc" />
-    </el-card>
+      <el-card id="post-card" class="box-card">
+        <div
+          id="post-image"
+        >
+          <el-image
+            v-if="doc.image"
+            :src="doc.image"
+            fit="contain"
+          />
+        </div>
+        <nuxt-content :document="doc" />
+      </el-card>
+    </article>
     <el-row
       class="social-networks"
     >
@@ -101,6 +103,9 @@ export default {
         month,
         year,
       });
+    },
+    getPostDateFormated() {
+      return this.$moment(this.doc.creationDate).format('YYYY-MM-DD');
     },
     getTagBackgroundColor(tag) {
       return tag.background_color.selected;
