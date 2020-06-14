@@ -28,20 +28,20 @@ creationDate: '2020-06-10T21:40:15.000Z'
 
 ## Concierto de Esencia en la capilla de Montserrat (29/03/2014)
 
-En este post hablaremos de la actuación de la [Banda de Cornetas y Tambores Esencia](https://amigosdeesencia.com) en la capilla de **Montserrat** en el año 2014.
+En este post hablaremos de la actuación de la [Banda de Cornetas y Tambores Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") en la capilla de **Montserrat** en el año 2014.
 
 ## Conversión del Buen Ladrón: el origen de todo
 
 Como dije en mi anterior post, uno de los motivos por los que he decidido iniciar mi andadura en este blog ha sido la 
-eliminación de uno de mis vídeos en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) de **Youtube**. En concreto me eliminaron un vídeo de este mismo concierto, en el que sonaba la marcha **Conversión del Buen Ladrón**, marcha compuesta por **José Julio Vera Cuder** en el año **1987**.
+eliminación de uno de mis vídeos en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") de **Youtube**. En concreto me eliminaron un vídeo de este mismo concierto, en el que sonaba la marcha **Conversión del Buen Ladrón**, marcha compuesta por **José Julio Vera Cuder** en el año **1987**.
 
-**Youtube** me notificó una infracción de derechos sobre dicha marcha, por tanto yo me esperaba alguna reclamación en nombre de su autor, **José Julio Vera Cuder**, pero no: la reclamación fue realizada por una famosa discográfica que editó dicha marcha en un disco de la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/).
+**Youtube** me notificó una infracción de derechos sobre dicha marcha, por tanto yo me esperaba alguna reclamación en nombre de su autor, **José Julio Vera Cuder**, pero no: la reclamación fue realizada por una famosa discográfica que editó dicha marcha en un disco de la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana").
 
-La supuesta infracción de derechos no me impedía mantener el vídeo en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos), pero sí implicaba la desactivación de ciertas características del mismo como la posibilidad de monetización del vídeo.
+La supuesta infracción de derechos no me impedía mantener el vídeo en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube"), pero sí implicaba la desactivación de ciertas características del mismo como la posibilidad de monetización del vídeo.
 
-Al tener menos de **1000 suscriptores** en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) no era apto para monetizar vídeo alguno, pero al considerar injusta dicha notificación decidí reclamarla hasta en 3 ocasiones. Como la **discográfica** en cuestión continuó afirmando que la reclamación era válida el vídeo fue eliminado de mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos). Resulta irónico, ya que el sonido que contenía el vídeo no fue grabado ni siquiera por mí (yo estaba actuando con [Esencia](https://amigosdeesencia.com) en el mismo), sino que lo encontré de casualidad en la ya inexistente web **http://www.passionostra.blogspot.com.es**.
+Al tener menos de **1000 suscriptores** en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") no era apto para monetizar vídeo alguno, pero al considerar injusta dicha notificación decidí reclamarla hasta en 3 ocasiones. Como la **discográfica** en cuestión continuó afirmando que la reclamación era válida el vídeo fue eliminado de mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube"). Resulta irónico, ya que el sonido que contenía el vídeo no fue grabado ni siquiera por mí (yo estaba actuando con [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") en el mismo), sino que lo encontré de casualidad en la ya inexistente web **http://www.passionostra.blogspot.com.es**.
 
-Pero bueno, mientras la política de **Youtube** no cambie mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos) será historia y dará paso a mi nuevo [canal](https://www.dailymotion.com/jualoppaz) en **Dailymotion**. En el mismo ya están disponibles los vídeos del concierto.
+Pero bueno, mientras la política de **Youtube** no cambie mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") será historia y dará paso a mi nuevo [canal](https://www.dailymotion.com/jualoppaz "Canal de Juan Manuel López Pazos en Dailymotion") en **Dailymotion**. En el mismo ya están disponibles los vídeos del concierto.
 
 ## Citación para el concierto: Plaza de la Magdalena
 
@@ -73,7 +73,7 @@ Sin embargo, esa anécdota no empañó lo que iba a suceder a continuación. Yo 
   </el-col>
 </el-row>
 
-Ese año la batería de [Esencia](https://amigosdeesencia.com) llevó parches **azules** de la marca **Percussion**. Esos parches sonaban muy secos y tenían la peculiaridad de que, además de ser muy finos, eran transparentes. Esos parches se estrenaron en el concierto que dio la formación en la **Diputación provicinal de Sevilla** dentro del programa de actuaciones del **III Congreso Nacional de Bandas** que tuvo lugar en Sevilla.
+Ese año la batería de [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") llevó parches **azules** de la marca **Percussion**. Esos parches sonaban muy secos y tenían la peculiaridad de que, además de ser muy finos, eran transparentes. Esos parches se estrenaron en el concierto que dio la formación en la **Diputación provicinal de Sevilla** dentro del programa de actuaciones del **III Congreso Nacional de Bandas** que tuvo lugar en Sevilla.
 
 Inicialmente era algo que chocaba, ya que no es habitual que una banda de Cornetas y Tambores utilice parches transparentes. Era muy desconcertante mirar de reojo al parche y ver que no había fondo, no tenías la referencia de un parche blanco para saber a qué altura golpear, más aún en la oscuridad de un polígono como el **Parque Empresarial Torneo** o cualquier calle céntrica del **Casco Histórico** de Sevilla con poca iluminación. 
 
@@ -106,13 +106,13 @@ esa dificultad precisaba de un extra de concentración por parte del músico, y 
   </el-col>
 </el-row>
 
-El repertorio de este concierto fue amplio y de tintes clásicos. Por todos es sabido que el repertorio que interpreta en su mayoría la banda que acompaña al **Stmo. Cristo de la Conversión del Buen Ladrón** cada **Viernes Santo**, la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/), es en su mayoría clásico. Dado que [Esencia](https://amigosdeesencia.com) es una formación clásica que tiene como clara referencia a la **Banda de la Policía Armada** y, además, por aquel entonces contaba con varias composiciones en su repertorio que sonaban cada **Viernes Santo** tras el titular de la [Hermandad de Montserrat](http://hermandaddemontserrat.org/), era un lugar idóneo para que [Esencia](https://amigosdeesencia.com) ofreciera un concierto en el que poner sus sones en plena **Cuaresma**.
+El repertorio de este concierto fue amplio y de tintes clásicos. Por todos es sabido que el repertorio que interpreta en su mayoría la banda que acompaña al **Stmo. Cristo de la Conversión del Buen Ladrón** cada **Viernes Santo**, la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana"), es en su mayoría clásico. Dado que [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") es una formación clásica que tiene como clara referencia a la **Banda de la Policía Armada** y, además, por aquel entonces contaba con varias composiciones en su repertorio que sonaban cada **Viernes Santo** tras el titular de la [Hermandad de Montserrat](http://hermandaddemontserrat.org/ "Web oficial de la Hermandad de Montserrat (Sevilla)"), era un lugar idóneo para que [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") ofreciera un concierto en el que poner sus sones en plena **Cuaresma**.
 
 A continuación se muestran los vídeos con las marchas interpretadas en el concierto:
 
 ### 1. Soledad de San Pablo (1951, de Pascual Zueco Ramos)
 
-Fue la marcha que abrió el concierto. Es un clásico para [Esencia](https://amigosdeesencia.com) abrir los conciertos con esta marcha a la mano, ya que, a pesar de tener más de 50 años de antigüedad, no deja de ser una marcha impactante e idónea para este fin.
+Fue la marcha que abrió el concierto. Es un clásico para [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") abrir los conciertos con esta marcha a la mano, ya que, a pesar de tener más de 50 años de antigüedad, no deja de ser una marcha impactante e idónea para este fin.
 
 <el-row>
   <el-col
@@ -141,9 +141,9 @@ Fue la marcha que abrió el concierto. Es un clásico para [Esencia](https://ami
 
 Le siguió el clásico de los clásicos: **Cristo del amor**. A finales de los 90 y a principios de siglo, esta marcha solía ser la primera marcha interpretada por cada formación en cualquier cofradía nada más salir el paso por el dintel de la puerta de la capilla o iglesia. Hoy en día no se ve tanto esta estampa, pero en ciertas cofradías se sigue realizando de forma eventual.
 
-La mayoría de bandas de **Cornetas y Tambores** interpretan esta marcha partiendo de una rearmonización que se hizo hace más de 30 años, siendo popularmente conocida la que se realizó desde la [Banda de Las Cigarreras](https://lascigarreras.net/). De hecho, en mi infancia siempre quedará el recuerdo de esas tardes tocando el típico tambor de cadete de 5 varillas sobre la cama mientras sonaba de fondo el disco **XX aniversario** de [Las Cigarreras](https://lascigarreras.net/).
+La mayoría de bandas de **Cornetas y Tambores** interpretan esta marcha partiendo de una rearmonización que se hizo hace más de 30 años, siendo popularmente conocida la que se realizó desde la [Banda de Las Cigarreras](https://lascigarreras.net/ "Banda de Cornetas y Tambores Ntra. Señora de la Victora (Las Cigarreras)"). De hecho, en mi infancia siempre quedará el recuerdo de esas tardes tocando el típico tambor de cadete de 5 varillas sobre la cama mientras sonaba de fondo el disco **XX aniversario** de [Las Cigarreras](https://lascigarreras.net/ "Banda de Cornetas y Tambores Ntra. Señora de la Victora (Las Cigarreras)").
 
-Sin embargo, en el caso de [Esencia](https://amigosdeesencia.com) la versión que se interpreta es la original, sin ninguna modificación de la partitura original más allá del sello propio de la formación. Para quien no la haya escuchado nunca se la recomiendo totalmente:
+Sin embargo, en el caso de [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") la versión que se interpreta es la original, sin ninguna modificación de la partitura original más allá del sello propio de la formación. Para quien no la haya escuchado nunca se la recomiendo totalmente:
 
 <el-row>
   <el-col
@@ -197,11 +197,11 @@ Recuerdo que en mi infancia confundía siempre esta marcha con **Cristo del Perd
 
 ### 4. Caído vas por Triana (1988, de Manuel Hernández Garrido)
 
-Esta marcha no recuerdo haberla escuchado nunca en mi infancia. Sin embargo, cuando entré en [Esencia](https://amigosdeesencia.com) allá por el mes de septiembre de 2011 y la escuché en un ensayo me resultó familiar. Era como si la hubiera tocado antes sin ser así.
+Esta marcha no recuerdo haberla escuchado nunca en mi infancia. Sin embargo, cuando entré en [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") allá por el mes de septiembre de 2011 y la escuché en un ensayo me resultó familiar. Era como si la hubiera tocado antes sin ser así.
 
-Fijaos si ha acabado resultándome familiar que la rufé en este concierto y también la he rufado en el reciente disco de **Esencia**: [La Oración](https://amigosdeesencia.com/disco-la-oracion-esencia-ya-a-la-venta).
+Fijaos si ha acabado resultándome familiar que la rufé en este concierto y también la he rufado en el reciente disco de **Esencia**: [La Oración](https://amigosdeesencia.com/disco-la-oracion-esencia-ya-a-la-venta "Nuevo disco de Esencia La Oración").
  
-Esta composición fue un clásico de la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/). Desconozco cuántos años la mantendrían en su repertorio, pero siendo del año **1988** y al no haber muchos vídeos de los 90 de las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/) interpretándola, diría que no estuvo mucho tiempo en el mismo y, sinceramente, es una auténtica pena. Entiendo que por este motivo, entre otros, se decidió en [Esencia](https://amigosdeesencia.com) tener una marcha de estas características en el repertorio. Si nunca la has escuchado aquí la tienes:
+Esta composición fue un clásico de la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana"). Desconozco cuántos años la mantendrían en su repertorio, pero siendo del año **1988** y al no haber muchos vídeos de los 90 de las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana") interpretándola, diría que no estuvo mucho tiempo en el mismo y, sinceramente, es una auténtica pena. Entiendo que por este motivo, entre otros, se decidió en [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") tener una marcha de estas características en el repertorio. Si nunca la has escuchado aquí la tienes:
 
 <el-row>
   <el-col
@@ -255,7 +255,7 @@ Marcha estilo **Policía Armada** por excelencia. Seguramente no sea la mejor ma
 
 ### 6. Virgen de la Salud (1984, de Bienvenido Puelles Oliver)
 
-Una de las muchas marchas **Bienvenido Puelles Oliver** para [Las Cigarreras](https://lascigarreras.net/) que marcaron época y que supusieron la primera piedra del estilo que hoy en día mantiene la formación. Sin embargo, esta marcha ya no se escuchaba hoy en día interpretada de la misma manera en que fue escrita. Por eso [Esencia](https://amigosdeesencia.com) la tiene en su repertorio y suena de esta forma:
+Una de las muchas marchas **Bienvenido Puelles Oliver** para [Las Cigarreras](https://lascigarreras.net/ "Banda de Cornetas y Tambores Ntra. Señora de la Victora (Las Cigarreras)") que marcaron época y que supusieron la primera piedra del estilo que hoy en día mantiene la formación. Sin embargo, esta marcha ya no se escuchaba hoy en día interpretada de la misma manera en que fue escrita. Por eso [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") la tiene en su repertorio y suena de esta forma:
 
 <el-row>
   <el-col
@@ -284,7 +284,7 @@ Una de las muchas marchas **Bienvenido Puelles Oliver** para [Las Cigarreras](ht
 
 La marcha que, sin lugar a dudas, ha tenido la "culpa" de que yo haya desarrollado este blog y esté escribiendo estas líneas. Pero como siempre se dice, <cite>no hay mal que por bien no venga</cite>, y gracias a esta situación ya tengo mi blog operativo.
 
-Esta marcha sigue a día de hoy en el repertorio de las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/), aunque con una instrumentación y armonización muy diferentes. Para quien prefiera escuchar una versión más clásica en directo de esta marcha, aquí la tiene:
+Esta marcha sigue a día de hoy en el repertorio de las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana"), aunque con una instrumentación y armonización muy diferentes. Para quien prefiera escuchar una versión más clásica en directo de esta marcha, aquí la tiene:
 
 <el-row>
   <el-col
@@ -311,7 +311,7 @@ Esta marcha sigue a día de hoy en el repertorio de las [⚓ Tres Caídas de Tri
 
 ### 8. Marcha real (1971, de Manuel Espinosa de los Monteros)
 
-Para cerrar el concierto, como no podía ser de otra forma, sonó la Marcha real. Una cosa que tienen en común [Esencia](https://amigosdeesencia.com) y las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/) es que ambas interpretan la Marcha real en la llave **Re**, mientras que la extensa mayoría de formaciones del estilo de Cornetas y Tambores lo hacen en **Do**.
+Para cerrar el concierto, como no podía ser de otra forma, sonó la Marcha real. Una cosa que tienen en común [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") y las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana") es que ambas interpretan la Marcha real en la llave **Re**, mientras que la extensa mayoría de formaciones del estilo de Cornetas y Tambores lo hacen en **Do**.
 
 Aún así se aprecian muchas diferencias entre la interpretación de una formación y otra, ya que hay muchos factores que entran en juego como afinación, instrumentos, etc. Pero sólo ese tema da para un post bien amplio y del que no tengo muchos conocimientos: eso se lo dejo a los expertos en la materia.
 
@@ -340,6 +340,6 @@ Aún así se aprecian muchas diferencias entre la interpretación de una formaci
 
 ## Fotos del concierto
 
-Ese concierto fue ampliamente cubierto por **Francisco Javier Montiel**, fotógrafo habitual de [Artesacro](http://www.artesacro.org/). La galería de imágenes del mismo se encuentra en el siguiente enlace: [http://www.artesacro.org/Noticia.asp?idreg=93792](http://www.artesacro.org/Noticia.asp?idreg=93792).
+Ese concierto fue ampliamente cubierto por **Francisco Javier Montiel**, fotógrafo habitual de [Artesacro](http://www.artesacro.org/ "Artesacro"). La galería de imágenes del mismo se encuentra en el siguiente enlace: [http://www.artesacro.org/Noticia.asp?idreg=93792](http://www.artesacro.org/Noticia.asp?idreg=93792 "Galería de imágenes del concierto de Esencia en Montserrat obra de Artesacro").
 
-Si quieres ver más fotos de **Francisco Javier Montiel** síguelo en su cuenta de Twitter: <a href="https://twitter.com/fjmonrod" target="_blank">@fjmonrod</a>
+Si quieres ver más fotos de **Francisco Javier Montiel** síguelo en su cuenta de Twitter: <a href="https://twitter.com/fjmonrod" target="_blank" title="Cuenta de Twitter de Francisco Javier Montiel">@fjmonrod</a>
