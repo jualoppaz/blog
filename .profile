@@ -1,1 +1,1 @@
-chmod +777 static/ads.txt
+chmod 744 static/ads.txt
