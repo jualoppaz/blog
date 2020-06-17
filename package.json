@@ -61,6 +61,10 @@
     "sass-loader": "8.0.2",
     "vue-jest": "4.0.0-beta.2"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "engines": {
     "npm": "6.4.1",
     "node": "10.15.3"
