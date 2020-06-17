@@ -66,20 +66,14 @@ export default {
     SocialShare,
   },
   async fetch() {
-    console.log('====> Entramos en el fetch');
     if (process.client) {
-      console.log('====> Entramos en el process.client');
       this.loadingInstance = Loading.service({
         target: utils.LOADING.QUERY_SELECTOR,
         background: 'rgba(0, 0, 0, 0.8)',
       });
     }
 
-    console.log('====> Pasamos el if');
-
     const tag = this.$store.state.tags.current;
-
-    console.log('====> Vamos a realizar los dispatch');
 
     return Promise.all([
       this.$store.dispatch('posts/getAll', { tag }),
@@ -87,14 +81,8 @@ export default {
         slug: null,
       }),
     ])
-      .catch((error) => {
-        console.log('====> Error en los dispatch:');
-        console.log(error);
-      })
       .finally(() => {
-        console.log('====> Entramos en el finally');
         if (this.loadingInstance) this.loadingInstance.close();
-        console.log('====> Salimos del finally');
       });
   },
   data() {
