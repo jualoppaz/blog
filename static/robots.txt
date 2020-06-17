@@ -1,7 +1,7 @@
-User-agent: *
+User-agent: Twitterbot
 Disallow:
 
-User-agent: Twitterbot
+User-agent: *
 Disallow:
 
 Sitemap: http://blog.juanmanuellopezpazos.es/sitemap.xml
