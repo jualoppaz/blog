@@ -73,13 +73,13 @@ export default {
       });
     }
 
-    // const tag = this.$store.state.tags.current;
+    const tag = this.$store.state.tags.current;
 
     return Promise.all([
-      /* this.$store.dispatch('posts/getAll', { tag }),
+      this.$store.dispatch('posts/getAll', { tag }),
       this.$store.dispatch('posts/getBySlug', {
         slug: null,
-      }), */
+      }),
     ])
       .finally(() => {
         if (this.loadingInstance) this.loadingInstance.close();
