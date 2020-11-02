@@ -126,8 +126,6 @@ body{
       }
 
       #content {
-        border-left: 1px solid #e6e6e6;
-
         .el-header{
           width: 100%;
           padding: 0;
