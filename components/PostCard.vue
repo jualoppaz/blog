@@ -15,7 +15,7 @@
           <span>{{ getPostDate() }}</span>
         </div>
         <div class="title">
-          <nuxt-link :to="`/posts/${post.slug}`" :title="post.title">
+          <nuxt-link :to="`/blog/posts/${post.slug}`" :title="post.title">
             {{ post.title }}
           </nuxt-link>
         </div>
