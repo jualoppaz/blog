@@ -33,7 +33,7 @@ export const actions = {
       .then((posts) => commit('setAll', posts));
   },
   getBySlug({ commit }, { slug }) {
-    const path = slug ? `posts/${slug}` : 'home';
+    const path = slug && (slug === 'home' || slug === 'blog') ? slug : `posts/${slug}`;
 
     return this.$content(path)
       .where({ published: true })
