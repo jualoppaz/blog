@@ -50,9 +50,9 @@
 import { mapState } from 'vuex';
 import { Loading } from 'element-ui';
 
-import SocialShare from '../../../components/SocialShare.vue';
+import SocialShare from '../../../../components/SocialShare.vue';
 
-import utils from '../../../utils';
+import utils from '../../../../utils';
 
 export default {
   layout: 'blog',
@@ -176,14 +176,6 @@ export default {
 
         & + h3{
           margin-top: 2em;
-        }
-      }
-
-      a{
-        color: $color-text-blue;
-
-        &:hover{
-          color: $color-text-orange;
         }
       }
 

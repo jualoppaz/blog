@@ -4,27 +4,28 @@
     mode="horizontal"
   >
     <el-menu-item index="1">
-      <a
-        href="http://www.juanmanuellopezpazos.es"
-        target="_blank"
+      <NuxtLink
+        to="/"
         :title="homeLinkTitle"
       >
         <span>{{ homeItemText }}</span>
-      </a>
+      </NuxtLink>
     </el-menu-item>
     <el-menu-item index="2">
-      <a
-        href="http://www.juanmanuellopezpazos.es/curriculum"
-        target="_blank"
+      <NuxtLink
+        to="/curriculum"
         :title="cvLinkTitle"
       >
         <span>{{ cvItemText }}</span>
-      </a>
+      </NuxtLink>
     </el-menu-item>
     <el-menu-item index="3">
-      <nuxt-link :to="{ name: `index___${$i18n.locale}` }" :title="blogLinkTitle">
+      <NuxtLink
+        :to="{ name: `blog___${$i18n.locale}` }"
+        :title="blogLinkTitle"
+      >
         <span>{{ blogItemText }}</span>
-      </nuxt-link>
+      </NuxtLink>
     </el-menu-item>
   </el-menu>
 </template>

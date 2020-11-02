@@ -62,3 +62,28 @@ a {
     width: 1140px;
   }
 }
+
+.nuxt-content{
+  font-size: 1.25em;
+  line-height: 1.625;
+  text-align: justify;
+
+  > h1{
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .el-card{
+    &.gray-background{
+      background-color: rgba(190, 190, 190, 0.3)
+    }
+  }
+
+  a[href]{
+    color: $color-text-blue;
+
+    &:hover{
+      color: $color-text-orange;
+    }
+  }
+}
