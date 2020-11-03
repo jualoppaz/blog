@@ -37,8 +37,8 @@
 <script>
 import { mapState } from 'vuex';
 import { Loading } from 'element-ui';
-import SocialShare from '../components/SocialShare.vue';
-import utils from '../utils';
+import SocialShare from '@/components/SocialShare.vue';
+import utils from '@/utils';
 
 export default {
   components: {

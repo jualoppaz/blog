@@ -1,4 +1,6 @@
-{
+const resolve = require('path').resolve;
+
+module.exports = {
   "root": true,
   "env": {
     "browser": true,
@@ -45,5 +47,18 @@
         "jest": true
       }
     }
-  ]
-}
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": {
+          "resolve": {
+            "alias": {
+              "@": __dirname,
+            }
+          }
+        }
+      }
+    }
+  }
+};

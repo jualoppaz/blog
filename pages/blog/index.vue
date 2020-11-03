@@ -53,10 +53,10 @@
 
 import { mapState } from 'vuex';
 import { Loading } from 'element-ui';
-import PostCard from '../../components/PostCard.vue';
-import TagsFilter from '../../components/TagsFilter.vue';
-import SocialShare from '../../components/SocialShare.vue';
-import utils from '../../utils';
+import PostCard from '@/components/PostCard.vue';
+import TagsFilter from '@/components/TagsFilter.vue';
+import SocialShare from '@/components/SocialShare.vue';
+import utils from '@/utils';
 
 export default {
   // layout: 'blog',

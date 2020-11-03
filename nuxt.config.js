@@ -84,6 +84,9 @@ export default {
         }, {
           set: '@fortawesome/free-brands-svg-icons',
           icons: ['fab'],
+        }, {
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: ['far'],
         },
       ],
     }],
@@ -113,7 +116,10 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config) { },
+    extend(config) {
+      // eslint-disable-next-line no-param-reassign
+      config.resolve.alias['@'] = __dirname;
+    },
   },
   router: {
     middleware: ['scroll-top'],
