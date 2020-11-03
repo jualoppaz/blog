@@ -51,6 +51,17 @@ export default
     },
   },
   VIEWS: {
+    CV: {
+      SEE_CV: {
+        TEXT: 'Consultar en formato PDF',
+        SEE_ICON: {
+          TITLE: 'Visualizar',
+        },
+        DOWNLOAD_ICON: {
+          TITLE: 'Descargar',
+        },
+      },
+    },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
       ITEM: {

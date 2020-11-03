@@ -1,11 +1,11 @@
 <template>
   <div id="curriculum-pdf-format">
     <div id="text">
-      {{ curriculumPdfFormatText }} Consultar en formato PDF
+      {{ curriculumPdfFormatText }}
       <a
         href="/docs/Curriculum.pdf"
         target="_blank"
-        title="xoxVisualizar"
+        :title="seeCVTitle"
         class="file-pdf-icon"
       >
         <font-awesome-icon
@@ -17,7 +17,7 @@
         href="/docs/Curriculum.pdf"
         target="_self"
         download=""
-        title="xoxDescargar"
+        :title="downloadIconTitle"
         class="download-icon"
       >
         <font-awesome-icon
@@ -31,7 +31,14 @@
 
 <script>
 export default {
-
+  name: 'SeeCurriculumPdf',
+  data() {
+    return {
+      curriculumPdfFormatText: this.$t('VIEWS.CV.SEE_CV.TEXT'),
+      seeIconTitle: this.$t('VIEWS.CV.SEE_CV.SEE_ICON.TITLE'),
+      downloadIconTitle: this.$t('VIEWS.CV.SEE_CV.DOWNLOAD_ICON.TITLE'),
+    };
+  },
 };
 </script>
 
