@@ -5,7 +5,7 @@
       <a
         href="/docs/Curriculum.pdf"
         target="_blank"
-        :title="seeCVTitle"
+        :title="seeIconTitle"
         class="file-pdf-icon"
       >
         <font-awesome-icon
