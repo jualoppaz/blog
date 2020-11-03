@@ -50,9 +50,9 @@
 import { mapState } from 'vuex';
 import { Loading } from 'element-ui';
 
-import SocialShare from '../../../../components/SocialShare.vue';
+import SocialShare from '@/components/SocialShare.vue';
 
-import utils from '../../../../utils';
+import utils from '@/utils';
 
 export default {
   layout: 'blog',

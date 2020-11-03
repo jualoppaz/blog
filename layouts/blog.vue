@@ -36,12 +36,12 @@
 <script>
 
 import VueAdBlockDetect from 'vue-adblock-detect';
-import Menu from '../components/layout/Menu.vue';
-import Footer from '../components/layout/Footer.vue';
+import Menu from '@/components/layout/Menu.vue';
+import Footer from '@/components/layout/Footer.vue';
 
-import TagsFilter from '../components/TagsFilter.vue';
+import TagsFilter from '@/components/TagsFilter.vue';
 
-import utils from '../utils';
+import utils from '@/utils';
 
 export default {
   name: 'App',

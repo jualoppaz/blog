@@ -40,7 +40,7 @@
 import { mapState, mapGetters } from 'vuex';
 import { Loading } from 'element-ui';
 
-import utils from '../utils';
+import utils from '@/utils';
 
 export default {
   name: 'TagsFilter',
