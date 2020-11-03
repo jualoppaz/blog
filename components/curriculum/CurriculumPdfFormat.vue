@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'SeeCurriculumPdf',
+  name: 'CurriculumPdfFormat',
   data() {
     return {
       curriculumPdfFormatText: this.$t('VIEWS.CV.SEE_CV.TEXT'),

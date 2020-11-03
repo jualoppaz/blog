@@ -16,7 +16,7 @@
 
 <script>
 
-import SeeCurriculumPdf from '@/components/curriculum/SeeCurriculumPdf.vue';
+import SeeCurriculumPdf from '@/components/curriculum/CurriculumPdfFormat.vue';
 
 export default {
   components: {
