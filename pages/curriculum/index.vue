@@ -9,6 +9,7 @@
         }"
       >
         <SeeCurriculumPdf />
+        <AcademicTraining />
       </el-col>
     </el-row>
   </div>
@@ -17,13 +18,25 @@
 <script>
 
 import SeeCurriculumPdf from '@/components/curriculum/CurriculumPdfFormat.vue';
+import AcademicTraining from '@/components/curriculum/AcademicTraining.vue';
 
 export default {
   components: {
-    SeeCurriculumPdf,
+    SeeCurriculumPdf, AcademicTraining,
   },
   beforeDestroy() {
     this.$store.dispatch('posts/destroyCurrent');
   },
 };
 </script>
+
+<style lang="scss" scoped>
+
+#curriculum {
+  ::v-deep .curriculum-section-title{
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+</style>
