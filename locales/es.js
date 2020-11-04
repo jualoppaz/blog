@@ -61,6 +61,9 @@ export default
           TITLE: 'Descargar',
         },
       },
+      ACADEMIC_TRAINING: {
+        TITLE: 'Formación Académica',
+      },
     },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',

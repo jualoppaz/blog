@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-unused-vars */
 
 import es from './locales/es';
@@ -117,8 +118,8 @@ export default {
     ** You can extend webpack config here
     */
     extend(config) {
-      // eslint-disable-next-line no-param-reassign
       config.resolve.alias['@'] = __dirname;
+      config.resolve.alias.vue = 'vue/dist/vue.common';
     },
   },
   router: {
