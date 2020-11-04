@@ -38,6 +38,7 @@
     "nuxt-i18n": "6.9.1",
     "nuxt-sass-resources-loader": "2.0.5",
     "swagger-ui": "3.25.3",
+    "v-runtime-template": "1.10.0",
     "vue": "2.6.12",
     "vue-adblock-detect": "0.0.2",
     "vue-social-sharing": "2.4.7",
