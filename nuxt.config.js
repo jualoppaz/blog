@@ -3,13 +3,14 @@
 
 import es from './locales/es';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config();
 
 export default {
   mode: 'universal',
-  env: {
-
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL,
+    },
   },
   /*
   ** Headers of the page
@@ -108,6 +109,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: process.env.BASE_URL,
   },
   /*
   ** Build configuration
@@ -125,6 +127,9 @@ export default {
   router: {
     middleware: ['scroll-top'],
   },
+  serverMiddleware: [
+    { path: '/api', handler: '@/api/index.js' },
+  ],
   moment: {
     defaultLocale: 'es',
     locales: ['es'],
