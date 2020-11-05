@@ -64,6 +64,26 @@ export default
       ACADEMIC_TRAINING: {
         TITLE: 'Formación Académica',
       },
+      PROFESSIONAL_EXPERIENCE: {
+        TITLE: 'Experiencia Profesional',
+        TIMESTAMP: {
+          CURRENT: {
+            TEXT: 'Actualidad',
+          },
+        },
+        PROJECTS: {
+          TEXT: 'Proyectos',
+        },
+        POSITION: {
+          TEXT: 'Puesto',
+        },
+        TECHNOLOGIES: {
+          TEXT: 'Tecnologías utilizadas',
+        },
+        FUNCTIONS: {
+          TEXT: 'Funciones',
+        },
+      },
     },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
