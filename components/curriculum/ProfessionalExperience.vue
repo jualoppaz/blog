@@ -70,7 +70,7 @@
                 >
                   <el-avatar
                     class="technology"
-                    size="large"
+                    :size="40"
                     shape="square"
                     :title="technology.name"
                     :src="`/images/${technology.image}`"
