@@ -31,7 +31,7 @@
                 >
               </a>
               <div style="display: inline-block; vertical-align: top; padding: 14px;">
-                <span class="experience-timestamp">{{ getExperienceTimestamp(experience) }}</span>
+                <span class="experience-timestamp">{{ getTimestamp(experience) }}</span>
                 <p>
                   {{ experience.description }}
                 </p>
@@ -90,6 +90,83 @@
             />
           </el-table>
         </el-card>
+        <!-- Consultora -->
+        <div
+          v-for="(client, index) in experience.clients"
+          :key="index"
+          class="experience-clients"
+        >
+          <el-card :body-style="{ padding: '0px' }">
+            <a
+              :href="client.company.web"
+              :title="client.company.name"
+              target="_blank"
+            >
+              <img
+                style="display: inline-block"
+                :src="`/images/${client.company.image}`"
+                class="client-image"
+              >
+            </a>
+            <div style="display: inline-block; vertical-align: top; padding: 14px;">
+              <span class="client-timestamp">{{ getTimestamp(client) }}</span>
+              <p>
+                {{ client.description }}
+              </p>
+            </div>
+          </el-card>
+          <h4
+            v-if="client.projects && client.projects.length > 0"
+            class="projects-title"
+          >
+            {{ projectsTitle }}
+          </h4>
+          <el-card
+            v-for="(clientProject, indexClientProject) in client.projects"
+            :key="indexClientProject"
+          >
+            <h4>{{ getCompanyProjectName(clientProject) }}</h4>
+            <p v-text="clientProject.description" />
+            <p>{{ positionText }}: {{ clientProject.position }}</p>
+            <div class="project-technologies">
+              <div class="technologies-label">
+                {{ technologiesText }}:
+              </div>
+              <div
+                class="technologies-list"
+              >
+                <div
+                  v-for="(technology, techIndex) in clientProject.technologies"
+                  :key="techIndex"
+                  class="technology-item"
+                >
+                  <a
+                    :href="technology.web"
+                    target="_blank"
+                  >
+                    <el-avatar
+                      class="technology"
+                      :size="40"
+                      shape="square"
+                      :title="technology.name"
+                      :src="`/images/${technology.image}`"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p>{{ functionsText }}:</p>
+            <el-table
+              :data="clientProject.functions"
+              border
+              :show-header="false"
+            >
+              <el-table-column
+                prop="text"
+              />
+            </el-table>
+          </el-card>
+        </div>
       </el-timeline-item>
     </el-timeline>
   </div>
@@ -119,7 +196,7 @@ export default {
     this.$store.dispatch('curriculum/getCVProfessionalExperience');
   },
   methods: {
-    getExperienceTimestamp(experience) {
+    getTimestamp(experience) {
       const startDateFormatted = this.$moment(experience.startDate).format('DD/MM/YYYY');
 
       let endDateFormatted = this.currentText;
@@ -179,6 +256,28 @@ export default {
       .technology{
         background-color: $color-text-white;
       }
+    }
+  }
+}
+
+.experience-clients{
+  padding-top: 20px;
+  padding-left: 20px;
+
+  .client-image{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+
+  .client-timestamp{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .el-card{
+    &:not(:first-child){
+      margin-top: 20px;
     }
   }
 }
