@@ -10,7 +10,7 @@
     <el-divider />
     <ul class="media-list">
       <li
-        v-for="(training, key, index) in academicTraining"
+        v-for="(training, index) in academicTraining"
         :key="index"
         class="media"
       >
