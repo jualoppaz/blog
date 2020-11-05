@@ -1,3 +1,5 @@
+import Vue from 'vue';
+
 export const state = () => ({
   curriculum: {
     academicTraining: [
@@ -10,9 +12,21 @@ export const state = () => ({
         },
       },
     ],
+    professionalExperience: [],
   },
 });
 
-export const actions = {
+const CV = 'cv';
 
+export const actions = {
+  getCVProfessionalExperience({ commit }) {
+    return this.$axios.get(`/${CV}/professional-experiences`)
+      .then((res) => commit('setProfessionalExperience', res.data));
+  },
+};
+
+export const mutations = {
+  setProfessionalExperience(state, data) {
+    Vue.set(state.curriculum, 'professionalExperience', data);
+  },
 };
