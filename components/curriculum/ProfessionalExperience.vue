@@ -174,6 +174,7 @@
 
 <script>
 import { mapState } from 'vuex';
+import utils from '@/utils';
 
 export default {
   name: 'ProfessionalExperience',
@@ -197,21 +198,29 @@ export default {
   },
   methods: {
     getTimestamp(experience) {
-      const startDateFormatted = this.$moment(experience.startDate).format('DD/MM/YYYY');
+      const startDateFormatted = this.$moment(experience.startDate)
+        .format(utils.COMMON.DATE_FORMAT.WITHOUT_DAY);
 
       let endDateFormatted = this.currentText;
 
-      if (experience.endDate) endDateFormatted = this.$moment(experience.endDate).format('DD/MM/YYYY');
+      if (experience.endDate) {
+        endDateFormatted = this.$moment(experience.endDate)
+          .format(utils.COMMON.DATE_FORMAT.WITHOUT_DAY);
+      }
 
       return `${startDateFormatted} - ${endDateFormatted}: ${experience.company.name}`;
     },
     getCompanyProjectName(project) {
       let res = project.name;
-      const startDateFormatted = this.$moment(project.startDate).format('DD/MM/YYYY');
+      const startDateFormatted = this.$moment(project.startDate)
+        .format(utils.COMMON.DATE_FORMAT.WITHOUT_DAY);
 
       let endDateFormatted = this.currentText;
 
-      if (project.endDate) endDateFormatted = this.$moment(project.endDate).format('DD/MM/YYYY');
+      if (project.endDate) {
+        endDateFormatted = this.$moment(project.endDate)
+          .format(utils.COMMON.DATE_FORMAT.WITHOUT_DAY);
+      }
 
       res += `: ${startDateFormatted} - ${endDateFormatted}`;
 

@@ -8,6 +8,10 @@ const constants = {
         },
       },
     },
+    DATE_FORMAT: {
+      WITHOUT_DAY: 'MM/YYYY',
+      FOR_SEO: 'YYYY-MM-DD',
+    },
   },
   DEVICES: {
     TABLET: {
