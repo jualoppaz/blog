@@ -41,6 +41,7 @@
         </el-row>
         <h4
           v-if="experience.projects && experience.projects.length > 0"
+          class="projects-title"
         >
           {{ projectsTitle }}
         </h4>
@@ -156,6 +157,10 @@ export default {
     font-size: 16px;
     font-weight: bold;
   }
+}
+
+.projects-title{
+  font-size: 16px;
 }
 
 .project-technologies{
