@@ -105,7 +105,7 @@ export default {
       });
     },
     getPostDateFormated() {
-      return this.$moment(this.doc.creationDate).format('YYYY-MM-DD');
+      return this.$moment(this.doc.creationDate).format(utils.COMMON.DATE_FORMAT.FOR_SEO);
     },
     getTagBackgroundColor(tag) {
       return tag.background_color.selected;
