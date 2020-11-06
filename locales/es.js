@@ -84,6 +84,10 @@ export default
           TEXT: 'Funciones',
         },
       },
+      EXTRA_TRAINING: {
+        TITLE: 'Formación Complementaria',
+        DATE: '{month} de {year}',
+      },
     },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',

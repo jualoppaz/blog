@@ -11,6 +11,7 @@
         <SeeCurriculumPdf />
         <AcademicTraining />
         <ProfessionalExperience />
+        <ExtraTraining />
       </el-col>
     </el-row>
   </div>
@@ -21,10 +22,11 @@
 import SeeCurriculumPdf from '@/components/curriculum/CurriculumPdfFormat.vue';
 import AcademicTraining from '@/components/curriculum/AcademicTraining.vue';
 import ProfessionalExperience from '@/components/curriculum/ProfessionalExperience.vue';
+import ExtraTraining from '@/components/curriculum/ExtraTraining.vue';
 
 export default {
   components: {
-    SeeCurriculumPdf, AcademicTraining, ProfessionalExperience,
+    SeeCurriculumPdf, AcademicTraining, ProfessionalExperience, ExtraTraining,
   },
   beforeDestroy() {
     this.$store.dispatch('posts/destroyCurrent');
