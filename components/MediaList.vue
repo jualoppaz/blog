@@ -15,7 +15,7 @@
           <slot name="title" :item="item" />
         </h4>
         <div>
-          <slot name="description" :item="item" />
+          <slot name="body" :item="item" />
         </div>
       </div>
     </li>
@@ -40,6 +40,10 @@ ul.media-list{
   padding: 0;
 
   li.media{
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+
     div{
       &.media-left{
         display: table-cell;
