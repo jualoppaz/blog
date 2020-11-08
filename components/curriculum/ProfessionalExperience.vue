@@ -56,28 +56,9 @@
             <div class="technologies-label">
               {{ technologiesText }}:
             </div>
-            <div
-              class="technologies-list"
-            >
-              <div
-                v-for="(technology, techIndex) in project.technologies"
-                :key="techIndex"
-                class="technology-item"
-              >
-                <a
-                  :href="technology.web"
-                  target="_blank"
-                >
-                  <el-avatar
-                    class="technology"
-                    :size="40"
-                    shape="square"
-                    :title="technology.name"
-                    :src="`/images/${technology.image}`"
-                  />
-                </a>
-              </div>
-            </div>
+            <TechnologiesList
+              :technologies="project.technologies"
+            />
           </div>
           <p>{{ functionsText }}:</p>
           <el-table
@@ -132,28 +113,9 @@
               <div class="technologies-label">
                 {{ technologiesText }}:
               </div>
-              <div
-                class="technologies-list"
-              >
-                <div
-                  v-for="(technology, techIndex) in clientProject.technologies"
-                  :key="techIndex"
-                  class="technology-item"
-                >
-                  <a
-                    :href="technology.web"
-                    target="_blank"
-                  >
-                    <el-avatar
-                      class="technology"
-                      :size="40"
-                      shape="square"
-                      :title="technology.name"
-                      :src="`/images/${technology.image}`"
-                    />
-                  </a>
-                </div>
-              </div>
+              <TechnologiesList
+                :technologies="clientProject.technologies"
+              />
             </div>
             <p>{{ functionsText }}:</p>
             <el-table
@@ -175,9 +137,13 @@
 <script>
 import { mapState } from 'vuex';
 import utils from '@/utils';
+import TechnologiesList from '@/components/TechnologiesList.vue';
 
 export default {
   name: 'ProfessionalExperience',
+  components: {
+    TechnologiesList,
+  },
   data() {
     return {
       professionalExperienceTitle: this.$t('VIEWS.CV.PROFESSIONAL_EXPERIENCE.TITLE'),
@@ -190,11 +156,11 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
-      professionalExperience: (state) => state.curriculum.professionalExperience,
+      professionalExperience: 'professionalExperience',
     }),
   },
   created() {
-    this.$store.dispatch('curriculum/getCVProfessionalExperience');
+    this.$store.dispatch('curriculum/getProfessionalExperience');
   },
   methods: {
     getTimestamp(experience) {
@@ -247,26 +213,6 @@ export default {
 
 .projects-title{
   font-size: 16px;
-}
-
-.project-technologies{
-  .technologies-label{
-    line-height: 40px;
-    vertical-align: top;
-    display: inline-block;
-  }
-
-  .technologies-list{
-    display: inline-block;
-
-    .technology-item{
-      display: inline-block;
-
-      .technology{
-        background-color: $color-text-white;
-      }
-    }
-  }
 }
 
 .experience-clients{

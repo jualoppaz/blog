@@ -8,39 +8,38 @@
       {{ extraTrainingTitle }}
     </h1>
     <el-divider />
-    <ul class="media-list">
-      <li
-        v-for="(training, index) in extraTraining"
-        :key="index"
-        class="media"
-      >
-        <div
-          class="media-left"
+    <MediaList
+      :items="extraTraining"
+    >
+      <template v-slot:image="{ item: training }">
+        <a
+          :href="`/docs/${training.certification}`"
+          target="_blank"
         >
           <img
             :src="`/images/${training.image}`"
           >
-        </div>
-        <div class="media-body">
-          <h4>
-            <span class="extra-training-date">{{ getExtraTrainingDate(training) }}</span>
-          </h4>
-          <p
-            class="media-heading"
-            v-text="training.description"
-          />
-        </div>
-      </li>
-    </ul>
+        </a>
+      </template>
+      <template v-slot:title="{ item: training }">
+        <span class="extra-training-date">{{ getExtraTrainingDate(training) }}</span>
+      </template>
+      <template v-slot:body="{ item: training }">
+        {{ training.description }}
+      </template>
+    </MediaList>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
+import MediaList from '@/components/MediaList.vue';
 
 export default {
   name: 'ExtraTraining',
-  components: {},
+  components: {
+    MediaList,
+  },
   data() {
     return {
       extraTrainingTitle: this.$t('VIEWS.CV.EXTRA_TRAINING.TITLE'),
@@ -48,11 +47,11 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
-      extraTraining: (state) => state.curriculum.extraTraining,
+      extraTraining: 'extraTraining',
     }),
   },
   created() {
-    this.$store.dispatch('curriculum/getCVExtraTraining');
+    this.$store.dispatch('curriculum/getExtraTraining');
   },
   methods: {
     getExtraTrainingDate(training) {

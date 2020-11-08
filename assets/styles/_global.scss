@@ -1,5 +1,4 @@
 @import './variables.scss';
-@import './components/media-list.scss';
 
 .pointer{
   cursor: pointer;
@@ -79,4 +78,22 @@ a[href]{
       background-color: rgba(190, 190, 190, 0.3)
     }
   }
+}
+
+.text-justified{
+  text-align: justify;
+}
+
+.project-technologies{
+  margin-top: 4px;
+
+  .technologies-label{
+    line-height: 40px;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+.project-link{
+  margin-top: 7px;
 }
