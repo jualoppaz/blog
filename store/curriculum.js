@@ -13,6 +13,7 @@ export const state = () => ({
   ],
   professionalExperience: [],
   extraTraining: [],
+  personalProjects: [],
 });
 
 const CV = 'cv';
@@ -26,6 +27,10 @@ export const actions = {
     return this.$axios.get(`/${CV}/extra-training`)
       .then((res) => commit('setExtraTraining', res.data));
   },
+  getPersonalProjects({ commit }) {
+    return this.$axios.get(`/${CV}/personal-projects`)
+      .then((res) => commit('setPersonalProjects', res.data));
+  },
 };
 
 export const mutations = {
@@ -34,5 +39,8 @@ export const mutations = {
   },
   setExtraTraining(state, data) {
     Vue.set(state, 'extraTraining', data);
+  },
+  setPersonalProjects(state, data) {
+    Vue.set(state, 'personalProjects', data);
   },
 };
