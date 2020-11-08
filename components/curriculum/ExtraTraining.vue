@@ -12,9 +12,14 @@
       :items="extraTraining"
     >
       <template v-slot:image="{ item: training }">
-        <img
-          :src="`/images/${training.image}`"
+        <a
+          :href="`/docs/${training.certification}`"
+          target="_blank"
         >
+          <img
+            :src="`/images/${training.image}`"
+          >
+        </a>
       </template>
       <template v-slot:title="{ item: training }">
         <span class="extra-training-date">{{ getExtraTrainingDate(training) }}</span>
