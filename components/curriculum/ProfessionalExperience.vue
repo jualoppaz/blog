@@ -190,11 +190,11 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
-      professionalExperience: (state) => state.curriculum.professionalExperience,
+      professionalExperience: 'professionalExperience',
     }),
   },
   created() {
-    this.$store.dispatch('curriculum/getCVProfessionalExperience');
+    this.$store.dispatch('curriculum/getProfessionalExperience');
   },
   methods: {
     getTimestamp(experience) {

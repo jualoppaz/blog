@@ -43,7 +43,7 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
-      academicTraining: (state) => state.curriculum.academicTraining,
+      academicTraining: 'academicTraining',
     }),
   },
 };

@@ -42,11 +42,11 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
-      extraTraining: (state) => state.curriculum.extraTraining,
+      extraTraining: 'extraTraining',
     }),
   },
   created() {
-    this.$store.dispatch('curriculum/getCVExtraTraining');
+    this.$store.dispatch('curriculum/getExtraTraining');
   },
   methods: {
     getExtraTrainingDate(training) {
