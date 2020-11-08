@@ -88,6 +88,25 @@ export default
         TITLE: 'Formación Complementaria',
         DATE: '{month} de {year}',
       },
+      PERSONAL_PROJECTS: {
+        TITLE: 'Proyectos Personales',
+        TIMESTAMP: {
+          CURRENT: {
+            TEXT: 'Actualidad',
+          },
+        },
+        TECHNOLOGIES: {
+          TEXT: 'Tecnologías utilizadas',
+        },
+        LINK: {
+          TYPE: {
+            WEB: 'Web',
+            REPOSITORY: 'Repositorio',
+            TFG_DOCUMENTATION: 'Memoria',
+          },
+          TFG_DOCUMENTATION: 'Documentación del proyecto',
+        },
+      },
     },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
