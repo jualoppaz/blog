@@ -8,39 +8,33 @@
       {{ extraTrainingTitle }}
     </h1>
     <el-divider />
-    <ul class="media-list">
-      <li
-        v-for="(training, index) in extraTraining"
-        :key="index"
-        class="media"
-      >
-        <div
-          class="media-left"
+    <MediaList
+      :items="extraTraining"
+    >
+      <template v-slot:image="{ item: training }">
+        <img
+          :src="`/images/${training.image}`"
         >
-          <img
-            :src="`/images/${training.image}`"
-          >
-        </div>
-        <div class="media-body">
-          <h4>
-            <span class="extra-training-date">{{ getExtraTrainingDate(training) }}</span>
-          </h4>
-          <p
-            class="media-heading"
-            v-text="training.description"
-          />
-        </div>
-      </li>
-    </ul>
+      </template>
+      <template v-slot:title="{ item: training }">
+        <span class="extra-training-date">{{ getExtraTrainingDate(training) }}</span>
+      </template>
+      <template v-slot:description="{ item: training }">
+        {{ training.description }}
+      </template>
+    </MediaList>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
+import MediaList from '@/components/MediaList.vue';
 
 export default {
   name: 'ExtraTraining',
-  components: {},
+  components: {
+    MediaList,
+  },
   data() {
     return {
       extraTrainingTitle: this.$t('VIEWS.CV.EXTRA_TRAINING.TITLE'),
