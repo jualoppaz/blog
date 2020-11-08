@@ -17,7 +17,7 @@
       <template v-slot:title="{ item: training }">
         {{ training.startDate }} - {{ training.endDate }}
       </template>
-      <template v-slot:description="{ item: training }">
+      <template v-slot:body="{ item: training }">
         <v-runtime-template
           :template="training.description"
         />
