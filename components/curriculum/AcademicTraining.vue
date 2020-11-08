@@ -8,41 +8,33 @@
       {{ academicTrainingTitle }}
     </h1>
     <el-divider />
-    <ul class="media-list">
-      <li
-        v-for="(training, index) in academicTraining"
-        :key="index"
-        class="media"
-      >
-        <div
-          class="media-left"
-        >
-          <img
-            :src="training.image.url"
-          >
-        </div>
-        <div class="media-body">
-          <h4>
-            <b>{{ training.startDate }} - {{ training.endDate }}</b>
-          </h4>
-          <v-runtime-template
-            class="media-heading"
-            :template="training.description"
-          />
-        </div>
-      </li>
-    </ul>
+    <MediaList
+      :items="academicTraining"
+    >
+      <template v-slot:image="{ item: training }">
+        <img :src="`${training.image.url}`">
+      </template>
+      <template v-slot:title="{ item: training }">
+        {{ training.startDate }} - {{ training.endDate }}
+      </template>
+      <template v-slot:description="{ item: training }">
+        <v-runtime-template
+          :template="training.description"
+        />
+      </template>
+    </MediaList>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 import VRuntimeTemplate from 'v-runtime-template';
+import MediaList from '@/components/MediaList.vue';
 
 export default {
   name: 'AcademicTraining',
   components: {
-    VRuntimeTemplate,
+    VRuntimeTemplate, MediaList,
   },
   data() {
     return {
