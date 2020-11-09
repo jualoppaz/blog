@@ -1,6 +1,6 @@
 <template>
-  <div id="professional-experience">
-    <h1 class="professional-experience-section-title">
+  <div id="curriculum-professional-experience">
+    <h1 class="curriculum-section-title">
       <font-awesome-icon
         :icon="['fas', 'briefcase']"
         size="1x"

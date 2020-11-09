@@ -1,5 +1,5 @@
 <template>
-  <div id="personal-projects">
+  <div id="curriculum-personal-projects">
     <h1 class="curriculum-section-title">
       <font-awesome-icon
         :icon="['fas', 'code-branch']"

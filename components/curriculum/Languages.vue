@@ -1,5 +1,5 @@
 <template>
-  <div id="languages">
+  <div id="curriculum-languages">
     <h1 class="curriculum-section-title">
       <font-awesome-icon
         :icon="['fas', 'users']"
