@@ -1,5 +1,5 @@
 <template>
-  <div id="extra-training">
+  <div id="curriculum-extra-training">
     <h1 class="curriculum-section-title">
       <font-awesome-icon
         :icon="['fas', 'university']"

@@ -107,6 +107,9 @@ export default
           TFG_DOCUMENTATION: 'Documentación del proyecto',
         },
       },
+      LANGUAGES: {
+        TITLE: 'Idiomas',
+      },
     },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
