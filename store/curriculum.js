@@ -14,6 +14,15 @@ export const state = () => ({
   professionalExperience: [],
   extraTraining: [],
   personalProjects: [],
+  languages: [
+    {
+      name: 'Inglés',
+      level: 'B1',
+      description: 'Acreditación de nivel B1 por el Instituto de idiomas de la Universidad de Sevilla.',
+      date: '2012',
+      image: '/images/estudios_us.png',
+    },
+  ],
 });
 
 const CV = 'cv';
