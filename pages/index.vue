@@ -7,7 +7,7 @@
         <el-avatar
           id="personal-image"
           :size="200"
-          src="http://juanmanuellopezpazos.es/images/yo_2018.jpg"
+          src="http://www.juanmanuellopezpazos.es/images/yo_2018.jpg"
           fit="fill"
         />
       </el-col>
