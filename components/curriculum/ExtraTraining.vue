@@ -40,6 +40,9 @@ export default {
   components: {
     MediaList,
   },
+  async fetch() {
+    return this.$store.dispatch('curriculum/getExtraTraining');
+  },
   data() {
     return {
       extraTrainingTitle: this.$t('VIEWS.CV.EXTRA_TRAINING.TITLE'),
@@ -49,9 +52,6 @@ export default {
     ...mapState('curriculum', {
       extraTraining: 'extraTraining',
     }),
-  },
-  created() {
-    this.$store.dispatch('curriculum/getExtraTraining');
   },
   methods: {
     getExtraTrainingDate(training) {

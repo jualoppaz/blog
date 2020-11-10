@@ -64,6 +64,9 @@ export default {
     MediaList,
     TechnologiesList,
   },
+  async fetch() {
+    return this.$store.dispatch('curriculum/getPersonalProjects');
+  },
   data() {
     return {
       personalProjectsTitle: this.$t('VIEWS.CV.PERSONAL_PROJECTS.TITLE'),
@@ -75,9 +78,6 @@ export default {
     ...mapState('curriculum', {
       personalProjects: 'personalProjects',
     }),
-  },
-  created() {
-    this.$store.dispatch('curriculum/getPersonalProjects');
   },
   methods: {
     getPersonalProjectDate(project) {

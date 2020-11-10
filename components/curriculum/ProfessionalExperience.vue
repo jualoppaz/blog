@@ -144,6 +144,9 @@ export default {
   components: {
     TechnologiesList,
   },
+  async fetch() {
+    return this.$store.dispatch('curriculum/getProfessionalExperience');
+  },
   data() {
     return {
       professionalExperienceTitle: this.$t('VIEWS.CV.PROFESSIONAL_EXPERIENCE.TITLE'),
@@ -158,9 +161,6 @@ export default {
     ...mapState('curriculum', {
       professionalExperience: 'professionalExperience',
     }),
-  },
-  created() {
-    this.$store.dispatch('curriculum/getProfessionalExperience');
   },
   methods: {
     getTimestamp(experience) {
