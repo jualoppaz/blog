@@ -107,6 +107,38 @@ export default
           TFG_DOCUMENTATION: 'Documentación del proyecto',
         },
       },
+      KNOWLEDGE: {
+        TITLE: 'Conocimientos',
+        LEVEL: {
+          HIGH: 'Avanzado',
+          MEDIUM: 'Intermedio',
+          LOW: 'Básico',
+        },
+        PROGRAMMING_LANGUAGES: {
+          TITLE: 'Lenguajes de programación',
+        },
+        FRAMEWORKS: {
+          TITLE: 'Frameworks',
+        },
+        WEB_DESIGN: {
+          TITLE: 'Diseño web',
+        },
+        TEMPLATE_ENGINES: {
+          TITLE: 'Motores de plantillas',
+        },
+        DATABASES: {
+          TITLE: 'Bases de datos',
+        },
+        VERSION_CONTROL_SYSTEMS: {
+          TITLE: 'Sistemas de control de versiones',
+        },
+        PROJECT_MANAGEMENT_TOOLS: {
+          TITLE: 'Herramientas de Gestión de Proyectos',
+        },
+        CONFIGURATION_MANAGEMENT_TOOLS: {
+          TITLE: 'Herramientas de Gestión de la Configuración',
+        },
+      },
       LANGUAGES: {
         TITLE: 'Idiomas',
       },
