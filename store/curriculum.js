@@ -14,6 +14,16 @@ export const state = () => ({
   professionalExperience: [],
   extraTraining: [],
   personalProjects: [],
+  knowledge: {
+    programmingLanguages: [],
+    frameworks: [],
+    webDesignFrameworks: [],
+    templateEngines: [],
+    databases: [],
+    versionControlSystems: [],
+    projectManagementTools: [],
+    configurationManagementTools: [],
+  },
   languages: [
     {
       name: 'Inglés',
@@ -40,6 +50,58 @@ export const actions = {
     return this.$axios.get(`/${CV}/personal-projects`)
       .then((res) => commit('setPersonalProjects', res.data));
   },
+  getKnowledgeList(context, type) {
+    return this.$axios.get(`/${CV}/knowledge`, {
+      params: {
+        type,
+      },
+    });
+  },
+  getProgrammingLanguages({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'programming_language')
+      .then((res) => commit('setProgrammingLanguages', res.data));
+  },
+  getFrameworks({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'framework')
+      .then((res) => commit('setFrameworks', res.data));
+  },
+  getWebDesignFrameworks({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'web_design')
+      .then((res) => commit('setWebDesignFrameworks', res.data));
+  },
+  getTemplateEngines({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'template_engine')
+      .then((res) => commit('setTemplateEngines', res.data));
+  },
+  getDatabases({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'database')
+      .then((res) => commit('setDatabases', res.data));
+  },
+  getVersionControlSystems({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'version_control_system')
+      .then((res) => commit('setVersionControlSystems', res.data));
+  },
+  getProjectManagementTools({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'project_management_tool')
+      .then((res) => commit('setProjectManagementTools', res.data));
+  },
+  getConfigurationManagementTools({ dispatch, commit }) {
+    return dispatch('getKnowledgeList', 'configuration_management_tool')
+      .then((res) => commit('setConfigurationManagementTools', res.data));
+  },
+  destroyCV({ commit }) {
+    commit('setProfessionalExperience', []);
+    commit('setExtraTraining', []);
+    commit('setPersonalProjects', []);
+    commit('setProgrammingLanguages', []);
+    commit('setFrameworks', []);
+    commit('setWebDesignFrameworks', []);
+    commit('setTemplateEngines', []);
+    commit('setDatabases', []);
+    commit('setVersionControlSystems', []);
+    commit('setProjectManagementTools', []);
+    commit('setConfigurationManagementTools', []);
+  },
 };
 
 export const mutations = {
@@ -51,5 +113,29 @@ export const mutations = {
   },
   setPersonalProjects(state, data) {
     Vue.set(state, 'personalProjects', data);
+  },
+  setProgrammingLanguages(state, data) {
+    Vue.set(state.knowledge, 'programmingLanguages', data);
+  },
+  setFrameworks(state, data) {
+    Vue.set(state.knowledge, 'frameworks', data);
+  },
+  setWebDesignFrameworks(state, data) {
+    Vue.set(state.knowledge, 'webDesignFrameworks', data);
+  },
+  setTemplateEngines(state, data) {
+    Vue.set(state.knowledge, 'templateEngines', data);
+  },
+  setDatabases(state, data) {
+    Vue.set(state.knowledge, 'databases', data);
+  },
+  setVersionControlSystems(state, data) {
+    Vue.set(state.knowledge, 'versionControlSystems', data);
+  },
+  setProjectManagementTools(state, data) {
+    Vue.set(state.knowledge, 'projectManagementTools', data);
+  },
+  setConfigurationManagementTools(state, data) {
+    Vue.set(state.knowledge, 'configurationManagementTools', data);
   },
 };
