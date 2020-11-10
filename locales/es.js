@@ -51,6 +51,98 @@ export default
     },
   },
   VIEWS: {
+    CV: {
+      SEE_CV: {
+        TEXT: 'Consultar en formato PDF',
+        SEE_ICON: {
+          TITLE: 'Visualizar',
+        },
+        DOWNLOAD_ICON: {
+          TITLE: 'Descargar',
+        },
+      },
+      ACADEMIC_TRAINING: {
+        TITLE: 'Formación Académica',
+      },
+      PROFESSIONAL_EXPERIENCE: {
+        TITLE: 'Experiencia Profesional',
+        TIMESTAMP: {
+          CURRENT: {
+            TEXT: 'Actualidad',
+          },
+        },
+        PROJECTS: {
+          TEXT: 'Proyectos',
+        },
+        POSITION: {
+          TEXT: 'Puesto',
+        },
+        TECHNOLOGIES: {
+          TEXT: 'Tecnologías utilizadas',
+        },
+        FUNCTIONS: {
+          TEXT: 'Funciones',
+        },
+      },
+      EXTRA_TRAINING: {
+        TITLE: 'Formación Complementaria',
+        DATE: '{month} de {year}',
+      },
+      PERSONAL_PROJECTS: {
+        TITLE: 'Proyectos Personales',
+        TIMESTAMP: {
+          CURRENT: {
+            TEXT: 'Actualidad',
+          },
+        },
+        TECHNOLOGIES: {
+          TEXT: 'Tecnologías utilizadas',
+        },
+        LINK: {
+          TYPE: {
+            WEB: 'Web',
+            REPOSITORY: 'Repositorio',
+            TFG_DOCUMENTATION: 'Memoria',
+          },
+          TFG_DOCUMENTATION: 'Documentación del proyecto',
+        },
+      },
+      KNOWLEDGE: {
+        TITLE: 'Conocimientos',
+        LEVEL: {
+          HIGH: 'Avanzado',
+          MEDIUM: 'Intermedio',
+          LOW: 'Básico',
+        },
+        PROGRAMMING_LANGUAGES: {
+          TITLE: 'Lenguajes de programación',
+        },
+        FRAMEWORKS: {
+          TITLE: 'Frameworks',
+        },
+        WEB_DESIGN: {
+          TITLE: 'Diseño web',
+        },
+        TEMPLATE_ENGINES: {
+          TITLE: 'Motores de plantillas',
+        },
+        DATABASES: {
+          TITLE: 'Bases de datos',
+        },
+        VERSION_CONTROL_SYSTEMS: {
+          TITLE: 'Sistemas de control de versiones',
+        },
+        PROJECT_MANAGEMENT_TOOLS: {
+          TITLE: 'Herramientas de Gestión de Proyectos',
+        },
+        CONFIGURATION_MANAGEMENT_TOOLS: {
+          TITLE: 'Herramientas de Gestión de la Configuración',
+        },
+      },
+      LANGUAGES: {
+        TITLE: 'Idiomas',
+      },
+    },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
       ITEM: {

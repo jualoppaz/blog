@@ -47,12 +47,12 @@
   }
 }
 
-a {
-  color: $color-text-black;
+a[href]{
+  color: $color-text-blue;
   text-decoration: none;
 
   &:hover{
-    color: $color-text-blue;
+    color: $color-text-orange;
   }
 }
 
@@ -61,4 +61,39 @@ a {
     margin: 0 auto;
     width: 1140px;
   }
+}
+
+.nuxt-content{
+  font-size: 1.25em;
+  line-height: 1.625;
+  text-align: justify;
+
+  > h1{
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .el-card{
+    &.gray-background{
+      background-color: rgba(190, 190, 190, 0.3)
+    }
+  }
+}
+
+.text-justified{
+  text-align: justify;
+}
+
+.project-technologies{
+  margin-top: 4px;
+
+  .technologies-label{
+    line-height: 40px;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+.project-link{
+  margin-top: 7px;
 }

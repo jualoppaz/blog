@@ -23,8 +23,8 @@
 <script>
 
 import VueAdBlockDetect from 'vue-adblock-detect';
-import Menu from '../components/layout/Menu.vue';
-import Footer from '../components/layout/Footer.vue';
+import Menu from '@/components/layout/Menu.vue';
+import Footer from '@/components/layout/Footer.vue';
 
 export default {
   name: 'App',
@@ -70,8 +70,6 @@ body{
       }
 
       #content {
-        border-left: 1px solid #e6e6e6;
-
         .el-header{
           width: 100%;
           padding: 0;

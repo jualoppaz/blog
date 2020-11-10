@@ -1,68 +1,47 @@
 <template>
-  <div id="blog">
+  <div id="home">
     <el-row>
-      <el-col>
+      <el-col
+        style="text-align: center"
+      >
+        <el-avatar
+          id="personal-image"
+          :size="200"
+          src="http://juanmanuellopezpazos.es/images/yo_2018.jpg"
+          fit="fill"
+        />
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col
+        :xs="24"
+        :lg="{
+          span: 16,
+          offset: 4
+        }"
+      >
         <nuxt-content :document="doc" />
       </el-col>
     </el-row>
-
-    <div
-      id="posts-list"
+    <el-row
+      class="social-networks"
     >
-      <el-row id="tags-filter-section">
-        <el-col
-          :xs="24"
-          :md="{ span: 12, offset: 6 }"
-          :lg="{ span: 8, offset: 8 }"
-        >
-          <TagsFilter />
-          <el-alert
-            v-if="!posts || posts.length === 0"
-            id="empty-message"
-            :closable="false"
-            :title="emptyPostsListText"
-            type="warning"
-          />
-        </el-col>
-      </el-row>
-      <el-row
-        v-for="post in posts"
-        :key="post.slug"
-        class="post-row"
-      >
-        <el-col
-          :xs="24"
-          :lg="{ span: 18, offset: 3 }"
-        >
-          <PostCard :post="post" />
-        </el-col>
-      </el-row>
-      <el-row
-        class="social-networks"
-      >
-        <social-share
-          :title="shareText"
-          :seo-config="doc.metas"
-        />
-      </el-row>
-    </div>
+      <social-share
+        :title="shareText"
+        :seo-config="doc.metas"
+      />
+    </el-row>
   </div>
 </template>
 
 <script>
-
 import { mapState } from 'vuex';
 import { Loading } from 'element-ui';
-import PostCard from '../components/PostCard.vue';
-import TagsFilter from '../components/TagsFilter.vue';
-import SocialShare from '../components/SocialShare.vue';
-import utils from '../utils';
+import SocialShare from '@/components/SocialShare.vue';
+import utils from '@/utils';
 
 export default {
-  // layout: 'blog',
   components: {
-    PostCard,
-    TagsFilter,
     SocialShare,
   },
   async fetch() {
@@ -73,12 +52,9 @@ export default {
       });
     }
 
-    const tag = this.$store.state.tags.current;
-
     return Promise.all([
-      this.$store.dispatch('posts/getAll', { tag }),
       this.$store.dispatch('posts/getBySlug', {
-        slug: null,
+        slug: 'home',
       }),
     ])
       .finally(() => {
@@ -87,16 +63,12 @@ export default {
   },
   data() {
     return {
-      emptyPostsListText: this.$t('VIEWS.POSTS.EMPTY'),
       shareText: this.$t('COMMON.SOCIAL_SHARING.SHARE'),
     };
   },
   computed: {
     ...mapState('posts', {
       doc: 'current',
-    }),
-    ...mapState('posts', {
-      posts: 'all',
     }),
   },
   beforeDestroy() {
@@ -110,45 +82,13 @@ export default {
 
 <style lang="scss" scoped>
 
-#blog{
-  .nuxt-content{
-    text-align: justify;
+#home {
+  ::v-deep #personal-image{
+    border: 4px solid $color-text-blue;
 
-    #bienvenido-a-mi-blog{
-      font-size: 50px;
-      margin: 0;
-    }
-  }
-
-  #tags-filter-section{
-    text-align: center;
-  }
-
-  #posts-list{
-    margin: auto;
-
-    .tags-filter{
-      ::v-deep .el-tag{
-        user-select: none;
-        margin: 0 5px;
-      }
-
-      ::v-deep .secondary-tags{
-        margin-top: 15px;
-      }
-
-    }
-
-    #empty-message{
-      margin-top: 15px;
-    }
-
-    .post-row{
-      &:not(:first-child){
-        margin-top: 15px;
-      }
+    > img {
+      width: 100%;
     }
   }
 }
-
 </style>

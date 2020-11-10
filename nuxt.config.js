@@ -1,14 +1,16 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-unused-vars */
 
 import es from './locales/es';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config();
 
 export default {
   mode: 'universal',
-  env: {
-
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL,
+    },
   },
   /*
   ** Headers of the page
@@ -84,6 +86,9 @@ export default {
         }, {
           set: '@fortawesome/free-brands-svg-icons',
           icons: ['fab'],
+        }, {
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: ['far'],
         },
       ],
     }],
@@ -104,6 +109,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: process.env.BASE_URL,
   },
   /*
   ** Build configuration
@@ -113,11 +119,17 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config) { },
+    extend(config) {
+      config.resolve.alias['@'] = __dirname;
+      config.resolve.alias.vue = 'vue/dist/vue.common';
+    },
   },
   router: {
     middleware: ['scroll-top'],
   },
+  serverMiddleware: [
+    { path: '/api', handler: '@/api/index.js' },
+  ],
   moment: {
     defaultLocale: 'es',
     locales: ['es'],
