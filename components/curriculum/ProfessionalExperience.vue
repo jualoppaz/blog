@@ -8,6 +8,9 @@
       {{ professionalExperienceTitle }}
     </h1>
     <el-divider />
+    <LoadingText
+      v-if="isLoading.professionalExperience"
+    />
     <el-timeline>
       <el-timeline-item
         v-for="experience in professionalExperience"
@@ -32,7 +35,7 @@
               </a>
               <div style="display: inline-block; vertical-align: top; padding: 14px;">
                 <span class="experience-timestamp">{{ getTimestamp(experience) }}</span>
-                <p>
+                <p v-if="experience.description">
                   {{ experience.description }}
                 </p>
               </div>
@@ -91,7 +94,7 @@
             </a>
             <div style="display: inline-block; vertical-align: top; padding: 14px;">
               <span class="client-timestamp">{{ getTimestamp(client) }}</span>
-              <p>
+              <p v-if="client.description">
                 {{ client.description }}
               </p>
             </div>
@@ -138,11 +141,16 @@
 import { mapState } from 'vuex';
 import utils from '@/utils';
 import TechnologiesList from '@/components/TechnologiesList.vue';
+import LoadingText from '@/components/LoadingText.vue';
 
 export default {
   name: 'ProfessionalExperience',
   components: {
     TechnologiesList,
+    LoadingText,
+  },
+  async fetch() {
+    return this.$store.dispatch('curriculum/getProfessionalExperience');
   },
   data() {
     return {
@@ -157,10 +165,8 @@ export default {
   computed: {
     ...mapState('curriculum', {
       professionalExperience: 'professionalExperience',
+      isLoading: 'isLoading',
     }),
-  },
-  created() {
-    this.$store.dispatch('curriculum/getProfessionalExperience');
   },
   methods: {
     getTimestamp(experience) {

@@ -8,6 +8,9 @@
       {{ extraTrainingTitle }}
     </h1>
     <el-divider />
+    <LoadingText
+      v-if="isLoading.extraTraining"
+    />
     <MediaList
       :items="extraTraining"
     >
@@ -34,11 +37,16 @@
 <script>
 import { mapState } from 'vuex';
 import MediaList from '@/components/MediaList.vue';
+import LoadingText from '@/components/LoadingText.vue';
 
 export default {
   name: 'ExtraTraining',
   components: {
     MediaList,
+    LoadingText,
+  },
+  async fetch() {
+    return this.$store.dispatch('curriculum/getExtraTraining');
   },
   data() {
     return {
@@ -48,10 +56,8 @@ export default {
   computed: {
     ...mapState('curriculum', {
       extraTraining: 'extraTraining',
+      isLoading: 'isLoading',
     }),
-  },
-  created() {
-    this.$store.dispatch('curriculum/getExtraTraining');
   },
   methods: {
     getExtraTrainingDate(training) {
