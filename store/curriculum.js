@@ -1,6 +1,19 @@
 import Vue from 'vue';
 
 export const state = () => ({
+  isLoading: {
+    professionalExperience: false,
+    extraTraining: false,
+    personalProjects: false,
+    programmingLanguages: false,
+    frameworks: false,
+    webDesignFrameworks: false,
+    templateEngines: false,
+    databases: false,
+    versionControlSystems: false,
+    projectManagementTools: false,
+    configurationManagementTools: false,
+  },
   academicTraining: [
     {
       startDate: '09/2010',
@@ -39,16 +52,43 @@ const CV = 'cv';
 
 export const actions = {
   getProfessionalExperience({ commit }) {
+    commit('setIsLoading', {
+      section: 'professionalExperience',
+      value: true,
+    });
+
     return this.$axios.get(`/${CV}/professional-experiences`)
-      .then((res) => commit('setProfessionalExperience', res.data));
+      .then((res) => commit('setProfessionalExperience', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'professionalExperience',
+        value: false,
+      }));
   },
   getExtraTraining({ commit }) {
+    commit('setIsLoading', {
+      section: 'extraTraining',
+      value: true,
+    });
+
     return this.$axios.get(`/${CV}/extra-training`)
-      .then((res) => commit('setExtraTraining', res.data));
+      .then((res) => commit('setExtraTraining', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'extraTraining',
+        value: false,
+      }));
   },
   getPersonalProjects({ commit }) {
+    commit('setIsLoading', {
+      section: 'personalProjects',
+      value: true,
+    });
+
     return this.$axios.get(`/${CV}/personal-projects`)
-      .then((res) => commit('setPersonalProjects', res.data));
+      .then((res) => commit('setPersonalProjects', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'personalProjects',
+        value: false,
+      }));
   },
   getKnowledgeList(context, type) {
     return this.$axios.get(`/${CV}/knowledge`, {
@@ -58,36 +98,108 @@ export const actions = {
     });
   },
   getProgrammingLanguages({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'programmingLanguages',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'programming_language')
-      .then((res) => commit('setProgrammingLanguages', res.data));
+      .then((res) => commit('setProgrammingLanguages', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'programmingLanguages',
+        value: false,
+      }));
   },
   getFrameworks({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'frameworks',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'framework')
-      .then((res) => commit('setFrameworks', res.data));
+      .then((res) => commit('setFrameworks', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'frameworks',
+        value: false,
+      }));
   },
   getWebDesignFrameworks({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'webDesignFrameworks',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'web_design')
-      .then((res) => commit('setWebDesignFrameworks', res.data));
+      .then((res) => commit('setWebDesignFrameworks', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'webDesignFrameworks',
+        value: false,
+      }));
   },
   getTemplateEngines({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'templateEngines',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'template_engine')
-      .then((res) => commit('setTemplateEngines', res.data));
+      .then((res) => commit('setTemplateEngines', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'templateEngines',
+        value: false,
+      }));
   },
   getDatabases({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'databases',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'database')
-      .then((res) => commit('setDatabases', res.data));
+      .then((res) => commit('setDatabases', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'databases',
+        value: false,
+      }));
   },
   getVersionControlSystems({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'versionControlSystems',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'version_control_system')
-      .then((res) => commit('setVersionControlSystems', res.data));
+      .then((res) => commit('setVersionControlSystems', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'versionControlSystems',
+        value: false,
+      }));
   },
   getProjectManagementTools({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'projectManagementTools',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'project_management_tool')
-      .then((res) => commit('setProjectManagementTools', res.data));
+      .then((res) => commit('setProjectManagementTools', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'projectManagementTools',
+        value: false,
+      }));
   },
   getConfigurationManagementTools({ dispatch, commit }) {
+    commit('setIsLoading', {
+      section: 'configurationManagementTools',
+      value: true,
+    });
+
     return dispatch('getKnowledgeList', 'configuration_management_tool')
-      .then((res) => commit('setConfigurationManagementTools', res.data));
+      .then((res) => commit('setConfigurationManagementTools', res.data))
+      .finally(() => commit('setIsLoading', {
+        section: 'configurationManagementTools',
+        value: false,
+      }));
   },
   destroyCV({ commit }) {
     commit('setProfessionalExperience', []);
@@ -137,5 +249,11 @@ export const mutations = {
   },
   setConfigurationManagementTools(state, data) {
     Vue.set(state.knowledge, 'configurationManagementTools', data);
+  },
+  setIsLoading(state, {
+    section,
+    value,
+  }) {
+    Vue.set(state.isLoading, section, value);
   },
 };
