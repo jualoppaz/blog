@@ -32,7 +32,7 @@
               </a>
               <div style="display: inline-block; vertical-align: top; padding: 14px;">
                 <span class="experience-timestamp">{{ getTimestamp(experience) }}</span>
-                <p>
+                <p v-if="experience.description">
                   {{ experience.description }}
                 </p>
               </div>
@@ -91,7 +91,7 @@
             </a>
             <div style="display: inline-block; vertical-align: top; padding: 14px;">
               <span class="client-timestamp">{{ getTimestamp(client) }}</span>
-              <p>
+              <p v-if="client.description">
                 {{ client.description }}
               </p>
             </div>
