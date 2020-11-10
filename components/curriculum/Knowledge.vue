@@ -20,6 +20,9 @@
         {{ programmingLanguagesTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.programmingLanguages"
+    />
     <KnowledgeList
       :items="frameworks"
     >
@@ -32,6 +35,9 @@
         {{ frameworksTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.frameworks"
+    />
     <KnowledgeList
       :items="webDesignFrameworks"
     >
@@ -44,6 +50,9 @@
         {{ webDesignTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.webDesignFrameworks"
+    />
     <KnowledgeList
       :items="templateEngines"
     >
@@ -56,6 +65,9 @@
         {{ templateEnginesTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.templateEngines"
+    />
     <KnowledgeList
       :items="databases"
     >
@@ -68,6 +80,9 @@
         {{ databasesTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.databases"
+    />
     <KnowledgeList
       :items="versionControlSystems"
     >
@@ -80,6 +95,9 @@
         {{ versionControlSystemsTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.versionControlSystems"
+    />
     <KnowledgeList
       :items="projectManagementTools"
     >
@@ -92,6 +110,9 @@
         {{ projectManagementToolsTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.projectManagementTools"
+    />
     <KnowledgeList
       :items="configurationManagementTools"
     >
@@ -104,17 +125,22 @@
         {{ configurationManagementToolsTitle }}
       </template>
     </KnowledgeList>
+    <LoadingText
+      v-if="isLoading.configurationManagementTools"
+    />
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 import KnowledgeList from '@/components/curriculum/knowledge/KnowledgeList.vue';
+import LoadingText from '@/components/LoadingText.vue';
 
 export default {
   name: 'Languages',
   components: {
     KnowledgeList,
+    LoadingText,
   },
   async fetch() {
     return Promise.all([
@@ -151,6 +177,7 @@ export default {
       versionControlSystems: (state) => state.knowledge.versionControlSystems,
       projectManagementTools: (state) => state.knowledge.projectManagementTools,
       configurationManagementTools: (state) => state.knowledge.configurationManagementTools,
+      isLoading: 'isLoading',
     }),
   },
 };

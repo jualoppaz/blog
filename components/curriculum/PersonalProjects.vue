@@ -8,6 +8,9 @@
       {{ personalProjectsTitle }}
     </h1>
     <el-divider />
+    <LoadingText
+      v-if="isLoading.personalProjects"
+    />
     <MediaList
       :items="personalProjects"
     >
@@ -57,12 +60,14 @@ import { mapState } from 'vuex';
 import utils from '@/utils';
 import MediaList from '@/components/MediaList.vue';
 import TechnologiesList from '@/components/TechnologiesList.vue';
+import LoadingText from '@/components/LoadingText.vue';
 
 export default {
   name: 'PersonalProjects',
   components: {
     MediaList,
     TechnologiesList,
+    LoadingText,
   },
   async fetch() {
     return this.$store.dispatch('curriculum/getPersonalProjects');
@@ -77,6 +82,7 @@ export default {
   computed: {
     ...mapState('curriculum', {
       personalProjects: 'personalProjects',
+      isLoading: 'isLoading',
     }),
   },
   methods: {

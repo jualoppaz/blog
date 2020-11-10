@@ -8,6 +8,9 @@
       {{ professionalExperienceTitle }}
     </h1>
     <el-divider />
+    <LoadingText
+      v-if="isLoading.professionalExperience"
+    />
     <el-timeline>
       <el-timeline-item
         v-for="experience in professionalExperience"
@@ -138,11 +141,13 @@
 import { mapState } from 'vuex';
 import utils from '@/utils';
 import TechnologiesList from '@/components/TechnologiesList.vue';
+import LoadingText from '@/components/LoadingText.vue';
 
 export default {
   name: 'ProfessionalExperience',
   components: {
     TechnologiesList,
+    LoadingText,
   },
   async fetch() {
     return this.$store.dispatch('curriculum/getProfessionalExperience');
@@ -160,6 +165,7 @@ export default {
   computed: {
     ...mapState('curriculum', {
       professionalExperience: 'professionalExperience',
+      isLoading: 'isLoading',
     }),
   },
   methods: {
