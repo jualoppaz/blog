@@ -13,6 +13,7 @@
         <ProfessionalExperience />
         <ExtraTraining />
         <PersonalProjects />
+        <Knowledge />
         <Languages />
       </el-col>
     </el-row>
@@ -26,6 +27,7 @@ import AcademicTraining from '@/components/curriculum/AcademicTraining.vue';
 import ProfessionalExperience from '@/components/curriculum/ProfessionalExperience.vue';
 import ExtraTraining from '@/components/curriculum/ExtraTraining.vue';
 import PersonalProjects from '@/components/curriculum/PersonalProjects.vue';
+import Knowledge from '@/components/curriculum/Knowledge.vue';
 import Languages from '@/components/curriculum/Languages.vue';
 
 export default {
@@ -35,10 +37,11 @@ export default {
     ProfessionalExperience,
     ExtraTraining,
     PersonalProjects,
+    Knowledge,
     Languages,
   },
   beforeDestroy() {
-    this.$store.dispatch('posts/destroyCurrent');
+    this.$store.dispatch('curriculum/destroyCV');
   },
 };
 </script>
