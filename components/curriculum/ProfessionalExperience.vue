@@ -65,6 +65,7 @@
           </div>
           <p>{{ functionsText }}:</p>
           <el-table
+            class="project-functions"
             :data="project.functions"
             border
             :show-header="false"
@@ -122,6 +123,7 @@
             </div>
             <p>{{ functionsText }}:</p>
             <el-table
+              class="project-functions"
               :data="clientProject.functions"
               border
               :show-header="false"
@@ -209,6 +211,17 @@ export default {
 
   @include for-tablet-up{
     padding-left: 40px;
+  }
+
+  .project-functions{
+    ::v-deep tr.el-table__row{
+      td{
+        div.cell{
+          word-break: normal;
+          text-align: justify;
+        }
+      }
+    }
   }
 
   .company-card{
