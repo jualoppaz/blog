@@ -46,7 +46,9 @@ export default {
     LoadingText,
   },
   async fetch() {
-    return this.$store.dispatch('curriculum/getExtraTraining');
+    return Promise.all([
+      this.$store.dispatch('curriculum/getExtraTraining'),
+    ]);
   },
   data() {
     return {
