@@ -28,13 +28,14 @@ export default {
   text-align: center;
   margin: 0;
 
-  @media screen and (min-width: $tablet-min-width){
+  @include for-tablet-up{
     line-height: 59px;
   }
 
   > div{
     line-height: 39.5px;
-    @media screen and (min-width: $tablet-min-width){
+
+    @include for-tablet-up{
       display: inline-block;
 
       &#author{
