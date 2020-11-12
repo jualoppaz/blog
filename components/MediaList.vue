@@ -41,17 +41,29 @@ ul.media-list{
 
   li.media{
     &:not(:first-child) {
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
     div{
       &.media-left{
-        display: table-cell;
-        padding-right: 10px;
+
+        @include for-phone-only{
+          text-align: center;
+        }
+
+        @include for-tablet-up{
+          display: table-cell;
+          padding-right: 10px;
+        }
 
         img{
-          width: 80px;
-          height: 80px;
+          width: 100px;
+          height: 100px;
+
+          @include for-tablet-up{
+            width: 80px;
+            height: 80px;
+          }
         }
       }
 
