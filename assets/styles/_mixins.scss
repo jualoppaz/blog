@@ -5,9 +5,9 @@
 }
 
 @mixin for-tablet-up {
-  @media (min-width: $tablet-min-width) { @content; }
+  @media (min-width: $min-width-tablet) { @content; }
 }
 
 @mixin for-desktop-up {
-  @media (min-width: $lg-desktop-min-width) { @content; }
+  @media (min-width: $min-width-lg-desktop) { @content; }
 }

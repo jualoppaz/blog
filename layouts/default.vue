@@ -103,7 +103,7 @@ body{
               overflow: hidden;
               white-space: nowrap;
 
-              @media screen and (min-width: $tablet-min-width){
+              @include for-tablet-up{
                 height: 150px;
                 line-height: 150px;
                 font-size: 50px;
@@ -129,7 +129,7 @@ body{
         padding: 0;
         height: 80px !important;
 
-        @media screen and (min-width: $tablet-min-width){
+        @include for-tablet-up{
           height: 60px !important;
         }
       }
