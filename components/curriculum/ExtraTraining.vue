@@ -51,11 +51,6 @@ export default {
       required: true,
     },
   },
-  async fetch() {
-    return Promise.all([
-      this.$store.dispatch('curriculum/getExtraTraining'),
-    ]);
-  },
   data() {
     return {
       extraTrainingTitle: this.$t('VIEWS.CV.EXTRA_TRAINING.TITLE'),

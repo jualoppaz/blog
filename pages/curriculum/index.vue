@@ -42,6 +42,11 @@ export default {
     Knowledge,
     Languages,
   },
+  async fetch() {
+    return Promise.all([
+      this.$store.dispatch('curriculum/getExtraTraining'),
+    ]);
+  },
   computed: {
     ...mapState('curriculum', {
       extraTraining: 'extraTraining',
