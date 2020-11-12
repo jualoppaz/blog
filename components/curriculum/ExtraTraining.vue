@@ -9,7 +9,7 @@
     </h1>
     <el-divider />
     <LoadingText
-      v-if="isLoading.extraTraining"
+      v-if="isLoading"
     />
     <MediaList
       :items="items"
@@ -58,7 +58,7 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
-      isLoading: 'isLoading',
+      isLoading: (state) => state.isLoading.extraTraining,
     }),
   },
   methods: {

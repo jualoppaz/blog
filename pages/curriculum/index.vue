@@ -50,7 +50,6 @@ export default {
   computed: {
     ...mapState('curriculum', {
       extraTraining: 'extraTraining',
-      isLoading: 'isLoading',
     }),
   },
   beforeDestroy() {
