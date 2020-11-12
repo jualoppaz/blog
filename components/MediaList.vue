@@ -15,7 +15,7 @@
           <slot name="title" :item="item" />
         </h4>
         <div>
-          <slot name="body" :item="item" />
+          <slot :item="item" />
         </div>
       </div>
     </li>
