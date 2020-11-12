@@ -1,22 +1,11 @@
-# blog
+# Blog
 
-> My dandy Nuxt.js project
+En este proyecto se encuentra el desarrollo de mi página web personal, la cual contiene mi trayectoria en forma de currículum y un blog en el que iré publicando artículos que considere relevantes, desde tecnologías hasta música procesional.
 
-## Build Setup
+## Currículum
 
-```bash
-# install dependencies
-$ npm install
+En esta [página](http://juanmanuellopezpazos.es/curriculum) podrás ver mi currículum en un diseño más amigable y visual.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Blog
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Si quieres consultar los artículos que he publicado hasta la fecha te invito a visitar mi [blog](http://juanmanuellopezpazos.es/blog).

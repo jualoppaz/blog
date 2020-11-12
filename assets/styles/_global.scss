@@ -50,6 +50,7 @@
 a[href]{
   color: $color-text-blue;
   text-decoration: none;
+  word-break: break-all;
 
   &:hover{
     color: $color-text-orange;
@@ -57,7 +58,7 @@ a[href]{
 }
 
 .container {
-  @media screen and (min-width: $lg-desktop-min-width) {
+  @include for-desktop-up{
     margin: 0 auto;
     width: 1140px;
   }

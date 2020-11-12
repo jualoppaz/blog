@@ -65,6 +65,7 @@
           </div>
           <p>{{ functionsText }}:</p>
           <el-table
+            class="project-functions"
             :data="project.functions"
             border
             :show-header="false"
@@ -122,6 +123,7 @@
             </div>
             <p>{{ functionsText }}:</p>
             <el-table
+              class="project-functions"
               :data="clientProject.functions"
               border
               :show-header="false"
@@ -204,42 +206,62 @@ export default {
 
 <style lang="scss" scoped>
 
-.company-card{
-  .company-image{
-    width: 100px;
-    height: 100px;
-    padding: 5px;
+.el-timeline{
+  padding-left: 0;
+
+  @include for-tablet-up{
+    padding-left: 40px;
   }
 
-  .experience-timestamp{
+  .project-functions{
+    ::v-deep tr.el-table__row{
+      td{
+        div.cell{
+          word-break: normal;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .company-card{
+    .company-image{
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+    }
+
+    .experience-timestamp{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .projects-title{
     font-size: 16px;
-    font-weight: bold;
-  }
-}
-
-.projects-title{
-  font-size: 16px;
-}
-
-.experience-clients{
-  padding-top: 20px;
-  padding-left: 20px;
-
-  .client-image{
-    width: 100px;
-    height: 100px;
-    padding: 5px;
   }
 
-  .client-timestamp{
-    font-size: 16px;
-    font-weight: bold;
-  }
+  .experience-clients{
+    padding-top: 20px;
+    padding-left: 20px;
 
-  .el-card{
-    &:not(:first-child){
-      margin-top: 20px;
+    .client-image{
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+    }
+
+    .client-timestamp{
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .el-card{
+      &:not(:first-child){
+        margin-top: 20px;
+      }
     }
   }
 }
+
 </style>
