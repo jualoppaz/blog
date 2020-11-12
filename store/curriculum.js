@@ -254,6 +254,6 @@ export const mutations = {
     section,
     value,
   }) {
-    Vue.set(state.isLoading, section, value);
+    if (process.client || !value) Vue.set(state.isLoading, section, value);
   },
 };
