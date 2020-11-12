@@ -10,10 +10,10 @@
       >
         <CurriculumPdfFormat />
         <AcademicTraining />
-        <ProfessionalExperience />
+        <!--<ProfessionalExperience />-->
         <ExtraTraining :items="extraTraining" />
-        <PersonalProjects />
-        <Knowledge />
+        <!--<PersonalProjects />
+        <Knowledge />-->
         <Languages />
       </el-col>
     </el-row>
@@ -24,10 +24,10 @@
 
 import CurriculumPdfFormat from '@/components/curriculum/CurriculumPdfFormat.vue';
 import AcademicTraining from '@/components/curriculum/AcademicTraining.vue';
-import ProfessionalExperience from '@/components/curriculum/ProfessionalExperience.vue';
+// import ProfessionalExperience from '@/components/curriculum/ProfessionalExperience.vue';
 import ExtraTraining from '@/components/curriculum/ExtraTraining.vue';
-import PersonalProjects from '@/components/curriculum/PersonalProjects.vue';
-import Knowledge from '@/components/curriculum/Knowledge.vue';
+// import PersonalProjects from '@/components/curriculum/PersonalProjects.vue';
+// import Knowledge from '@/components/curriculum/Knowledge.vue';
 import Languages from '@/components/curriculum/Languages.vue';
 
 import { mapState } from 'vuex';
@@ -36,10 +36,10 @@ export default {
   components: {
     CurriculumPdfFormat,
     AcademicTraining,
-    ProfessionalExperience,
+    // ProfessionalExperience,
     ExtraTraining,
-    PersonalProjects,
-    Knowledge,
+    // PersonalProjects,
+    // Knowledge,
     Languages,
   },
   async fetch() {
