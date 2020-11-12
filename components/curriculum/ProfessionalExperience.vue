@@ -205,7 +205,11 @@ export default {
 <style lang="scss" scoped>
 
 .el-timeline{
-  padding: 0;
+  padding-left: 0;
+
+  @include for-tablet-up{
+    padding-left: 40px;
+  }
 
   .company-card{
     .company-image{
