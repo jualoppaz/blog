@@ -178,16 +178,16 @@ export default {
       projectManagementTools: (state) => state.knowledge.projectManagementTools,
       configurationManagementTools: (state) => state.knowledge.configurationManagementTools,
       isLoadingProgrammingLanguages:
-        (state) => state.isLoading.knowledge.isLoadingProgrammingLanguages,
-      isLoadingFrameworks: (state) => state.isLoading.knowledge.frameworks,
+        (state) => state.isLoading.programmingLanguages,
+      isLoadingFrameworks: (state) => state.isLoading.frameworks,
       isLoadingWebDesignFrameworks:
-        (state) => state.isLoading.knowledge.isLoadingWebDesignFrameworks,
-      isLoadingTemplateEngines: (state) => state.isLoading.knowledge.isLoadingTemplateEngines,
-      isLoadingDatabases: (state) => state.isLoading.knowledge.databases,
-      isLoadingVersionControlSystems: (state) => state.isLoading.knowledge.versionControlSystems,
-      isLoadingProjectManagementTools: (state) => state.isLoading.knowledge.projectManagementTools,
+        (state) => state.isLoading.webDesignFrameworks,
+      isLoadingTemplateEngines: (state) => state.isLoading.templateEngines,
+      isLoadingDatabases: (state) => state.isLoading.databases,
+      isLoadingVersionControlSystems: (state) => state.isLoading.versionControlSystems,
+      isLoadingProjectManagementTools: (state) => state.isLoading.projectManagementTools,
       isLoadingConfigurationManagementTools:
-        (state) => state.isLoading.knowledge.configurationManagementTools,
+        (state) => state.isLoading.configurationManagementTools,
     }),
   },
 };

@@ -27,7 +27,7 @@
       <template v-slot:title="{ item: training }">
         <span class="extra-training-date">{{ getExtraTrainingDate(training) }}</span>
       </template>
-      <template v-slot="{ item: training }">
+      <template v-slot:description="{ item: training }">
         {{ training.description }}
       </template>
     </MediaList>
