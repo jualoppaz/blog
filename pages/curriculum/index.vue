@@ -43,9 +43,13 @@ export default {
     Languages,
   },
   async fetch() {
+    console.log('Consultamos la formación complementaria');
     return Promise.all([
       this.$store.dispatch('curriculum/getExtraTraining'),
-    ]);
+    ])
+      .then(() => {
+        console.log('Hemos obtenido la formación complementaria');
+      });
   },
   computed: {
     ...mapState('curriculum', {

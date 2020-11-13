@@ -72,6 +72,7 @@ export const actions = {
 
     return this.$axios.get(`/${CV}/extra-training`)
       .then((res) => commit('setExtraTraining', res.data))
+      .catch((err) => console.log(err))
       .finally(() => commit('setIsLoading', {
         section: 'extraTraining',
         value: false,
