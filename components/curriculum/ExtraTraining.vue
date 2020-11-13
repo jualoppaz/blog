@@ -12,7 +12,7 @@
       v-if="isLoading"
     />
     <MediaList
-      :items="items"
+      :items="extraTraining"
     >
       <template v-slot:image="{ item: training }">
         <a
@@ -45,11 +45,8 @@ export default {
     MediaList,
     LoadingText,
   },
-  props: {
-    items: {
-      type: Array,
-      required: true,
-    },
+  async fetch() {
+    await this.$store.dispatch('curriculum/getExtraTraining');
   },
   data() {
     return {
@@ -58,6 +55,7 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
+      extraTraining: 'extraTraining',
       isLoading: (state) => state.isLoading.extraTraining,
     }),
   },
