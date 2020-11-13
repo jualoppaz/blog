@@ -8,10 +8,10 @@
           offset: 4
         }"
       >
-        <SeeCurriculumPdf />
+        <CurriculumPdfFormat />
         <AcademicTraining />
         <ProfessionalExperience />
-        <ExtraTraining />
+        <ExtraTraining :items="extraTraining" />
         <PersonalProjects />
         <Knowledge />
         <Languages />
@@ -22,7 +22,7 @@
 
 <script>
 
-import SeeCurriculumPdf from '@/components/curriculum/CurriculumPdfFormat.vue';
+import CurriculumPdfFormat from '@/components/curriculum/CurriculumPdfFormat.vue';
 import AcademicTraining from '@/components/curriculum/AcademicTraining.vue';
 import ProfessionalExperience from '@/components/curriculum/ProfessionalExperience.vue';
 import ExtraTraining from '@/components/curriculum/ExtraTraining.vue';
@@ -30,15 +30,31 @@ import PersonalProjects from '@/components/curriculum/PersonalProjects.vue';
 import Knowledge from '@/components/curriculum/Knowledge.vue';
 import Languages from '@/components/curriculum/Languages.vue';
 
+import { mapState } from 'vuex';
+
 export default {
   components: {
-    SeeCurriculumPdf,
+    CurriculumPdfFormat,
     AcademicTraining,
     ProfessionalExperience,
     ExtraTraining,
     PersonalProjects,
     Knowledge,
     Languages,
+  },
+  async fetch() {
+    console.log('Consultamos la formación complementaria');
+    return Promise.all([
+      this.$store.dispatch('curriculum/getExtraTraining'),
+    ])
+      .then(() => {
+        console.log('Hemos obtenido la formación complementaria');
+      });
+  },
+  computed: {
+    ...mapState('curriculum', {
+      extraTraining: 'extraTraining',
+    }),
   },
   beforeDestroy() {
     this.$store.dispatch('curriculum/destroyCV');

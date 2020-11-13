@@ -9,7 +9,7 @@
     </h1>
     <el-divider />
     <LoadingText
-      v-if="isLoading.professionalExperience"
+      v-if="isLoading"
     />
     <el-timeline>
       <el-timeline-item
@@ -167,7 +167,7 @@ export default {
   computed: {
     ...mapState('curriculum', {
       professionalExperience: 'professionalExperience',
-      isLoading: 'isLoading',
+      isLoading: (state) => state.isLoading.professionalExperience,
     }),
   },
   methods: {

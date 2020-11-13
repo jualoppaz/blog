@@ -9,10 +9,10 @@
     </h1>
     <el-divider />
     <LoadingText
-      v-if="isLoading.extraTraining"
+      v-if="isLoading"
     />
     <MediaList
-      :items="extraTraining"
+      :items="items"
     >
       <template v-slot:image="{ item: training }">
         <a
@@ -27,7 +27,7 @@
       <template v-slot:title="{ item: training }">
         <span class="extra-training-date">{{ getExtraTrainingDate(training) }}</span>
       </template>
-      <template v-slot:body="{ item: training }">
+      <template v-slot:description="{ item: training }">
         {{ training.description }}
       </template>
     </MediaList>
@@ -45,8 +45,11 @@ export default {
     MediaList,
     LoadingText,
   },
-  async fetch() {
-    return this.$store.dispatch('curriculum/getExtraTraining');
+  props: {
+    items: {
+      type: Array,
+      required: true,
+    },
   },
   data() {
     return {
@@ -55,8 +58,7 @@ export default {
   },
   computed: {
     ...mapState('curriculum', {
-      extraTraining: 'extraTraining',
-      isLoading: 'isLoading',
+      isLoading: (state) => state.isLoading.extraTraining,
     }),
   },
   methods: {

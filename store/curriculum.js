@@ -24,18 +24,18 @@ export const state = () => ({
       },
     },
   ],
-  professionalExperience: [],
-  extraTraining: [],
-  personalProjects: [],
+  professionalExperience: null,
+  extraTraining: null,
+  personalProjects: null,
   knowledge: {
-    programmingLanguages: [],
-    frameworks: [],
-    webDesignFrameworks: [],
-    templateEngines: [],
-    databases: [],
-    versionControlSystems: [],
-    projectManagementTools: [],
-    configurationManagementTools: [],
+    programmingLanguages: null,
+    frameworks: null,
+    webDesignFrameworks: null,
+    templateEngines: null,
+    databases: null,
+    versionControlSystems: null,
+    projectManagementTools: null,
+    configurationManagementTools: null,
   },
   languages: [
     {
@@ -72,6 +72,7 @@ export const actions = {
 
     return this.$axios.get(`/${CV}/extra-training`)
       .then((res) => commit('setExtraTraining', res.data))
+      .catch((err) => console.log(err))
       .finally(() => commit('setIsLoading', {
         section: 'extraTraining',
         value: false,

@@ -21,7 +21,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.programmingLanguages"
+      v-if="isLoadingProgrammingLanguages"
     />
     <KnowledgeList
       :items="frameworks"
@@ -36,7 +36,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.frameworks"
+      v-if="isLoadingFrameworks"
     />
     <KnowledgeList
       :items="webDesignFrameworks"
@@ -51,7 +51,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.webDesignFrameworks"
+      v-if="isLoadingWebDesignFrameworks"
     />
     <KnowledgeList
       :items="templateEngines"
@@ -66,7 +66,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.templateEngines"
+      v-if="isLoadingTemplateEngines"
     />
     <KnowledgeList
       :items="databases"
@@ -81,7 +81,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.databases"
+      v-if="isLoadingDatabases"
     />
     <KnowledgeList
       :items="versionControlSystems"
@@ -96,7 +96,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.versionControlSystems"
+      v-if="isLoadingVersionControlSystems"
     />
     <KnowledgeList
       :items="projectManagementTools"
@@ -111,7 +111,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.projectManagementTools"
+      v-if="isLoadingProjectManagementTools"
     />
     <KnowledgeList
       :items="configurationManagementTools"
@@ -126,7 +126,7 @@
       </template>
     </KnowledgeList>
     <LoadingText
-      v-if="isLoading.configurationManagementTools"
+      v-if="isLoadingConfigurationManagementTools"
     />
   </div>
 </template>
@@ -177,7 +177,17 @@ export default {
       versionControlSystems: (state) => state.knowledge.versionControlSystems,
       projectManagementTools: (state) => state.knowledge.projectManagementTools,
       configurationManagementTools: (state) => state.knowledge.configurationManagementTools,
-      isLoading: 'isLoading',
+      isLoadingProgrammingLanguages:
+        (state) => state.isLoading.programmingLanguages,
+      isLoadingFrameworks: (state) => state.isLoading.frameworks,
+      isLoadingWebDesignFrameworks:
+        (state) => state.isLoading.webDesignFrameworks,
+      isLoadingTemplateEngines: (state) => state.isLoading.templateEngines,
+      isLoadingDatabases: (state) => state.isLoading.databases,
+      isLoadingVersionControlSystems: (state) => state.isLoading.versionControlSystems,
+      isLoadingProjectManagementTools: (state) => state.isLoading.projectManagementTools,
+      isLoadingConfigurationManagementTools:
+        (state) => state.isLoading.configurationManagementTools,
     }),
   },
 };

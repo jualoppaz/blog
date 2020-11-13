@@ -3,10 +3,9 @@
 
 import es from './locales/es';
 
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const { $content } = require('@nuxt/content');
-
 require('dotenv').config();
+
+console.log('BaseURL para configurar en axios:', process.env.BASE_URL);
 
 export default {
   mode: 'universal',
@@ -141,6 +140,9 @@ export default {
   sitemap: {
     hostname: 'http://www.juanmanuellopezpazos.es',
     routes: async () => {
+      // eslint-disable-next-line global-require
+      const { $content } = require('@nuxt/content');
+
       const posts = await $content('posts')
         .only(['path'])
         .fetch();
