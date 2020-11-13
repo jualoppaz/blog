@@ -11,7 +11,7 @@
         <CurriculumPdfFormat />
         <AcademicTraining />
         <ProfessionalExperience />
-        <ExtraTraining :items="extraTraining" />
+        <ExtraTraining />
         <PersonalProjects />
         <Knowledge />
         <Languages />
@@ -30,8 +30,6 @@ import PersonalProjects from '@/components/curriculum/PersonalProjects.vue';
 import Knowledge from '@/components/curriculum/Knowledge.vue';
 import Languages from '@/components/curriculum/Languages.vue';
 
-import { mapState } from 'vuex';
-
 export default {
   components: {
     CurriculumPdfFormat,
@@ -41,20 +39,6 @@ export default {
     PersonalProjects,
     Knowledge,
     Languages,
-  },
-  async fetch() {
-    console.log('Consultamos la formación complementaria');
-    return Promise.all([
-      this.$store.dispatch('curriculum/getExtraTraining'),
-    ])
-      .then(() => {
-        console.log('Hemos obtenido la formación complementaria');
-      });
-  },
-  computed: {
-    ...mapState('curriculum', {
-      extraTraining: 'extraTraining',
-    }),
   },
   beforeDestroy() {
     this.$store.dispatch('curriculum/destroyCV');
