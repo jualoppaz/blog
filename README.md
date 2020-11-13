@@ -1,11 +1,11 @@
-# Blog
+# 👨‍💻 Blog JMLP
 
-En este proyecto se encuentra el desarrollo de mi página web personal, la cual contiene mi trayectoria en forma de currículum y un blog en el que iré publicando artículos que considere relevantes, desde tecnologías hasta música procesional.
+Página web personal de [Juan Manuel López Pazos](http://www.juanmanuellopezpazos.es). Este proyecto tiene como objetivo exponer una web en la que mostrar mi Curriculum, así como los proyectos que realizo en mi tiempo libre. También se incluye un blog en el que iré publicando artículos que considere relevantes, desde tecnologías hasta música procesional.
 
-## Currículum
+## 📑 Curriculum
 
-En esta [página](http://juanmanuellopezpazos.es/curriculum) podrás ver mi currículum en un diseño más amigable y visual.
+En esta [página](http://www.juanmanuellopezpazos.es/curriculum) podrás ver mi currículum en un diseño más amigable y visual.
 
-## Blog
+## 📝 Blog
 
-Si quieres consultar los artículos que he publicado hasta la fecha te invito a visitar mi [blog](http://juanmanuellopezpazos.es/blog).
+Si quieres consultar los artículos que he publicado hasta la fecha te invito a visitar mi [blog](http://www.juanmanuellopezpazos.es/blog).
