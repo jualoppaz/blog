@@ -14,11 +14,6 @@ export default {
       baseURL: process.env.BASE_URL,
     },
   },
-  privateRuntimeConfig: {
-    axios: {
-      baseURL: process.env.BASE_URL,
-    },
-  },
   /*
   ** Headers of the page
   */
