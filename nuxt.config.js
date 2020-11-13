@@ -5,6 +5,8 @@ import es from './locales/es';
 
 require('dotenv').config();
 
+console.log('BaseURL para configurar en axios:', process.env.BASE_URL);
+
 export default {
   mode: 'universal',
   publicRuntimeConfig: {
