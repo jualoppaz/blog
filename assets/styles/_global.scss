@@ -94,6 +94,25 @@ a[href]{
   }
 }
 
-.project-link{
-  margin-top: 7px;
+.project-links{
+  margin-top: 15px;
+
+  .project-link{
+
+    @include for-phone-only{
+      display: block;
+
+      &:not(:first-child) {
+        margin-top: 5px;
+      }
+    }
+
+    @include for-tablet-up{
+      &:not(:first-child){
+        margin-left: 10px;
+
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
