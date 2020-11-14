@@ -17,6 +17,9 @@
         <Languages />
       </el-col>
     </el-row>
+    <el-backtop
+      :visibility-height="200"
+    />
   </div>
 </template>
 

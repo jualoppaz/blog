@@ -98,7 +98,8 @@ export default
         TECHNOLOGIES: {
           TEXT: 'Tecnologías utilizadas',
         },
-        LINK: {
+        LINKS: {
+          TEXT: 'Enlaces',
           TYPE: {
             WEB: 'Web',
             REPOSITORY: 'Repositorio',
