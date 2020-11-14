@@ -97,21 +97,26 @@ a[href]{
 .project-links{
   margin-top: 15px;
 
-  .project-link{
+  .el-card__body{
+    overflow: hidden;
 
-    @include for-phone-only{
-      display: block;
+    .project-link{
 
-      &:not(:first-child) {
-        margin-top: 5px;
+      @include for-phone-only{
+        float: left;
+        clear: left;
+
+        &:not(:first-child) {
+          margin-top: 5px;
+        }
       }
-    }
 
-    @include for-tablet-up{
-      &:not(:first-child){
-        margin-left: 10px;
+      @include for-tablet-up{
+        &:not(:first-child){
+          margin-left: 10px;
 
-        margin-bottom: 5px;
+          margin-bottom: 5px;
+        }
       }
     }
   }
