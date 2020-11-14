@@ -37,19 +37,31 @@
             :technologies="project.technologies"
           />
         </div>
-        <div
-          v-for="(link, index) in project.links"
-          :key="index"
-          class="project-link"
+        <el-card
+          class="project-links"
         >
-          {{ getLinkTypeText(link.type) }}:
-          <a
-            :href="link.value"
-            target="_blank"
+          <div slot="header" class="clearfix">
+            <span>{{ linksText }}</span>
+          </div>
+          <el-tag
+            v-for="(link, index) in project.links"
+            :key="index"
+            type="primary"
+            effect="plain"
+            class="project-link"
           >
-            {{ getLinkValueText(link) }}
-          </a>
-        </div>
+            <a
+              :href="link.value"
+              target="_blank"
+            >
+              {{ getLinkTypeText(link.type) }}
+              <font-awesome-icon
+                :icon="['fas', 'external-link-alt']"
+                size="1x"
+              />
+            </a>
+          </el-tag>
+        </el-card>
       </template>
     </MediaList>
   </div>
@@ -77,6 +89,7 @@ export default {
       personalProjectsTitle: this.$t('VIEWS.CV.PERSONAL_PROJECTS.TITLE'),
       currentText: this.$t('VIEWS.CV.PERSONAL_PROJECTS.TIMESTAMP.CURRENT.TEXT'),
       technologiesText: this.$t('VIEWS.CV.PERSONAL_PROJECTS.TECHNOLOGIES.TEXT'),
+      linksText: this.$t('VIEWS.CV.PERSONAL_PROJECTS.LINKS.TEXT'),
     };
   },
   computed: {
@@ -100,11 +113,11 @@ export default {
       return `${startDateFormatted} - ${endDateFormatted}: ${project.name}`;
     },
     getLinkTypeText(linkType) {
-      return this.$t(`VIEWS.CV.PERSONAL_PROJECTS.LINK.TYPE.${linkType.toUpperCase()}`);
+      return this.$t(`VIEWS.CV.PERSONAL_PROJECTS.LINKS.TYPE.${linkType.toUpperCase()}`);
     },
     getLinkValueText(link) {
       return link.type === 'tfg_documentation'
-        ? this.$t('VIEWS.CV.PERSONAL_PROJECTS.LINK.TFG_DOCUMENTATION') : link.value;
+        ? this.$t('VIEWS.CV.PERSONAL_PROJECTS.LINKS.TFG_DOCUMENTATION') : link.value;
     },
   },
 };
