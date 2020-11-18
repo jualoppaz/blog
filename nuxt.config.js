@@ -46,10 +46,6 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/nuxt-social-sharing.js',
-    {
-      src: '@/plugins/adsense.js',
-      mode: 'client',
-    },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -97,9 +93,9 @@ export default {
       ],
     }],
     '@nuxtjs/sitemap',
-    /* ['@nuxtjs/google-adsense', {
+    ['@nuxtjs/google-adsense', {
       id: 'ca-pub-2309187828170787',
-    }], */
+    }],
   ],
 
   styleResources: {
