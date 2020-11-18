@@ -35,6 +35,8 @@ En los años de experiencia profesional que tengo como desarrollador de aplicaci
 
 Desde 2014 que empecé a desarrollar aplicaciones web en mi tiempo libre pensé en crear un Blog en el que poder compartir los conocimientos que iba adquiriendo gracias a las distintas fuentes que iba consultando. De hecho, tengo anotados multitud de temas sobre los que escribir interesantes artículos, los cuales iré publicando próximamente.
 
+<advertisement></advertisement>
+
 ### Posicionamiento de mi web
 
 Este Blog no sólo me servirá para trabajar en mi Marca personal, sino que también me servirá para mejorar el posicionamiento de mi web personal.
@@ -58,6 +60,8 @@ Sin embargo, el famoso algoritmo utilizado en [ContentID](https://support.google
 - **Youtube** permite a las discográficas registrar obras editadas como si fueran los autores legítimos de las mismas, lo cual no es cierto salvo contados casos
 
 Y a estos motivos hay que sumarle que las discográficas no ayudan puesto que, aún a sabiendas de que **Youtube** no es infalibe y que un usuario no está infringiendo los derechos de ninguna obra, suelen optar por rechazar cualquier tipo de reclamación y acaban teniendo ventaja.
+
+<advertisement></advertisement>
 
 Para poner un poco en contexto a aquellos que no sepan a lo que me refiero voy a comentar un caso muy particular. Me sucedió cuando publiqué este vídeo:
 
@@ -109,6 +113,8 @@ Imaginemos un caso totalmente rocambolesco:
 1. La **discográfica** registra el **disco** en **ContentID** y lo sube a **Youtube**
 1. El **autor** decide subir una versión de su marcha a **Youtube** interpretada con violines
 1. El **autor** recibe una reclamación de infracción de derechos de **¡¡SU MARCHA!!** editada en el **disco** producido por la **discográfica**
+
+<advertisement></advertisement>
 
 ¿Se entiende así el sinsentido del entramado que tiene formado **Youtube**? Entiendo que **Youtube** quiera asegurarse de que no se suba material a su plataforma que infrinja derechos de autor, pero esta política no funciona si se les da poder absoluto a las discográficas y editores y éstos no actúan debidamente cuando un usuario les demuestra que no existe tal infracción.
 
