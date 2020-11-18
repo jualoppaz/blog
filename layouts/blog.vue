@@ -18,6 +18,7 @@
           :width="asideColumnWidth"
         >
           <TagsFilter @tagChanged="goToBlog()" />
+          <Advertisement />
         </el-aside>
       </el-container>
       <el-container
@@ -42,6 +43,7 @@ import Footer from '@/components/layout/Footer.vue';
 import TagsFilter from '@/components/TagsFilter.vue';
 
 import utils from '@/utils';
+import Advertisement from '@/components/Advertisement.vue';
 
 export default {
   name: 'App',
@@ -49,6 +51,7 @@ export default {
     Menu,
     Footer,
     TagsFilter,
+    Advertisement,
   },
   mixins: [VueAdBlockDetect],
   data() {

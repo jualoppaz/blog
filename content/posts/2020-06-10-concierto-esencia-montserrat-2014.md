@@ -43,6 +43,8 @@ Al tener menos de **1000 suscriptores** en mi [canal](https://www.youtube.com/c/
 
 Pero bueno, mientras la política de **Youtube** no cambie mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") será historia y dará paso a mi nuevo [canal](https://www.dailymotion.com/jualoppaz "Canal de Juan Manuel López Pazos en Dailymotion") en **Dailymotion**. En el mismo ya están disponibles los vídeos del concierto.
 
+<advertisement></advertisement>
+
 ## Citación para el concierto: Plaza de la Magdalena
 
 Dado que el concierto era en la capilla de **Montserrat**, el lugar en el que fuimos citados los músicos fue la **Plaza de la Magdalena**. Recuerdo que, mientras esperábamos a que afinaran todas las voces de corneta, estaba jugando el **Sevilla** en **Balaídos** contra el **Celta**. Y dicho partido lo ganó el **Celta** con gol de **Nolito**, quien milita hoy en las filas del **Sevilla**: curiosidades que son muy recurrentes hoy en día. Creo que no hace falta decir que soy sevillista 😜.
@@ -109,6 +111,8 @@ esa dificultad precisaba de un extra de concentración por parte del músico, y 
 El repertorio de este concierto fue amplio y de tintes clásicos. Por todos es sabido que el repertorio que interpreta en su mayoría la banda que acompaña al **Stmo. Cristo de la Conversión del Buen Ladrón** cada **Viernes Santo**, la [⚓ Banda del Stmo. Cristo de las Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana"), es en su mayoría clásico. Dado que [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") es una formación clásica que tiene como clara referencia a la **Banda de la Policía Armada** y, además, por aquel entonces contaba con varias composiciones en su repertorio que sonaban cada **Viernes Santo** tras el titular de la [Hermandad de Montserrat](http://hermandaddemontserrat.org/ "Web oficial de la Hermandad de Montserrat (Sevilla)"), era un lugar idóneo para que [Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") ofreciera un concierto en el que poner sus sones en plena **Cuaresma**.
 
 A continuación se muestran los vídeos con las marchas interpretadas en el concierto:
+
+<advertisement></advertisement>
 
 ### 1. Soledad de San Pablo (1951, de Pascual Zueco Ramos)
 
@@ -225,6 +229,8 @@ Esta composición fue un clásico de la [⚓ Banda del Stmo. Cristo de las Tres 
     </div>
   </el-col>
 </el-row>
+
+<advertisement></advertisement>
 
 ### 5. Evocación (1925, de Alberto Escámez López)
 

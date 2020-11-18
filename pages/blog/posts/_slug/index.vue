@@ -51,6 +51,7 @@ import { mapState } from 'vuex';
 import { Loading } from 'element-ui';
 
 import SocialShare from '@/components/SocialShare.vue';
+import Advertisement from '@/components/Advertisement.vue';
 
 import utils from '@/utils';
 
@@ -58,6 +59,8 @@ export default {
   layout: 'blog',
   components: {
     SocialShare,
+    // eslint-disable-next-line vue/no-unused-components
+    Advertisement,
   },
   async fetch() {
     if (process.client) {
