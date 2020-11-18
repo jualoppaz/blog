@@ -17,7 +17,9 @@
           id="aside-column"
           :width="asideColumnWidth"
         >
-          <TagsFilter @tagChanged="goToBlog()" />
+          <div class="tags-filter-section">
+            <TagsFilter @tagChanged="goToBlog()" />
+          </div>
           <Advertisement />
         </el-aside>
       </el-container>
@@ -25,7 +27,10 @@
         v-if="showAsideRow()"
         id="aside-row"
       >
-        <TagsFilter @tagChanged="goToBlog()" />
+        <div class="tags-filter-section">
+          <TagsFilter @tagChanged="goToBlog()" />
+        </div>
+        <Advertisement />
       </el-container>
       <el-footer>
         <Footer />
@@ -185,9 +190,11 @@ body{
 
         #aside-column{
           padding: 5px;
-          /* @include for-tablet-up{
-            padding: $content-padding-tablet;
-          } */
+
+          .tags-filter-section{
+            width: 100%;
+            text-align: center;
+          }
 
           .tags-filter{
             .el-tag{
@@ -204,6 +211,11 @@ body{
 
       #aside-row{
         padding: $content-padding-mobile;
+
+        .tags-filter-section{
+          width: 100%;
+          text-align: center;
+        }
 
         .tags-filter{
           .el-tag{
