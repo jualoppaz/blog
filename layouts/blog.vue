@@ -27,10 +27,12 @@
         v-if="showAsideRow()"
         id="aside-row"
       >
-        <div class="tags-filter-section">
-          <TagsFilter @tagChanged="goToBlog()" />
+        <div>
+          <div class="tags-filter-section">
+            <TagsFilter @tagChanged="goToBlog()" />
+          </div>
+          <Advertisement />
         </div>
-        <Advertisement />
       </el-container>
       <el-footer>
         <Footer />
@@ -212,9 +214,14 @@ body{
       #aside-row{
         padding: $content-padding-mobile;
 
-        .tags-filter-section{
+        > div{
+          display: block;
           width: 100%;
-          text-align: center;
+
+          .tags-filter-section{
+            width: 100%;
+            text-align: center;
+          }
         }
 
         .tags-filter{
