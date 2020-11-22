@@ -4,7 +4,7 @@ nsightvideo.com,35,DIRECT,fd25240165056a01
 appnexus.com,1201403,RESELLER
 
 
-#dailymotion-v1.12-2020-10-30
+#dailymotion-v1.13-2020-11-17
 freewheel.tv,899777,DIRECT
 freewheel.tv,901025,RESELLER
 springserve.com,843,RESELLER,a24eb641fc82e93d
@@ -50,6 +50,8 @@ smartclip.net,855,RESELLER
 smartclip.net,9098,RESELLER
 google.com,pub-8674340505315230,RESELLER,f08c47fec0942fa0
 google.com,pub-7197632655386039,RESELLER,f08c47fec0942fa0
+onetag.com,59d216e971852f2,RESELLER
+appnexus.com,10617,RESELLER
 admixer.net,10248498-454d-49a4-a789-acb8fe837f59,RESELLER
 google.com,pub-0627101520158699,RESELLER,f08c47fec0942fa0
 freewheel.tv,2493,RESELLER
@@ -267,7 +269,6 @@ adform.com,2579,RESELLER,9f5210a2f0999e32
 #v1.09
 google.com,pub-8834194653550774,RESELLER,f08c47fec0942fa0
 google.com,pub-3737030722290655,RESELLER,f08c47fec0942fa0
-google.com,pub-8929667634210480,RESELLER,f08c47fec0942fa0
 appnexus.com,3925,RESELLER,f5ab79cb980f11d1
 #v1.10
 smartclip.net,10451,RESELLER
@@ -291,4 +292,7 @@ smartadserver.com,3433,RESELLER
 axonix.com,57264,RESELLER
 admanmedia.com,43,RESELLER
 indexexchange.com,191385,RESELLER,50b1c356f2c5c8fc
+#v1.13
+google.com,pub-5459209596458886,RESELLER,f08c47fec0942fa0
+google.com,pub-8929667634210480,RESELLER,f08c47fec0942fa0
 
