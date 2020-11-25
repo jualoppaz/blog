@@ -102,6 +102,7 @@ export default
           TEXT: 'Enlaces',
           TYPE: {
             WEB: 'Web',
+            CONTRIBUTION: 'Contribución',
             REPOSITORY: 'Repositorio',
             TFG_DOCUMENTATION: 'Memoria',
           },
