@@ -19,6 +19,14 @@ function findAllPersonalProjects(req, res) {
       personalProjects,
       {
         path: 'technologies',
+        options: {
+          collation: {
+            locale: 'en',
+          },
+          sort: {
+            name: 1,
+          },
+        },
       },
       (err2, personalProjects2) => {
         if (err2) {
