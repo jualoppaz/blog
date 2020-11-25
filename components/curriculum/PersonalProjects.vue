@@ -115,10 +115,6 @@ export default {
     getLinkTypeText(linkType) {
       return this.$t(`VIEWS.CV.PERSONAL_PROJECTS.LINKS.TYPE.${linkType.toUpperCase()}`);
     },
-    getLinkValueText(link) {
-      return link.type === 'tfg_documentation'
-        ? this.$t('VIEWS.CV.PERSONAL_PROJECTS.LINKS.TFG_DOCUMENTATION') : link.value;
-    },
   },
 };
 </script>
