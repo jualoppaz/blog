@@ -36,6 +36,7 @@ import Languages from '@/components/curriculum/Languages.vue';
 import utils from '@/utils';
 
 export default {
+  name: 'Curriculum',
   components: {
     CurriculumPdfFormat,
     AcademicTraining,
