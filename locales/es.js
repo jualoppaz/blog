@@ -145,6 +145,46 @@ export default
         TITLE: 'Idiomas',
       },
     },
+    ACADEMIC_RECORD: {
+      ACADEMIC_COURSES: {
+        TITLE: 'Cursos académicos',
+        ACADEMIC_COURSE_TABLE: {
+          HEADER: {
+            TEXT: 'Curso académico',
+          },
+          FIRST_QUARTER: {
+            TEXT: 'Primer cuatrimestre',
+          },
+          SECOND_QUARTER: {
+            TEXT: 'Segundo cuatrimestre',
+          },
+          NO_QUARTER: {
+            TEXT: 'Anuales',
+          },
+          ABBREVIATION: {
+            LABEL: 'Abreviatura',
+          },
+          DEPARTMENT: {
+            LABEL: 'Departamento',
+          },
+          SUBJECT: {
+            LABEL: 'Asignatura',
+          },
+          COURSE: {
+            LABEL: 'Curso',
+          },
+          MARK: {
+            LABEL: 'Nota',
+          },
+          PASS_METHOD: {
+            LABEL: 'Método de aprobado',
+          },
+          USED_ANNOUNCEMENTS: {
+            LABEL: 'Conv. utilizadas',
+          },
+        },
+      },
+    },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
       ITEM: {
