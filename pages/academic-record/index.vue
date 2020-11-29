@@ -4,11 +4,11 @@
       <el-col
         :xs="24"
         :lg="{
-          span: 16,
-          offset: 4
+          span: 18,
+          offset: 3
         }"
       >
-        xoxExpediente académico
+        <AcademicCourses />
       </el-col>
     </el-row>
     <el-backtop
@@ -21,12 +21,20 @@
 
 import utils from '@/utils';
 
+import AcademicCourses from '@/components/academic-record/AcademicCourses.vue';
+
 export default {
-  components: {},
+  name: 'AcademicRecord',
+  components: {
+    AcademicCourses,
+  },
   nuxtI18n: {
     paths: {
       es: '/expediente-academico',
     },
+  },
+  async fetch() {
+    return this.$store.dispatch('academic-records/getRecords');
   },
   beforeDestroy() {
     this.$store.dispatch('curriculum/destroyCV');
@@ -37,11 +45,11 @@ export default {
       description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
       author: 'Juan Manuel López Pazos',
       keywords: 'expediente academico, juan manuel lopez pazos, ingeniero software, programador frontend, desarrollador frontend, desarrollador vue, microfrontends, micro frontends, micro-frontends',
-      canonical_url: 'http://www.juanmanuellopezpazos.es/curriculum/expediente-academico',
+      canonical_url: 'http://www.juanmanuellopezpazos.es/expediente-academico',
       og_title: 'Expediente académico de Juan Manuel López Pazos',
       og_type: 'website',
       og_image: 'http://www.juanmanuellopezpazos.es/images/yo_2018.jpg',
-      og_url: 'http://www.juanmanuellopezpazos.es/curriculum/expediente-academico',
+      og_url: 'http://www.juanmanuellopezpazos.es/expediente-academico',
       og_description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
       og_site_name: 'BLOG - JMLP',
       twitter_site: '@LopezPazos14',
