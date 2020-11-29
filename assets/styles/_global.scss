@@ -121,3 +121,12 @@ a[href]{
     }
   }
 }
+
+.el-tag{
+  &.el-tag--fail{
+    &.el-tag--dark{
+      background-color: $color-purple;
+      border-color: $color-purple;
+    }
+  }
+}
