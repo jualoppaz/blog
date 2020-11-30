@@ -689,13 +689,11 @@ export const actions = {
       }
     });
 
-    commit('setSubjectMarksByAcademicCourse', {
+    return commit('setSubjectMarksByAcademicCourse', {
       academicCourse,
       quarter,
       data: res,
     });
-
-    return res;
   },
   getSubjectMarksByDegreeCourseAndQuarter({ state, commit }, {
     degreeCourse,
@@ -723,13 +721,11 @@ export const actions = {
       }
     });
 
-    commit('setSubjectMarksByDegreeCourse', {
+    return commit('setSubjectMarksByDegreeCourse', {
       degreeCourse,
       quarter,
       data: res,
     });
-
-    return res;
   },
 };
 
@@ -750,5 +746,25 @@ export const mutations = {
     data,
   }) {
     Vue.set(state.subjectMarksByDegreeCourse[degreeCourse], quarter, data);
+  },
+};
+
+export const getters = {
+  getSubjectAverageByAcademicCourse: (state) => (academicCourse) => {
+    const subjects = [
+      ...state.subjectMarksByAcademicCourse[academicCourse][1],
+      ...state.subjectMarksByAcademicCourse[academicCourse][2],
+      ...state.subjectMarksByAcademicCourse[academicCourse].null,
+    ];
+
+    const subjectMarks = subjects
+      .filter((subject) => typeof subject.nota === 'number')
+      .map((subject) => subject.nota);
+
+    const subjectsNumber = subjectMarks.length;
+
+    const totalMarks = subjectMarks.reduce((prev, current) => prev + current);
+
+    return Math.round((totalMarks / subjectsNumber) * 100) / 100;
   },
 };
