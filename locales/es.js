@@ -184,6 +184,41 @@ export default
           },
         },
       },
+      DEGREE_COURSES: {
+        TITLE: 'Cursos del grado',
+        DEGREE_COURSE_TABLE: {
+          HEADER: {
+            TEXT: 'Curso:',
+          },
+          FIRST_QUARTER: {
+            TEXT: 'Primer cuatrimestre',
+          },
+          SECOND_QUARTER: {
+            TEXT: 'Segundo cuatrimestre',
+          },
+          NO_QUARTER: {
+            TEXT: 'Anuales',
+          },
+          ABBREVIATION: {
+            LABEL: 'Abreviatura',
+          },
+          DEPARTMENT: {
+            LABEL: 'Departamento',
+          },
+          SUBJECT: {
+            LABEL: 'Asignatura',
+          },
+          MARK: {
+            LABEL: 'Nota',
+          },
+          PASS_METHOD: {
+            LABEL: 'Método de aprobado',
+          },
+          USED_ANNOUNCEMENTS: {
+            LABEL: 'Conv. utilizadas',
+          },
+        },
+      },
     },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
