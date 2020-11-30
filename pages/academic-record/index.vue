@@ -9,6 +9,7 @@
         }"
       >
         <AcademicCourses />
+        <DegreeCourses />
       </el-col>
     </el-row>
     <el-backtop
@@ -22,11 +23,13 @@
 import utils from '@/utils';
 
 import AcademicCourses from '@/components/academic-record/AcademicCourses.vue';
+import DegreeCourses from '@/components/academic-record/DegreeCourses.vue';
 
 export default {
   name: 'AcademicRecord',
   components: {
     AcademicCourses,
+    DegreeCourses,
   },
   nuxtI18n: {
     paths: {
