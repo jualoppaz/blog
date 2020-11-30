@@ -23,6 +23,28 @@ export const state = () => ({
       null: [],
     },
   },
+  subjectMarksByDegreeCourse: {
+    1: {
+      1: [],
+      2: [],
+      null: [],
+    },
+    2: {
+      1: [],
+      2: [],
+      null: [],
+    },
+    3: {
+      1: [],
+      2: [],
+      null: [],
+    },
+    4: {
+      1: [],
+      2: [],
+      null: [],
+    },
+  },
 });
 
 export const actions = {
@@ -641,7 +663,7 @@ export const actions = {
 
     commit('setRecords', records);
   },
-  getSubjectMarksByAcademicCourseAndQuarter({ state }, {
+  getSubjectMarksByAcademicCourseAndQuarter({ state, commit }, {
     academicCourse,
     quarter,
   }) {
@@ -667,175 +689,47 @@ export const actions = {
       }
     });
 
+    commit('setSubjectMarksByAcademicCourse', {
+      academicCourse,
+      quarter,
+      data: res,
+    });
+
     return res;
   },
-  getSubjectMarksBy20102011CourseAndFirstQuarter({ dispatch, commit }) {
-    const academicCourse = '2010/2011';
-    const quarter = 1;
+  getSubjectMarksByDegreeCourseAndQuarter({ state, commit }, {
+    degreeCourse,
+    quarter,
+  }) {
+    const aux = state.records.filter(
+      (element) => element.curso === degreeCourse && element.cuatrimestre === quarter,
+    );
 
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20102011CourseAndSecondQuarter({ dispatch, commit }) {
-    const academicCourse = '2010/2011';
-    const quarter = 2;
+    aux.sort((a, b) => b.numeroConvocatoria - a.numeroConvocatoria);
 
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20102011CourseAndNoQuarter({ dispatch, commit }) {
-    const academicCourse = '2010/2011';
-    const quarter = null;
+    const res = [];
 
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20112012CourseAndFirstQuarter({ dispatch, commit }) {
-    const academicCourse = '2011/2012';
-    const quarter = 1;
+    aux.forEach((item) => {
+      const elem = res.find((element) => element.abreviatura === item.abreviatura);
+      if (elem) {
+        if (item.convocatoriaUtilizada) {
+          const resIndex = res.indexOf(elem);
+          res[resIndex].convocatoriasUtilizadas += 1;
+        }
+      } else if (item.convocatoriaUtilizada) {
+        const auxItem = { ...item };
+        auxItem.convocatoriasUtilizadas = 1;
+        res.push(auxItem);
+      }
+    });
 
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
+    commit('setSubjectMarksByDegreeCourse', {
+      degreeCourse,
       quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20112012CourseAndSecondQuarter({ dispatch, commit }) {
-    const academicCourse = '2011/2012';
-    const quarter = 2;
+      data: res,
+    });
 
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20112012CourseAndNoQuarter({ dispatch, commit }) {
-    const academicCourse = '2011/2012';
-    const quarter = null;
-
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20122013CourseAndFirstQuarter({ dispatch, commit }) {
-    const academicCourse = '2012/2013';
-    const quarter = 1;
-
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20122013CourseAndSecondQuarter({ dispatch, commit }) {
-    const academicCourse = '2012/2013';
-    const quarter = 2;
-
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20122013CourseAndNoQuarter({ dispatch, commit }) {
-    const academicCourse = '2012/2013';
-    const quarter = null;
-
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20132014CourseAndFirstQuarter({ dispatch, commit }) {
-    const academicCourse = '2013/2014';
-    const quarter = 1;
-
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20132014CourseAndSecondQuarter({ dispatch, commit }) {
-    const academicCourse = '2013/2014';
-    const quarter = 2;
-
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
-  },
-  getSubjectMarksBy20132014CourseAndNoQuarter({ dispatch, commit }) {
-    const academicCourse = '2013/2014';
-    const quarter = null;
-
-    return dispatch('getSubjectMarksByAcademicCourseAndQuarter', {
-      academicCourse,
-      quarter,
-    })
-      .then((data) => commit('setSubjectMarksByAcademicCourse', {
-        academicCourse,
-        quarter,
-        data,
-      }));
+    return res;
   },
 };
 
@@ -849,5 +743,12 @@ export const mutations = {
     data,
   }) {
     Vue.set(state.subjectMarksByAcademicCourse[academicCourse], quarter, data);
+  },
+  setSubjectMarksByDegreeCourse(state, {
+    degreeCourse,
+    quarter,
+    data,
+  }) {
+    Vue.set(state.subjectMarksByDegreeCourse[degreeCourse], quarter, data);
   },
 };
