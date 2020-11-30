@@ -39,18 +39,54 @@ export default {
   },
   async fetch() {
     return Promise.all([
-      this.$store.dispatch('academic-records/getSubjectMarksBy20102011CourseAndFirstQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20102011CourseAndSecondQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20102011CourseAndNoQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20112012CourseAndFirstQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20112012CourseAndSecondQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20112012CourseAndNoQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20122013CourseAndFirstQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20122013CourseAndSecondQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20122013CourseAndNoQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20132014CourseAndFirstQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20132014CourseAndSecondQuarter'),
-      this.$store.dispatch('academic-records/getSubjectMarksBy20132014CourseAndNoQuarter'),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2010/2011',
+        quarter: 1,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2010/2011',
+        quarter: 2,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2010/2011',
+        quarter: null,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2011/2012',
+        quarter: 1,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2011/2012',
+        quarter: 2,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2011/2012',
+        quarter: null,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2012/2013',
+        quarter: 1,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2012/2013',
+        quarter: 2,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2012/2013',
+        quarter: null,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2013/2014',
+        quarter: 1,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2013/2014',
+        quarter: 2,
+      }),
+      this.$store.dispatch('academic-records/getSubjectMarksByAcademicCourseAndQuarter', {
+        academicCourse: '2013/2014',
+        quarter: null,
+      }),
     ]);
   },
   data() {
