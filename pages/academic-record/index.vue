@@ -11,6 +11,7 @@
         <AcademicCourses />
         <DegreeCourses />
         <AcademicCourseAverages />
+        <DegreeCourseAverages />
       </el-col>
     </el-row>
     <el-backtop
@@ -26,6 +27,7 @@ import utils from '@/utils';
 import AcademicCourses from '@/components/academic-record/AcademicCourses.vue';
 import DegreeCourses from '@/components/academic-record/DegreeCourses.vue';
 import AcademicCourseAverages from '@/components/academic-record/averages/AcademicCourseAverages.vue';
+import DegreeCourseAverages from '@/components/academic-record/averages/DegreeCourseAverages.vue';
 
 export default {
   name: 'AcademicRecord',
@@ -33,6 +35,7 @@ export default {
     AcademicCourses,
     DegreeCourses,
     AcademicCourseAverages,
+    DegreeCourseAverages,
   },
   nuxtI18n: {
     paths: {
