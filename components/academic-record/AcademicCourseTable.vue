@@ -110,7 +110,7 @@ export default {
       if (subject.matriculaHonor) return 'danger';
       if (subject.nota >= 9) return 'warning';
       if (subject.nota >= 7) return '';
-      if (subject.nota >= 5) return 'success';
+      if (subject.nota >= 5 || subject.nota === 'APTO') return 'success';
       if (subject.nota < 5) return 'fail';
       return 'info';
     },
