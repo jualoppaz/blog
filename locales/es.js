@@ -247,6 +247,17 @@ export default
           LABEL: 'Media por Crédito',
         },
       },
+      DEGREE_AVERAGES_TABLE: {
+        HEADER: {
+          TITLE: 'Media del Grado',
+        },
+        SUBJECT_AVERAGE: {
+          LABEL: 'Media por Asignatura',
+        },
+        CREDIT_AVERAGE: {
+          LABEL: 'Media por Crédito',
+        },
+      },
     },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
