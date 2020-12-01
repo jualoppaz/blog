@@ -767,4 +767,26 @@ export const getters = {
 
     return Math.round((totalMarks / subjectsNumber) * 100) / 100;
   },
+  getCreditAverageByAcademicCourse: (state) => (academicCourse) => {
+    const subjects = [
+      ...state.subjectMarksByAcademicCourse[academicCourse][1],
+      ...state.subjectMarksByAcademicCourse[academicCourse][2],
+      ...state.subjectMarksByAcademicCourse[academicCourse].null,
+    ];
+
+    const subjectMarks = subjects
+      .filter((subject) => typeof subject.nota === 'number')
+      .map((subject) => subject.nota * subject.creditos);
+
+    const totalMarks = subjectMarks.reduce((prev, current) => prev + current);
+
+    const credits = subjects
+      .filter((subject) => typeof subject.nota === 'number')
+      .map((subject) => subject.creditos);
+
+    const creditsNumber = credits.reduce((prev, current) => prev + current);
+
+
+    return Math.round((totalMarks / creditsNumber) * 100) / 100;
+  },
 };
