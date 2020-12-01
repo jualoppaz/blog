@@ -52,27 +52,27 @@ export default {
     this.$store.dispatch('curriculum/destroyCV');
   },
   head() {
-    const metas = {
+    const obj = {
       title: 'Expediente académico de Juan Manuel López Pazos',
-      description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
-      author: 'Juan Manuel López Pazos',
-      keywords: 'expediente academico, juan manuel lopez pazos, ingeniero software, programador frontend, desarrollador frontend, desarrollador vue, microfrontends, micro frontends, micro-frontends',
-      canonical_url: 'http://www.juanmanuellopezpazos.es/expediente-academico',
-      og_title: 'Expediente académico de Juan Manuel López Pazos',
-      og_type: 'website',
-      og_image: 'http://www.juanmanuellopezpazos.es/images/yo_2018.jpg',
-      og_url: 'http://www.juanmanuellopezpazos.es/expediente-academico',
-      og_description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
-      og_site_name: 'BLOG - JMLP',
-      twitter_site: '@LopezPazos14',
-      twitter_card: 'summary',
-      twitter_image: 'http://www.juanmanuellopezpazos.es/images/yo_2018.jpg',
-      twitter_title: 'Expediente académico de Juan Manuel López Pazos',
-      twitter_description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
+      metas: {
+        description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
+        author: 'Juan Manuel López Pazos',
+        keywords: 'expediente academico, juan manuel lopez pazos, ingeniero software, programador frontend, desarrollador frontend, desarrollador vue, microfrontends, micro frontends, micro-frontends',
+        canonical_url: 'http://www.juanmanuellopezpazos.es/expediente-academico',
+        og_title: 'Expediente académico de Juan Manuel López Pazos',
+        og_type: 'website',
+        og_image: 'http://www.juanmanuellopezpazos.es/images/yo_2018.jpg',
+        og_url: 'http://www.juanmanuellopezpazos.es/expediente-academico',
+        og_description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
+        og_site_name: 'BLOG - JMLP',
+        twitter_site: '@LopezPazos14',
+        twitter_card: 'summary',
+        twitter_image: 'http://www.juanmanuellopezpazos.es/images/yo_2018.jpg',
+        twitter_title: 'Expediente académico de Juan Manuel López Pazos',
+        twitter_description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
+      },
     };
-    return utils.getCommonMetas({
-      metas,
-    });
+    return utils.getCommonMetas(obj);
   },
 };
 </script>
