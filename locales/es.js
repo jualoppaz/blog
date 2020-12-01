@@ -183,20 +183,6 @@ export default
             LABEL: 'Conv. utilizadas',
           },
         },
-        ACADEMIC_COURSE_AVERAGES_TABLE: {
-          HEADER: {
-            TITLE: 'Media por Curso Académico',
-          },
-          ACADEMIC_COURSE: {
-            LABEL: 'Curso académico',
-          },
-          SUBJECT_AVERAGE: {
-            LABEL: 'Media por Asignatura',
-          },
-          CREDIT_AVERAGE: {
-            LABEL: 'Media por Crédito',
-          },
-        },
       },
       DEGREE_COURSES: {
         TITLE: 'Cursos del grado',
@@ -231,6 +217,34 @@ export default
           USED_ANNOUNCEMENTS: {
             LABEL: 'Conv. utilizadas',
           },
+        },
+      },
+      ACADEMIC_COURSE_AVERAGES_TABLE: {
+        HEADER: {
+          TITLE: 'Media por Curso Académico',
+        },
+        ACADEMIC_COURSE: {
+          LABEL: 'Curso académico',
+        },
+        SUBJECT_AVERAGE: {
+          LABEL: 'Media por Asignatura',
+        },
+        CREDIT_AVERAGE: {
+          LABEL: 'Media por Crédito',
+        },
+      },
+      DEGREE_COURSE_AVERAGES_TABLE: {
+        HEADER: {
+          TITLE: 'Media por Curso del Grado',
+        },
+        DEGREE_COURSE: {
+          LABEL: 'Curso',
+        },
+        SUBJECT_AVERAGE: {
+          LABEL: 'Media por Asignatura',
+        },
+        CREDIT_AVERAGE: {
+          LABEL: 'Media por Crédito',
         },
       },
     },
