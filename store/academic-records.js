@@ -828,4 +828,61 @@ export const getters = {
 
     return Math.round((totalMarks / creditsNumber) * 100) / 100;
   },
+  getSubjectAverage: (state) => {
+    const subjects = [
+      ...state.subjectMarksByDegreeCourse[1][1],
+      ...state.subjectMarksByDegreeCourse[1][2],
+      ...state.subjectMarksByDegreeCourse[1].null,
+      ...state.subjectMarksByDegreeCourse[2][1],
+      ...state.subjectMarksByDegreeCourse[2][2],
+      ...state.subjectMarksByDegreeCourse[2].null,
+      ...state.subjectMarksByDegreeCourse[3][1],
+      ...state.subjectMarksByDegreeCourse[3][2],
+      ...state.subjectMarksByDegreeCourse[3].null,
+      ...state.subjectMarksByDegreeCourse[4][1],
+      ...state.subjectMarksByDegreeCourse[4][2],
+      ...state.subjectMarksByDegreeCourse[4].null,
+    ];
+
+    const subjectMarks = subjects
+      .filter((subject) => typeof subject.nota === 'number')
+      .map((subject) => subject.nota);
+
+    const subjectsNumber = subjectMarks.length;
+
+    const totalMarks = subjectMarks.reduce((prev, current) => prev + current);
+
+    return Math.round((totalMarks / subjectsNumber) * 100) / 100;
+  },
+  getCreditAverage: (state) => {
+    const subjects = [
+      ...state.subjectMarksByDegreeCourse[1][1],
+      ...state.subjectMarksByDegreeCourse[1][2],
+      ...state.subjectMarksByDegreeCourse[1].null,
+      ...state.subjectMarksByDegreeCourse[2][1],
+      ...state.subjectMarksByDegreeCourse[2][2],
+      ...state.subjectMarksByDegreeCourse[2].null,
+      ...state.subjectMarksByDegreeCourse[3][1],
+      ...state.subjectMarksByDegreeCourse[3][2],
+      ...state.subjectMarksByDegreeCourse[3].null,
+      ...state.subjectMarksByDegreeCourse[4][1],
+      ...state.subjectMarksByDegreeCourse[4][2],
+      ...state.subjectMarksByDegreeCourse[4].null,
+    ];
+
+    const subjectMarks = subjects
+      .filter((subject) => typeof subject.nota === 'number')
+      .map((subject) => subject.nota * subject.creditos);
+
+    const totalMarks = subjectMarks.reduce((prev, current) => prev + current);
+
+    const credits = subjects
+      .filter((subject) => typeof subject.nota === 'number')
+      .map((subject) => subject.creditos);
+
+    const creditsNumber = credits.reduce((prev, current) => prev + current);
+
+
+    return Math.round((totalMarks / creditsNumber) * 100) / 100;
+  },
 };
