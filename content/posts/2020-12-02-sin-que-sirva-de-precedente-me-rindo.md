@@ -27,7 +27,7 @@ creationDate: '2020-12-02T21:40:15.000Z'
 
 ## Me rindo: vuelvo a Youtube
 
-Como ya indiqué meses atrás en esta [entrada](https://www.juanmanuellopezpazos.es/blog/posts/2020-06-06-mi-primer-post-en-mi-blog-con-nuxt-content "Mi primer post con @nuxt/content") tomé la decisión de migrar paulatinamente mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") de **Youtube** a **Dailymotion** debido a las continuas reclamaciones de derechos de autor absurdas. Sin embargo, tras los últimos acontecimientos en **Dailymotion** he comprobado que la política de reclamaciones de derechos es igual, o puede que hasta peor que en **Youtube**.
+Como ya indiqué meses atrás en esta [entrada](http://www.juanmanuellopezpazos.es/blog/posts/2020-06-06-mi-primer-post-en-mi-blog-con-nuxt-content "Mi primer post con @nuxt/content") tomé la decisión de migrar paulatinamente mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") de **Youtube** a **Dailymotion** debido a las continuas reclamaciones de derechos de autor absurdas. Sin embargo, tras los últimos acontecimientos en **Dailymotion** he comprobado que la política de reclamaciones de derechos es igual, o puede que hasta peor que en **Youtube**.
 
 <advertisement></advertisement>
 
