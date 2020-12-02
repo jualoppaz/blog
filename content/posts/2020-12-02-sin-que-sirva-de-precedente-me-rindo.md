@@ -88,7 +88,7 @@ Pero entonces pensé: <q>¿cómo hará <b>Youtube</b> para saber que se trata de
 
 Lo que hice fue eliminar un segundo de aplausos al final del vídeo, y al intentar subir de nuevo el vídeo (esta vez modificado) no tuve ningún problema, fue todo un éxito. Así que deduzco que el método que usa **Youtube** para identificar vídeos duplicados no debe ser muy distinto al que he comentado en estas líneas.
 
-Lo parte mala: que me ha vuelto a saltar la infracción de derechos de un disco registrado por una discográfica, en el que se interpreta esta misma marcha interpretada por otra banda. Y ahora que aparecen más datos en la coincidencia podemos ver que no se trata siquiera de la banda que la interpreta originalmente, las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana"):
+La parte mala: que me ha vuelto a saltar la infracción de derechos de un disco registrado por una discográfica, en el que se interpreta esta misma marcha interpretada por otra banda. Y ahora que aparecen más datos en la coincidencia podemos ver que no se trata siquiera de la banda que la interpreta originalmente, las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana"):
 
 <el-row>
   <el-col
@@ -120,4 +120,4 @@ Lo dicho: ya hay que estar sordo para confundir a [Esencia](https://amigosdeesen
 
 ### ¿Y ahora qué?
 
-Pues por ahora mantendré mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") y seguiré subiendo vídeos cuando pase esta histórica pandemia del **COVID-19** y, a su vez, las bandas puedan volver a la normalidad. Espero que para entonces **Youtube** haya mejorado su algoritmo a la hora de reconocer coincidencias y, al mismo tiempo, gane en flexibilidad. Peor en el caso de que todo se mantenga igual, al menos puedo seguir disponiendo de mis vídeos en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") a pesar de que reciban reclamaciones de derechos en cuanto a la música utilizada. Por lo tanto, algo mejor que la política de **Dailymotion** es: las cosas... como son.
+Pues por ahora mantendré mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") y seguiré subiendo vídeos cuando pase esta histórica pandemia del **COVID-19** y, a su vez, las bandas puedan volver a la normalidad. Espero que para entonces **Youtube** haya mejorado su algoritmo a la hora de reconocer coincidencias y, al mismo tiempo, gane en flexibilidad. Pero en el caso de que todo se mantenga igual, al menos puedo seguir disponiendo de mis vídeos en mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") a pesar de que reciban reclamaciones de derechos en cuanto a la música utilizada. Por lo tanto, algo mejor que la política de **Dailymotion** es: las cosas... como son.
