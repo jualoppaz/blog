@@ -78,20 +78,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-#curriculum {
-  ::v-deep {
-    .curriculum-section-title{
-      font-size: 36px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
-    div[id^="curriculum-"] {
-      &:not(:first-child) {
-        margin-top: 50px;
-      }
-    }
-  }
-}
 </style>
