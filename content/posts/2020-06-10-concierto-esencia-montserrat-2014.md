@@ -28,6 +28,15 @@ creationDate: '2020-06-10T21:40:15.000Z'
 
 ## Concierto de Esencia en la capilla de Montserrat (29/03/2014)
 
+<el-alert 
+  title="¡¡Actualización!!"
+  type="warning"
+  effect="dark"
+  show-icon
+  :closable="false">
+  Finalmente he decidido mantener mi canal en <b>Youtube</b>, eliminando así el de <b>Dailymotion</b>. Más info <a href="/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo">aquí</a>.
+</el-alert>
+
 En este post hablaremos de la actuación de la [Banda de Cornetas y Tambores Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") en la capilla de **Montserrat** en el año 2014.
 
 ## Conversión del Buen Ladrón: el origen de todo
