@@ -145,6 +145,120 @@ export default
         TITLE: 'Idiomas',
       },
     },
+    ACADEMIC_RECORD: {
+      ACADEMIC_COURSES: {
+        TITLE: 'Cursos académicos',
+        ACADEMIC_COURSE_TABLE: {
+          HEADER: {
+            TEXT: 'Curso académico',
+          },
+          FIRST_QUARTER: {
+            TEXT: 'Primer cuatrimestre',
+          },
+          SECOND_QUARTER: {
+            TEXT: 'Segundo cuatrimestre',
+          },
+          NO_QUARTER: {
+            TEXT: 'Anuales',
+          },
+          ABBREVIATION: {
+            LABEL: 'Abreviatura',
+          },
+          DEPARTMENT: {
+            LABEL: 'Departamento',
+          },
+          SUBJECT: {
+            LABEL: 'Asignatura',
+          },
+          COURSE: {
+            LABEL: 'Curso',
+          },
+          MARK: {
+            LABEL: 'Nota',
+          },
+          PASS_METHOD: {
+            LABEL: 'Método de aprobado',
+          },
+          USED_ANNOUNCEMENTS: {
+            LABEL: 'Conv. utilizadas',
+          },
+        },
+      },
+      DEGREE_COURSES: {
+        TITLE: 'Cursos del grado',
+        DEGREE_COURSE_TABLE: {
+          HEADER: {
+            TEXT: 'Curso:',
+          },
+          FIRST_QUARTER: {
+            TEXT: 'Primer cuatrimestre',
+          },
+          SECOND_QUARTER: {
+            TEXT: 'Segundo cuatrimestre',
+          },
+          NO_QUARTER: {
+            TEXT: 'Anuales',
+          },
+          ABBREVIATION: {
+            LABEL: 'Abreviatura',
+          },
+          DEPARTMENT: {
+            LABEL: 'Departamento',
+          },
+          SUBJECT: {
+            LABEL: 'Asignatura',
+          },
+          MARK: {
+            LABEL: 'Nota',
+          },
+          PASS_METHOD: {
+            LABEL: 'Método de aprobado',
+          },
+          USED_ANNOUNCEMENTS: {
+            LABEL: 'Conv. utilizadas',
+          },
+        },
+      },
+      ACADEMIC_COURSE_AVERAGES_TABLE: {
+        HEADER: {
+          TITLE: 'Media por Curso Académico',
+        },
+        ACADEMIC_COURSE: {
+          LABEL: 'Curso académico',
+        },
+        SUBJECT_AVERAGE: {
+          LABEL: 'Media por Asignatura',
+        },
+        CREDIT_AVERAGE: {
+          LABEL: 'Media por Crédito',
+        },
+      },
+      DEGREE_COURSE_AVERAGES_TABLE: {
+        HEADER: {
+          TITLE: 'Media por Curso del Grado',
+        },
+        DEGREE_COURSE: {
+          LABEL: 'Curso',
+        },
+        SUBJECT_AVERAGE: {
+          LABEL: 'Media por Asignatura',
+        },
+        CREDIT_AVERAGE: {
+          LABEL: 'Media por Crédito',
+        },
+      },
+      DEGREE_AVERAGES_TABLE: {
+        HEADER: {
+          TITLE: 'Media del Grado',
+        },
+        SUBJECT_AVERAGE: {
+          LABEL: 'Media por Asignatura',
+        },
+        CREDIT_AVERAGE: {
+          LABEL: 'Media por Crédito',
+        },
+      },
+    },
     POSTS: {
       EMPTY: 'No hay posts con la etiqueta seleccionada.',
       ITEM: {

@@ -121,3 +121,24 @@ a[href]{
     }
   }
 }
+
+.el-tag{
+  &.el-tag--fail{
+    &.el-tag--dark{
+      background-color: $color-purple;
+      border-color: $color-purple;
+    }
+  }
+}
+
+.el-alert{
+  &.el-alert--warning{
+    a{
+      color: $color-text-white;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
