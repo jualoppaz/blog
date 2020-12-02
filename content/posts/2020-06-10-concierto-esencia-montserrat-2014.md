@@ -1,24 +1,24 @@
 ---
 title: Concierto de Esencia en la capilla de Montserrat (29/03/2014)
-image: /images/2014-03-29-cartel-concierto-montserrat.jpg
+image: /images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg
 description: Este es el texto de la descripción
 tags: ['holy_week', 'esencia']
 metas: { 
   description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
   author: "Juan Manuel López Pazos",
   keywords: "blog, youtube, dailymotion, esencia, esencia sevilla, banda esencia, esencia montserrat, esencia concierto montserrat, tres caidas triana, triana, alberto escámez, alberto escámez lópez, julio vera, josé julio vera cuder, zueco ramos, pascual zueco ramos, ramón montoya, ramón montoya molina, bienvenido puelles, bienvenido puelles oliver, soledad de san pablo, cristo del amor, lanzada, caído vas por triana, evocación, virgen de la salud, conversión del buen ladrón, marcha real, concierto esencia capilla montserrat",
-  canonical_url: "http://blog.juanmanuellopezpazos.es/posts/2020-06-10-concierto-esencia-montserrat-2014",
+  canonical_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014",
   og_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
   og_type: "article",
   article_published_time: "2020-06-10T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "http://blog.juanmanuellopezpazos.es/images/2014-03-29-cartel-concierto-montserrat.jpg",
-  og_url: "http://blog.juanmanuellopezpazos.es/posts/2020-06-10-concierto-esencia-montserrat-2014",
+  og_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
+  og_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014",
   og_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
   og_site_name: BLOG - JMLP,
   twitter_site: "@LopezPazos14",
   twitter_card: summary,
-  twitter_image: "http://blog.juanmanuellopezpazos.es/images/2014-03-29-cartel-concierto-montserrat.jpg",
+  twitter_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
   twitter_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
   twitter_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas."
 }
@@ -64,7 +64,7 @@ Sin embargo, esa anécdota no empañó lo que iba a suceder a continuación. Yo 
     <div class="post-image-container">
       <el-image
         class="post-image"
-        src="/images/2014-03-29-foto-bateria-previa-al-concierto.jpg"
+        src="/images/blog/posts/2014-03-29-foto-bateria-previa-al-concierto.jpg"
         fit="contain"
         alt="Foto de la batería de Esencia instantes previos al concierto en la capilla de Montserrat (29/03/2014)"
       ></el-image>
@@ -97,7 +97,7 @@ esa dificultad precisaba de un extra de concentración por parte del músico, y 
     <div class="post-image-container">
       <el-image
         class="post-image"
-        src="/images/2014-03-29-foto-esencia-en-capilla-de-montserrat.jpg"
+        src="/images/blog/posts/2014-03-29-foto-esencia-en-capilla-de-montserrat.jpg"
         fit="contain"
         alt="Foto de Esencia dentro de la capilla de Montserrat durante el concierto (29/03/2014)"
       ></el-image>
