@@ -133,7 +133,7 @@ Fue la marcha que abrió el concierto. Es un clásico para [Esencia](https://ami
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27c" 
+        src="https://www.youtube.com/embed/TUxcm6cKNxE" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -164,7 +164,7 @@ Sin embargo, en el caso de [Esencia](https://amigosdeesencia.com "Banda de Corne
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27k" 
+        src="https://www.youtube.com/embed/A98uudsCu8o" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -191,7 +191,7 @@ Recuerdo que en mi infancia confundía siempre esta marcha con **Cristo del Perd
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27o" 
+        src="https://www.youtube.com/embed/KoJKzz25VLA" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -222,7 +222,7 @@ Esta composición fue un clásico de la [⚓ Banda del Stmo. Cristo de las Tres 
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27p" 
+        src="https://www.youtube.com/embed/07ZkedUTKkM" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -251,7 +251,7 @@ Marcha estilo **Policía Armada** por excelencia. Seguramente no sea la mejor ma
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27q" 
+        src="https://www.youtube.com/embed/dtmnnrE-76E" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -278,7 +278,7 @@ Una de las muchas marchas **Bienvenido Puelles Oliver** para [Las Cigarreras](ht
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27t" 
+        src="https://www.youtube.com/embed/YfPMWPLS3JM" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -307,7 +307,7 @@ Esta marcha sigue a día de hoy en el repertorio de las [⚓ Tres Caídas de Tri
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27u" 
+        src="https://www.youtube.com/embed/MOQtu7W11eo" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -336,7 +336,7 @@ Aún así se aprecian muchas diferencias entre la interpretación de una formaci
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27v" 
+        src="https://www.youtube.com/embed/9P_FT0iaCtg" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
