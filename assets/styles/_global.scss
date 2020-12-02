@@ -130,3 +130,15 @@ a[href]{
     }
   }
 }
+
+.el-alert{
+  &.el-alert--warning{
+    a{
+      color: $color-text-white;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
