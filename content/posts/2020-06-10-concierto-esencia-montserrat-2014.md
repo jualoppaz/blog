@@ -1,24 +1,24 @@
 ---
 title: Concierto de Esencia en la capilla de Montserrat (29/03/2014)
-image: /images/2014-03-29-cartel-concierto-montserrat.jpg
+image: /images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg
 description: Este es el texto de la descripción
 tags: ['holy_week', 'esencia']
 metas: { 
   description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
   author: "Juan Manuel López Pazos",
   keywords: "blog, youtube, dailymotion, esencia, esencia sevilla, banda esencia, esencia montserrat, esencia concierto montserrat, tres caidas triana, triana, alberto escámez, alberto escámez lópez, julio vera, josé julio vera cuder, zueco ramos, pascual zueco ramos, ramón montoya, ramón montoya molina, bienvenido puelles, bienvenido puelles oliver, soledad de san pablo, cristo del amor, lanzada, caído vas por triana, evocación, virgen de la salud, conversión del buen ladrón, marcha real, concierto esencia capilla montserrat",
-  canonical_url: "http://blog.juanmanuellopezpazos.es/posts/2020-06-10-concierto-esencia-montserrat-2014",
+  canonical_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014",
   og_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
   og_type: "article",
   article_published_time: "2020-06-10T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "http://blog.juanmanuellopezpazos.es/images/2014-03-29-cartel-concierto-montserrat.jpg",
-  og_url: "http://blog.juanmanuellopezpazos.es/posts/2020-06-10-concierto-esencia-montserrat-2014",
+  og_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
+  og_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014",
   og_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
   og_site_name: BLOG - JMLP,
   twitter_site: "@LopezPazos14",
   twitter_card: summary,
-  twitter_image: "http://blog.juanmanuellopezpazos.es/images/2014-03-29-cartel-concierto-montserrat.jpg",
+  twitter_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
   twitter_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
   twitter_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas."
 }
@@ -27,6 +27,15 @@ creationDate: '2020-06-10T21:40:15.000Z'
 ---
 
 ## Concierto de Esencia en la capilla de Montserrat (29/03/2014)
+
+<el-alert 
+  title="¡¡Actualización!!"
+  type="warning"
+  effect="dark"
+  show-icon
+  :closable="false">
+  Finalmente he decidido mantener mi canal en <b>Youtube</b>, eliminando así el de <b>Dailymotion</b>. Más info <a href="/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo">aquí</a>.
+</el-alert>
 
 En este post hablaremos de la actuación de la [Banda de Cornetas y Tambores Esencia](https://amigosdeesencia.com "Banda de Cornetas y Tambores Esencia") en la capilla de **Montserrat** en el año 2014.
 
@@ -64,7 +73,7 @@ Sin embargo, esa anécdota no empañó lo que iba a suceder a continuación. Yo 
     <div class="post-image-container">
       <el-image
         class="post-image"
-        src="/images/2014-03-29-foto-bateria-previa-al-concierto.jpg"
+        src="/images/blog/posts/2014-03-29-foto-bateria-previa-al-concierto.jpg"
         fit="contain"
         alt="Foto de la batería de Esencia instantes previos al concierto en la capilla de Montserrat (29/03/2014)"
       ></el-image>
@@ -97,7 +106,7 @@ esa dificultad precisaba de un extra de concentración por parte del músico, y 
     <div class="post-image-container">
       <el-image
         class="post-image"
-        src="/images/2014-03-29-foto-esencia-en-capilla-de-montserrat.jpg"
+        src="/images/blog/posts/2014-03-29-foto-esencia-en-capilla-de-montserrat.jpg"
         fit="contain"
         alt="Foto de Esencia dentro de la capilla de Montserrat durante el concierto (29/03/2014)"
       ></el-image>
@@ -133,7 +142,7 @@ Fue la marcha que abrió el concierto. Es un clásico para [Esencia](https://ami
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27c" 
+        src="https://www.youtube.com/embed/TUxcm6cKNxE" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -164,7 +173,7 @@ Sin embargo, en el caso de [Esencia](https://amigosdeesencia.com "Banda de Corne
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27k" 
+        src="https://www.youtube.com/embed/A98uudsCu8o" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -191,7 +200,7 @@ Recuerdo que en mi infancia confundía siempre esta marcha con **Cristo del Perd
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27o" 
+        src="https://www.youtube.com/embed/KoJKzz25VLA" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -222,7 +231,7 @@ Esta composición fue un clásico de la [⚓ Banda del Stmo. Cristo de las Tres 
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27p" 
+        src="https://www.youtube.com/embed/07ZkedUTKkM" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -251,7 +260,7 @@ Marcha estilo **Policía Armada** por excelencia. Seguramente no sea la mejor ma
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27q" 
+        src="https://www.youtube.com/embed/dtmnnrE-76E" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -278,7 +287,7 @@ Una de las muchas marchas **Bienvenido Puelles Oliver** para [Las Cigarreras](ht
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27t" 
+        src="https://www.youtube.com/embed/YfPMWPLS3JM" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -307,7 +316,7 @@ Esta marcha sigue a día de hoy en el repertorio de las [⚓ Tres Caídas de Tri
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27u" 
+        src="https://www.youtube.com/embed/MOQtu7W11eo" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
@@ -336,7 +345,7 @@ Aún así se aprecian muchas diferencias entre la interpretación de una formaci
     >
       <iframe 
         frameborder="0" 
-        src="https://www.dailymotion.com/embed/video/x7tw27v" 
+        src="https://www.youtube.com/embed/9P_FT0iaCtg" 
         allowfullscreen 
         allow="autoplay">
       </iframe>      
