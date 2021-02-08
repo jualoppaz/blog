@@ -46,6 +46,7 @@
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.9.1",
     "nuxt-sass-resources-loader": "2.0.5",
+    "nuxt-youtube-subscribe-module": "0.1.1",
     "swagger-ui": "3.25.3",
     "v-runtime-template": "1.10.0",
     "vue": "2.6.12",
