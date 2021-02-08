@@ -29,11 +29,32 @@ creationDate: '2021-02-08T21:40:15.000Z'
 
 En este post voy a explicar cómo ha sido mi experiencia desarrollando un módulo de [Nuxt](https://nuxtjs.org "Web oficial de Nuxt"), pudiendo así reutilizar una funcionalidad en tantas aplicaciones como se desee. Además, así he podido realizar una contribución más, en esta ocasión la primera para [Nuxt](https://nuxtjs.org "Web oficial de Nuxt").
 
+<advertisement></advertisement>
+
 ### Motivación
 
 Hace escasos meses me surgió la necesidad de añadir un botón en una de mis webs con [Nuxt](https://nuxtjs.org "Web oficial de Nuxt") para invitar a los usuarios a que se suscribieran a un canal de **Youtube**. De este modo podría agilizar el incremento de suscriptores de dicho canal. Para quien no sepa a lo que me refiero es justo lo que se menciona en el siguiente [enlace](https://developers.google.com/youtube/youtube_subscribe_button?hl=es-419 "Botón de suscripción a canal de Youtube") y que se puede ver en la siguiente imagen:
 
-<!-- Añadir imagen de ejemplo para suscripción a canal de Youtube -->
+<el-row>
+  <el-col
+    :xs="24"
+    :sm="24"
+    :md="24"
+    :lg="{
+      span: 12,
+      offset: 6
+    }"
+  >
+    <div class="post-image-container">
+      <el-image
+        class="post-image"
+        src="/images/blog/posts/2021-02-08-ejemplo-boton-suscripcion-youtube.jpg"
+        fit="contain"
+        alt="Ejemplo de botón para suscribirse a un canal de Youtube"
+      ></el-image>
+    </div>
+  </el-col>
+</el-row>
 
 Para ello me puse a buscar en la red si había algún tipo de plugin, librería o módulo desarrollado que facilitara esta labor en aplicaciones hechas con [Nuxt](https://nuxtjs.org "Web oficial de Nuxt"). Sin embargo no encontré nada, y no es posible hacer uso de la librería oficial como en el ejemplo dado, puesto que el mismo sólo funciona en webs que se renderizan al completo en servidor o que tienen un renderizado clásico en el navegador: en [Nuxt](https://nuxtjs.org "Web oficial de Nuxt") no funciona porque los ciclos de vida que tiene dificultan la carga de la misma. Pero no es algo exclusivo de [Nuxt](https://nuxtjs.org "Web oficial de Nuxt"), ya que esto mismo sucederá en cualquier framework JavaScript con paradigmas actuales.
 
@@ -46,6 +67,8 @@ Dado que no tenía ni idea de por dónde empezar decidí fijarme en otros módul
 Por tanto, de entre los módulos que he llegado a utilizar, el que más se asemejaba a mis necesidades era [@nuxt/google-adsense](https://github.com/nuxt-community/google-adsense-module "Módulo de Google Adsense para Nuxt"). Este módulo te permite importar el script de **Google** requerido para poder añadir anuncios en tu sitio web, y por otro lado te permite insertar el anuncio específico a través de un componente **Vue** que hace uso de las funcionalidades cargadas en el script.
 
 Es por todo esto por lo que el módulo [@nuxt/google-adsense](https://github.com/nuxt-community/google-adsense-module "Módulo de Google Adsense para Nuxt") es ideal para ser tomado como ejemplo, ya que también necesitamos cargar un script específico de **Google** y por otro lado añadir el botón de suscripción en el lugar deseado.
+
+<advertisement></advertisement>
 
 ### Núcleo del módulo
 
@@ -100,6 +123,8 @@ Después se procede a registrar el módulo con el método **addPlugin**, el cual
 La última configuración consiste en añadir en el **DOM** el script de **Google** que contiene las funcionalidades necesarias para que el botón de suscripción al canal de **Youtube** pueda ser incrustado. Hay una peculiaridad en esta configuración y es la propiedad **callback**, la cual es proporcionada por [vue-meta](https://github.com/nuxt/vue-meta "Librería para personalizar metaetiquetas con Vue") y que sirve para ejecutar el código deseado cuando el script haya sido cargado. En este caso lo que haremos será lanzar un evento propio llamado **youtube-subscribe:gapi-loaded**, y más adelante veremos por qué es necesario.
 
 Para finalizar la implementación del módulo es necesario exportar la propiedad **meta** apuntando al fichero **package.json** del módulo. Esto es un requisito que se indica en las [instrucciones de Nuxt](https://nuxtjs.org/docs/2.x/directory-structure/modules "Instrucciones para desarrollar módulo de Nuxt") para el caso en que se quiera publicar como paquete de **NPM**, y es algo que aplica puesto que quiero que sea accesible para todo el mundo.
+
+<advertisement></advertisement>
 
 ### Plantilla del módulo
 
@@ -227,6 +252,8 @@ Y aquí es donde está la clave de este componente, ya que el botón de **Youtub
 Para el caso en que no pueda ser renderizado el botón en un primer intento tenemos el mecanismo alternativo, que consiste en la escucha del evento personalizado **youtube-subscribe:gapi-loaded**, el cual es lanzado por [vue-meta](https://github.com/nuxt/vue-meta "Librería para personalizar metaetiquetas con Vue") tal y como se ha indicado anteriormente. En este caso, al escuchar el evento se volverá a intentar renderizar el botón, esta vez teniendo la certeza de que la variable **window.gapi** va a estar cargada debidamente para ello.
 
 Para finalizar sólo queda comentar el registro del componente, el cual se realiza de forma global sobre la propia instancia de **Vue** para que esté accesible desde cualquier parte sin tener que importarlo en cada vista o componente donde se quiere utilizar. Y como se mencionó con anterioridad, el componente se registra de forma dinámica con el nombre indicado en la variable **options.tag**, siendo reemplazado en tiempo de compilación mediante [Lodash templates](https://lodash.com/docs/4.17.15#template "Mecanismo para compilar plantillas con Lodash").
+
+<advertisement></advertisement>
 
 ### Resultado
 
