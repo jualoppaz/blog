@@ -5,7 +5,7 @@ tags: ['technologies']
 metas: { 
   description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube.",
   author: 'Juan Manuel López Pazos',
-  keywords: "",
+  keywords: "nuxt, youtube, suscripción, google, adsense, google adsense, botón suscripción youtube con nuxt",
   canonical_url: "http://www.juanmanuellopezpazos.es/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module",
   og_title: "Mi primer módulo de Nuxt: nuxt-youtube-subscribe-module",
   og_type: "article",
