@@ -207,6 +207,7 @@ export default {
       }
 
       .post-image-container{
+        text-align: center;
         margin: 50px 0;
 
         .post-image-caption {
