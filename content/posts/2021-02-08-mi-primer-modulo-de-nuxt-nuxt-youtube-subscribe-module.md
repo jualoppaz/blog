@@ -58,7 +58,7 @@ Hace escasos meses me surgió la necesidad de añadir un botón en una de mis we
 
 Para ello me puse a buscar en la red si había algún tipo de plugin, librería o módulo desarrollado que facilitara esta labor en aplicaciones hechas con [Nuxt](https://nuxtjs.org "Web oficial de Nuxt"). Sin embargo no encontré nada, y no es posible hacer uso de la librería oficial como en el ejemplo dado, puesto que el mismo sólo funciona en webs que se renderizan al completo en servidor o que tienen un renderizado clásico en el navegador: en [Nuxt](https://nuxtjs.org "Web oficial de Nuxt") no funciona porque los ciclos de vida que tiene dificultan la carga de la misma. Pero no es algo exclusivo de [Nuxt](https://nuxtjs.org "Web oficial de Nuxt"), ya que esto mismo sucederá en cualquier framework JavaScript con paradigmas actuales.
 
-Por tanto, me dije: <q>¿Y si desarrollo mi propio módulo y, así, realizo una contribución a la comunidad de [Nuxt](https://nuxtjs.org "Web oficial de Nuxt")?</q> Y es por este motivo desarrollé el módulo [nuxt-youtube-subscribe-module](https://github.com/jualoppaz/nuxt-youtube-subscribe-module "Módulo de Nuxt para añadir botón de suscripción a canal de Youtube") y por eso estás leyendo estas líneas 😄.
+Por tanto, me dije: <q>¿Y si desarrollo mi propio módulo y, así, realizo una contribución a la comunidad de [Nuxt](https://nuxtjs.org "Web oficial de Nuxt")?</q> Y es por este motivo por el que desarrollé el módulo [nuxt-youtube-subscribe-module](https://github.com/jualoppaz/nuxt-youtube-subscribe-module "Módulo de Nuxt para añadir botón de suscripción a canal de Youtube") y por eso estás leyendo estas líneas 😄.
 
 ### Punto de partida
 
