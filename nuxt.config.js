@@ -6,7 +6,6 @@ import es from './locales/es';
 require('dotenv').config();
 
 export default {
-  mode: 'universal',
   publicRuntimeConfig: {
     axios: {
       baseURL: process.env.BASE_URL,
@@ -98,7 +97,6 @@ export default {
     }],
     ['nuxt-youtube-subscribe-module', {}],
   ],
-
   styleResources: {
     scss: [
       './assets/styles/_variables.scss',
@@ -147,6 +145,12 @@ export default {
         .fetch();
 
       return posts.map((p) => `/blog/${p.path}`);
+    },
+  },
+  content: {
+    liveEdit: false,
+    markdown: {
+      tocDepth: 4,
     },
   },
 };
