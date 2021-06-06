@@ -32,6 +32,40 @@
             fit="contain"
           />
         </div>
+        <el-row>
+          <el-col
+            :xs="{
+              span: 24
+            }"
+            :sm="{
+              span: 12,
+              offset: 6
+            }"
+          >
+            <el-card
+              id="toc-container"
+            >
+              <p id="toc-title">
+                {{ tocTitleText }}
+              </p>
+              <ul id="toc-list">
+                <li
+                  v-for="link of doc.toc"
+                  :key="link.id"
+                  :class="{
+                    'toc2': link.depth === 2,
+                    'toc3': link.depth === 3,
+                    'toc4': link.depth === 4,
+                  }"
+                >
+                  <NuxtLink :to="`#${link.id}`">
+                    {{ link.text }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </el-card>
+          </el-col>
+        </el-row>
         <nuxt-content :document="doc" />
       </el-card>
     </article>
@@ -82,6 +116,7 @@ export default {
   data() {
     return {
       shareText: this.$t('COMMON.SOCIAL_SHARING.SHARE'),
+      tocTitleText: this.$t('VIEWS.POSTS.DETAIL.POST.TOC.TITLE'),
     };
   },
   computed: {
@@ -171,7 +206,45 @@ export default {
       }
     }
 
-    .nuxt-content{
+    #toc-container{
+      background: #F8F8F8;
+
+      @include for-tablet-up{
+        padding: 0 30px 0;
+      }
+
+      #toc-title{
+        text-align: center;
+        font-weight: 700;
+      }
+
+      #toc-list{
+        padding: 0;
+
+        .toc2, .toc3, .toc4{
+          list-style: none;
+          line-height: 1.8em;
+        }
+
+        .toc3{
+          padding-left: 15px;
+
+          @include for-tablet-up{
+            padding-left: 30px;
+          }
+        }
+
+        .toc4{
+          padding-left: 30px;
+
+          @include for-tablet-up{
+            padding-left: 60px;
+          }
+        }
+      }
+    }
+
+    ::v-deep .nuxt-content{
       p{
         //margin: 1.5em 0;
         line-height: 1.6;
@@ -182,7 +255,7 @@ export default {
         }
       }
 
-      h2, h3{
+      h2, h3, h4{
         &>a:before{
           content: "#";
           --text-opacity: 1;
@@ -235,6 +308,62 @@ export default {
       q{
         font-style: italic;
         color: $color-text-gray;
+      }
+
+      ::v-deep .el-table{
+        table{
+          thead{
+            tr{
+              th{
+                .cell{
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+          tbody{
+            tr{
+              td{
+                .cell{
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .static-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+
+        table{
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+
+          td, th {
+            border: 1px solid #ddd;
+            padding: 10px;
+          }
+
+          tr:nth-child(even){
+            background-color: #f2f2f2;
+          }
+
+          tr:hover {
+            background-color: #ddd;
+          }
+
+          th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #04AA6D;
+            color: white;
+            min-width: 200px;
+          }
+        }
       }
     }
   }
