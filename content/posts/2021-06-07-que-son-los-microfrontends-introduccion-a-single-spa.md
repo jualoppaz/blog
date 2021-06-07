@@ -7,7 +7,7 @@ metas: {
   author: 'Juan Manuel López Pazos',
   keywords: "nuxt, microfrontends, single-spa, paquetes npm, webpack, vue",
   canonical_url: "http://www.juanmanuellopezpazos.es/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa",
-  og_title: "Mi primer módulo de Nuxt: nuxt-youtube-subscribe-module",
+  og_title: "¿Qué son los microfrontends? Introducción a single-spa",
   og_type: "article",
   article_published_time: "2021-02-08T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
