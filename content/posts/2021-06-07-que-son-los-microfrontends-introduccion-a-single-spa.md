@@ -95,7 +95,7 @@ Hay diferentes estrategias para implementar una aplicación [single-spa](https:/
 
 Esta estrategia es, según dicen en la propia documentación oficial de [single-spa](https://single-spa.js.org/ "single-spa: framework para microfrontends"), la más sencilla de implementar. Personalmente no creo que esto sea cierto de forma total y absoluta: ahora explicaré por qué.
 
-La estrategia **monorepo** implica que tanto la aplicación principal de [single-spa](https://single-spa.js.org/ "single-spa: framework para microfrontends") como las aplicaciones registradas deben encuentrarse alojadas en el mismo repositorio.
+La estrategia **monorepo** implica que tanto la aplicación principal de [single-spa](https://single-spa.js.org/ "single-spa: framework para microfrontends") como las aplicaciones registradas deben encontrarse alojadas en el mismo repositorio.
 
 Dentro de esta estrategia hay 2 variantes: un mismo script de **Webpack** para compilar toda la aplicación generando un fichero de salida para cada módulo, o un script de **Webpack** por cada aplicación registrada, así como para la aplicación anfitriona en la que se alojarán los **microfrontends**.
 
