@@ -1,8 +1,12 @@
 {
   "name": "blog",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Aplicación web y blog de Juan Manuel López Pazos",
-  "author": "Juan Manuel López Pazos",
+  "author": {
+    "name" : "Juan Manuel López Pazos",
+    "email" : "juanmalp1992@gmail.com",
+    "url" : "http://www.juanmanuellopezpazos.es"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -27,12 +31,12 @@
     "@fortawesome/free-regular-svg-icons": "5.15.1",
     "@fortawesome/free-solid-svg-icons": "5.13.0",
     "@fortawesome/vue-fontawesome": "0.1.9",
-    "@nuxt/content": "1.2.0",
-    "@nuxtjs/axios": "5.9.7",
+    "@nuxt/content": "1.14.0",
+    "@nuxtjs/axios": "5.13.6",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/google-adsense": "1.1.3",
     "@nuxtjs/sitemap": "2.4.0",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "body-parser": "1.19.0",
     "dotenv": "8.2.0",
     "element-ui": "2.13.1",
@@ -41,14 +45,15 @@
     "joi": "14.3.1",
     "joi-objectid": "2.0.0",
     "method-override": "3.0.0",
-    "mongoose": "5.10.12",
-    "nuxt": "2.12.2",
+    "mongoose": "5.12.12",
+    "nuxt": "2.15.6",
     "nuxt-fontawesome": "0.4.0",
     "nuxt-i18n": "6.9.1",
     "nuxt-sass-resources-loader": "2.0.5",
+    "nuxt-youtube-subscribe-module": "0.1.1",
     "swagger-ui": "3.25.3",
     "v-runtime-template": "1.10.0",
-    "vue": "2.6.12",
+    "vue": "2.6.13",
     "vue-adblock-detect": "0.0.2",
     "vue-social-sharing": "2.4.7",
     "vuex": "3.1.3"
@@ -70,17 +75,18 @@
     "husky": "4.2.5",
     "jest": "24.9.0",
     "lint-staged": "10.2.6",
-    "node-sass": "4.14.1",
-    "sass-loader": "8.0.2",
+    "sass": "1.47.0",
+    "sass-loader": "10.1.1",
     "vue-jest": "4.0.0-beta.3",
-    "vue-template-compiler": "2.6.12"
+    "vue-template-compiler": "2.6.13",
+    "webpack": "4.46.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
   ],
   "engines": {
-    "npm": "6.14.5",
-    "node": "12.18.1"
+    "node": "16.13.1",
+    "npm": "8.1.2"
   }
 }

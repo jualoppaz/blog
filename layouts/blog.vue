@@ -112,9 +112,9 @@ export default {
       return this.isMobile || this.isTablet;
     },
     goToBlog() {
-      this.$router.push({
-        path: '/',
-      });
+      this.$router.push(this.localePath({
+        name: 'blog',
+      }));
     },
   },
 };

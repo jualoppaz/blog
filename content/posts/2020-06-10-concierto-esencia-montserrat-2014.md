@@ -297,7 +297,7 @@ Una de las muchas marchas **Bienvenido Puelles Oliver** para [Las Cigarreras](ht
 
 ### 7. Conversión del Buen Ladrón (1987, de José Julio Vera Cuder)
 
-La marcha que, sin lugar a dudas, ha tenido la "culpa" de que yo haya desarrollado este blog y esté escribiendo estas líneas. Pero como siempre se dice, <cite>no hay mal que por bien no venga</cite>, y gracias a esta situación ya tengo mi blog operativo.
+La marcha que, sin lugar a dudas, ha tenido la "culpa" de que yo haya desarrollado este blog y esté escribiendo estas líneas. Pero como siempre se dice, <q>no hay mal que por bien no venga</q>, y gracias a esta situación ya tengo mi blog operativo.
 
 Esta marcha sigue a día de hoy en el repertorio de las [⚓ Tres Caídas de Triana](http://www.trescaidasdetriana.es/ "Banda del Stmo. Cristo de las Tres Caídas de Triana"), aunque con una instrumentación y armonización muy diferentes. Para quien prefiera escuchar una versión más clásica en directo de esta marcha, aquí la tiene:
 

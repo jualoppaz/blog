@@ -78,10 +78,18 @@ a[href]{
       background-color: rgba(190, 190, 190, 0.3)
     }
   }
+
+  .inline-code{
+    padding: 0 7px 0;
+  }
 }
 
 .text-justified{
   text-align: justify;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .project-technologies{

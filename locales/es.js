@@ -267,6 +267,9 @@ export default
       DETAIL: {
         POST: {
           DATE: '{day} de {month} de {year}',
+          TOC: {
+            TITLE: 'Índice del artículo',
+          },
         },
       },
     },
