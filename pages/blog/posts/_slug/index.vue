@@ -89,12 +89,15 @@ import Advertisement from '@/components/Advertisement.vue';
 
 import utils from '@/utils';
 
+import GithubButton from 'vue-github-button';
+
+/* eslint-disable vue/no-unused-components */
 export default {
   layout: 'blog',
   components: {
     SocialShare,
-    // eslint-disable-next-line vue/no-unused-components
     Advertisement,
+    GithubButton,
   },
   async fetch() {
     if (process.client) {
