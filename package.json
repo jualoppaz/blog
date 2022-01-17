@@ -1,8 +1,12 @@
 {
   "name": "blog",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Aplicación web y blog de Juan Manuel López Pazos",
-  "author": "Juan Manuel López Pazos",
+  "author": {
+    "name" : "Juan Manuel López Pazos",
+    "email" : "juanmalp1992@gmail.com",
+    "url" : "http://www.juanmanuellopezpazos.es"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -71,17 +75,18 @@
     "husky": "4.2.5",
     "jest": "24.9.0",
     "lint-staged": "10.2.6",
-    "node-sass": "4.14.1",
+    "sass": "1.47.0",
     "sass-loader": "10.1.1",
     "vue-jest": "4.0.0-beta.3",
-    "vue-template-compiler": "2.6.13"
+    "vue-template-compiler": "2.6.13",
+    "webpack": "4.46.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
   ],
   "engines": {
-    "npm": "6.14.5",
-    "node": "12.18.1"
+    "node": "16.13.1",
+    "npm": "8.1.2"
   }
 }
