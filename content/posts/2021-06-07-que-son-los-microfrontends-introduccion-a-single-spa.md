@@ -370,16 +370,10 @@ Después del trabajo realizado parece ser que ha tenido buena acogida, ya que de
     :md="24"
     :lg="24"
   >
-    <div class="post-image-container">
-      <el-image
-        class="post-image"
-        src="/images/blog/posts/2021-06-07-estrellas-repositorio-aplicacion-single-spa-autenticacion-con-paquetes-npm.jpg"
-        fit="contain"
-        alt="Estrellas actuales de mi repositorio con aplicación de ejemplo para single-spa con paquetes npm y aspectos de autenticación"
-      ></el-image>
-      <div class="post-image-caption">
-        Estrellas actuales de mi repositorio con aplicación de ejemplo para single-spa con paquetes npm y aspectos de autenticación
-      </div>
+    <div class="text-center">
+      <github-button href="https://github.com/jualoppaz/single-spa-login-example-with-npm-packages" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star jualoppaz/single-spa-login-example-with-npm-packages on GitHub">
+        Star
+      </github-button>
     </div>
   </el-col>
 </el-row>
