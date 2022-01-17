@@ -1,8 +1,12 @@
 {
   "name": "blog",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Aplicación web y blog de Juan Manuel López Pazos",
-  "author": "Juan Manuel López Pazos",
+  "author": {
+    "name" : "Juan Manuel López Pazos",
+    "email" : "juanmalp1992@gmail.com",
+    "url" : "http://www.juanmanuellopezpazos.es"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt",
