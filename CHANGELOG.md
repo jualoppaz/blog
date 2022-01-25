@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.0] - 2022-01-25
+## Added
+
+- Add Alten professional experience to CV
+
 ## [1.1.1] - 2022-01-17
 ## Fixed
 
