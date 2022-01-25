@@ -357,4 +357,4 @@ Aún así se aprecian muchas diferencias entre la interpretación de una formaci
 
 Ese concierto fue ampliamente cubierto por **Francisco Javier Montiel**, fotógrafo habitual de [Artesacro](http://www.artesacro.org/ "Artesacro"). La galería de imágenes del mismo se encuentra en el siguiente [enlace](http://www.artesacro.org/Noticia.asp?idreg=93792 "Galería de imágenes del concierto de Esencia en Montserrat obra de Artesacro").
 
-Si quieres ver más fotos de **Francisco Javier Montiel** síguelo en su cuenta de Twitter: <a href="https://twitter.com/fjmonrod" target="_blank" title="Cuenta de Twitter de Francisco Javier Montiel">@fjmonrod</a>
+Si quieres ver más fotos de **Francisco Javier Montiel** síguelo en su cuenta de Twitter: <a href="https://twitter.com/fjmonrod" target="_blank" title="Cuenta de Twitter de Francisco Javier Montiel" rel="nofollow">@fjmonrod</a>
