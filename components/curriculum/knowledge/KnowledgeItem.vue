@@ -3,6 +3,7 @@
     <a
       :href="item.technology.web"
       target="_blank"
+      rel="nofollow"
     >
       <img
         :title="item.technology.name"
