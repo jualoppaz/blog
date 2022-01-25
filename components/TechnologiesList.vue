@@ -10,6 +10,7 @@
       <a
         :href="technology.web"
         target="_blank"
+        rel="nofollow"
       >
         <el-avatar
           class="technology"

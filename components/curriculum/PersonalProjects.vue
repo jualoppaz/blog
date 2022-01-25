@@ -53,6 +53,7 @@
             <a
               :href="link.value"
               target="_blank"
+              rel="nofollow"
             >
               {{ getLinkTypeText(link.type) }}
               <font-awesome-icon

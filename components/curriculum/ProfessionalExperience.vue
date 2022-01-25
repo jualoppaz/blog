@@ -26,6 +26,7 @@
                 :href="experience.company.web"
                 :title="experience.company.name"
                 target="_blank"
+                rel="nofollow"
               >
                 <img
                   style="display: inline-block"
@@ -86,6 +87,7 @@
               :href="client.company.web"
               :title="client.company.name"
               target="_blank"
+              rel="nofollow"
             >
               <img
                 style="display: inline-block"
