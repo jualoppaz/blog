@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1] - 2022-01-26
+
+## Fixed
+
+- Add transpile config to vue-github-button package
+
 ## [1.2.0] - 2022-01-25
 ## Added
 
