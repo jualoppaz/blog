@@ -115,7 +115,7 @@ export default {
   ** Build configuration
   */
   build: {
-    transpile: [/^element-ui/, /^vue-adblock-detect/],
+    transpile: [/^element-ui/, /^vue-adblock-detect/, /^vue-github-button/],
     /*
     ** You can extend webpack config here
     */
