@@ -3,10 +3,17 @@
 
 import es from './locales/es';
 
+// En el servidor (SSR) axios necesita una URL absoluta con host; en el
+// navegador basta con una ruta relativa, que siempre apunta al dominio actual.
+// VERCEL_URL la define Vercel automáticamente en cada deployment.
+const serverBaseURL = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}/api`
+  : (process.env.BASE_URL || 'http://localhost:3000/api');
+
 export default {
   publicRuntimeConfig: {
     axios: {
-      baseURL: process.env.BASE_URL,
+      browserBaseURL: '/api',
     },
   },
   /*
@@ -104,7 +111,8 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: process.env.BASE_URL,
+    baseURL: serverBaseURL,
+    browserBaseURL: '/api',
   },
   /*
   ** Build configuration
