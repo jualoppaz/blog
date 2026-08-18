@@ -52,92 +52,49 @@ const CV = 'cv';
 
 export const actions = {
   getProfessionalExperience({ commit }) {
-    // eslint-disable-next-line no-console
-    console.log('[curriculum] getProfessionalExperience: start');
     commit('setIsLoading', {
       section: 'professionalExperience',
       value: true,
     });
 
     return this.$axios.get(`/${CV}/professional-experiences`)
-      .then((res) => {
-        // eslint-disable-next-line no-console
-        console.log('[curriculum] getProfessionalExperience: ok');
-        commit('setProfessionalExperience', res.data);
-      })
-      .catch((err) => {
-        // eslint-disable-next-line no-console
-        console.log('[curriculum] getProfessionalExperience: ERROR', err.message);
-        throw err;
-      })
+      .then((res) => commit('setProfessionalExperience', res.data))
       .finally(() => commit('setIsLoading', {
         section: 'professionalExperience',
         value: false,
       }));
   },
   getExtraTraining({ commit }) {
-    // eslint-disable-next-line no-console
-    console.log('[curriculum] getExtraTraining: start');
     commit('setIsLoading', {
       section: 'extraTraining',
       value: true,
     });
 
     return this.$axios.get(`/${CV}/extra-training`)
-      .then((res) => {
-        // eslint-disable-next-line no-console
-        console.log('[curriculum] getExtraTraining: ok');
-        commit('setExtraTraining', res.data);
-      })
-      .catch((err) => {
-        // eslint-disable-next-line no-console
-        console.log('[curriculum] getExtraTraining: ERROR', err.message);
-        throw err;
-      })
+      .then((res) => commit('setExtraTraining', res.data))
       .finally(() => commit('setIsLoading', {
         section: 'extraTraining',
         value: false,
       }));
   },
   getPersonalProjects({ commit }) {
-    // eslint-disable-next-line no-console
-    console.log('[curriculum] getPersonalProjects: start');
     commit('setIsLoading', {
       section: 'personalProjects',
       value: true,
     });
 
     return this.$axios.get(`/${CV}/personal-projects`)
-      .then((res) => {
-        // eslint-disable-next-line no-console
-        console.log('[curriculum] getPersonalProjects: ok');
-        commit('setPersonalProjects', res.data);
-      })
-      .catch((err) => {
-        // eslint-disable-next-line no-console
-        console.log('[curriculum] getPersonalProjects: ERROR', err.message);
-        throw err;
-      })
+      .then((res) => commit('setPersonalProjects', res.data))
       .finally(() => commit('setIsLoading', {
         section: 'personalProjects',
         value: false,
       }));
   },
   getKnowledgeList(context, type) {
-    // eslint-disable-next-line no-console
-    console.log('[curriculum] getKnowledgeList: start', type);
     return this.$axios.get(`/${CV}/knowledge`, {
       params: {
         type,
       },
-    }).then((res) => {
-      // eslint-disable-next-line no-console
-      console.log('[curriculum] getKnowledgeList: ok', type);
-      return res;
-    }).catch((err) => {
-      // eslint-disable-next-line no-console
-      console.log('[curriculum] getKnowledgeList: ERROR', type, err.message);
-      throw err;
     });
   },
   getProgrammingLanguages({ dispatch, commit }) {

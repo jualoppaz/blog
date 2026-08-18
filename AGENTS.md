@@ -33,7 +33,7 @@ El proyecto originalmente usaba MongoDB (Heroku add-on) para servir los datos de
   - `HOST`: específico del binding de Heroku.
   - `NODE_ENV`: Vercel lo gestiona automáticamente.
   - `NPM_CONFIG_PRODUCTION`: **activamente perjudicial** en Vercel, impide instalar devDependencies necesarias para el build de Nuxt.
-- La única variable de entorno necesaria es `BASE_URL` (debe incluir el prefijo `/api`, ver más abajo).
+- No hace falta ninguna variable de entorno para la URL de la API (se resuelve dinámicamente por request, ver incidencia I más abajo).
 
 ### 3. Despliegue en Vercel: builder oficial `@nuxtjs/vercel-builder` (solución final)
 
@@ -72,7 +72,7 @@ No hay `server.js` ni `scripts/vercel-build.js` ni script `vercel-build` en `pac
 > **Nota**: las incidencias A-E de abajo ocurrieron mientras se depuraba `@nuxtjs/vercel-builder` (la solución final y actual, ver sección 3). Sus fixes siguen aplicando. Las incidencias F y G documentan los dos intentos alternativos que se probaron y se descartaron (script de build propio, y patrón `server.js`).
 
 ### A. Crash SSR "circular reference" en `/curriculum`
-No era un problema real de referencia circular en Vue/devalue. La causa era que `store/curriculum.js` hacía llamadas axios sin el prefijo `/api` en la URL base. **Fix**: la variable de entorno `BASE_URL` debe ser `http://localhost:3000/api` en local, y en Vercel debe apuntar al dominio de producción **con el sufijo `/api`**. Si reaparece un error de serialización SSR, revisar primero esta variable antes de sospechar de datos circulares.
+No era un problema real de referencia circular en Vue/devalue (aunque el mensaje de error `Maximum call stack size exceeded` en `devalue` es engañoso y sugiere justo eso). La causa raíz era que una llamada axios fallaba (401/error de red) y esa promesa rechazada quedaba sin capturar; el objeto `AxiosError` crudo (con funciones internas como `transformRequest`, `httpAdapter`, etc.) se intentaba serializar para hidratación, lo que producía el stack overflow. **Ver incidencia I para la causa concreta y el fix definitivo** (baseURL dinámico por request, sin depender de variables de entorno). Si reaparece este error, el primer sospechoso siempre debe ser una llamada axios que esté fallando silenciosamente en el servidor, no una referencia circular real.
 
 Nota: en `store/posts.js` se usa `.without(['body','toc','text','excerpt'])` al listar posts para `/blog` — es una optimización de payload (evita serializar el AST/markdown completo en el listado), no una corrección de bug. Se decidió mantenerla.
 
@@ -120,6 +120,17 @@ Este enfoque también se **descartó por decisión explícita** en favor de volv
 ### H. Tras volver al builder: `Error: /posts not found` (contenido de `@nuxt/content` no incluido)
 Al recuperar `@nuxtjs/vercel-builder`, se restauró `serverFiles: ["server-api/**", "locales/**"]` tal cual estaba antes de los intentos F/G, sin recordar que `content/**` (los `.md` que `@nuxt/content` lee dinámicamente en runtime, incluida `content/posts/`) también hace falta explícitamente en `serverFiles` — no es un módulo de `node_modules` que el builder rastree por dependencias, sino ficheros de datos sueltos en el repo. **Fix**: añadir `content/**` a `serverFiles` en `vercel.json`.
 
+### I. `Maximum call stack size exceeded` en SSR de `/curriculum` — causa real: baseURL de axios apuntando a la URL interna del deployment (401 por SSO)
+Tras resolver A-H, siguió fallando `/curriculum` (y cualquier ruta que dispara `nuxtServerInit`/llamadas a la propia API en SSR) con `Maximum call stack size exceeded` en `node_modules/@nuxt/devalue`. Se diagnosticó con logs (`console.log`/`console.error` temporales en `store/curriculum.js`, ya revertidos) capturando `npx vercel logs <url>` mientras se disparaba la petición real. El log mostró la causa exacta: una llamada axios a `/cv/knowledge` fallaba con `401 ERR_BAD_REQUEST`, y esa promesa rechazada quedaba sin capturar (`UnhandledPromiseRejection`) porque ninguna action de las stores tenía `.catch`.
+
+La causa del 401: se había intentado fijar `baseURL` en el servidor usando `VERCEL_URL` (variable que Vercel define automáticamente), pero **`VERCEL_URL` apunta a la URL interna/inmutable del deployment concreto** (tipo `blog-xxxxx-usuario-projects.vercel.app`), **no al dominio/alias que visita el usuario**, y esas URLs de deployment individuales tienen la protección SSO de Vercel activada por defecto → cualquier llamada HTTP directa a ellas (como la que hace axios en SSR) devuelve 401. El objeto `AxiosError` resultante, al intentar serializarse para hidratación (`devalue`), contiene funciones internas (`transformRequest`, `httpAdapter`, etc.) que `devalue` no sabe serializar, entrando en el bucle que termina en el stack overflow.
+
+**Fix definitivo** (sin depender de ninguna variable de entorno, funciona igual en `*.vercel.app`, dominio final o localhost):
+- `plugins/axios.js` (nuevo, `mode: 'server'` en `nuxt.config.js`): en cada petición SSR, lee `req.headers.host` (el dominio real por el que el usuario está accediendo) y `req.headers['x-forwarded-proto']` (protocolo), y hace `$axios.setBaseURL(...)` con ese host antes de que se disparen las llamadas a la API. Esto es necesario porque `nuxt.config.js` solo se evalúa una vez al arrancar el proceso (no hay `req` disponible ahí), mientras que un plugin de Nuxt se ejecuta en cada request y sí recibe el contexto con `req`.
+- `nuxt.config.js`: `serverBaseURL` es un valor fijo `http://localhost:3000/api`, sin leer ninguna variable de entorno — solo se usa como valor inicial antes de que el plugin lo sobreescriba en la primera petición real; en desarrollo local (`npm run dev`) el plugin hace exactamente lo mismo con el host de `localhost:3000`.
+
+**Lección para el futuro**: no usar `VERCEL_URL` para construir URLs que la propia función SSR va a llamar por HTTP — solo sirve como identificador informativo, no como endpoint accesible sin autenticación. Para llamadas "a uno mismo" en SSR, usar siempre el host de la petición entrante (`req.headers.host`).
+
 ## Estado actual de `package.json` / `vercel.json` relevante para el deploy
 
 ```json
@@ -155,8 +166,7 @@ No hay script `vercel-build` en `package.json` — el builder `@nuxtjs/vercel-bu
 
 ## Variables de entorno necesarias en Vercel
 
-Solo una:
-- `BASE_URL`: URL base de la API, **debe incluir el sufijo `/api`** (p. ej. `https://tu-dominio.vercel.app/api`). Si falta el sufijo, reaparecerá el bug de la sección A (fallos de SSR en `/curriculum`, `/blog`, etc. por llamadas axios mal dirigidas).
+Ninguna relacionada con la URL de la API. El `baseURL` de axios en SSR se resuelve dinámicamente en cada petición a partir del host real (`req.headers.host`, ver `plugins/axios.js` e incidencia I).
 
 No añadir `HOST`, `NODE_ENV` ni `NPM_CONFIG_PRODUCTION` (ver sección "Eliminación de Heroku").
 
