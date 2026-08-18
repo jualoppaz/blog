@@ -11,13 +11,13 @@ metas: {
   og_type: "article",
   article_published_time: "2021-02-08T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg",
+  og_image: "/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg",
   og_url: "http://www.juanmanuellopezpazos.es/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module",
   og_description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube.",
   og_site_name: BLOG - JMLP,
   twitter_site: "@LopezPazos14",
   twitter_card: summary,
-  twitter_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg",
+  twitter_image: "/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg",
   twitter_title: "Mi primer módulo de Nuxt: nuxt-youtube-subscribe-module",
   twitter_description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube."
 }

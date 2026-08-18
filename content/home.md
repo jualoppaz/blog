@@ -8,13 +8,13 @@ metas:
   canonical_url: http://www.juanmanuellopezpazos.es/
   og_title: Blog personal de Juan Manuel López Pazos
   og_type: website
-  og_image: http://www.juanmanuellopezpazos.es/images/yo_2018.jpg
+  og_image: /images/yo_2018.jpg
   og_url: http://www.juanmanuellopezpazos.es/
   og_description: "Bienvenido a la web personal de Juan Manuel López Pazos ✅ Aquí encontrarás mi Curriculum, así como un blog con multitud de artículos relacionados con tecnologías y frameworks, así como vídeos de música procesional."
   og_site_name: Web - JMLP
   twitter_site: "@LopezPazos14"
   twitter_card: summary,
-  twitter_image: http://www.juanmanuellopezpazos.es/images/yo_2018.jpg
+  twitter_image: /images/yo_2018.jpg
   twitter_title: Web personal de Juan Manuel López Pazos
   twitter_description: "Bienvenido a la web personal de Juan Manuel López Pazos ✅ Aquí encontrarás mi Curriculum, así como un blog con multitud de artículos relacionados con tecnologías y frameworks, así como vídeos de música procesional."
 published: true

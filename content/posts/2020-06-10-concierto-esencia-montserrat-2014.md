@@ -12,13 +12,13 @@ metas: {
   og_type: "article",
   article_published_time: "2020-06-10T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
+  og_image: "/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
   og_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014",
   og_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
   og_site_name: BLOG - JMLP,
   twitter_site: "@LopezPazos14",
   twitter_card: summary,
-  twitter_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
+  twitter_image: "/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
   twitter_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
   twitter_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas."
 }

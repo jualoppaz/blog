@@ -11,13 +11,13 @@ metas: {
   og_type: "article",
   article_published_time: "2020-12-02T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg",
+  og_image: "/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg",
   og_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo",
   og_description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube.",
   og_site_name: BLOG - JMLP,
   twitter_site: "@LopezPazos14",
   twitter_card: summary,
-  twitter_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg",
+  twitter_image: "/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg",
   twitter_title: "Sin que sirva de precedente: me rindo",
   twitter_description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube."
 }

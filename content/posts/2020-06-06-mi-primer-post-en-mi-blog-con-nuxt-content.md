@@ -11,13 +11,13 @@ metas: {
   og_type: "article",
   article_published_time: "2020-06-06T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2020-06-06-mi-primer-post-blog-con-nuxt-content.jpg",
+  og_image: "/images/blog/posts/2020-06-06-mi-primer-post-blog-con-nuxt-content.jpg",
   og_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-06-06-mi-primer-post-en-mi-blog-con-nuxt-content",
   og_description: "Ésta es la primera entrada del Blog de Juan Manuel López Pazos. Aquí explico por qué he decidido desarrollar este blog: Nuxt, Youtube... y las discográficas.",
   og_site_name: BLOG - JMLP,
   twitter_site: "@LopezPazos14",
   twitter_card: summary,
-  twitter_image: "http://www.juanmanuellopezpazos.es/images/blog/posts/2020-06-06-mi-primer-post-blog-con-nuxt-content.jpg",
+  twitter_image: "/images/blog/posts/2020-06-06-mi-primer-post-blog-con-nuxt-content.jpg",
   twitter_title: "Mi primer post en el blog: @nuxt/content, Youtube y las discográficas",
   twitter_description: "Ésta es la primera entrada del Blog de Juan Manuel López Pazos. Aquí explico por qué he decidido desarrollar este blog: Nuxt, Youtube... y las discográficas."
 }
