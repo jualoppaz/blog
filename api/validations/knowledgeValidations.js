@@ -1,10 +1,9 @@
 const Joi = require('joi');
-Joi.objectId = require('joi-objectid')(Joi);
 
 module.exports = {
   findAllKnowledge: {
-    query: {
+    query: Joi.object({
       type: Joi.string(),
-    },
+    }),
   },
 };

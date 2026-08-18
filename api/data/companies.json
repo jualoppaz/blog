@@ -1,0 +1,84 @@
+[
+    {
+        "_id": "5bf82d0e8a9f6135cd2b9623",
+        "name": "SIAG Consulting",
+        "foundationDate": "2006-11-15T07:34:20.200Z",
+        "image": "empresa_siag.png",
+        "web": "https://siagconsulting.es"
+    },
+    {
+        "_id": "5bf82d998a9f6135cd2b964c",
+        "name": "GMV",
+        "foundationDate": "2000-05-26T01:45:20.200Z",
+        "image": "empresa_gmv.png",
+        "web": "https://www.gmv.com/es"
+    },
+    {
+        "_id": "5e245d22e7179a2f0110133d",
+        "name": "Proxya",
+        "foundationDate": "2004-12-20T20:20:19.196Z",
+        "image": "empresa_proxya.png",
+        "web": "https://www.proxya.com/"
+    },
+    {
+        "_id": "5bf82f5c8a9f6135cd2b96c8",
+        "name": "Aertis",
+        "foundationDate": "2006-06-07T02:26:20.200Z",
+        "image": "empresa_aertis.png",
+        "web": "http://www.aertis.es"
+    },
+    {
+        "_id": "5bf8314e8a9f6135cd2b974f",
+        "name": "Guadaltel",
+        "foundationDate": "1991-09-30T04:48:19.199Z",
+        "image": "empresa_guadaltel.png",
+        "web": "https://www.guadaltel.com"
+    },
+    {
+        "_id": "5bf82b968a9f6135cd2b95be",
+        "name": "Profile Software Services",
+        "foundationDate": "2001-03-09T23:29:20.200Z",
+        "image": "empresa_profile.png",
+        "web": "https://profile.es"
+    },
+    {
+        "_id": "5bf82ff38a9f6135cd2b96f2",
+        "name": "Innopro Advanced",
+        "foundationDate": "2009-06-11T02:30:20.200Z",
+        "image": "empresa_innopro.png"
+    },
+    {
+        "_id": "5bf82ea68a9f6135cd2b9695",
+        "name": "AUGE Digital",
+        "foundationDate": "2014-06-15T02:34:20.201Z",
+        "image": "empresa_augeDigital.png"
+    },
+    {
+        "_id": "5bf824ef8a9f6135cd2b9432",
+        "name": "Sopra Steria",
+        "foundationDate": "1968-01-01T20:20:19.196Z",
+        "image": "empresa_sopra.png",
+        "web": "https://www.soprasteria.es"
+    },
+    {
+        "_id": "61ede04a2772a0084711c94e",
+        "name": "Alten",
+        "foundationDate": "2000-12-20T20:20:19.196Z",
+        "image": "empresa_alten.png",
+        "web": "https://www.alten.es"
+    },
+    {
+        "_id": "61eee0542772a0084736c946",
+        "name": "Bershka",
+        "foundationDate": "1998-04-01T20:20:19.196Z",
+        "image": "empresa_bershka.png",
+        "web": "https://www.bershka.com/es/"
+    },
+    {
+        "_id": "61f05d942772a008476d3495",
+        "name": "Sanitas",
+        "foundationDate": "1954-01-01T20:20:19.196Z",
+        "image": "empresa_sanitas.png",
+        "web": "https://www.sanitas.es/"
+    }
+]

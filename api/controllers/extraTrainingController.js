@@ -1,21 +1,7 @@
-const ExtraTraining = require('../models/extraTraining');
+const extraTraining = require('../data/extraTraining.json');
 
 function findAllExtraTraining(req, res) {
-  ExtraTraining.find((err, extraTraining) => {
-    if (err) {
-      return res.status(400).send(
-        JSON.stringify(
-          {
-            message: err,
-          },
-          null,
-          4,
-        ),
-      );
-    }
-
-    return res.status(200).send(JSON.stringify(extraTraining, null, 4));
-  });
+  return res.status(200).send(JSON.stringify(extraTraining, null, 4));
 }
 
 module.exports = {

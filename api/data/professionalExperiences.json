@@ -1,0 +1,1221 @@
+[
+    {
+        "_id": "61ede1722772a0084711f4a2",
+        "description": "",
+        "company": {
+            "_id": "61ede04a2772a0084711c94e",
+            "name": "Alten",
+            "foundationDate": "2000-12-20T20:20:19.196Z",
+            "image": "empresa_alten.png",
+            "web": "https://www.alten.es"
+        },
+        "startDate": "2021-12-21T03:22:20.201Z",
+        "endDate": null,
+        "clients": [
+            {
+                "company": {
+                    "_id": "61eee0542772a0084736c946",
+                    "name": "Bershka",
+                    "foundationDate": "1998-04-01T20:20:19.196Z",
+                    "image": "empresa_bershka.png",
+                    "web": "https://www.bershka.com/es/"
+                },
+                "startDate": "2021-12-21T03:22:20.201Z",
+                "endDate": null,
+                "description": "Desarrollador web Frontend para Bershka",
+                "projects": [
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be5e04e34c31bce150d08ee",
+                                "name": "CSS3",
+                                "image": "tecnologia_css3.png"
+                            },
+                            {
+                                "_id": "5fbeb5fb152eedb2f3b77372",
+                                "name": "ESLint",
+                                "image": "tecnologia_eslint.png",
+                                "web": "https://eslint.org"
+                            },
+                            {
+                                "_id": "5be5e0ce34c31bce150d092e",
+                                "name": "Git",
+                                "image": "tecnologia_git.png",
+                                "web": "https://git-scm.com"
+                            },
+                            {
+                                "_id": "5fbea39a152eedb2f3ae46df",
+                                "name": "Jest",
+                                "image": "tecnologia_jest.png",
+                                "web": "https://jestjs.io"
+                            },
+                            {
+                                "_id": "5be5e3a434c31bce150d0a41",
+                                "name": "NPM",
+                                "image": "tecnologia_npm.png",
+                                "web": "https://www.npmjs.com"
+                            },
+                            {
+                                "_id": "5fbd7120152eedb2f3168b8c",
+                                "name": "Nuxt",
+                                "image": "tecnologia_nuxt.png",
+                                "web": "https://nuxtjs.org"
+                            },
+                            {
+                                "_id": "5be5e49734c31bce150d0a9b",
+                                "name": "Sass",
+                                "image": "tecnologia_sass.png",
+                                "web": "https://sass-lang.com"
+                            },
+                            {
+                                "_id": "5be5e4dc34c31bce150d0ab6",
+                                "name": "Sourcetree",
+                                "image": "tecnologia_sourceTree.png",
+                                "web": "https://www.sourcetreeapp.com"
+                            },
+                            {
+                                "_id": "5be5e5cd34c31bce150d0b0d",
+                                "name": "VueJS",
+                                "image": "tecnologia_vuejs.png",
+                                "web": "https://vuejs.org"
+                            },
+                            {
+                                "_id": "5e247c3ec0ac030cdc4da11f",
+                                "name": "Vuex",
+                                "image": "tecnologia_vuex.png",
+                                "web": "https://vuex.vuejs.org"
+                            },
+                            {
+                                "_id": "5fbeb9c4152eedb2f3b95aec",
+                                "name": "Webpack",
+                                "image": "tecnologia_webpack.png",
+                                "web": "https://webpack.js.org"
+                            }
+                        ],
+                        "name": "Sistemas eCommerce de Bershka (Inditex)",
+                        "description": "Desarrollo y Mantenimiento del Frontend de la web eCommerce de Bershka.",
+                        "startDate": "2021-12-21T03:22:20.201Z",
+                        "endDate": null,
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Maquetación CSS con Sass"
+                            },
+                            {
+                                "text": "Corrección de incidencias de Frontend"
+                            },
+                            {
+                                "text": "Gestión de código mediante Git-Flow"
+                            },
+                            {
+                                "text": "Implementación de tests unitarios con jest"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "projects": []
+    },
+    {
+        "_id": "5e247b2ec0ac030cdc4d9ebc",
+        "description": "",
+        "company": {
+            "_id": "5e245d22e7179a2f0110133d",
+            "name": "Proxya",
+            "foundationDate": "2004-12-20T20:20:19.196Z",
+            "image": "empresa_proxya.png",
+            "web": "https://www.proxya.com/"
+        },
+        "startDate": "2019-11-04T03:22:20.201Z",
+        "endDate": "2021-12-20T03:22:20.201Z",
+        "projects": [
+            {
+                "technologies": [
+                    {
+                        "_id": "5e247d14c0ac030cdc4da2e7",
+                        "name": "Axios",
+                        "image": "tecnologia_axios.png",
+                        "web": "https://github.com/axios/axios"
+                    },
+                    {
+                        "_id": "5e247f8ec0ac030cdc4da851",
+                        "name": "BackboneJS",
+                        "image": "tecnologia_backbonejs.png",
+                        "web": "https://backbonejs.org"
+                    },
+                    {
+                        "_id": "5be5de8934c31bce150d0843",
+                        "name": "Bootstrap",
+                        "image": "tecnologia_bootstrap.png",
+                        "web": "https://getbootstrap.com"
+                    },
+                    {
+                        "_id": "5e247d4fc0ac030cdc4da374",
+                        "name": "Electron",
+                        "image": "tecnologia_electron.png",
+                        "web": "https://electronjs.org"
+                    },
+                    {
+                        "_id": "5fbeb5fb152eedb2f3b77372",
+                        "name": "ESLint",
+                        "image": "tecnologia_eslint.png",
+                        "web": "https://eslint.org"
+                    },
+                    {
+                        "_id": "5be5e0ce34c31bce150d092e",
+                        "name": "Git",
+                        "image": "tecnologia_git.png",
+                        "web": "https://git-scm.com"
+                    },
+                    {
+                        "_id": "5e247de7c0ac030cdc4da495",
+                        "name": "single-spa",
+                        "image": "tecnologia_single-spa.png",
+                        "web": "https://single-spa.js.org"
+                    },
+                    {
+                        "_id": "5e247f12c0ac030cdc4da727",
+                        "name": "socket.io",
+                        "image": "tecnologia_socket.io.png",
+                        "web": "https://socket.io"
+                    },
+                    {
+                        "_id": "5be5e4dc34c31bce150d0ab6",
+                        "name": "Sourcetree",
+                        "image": "tecnologia_sourceTree.png",
+                        "web": "https://www.sourcetreeapp.com"
+                    },
+                    {
+                        "_id": "5e45a1a47c213e47b9d82f1a",
+                        "name": "SystemJS",
+                        "image": "tecnologia_systemjs.png",
+                        "web": "https://github.com/systemjs/systemjs"
+                    },
+                    {
+                        "_id": "5be5e5cd34c31bce150d0b0d",
+                        "name": "VueJS",
+                        "image": "tecnologia_vuejs.png",
+                        "web": "https://vuejs.org"
+                    },
+                    {
+                        "_id": "5e247c3ec0ac030cdc4da11f",
+                        "name": "Vuex",
+                        "image": "tecnologia_vuex.png",
+                        "web": "https://vuex.vuejs.org"
+                    },
+                    {
+                        "_id": "5fbeb9c4152eedb2f3b95aec",
+                        "name": "Webpack",
+                        "image": "tecnologia_webpack.png",
+                        "web": "https://webpack.js.org"
+                    }
+                ],
+                "name": "Aplicaciones Web para el Service Desk del SAS (Sistema Andaluz de Salud)",
+                "description": "Desarrollo y Mantenimiento de aplicaciones web para la gestión de incidencias en tiempo real en sistemas Service Desk con tecnologías JavaScript como VueJS, NodeJS y micro-frontends con single-spa.",
+                "startDate": "2019-10-31T03:22:20.201Z",
+                "endDate": "2021-12-20T03:22:20.201Z",
+                "position": "Desarrollador Web",
+                "functions": [
+                    {
+                        "text": "Desarrollo de componentes Vuex"
+                    },
+                    {
+                        "text": "Implementación de llamadas HTTP para consumir API REST con VueJS mediante Axios"
+                    },
+                    {
+                        "text": "Diseño e implementación de micro-frontends con single-spa integrando aplicaciones Backbone y VueJS"
+                    },
+                    {
+                        "text": "Actualización en tiempo real mediante WebSockets"
+                    },
+                    {
+                        "text": "Maquetación CSS con Sass"
+                    },
+                    {
+                        "text": "Corrección de incidencias de Frontend"
+                    },
+                    {
+                        "text": "Gestión de código mediante Git-Flow"
+                    },
+                    {
+                        "text": "Carga dinámica de módulos como micro-frontends mediante SystemJS"
+                    }
+                ]
+            }
+        ],
+        "clients": []
+    },
+    {
+        "_id": "5bfc45898a9f6135cd2b9bf8",
+        "description": "",
+        "company": {
+            "_id": "5bf82b968a9f6135cd2b95be",
+            "name": "Profile Software Services",
+            "foundationDate": "2001-03-09T23:29:20.200Z",
+            "image": "empresa_profile.png",
+            "web": "https://profile.es"
+        },
+        "startDate": "2018-07-03T03:22:20.201Z",
+        "endDate": "2019-10-31T03:22:20.201Z",
+        "clients": [
+            {
+                "description": "Desarrollador Web Frontend para Sanitas",
+                "company": {
+                    "_id": "61f05d942772a008476d3495",
+                    "name": "Sanitas",
+                    "foundationDate": "1954-01-01T20:20:19.196Z",
+                    "image": "empresa_sanitas.png",
+                    "web": "https://www.sanitas.es/"
+                },
+                "startDate": "2018-07-03T03:22:20.201Z",
+                "endDate": "2019-10-31T03:22:20.201Z",
+                "projects": [
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be5ddca34c31bce150d0804",
+                                "name": "Angular",
+                                "image": "tecnologia_angular.png",
+                                "web": "https://angular.io"
+                            },
+                            {
+                                "_id": "5be3374a34c31bce150d06b2",
+                                "name": "AngularJS",
+                                "image": "tecnologia_angularjs.png",
+                                "web": "https://angularjs.org"
+                            },
+                            {
+                                "_id": "5be5de8934c31bce150d0843",
+                                "name": "Bootstrap",
+                                "image": "tecnologia_bootstrap.png",
+                                "web": "https://getbootstrap.com"
+                            },
+                            {
+                                "_id": "5be5df2834c31bce150d0878",
+                                "name": "Bower",
+                                "image": "tecnologia_bower.png",
+                                "web": "https://bower.io"
+                            },
+                            {
+                                "_id": "5be5e0ce34c31bce150d092e",
+                                "name": "Git",
+                                "image": "tecnologia_git.png",
+                                "web": "https://git-scm.com"
+                            },
+                            {
+                                "_id": "5da31719b19008e58d776219",
+                                "name": "Jasmine",
+                                "image": "tecnologia_jasmine.png",
+                                "web": "https://jasmine.github.io/"
+                            },
+                            {
+                                "_id": "5da31734b19008e58d776225",
+                                "name": "Karma",
+                                "image": "tecnologia_karma.png",
+                                "web": "https://karma-runner.github.io/latest/index.html"
+                            },
+                            {
+                                "_id": "5be5e3a434c31bce150d0a41",
+                                "name": "NPM",
+                                "image": "tecnologia_npm.png",
+                                "web": "https://www.npmjs.com"
+                            },
+                            {
+                                "_id": "5be5e49734c31bce150d0a9b",
+                                "name": "Sass",
+                                "image": "tecnologia_sass.png",
+                                "web": "https://sass-lang.com"
+                            },
+                            {
+                                "_id": "5be5e4dc34c31bce150d0ab6",
+                                "name": "Sourcetree",
+                                "image": "tecnologia_sourceTree.png",
+                                "web": "https://www.sourcetreeapp.com"
+                            }
+                        ],
+                        "name": "Aplicación Web para el Portal de Contratación de Sanitas",
+                        "description": "Rediseño de aplicación web AngularJS para el Portal de Contratación de Sanitas.",
+                        "startDate": "2018-07-03T03:22:20.201Z",
+                        "endDate": "2019-10-31T03:22:20.201Z",
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Desarrollo de componentes y servicios de AngularJS y Angular 6"
+                            },
+                            {
+                                "text": "Implementación de llamadas HTTP para consumir API REST propia con AngularJS y Angular 6"
+                            },
+                            {
+                                "text": "Maquetación CSS con Sass"
+                            },
+                            {
+                                "text": "Corrección de incidencias de Frontend"
+                            },
+                            {
+                                "text": "Gestión de código mediante Git-Flow"
+                            },
+                            {
+                                "text": "Implementación de tests unitarios con Karma y Jasmine"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "projects": []
+    },
+    {
+        "_id": "5bfd8ade8a9f6135cd2ba01b",
+        "description": "",
+        "company": {
+            "_id": "5bf82d0e8a9f6135cd2b9623",
+            "name": "SIAG Consulting",
+            "foundationDate": "2006-11-15T07:34:20.200Z",
+            "image": "empresa_siag.png",
+            "web": "https://siagconsulting.es"
+        },
+        "startDate": "2016-10-25T06:44:20.201Z",
+        "endDate": "2018-06-30T02:49:20.201Z",
+        "clients": [
+            {
+                "company": {
+                    "_id": "5bf82d998a9f6135cd2b964c",
+                    "name": "GMV",
+                    "foundationDate": "2000-05-26T01:45:20.200Z",
+                    "image": "empresa_gmv.png",
+                    "web": "https://www.gmv.com/es"
+                },
+                "description": "Colaboración con GMV para participar en el desarrollo de diversos proyectos como Desarrollador Web.",
+                "startDate": "2016-10-25T06:44:20.201Z",
+                "endDate": "2018-06-30T02:49:20.201Z",
+                "projects": [
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be5ddca34c31bce150d0804",
+                                "name": "Angular",
+                                "image": "tecnologia_angular.png",
+                                "web": "https://angular.io"
+                            },
+                            {
+                                "_id": "5be5e03334c31bce150d08dd",
+                                "name": "Composer",
+                                "image": "tecnologia_composer.png",
+                                "web": "https://getcomposer.org"
+                            },
+                            {
+                                "_id": "5be5e0ce34c31bce150d092e",
+                                "name": "Git",
+                                "image": "tecnologia_git.png",
+                                "web": "https://git-scm.com"
+                            },
+                            {
+                                "_id": "5be5e2ab34c31bce150d09e0",
+                                "name": "Laravel",
+                                "image": "tecnologia_laravel.png",
+                                "web": "https://laravel.com"
+                            },
+                            {
+                                "_id": "5be5e38434c31bce150d0a2b",
+                                "name": "MySQL",
+                                "image": "tecnologia_mysql.png",
+                                "web": "https://www.mysql.com"
+                            },
+                            {
+                                "_id": "5be5e3a434c31bce150d0a41",
+                                "name": "NPM",
+                                "image": "tecnologia_npm.png",
+                                "web": "https://www.npmjs.com"
+                            },
+                            {
+                                "_id": "5be5e49734c31bce150d0a9b",
+                                "name": "Sass",
+                                "image": "tecnologia_sass.png",
+                                "web": "https://sass-lang.com"
+                            },
+                            {
+                                "_id": "5be5e4dc34c31bce150d0ab6",
+                                "name": "Sourcetree",
+                                "image": "tecnologia_sourceTree.png",
+                                "web": "https://www.sourcetreeapp.com"
+                            },
+                            {
+                                "_id": "5be5e53d34c31bce150d0adc",
+                                "name": "Swagger",
+                                "image": "tecnologia_swagger.png",
+                                "web": "https://swagger.io"
+                            }
+                        ],
+                        "name": "Aplicación Web para el Sector de Estudio de Mercado",
+                        "description": "Desarrollo de aplicación web para encuestar voluntarios para valorar productos lanzados por los clientes.",
+                        "startDate": "2018-02-05T22:25:20.201Z",
+                        "endDate": "2018-07-01T02:50:20.201Z",
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Diseño y Desarrollo de APIs Rest con Laravel"
+                            },
+                            {
+                                "text": "Desarrollo de componentes y servicios de Angular"
+                            },
+                            {
+                                "text": "Maquetación CSS con Sass"
+                            },
+                            {
+                                "text": "Documentación de APIs Rest con Swagger"
+                            },
+                            {
+                                "text": "Instalación y configuración de entorno de desarrollo"
+                            },
+                            {
+                                "text": "Gestión de código mediante Git Flow"
+                            },
+                            {
+                                "text": "Análisis de Requisitos"
+                            },
+                            {
+                                "text": "Planificación y estimación de tareas"
+                            },
+                            {
+                                "text": "Participación en diseño y modelado"
+                            }
+                        ]
+                    },
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be5ddca34c31bce150d0804",
+                                "name": "Angular",
+                                "image": "tecnologia_angular.png",
+                                "web": "https://angular.io"
+                            },
+                            {
+                                "_id": "5be5e03334c31bce150d08dd",
+                                "name": "Composer",
+                                "image": "tecnologia_composer.png",
+                                "web": "https://getcomposer.org"
+                            },
+                            {
+                                "_id": "5be5e0ce34c31bce150d092e",
+                                "name": "Git",
+                                "image": "tecnologia_git.png",
+                                "web": "https://git-scm.com"
+                            },
+                            {
+                                "_id": "5be5e2ab34c31bce150d09e0",
+                                "name": "Laravel",
+                                "image": "tecnologia_laravel.png",
+                                "web": "https://laravel.com"
+                            },
+                            {
+                                "_id": "5be5e29e34c31bce150d09db",
+                                "name": "Laravel-Mix",
+                                "image": "tecnologia_laravel-mix.png"
+                            },
+                            {
+                                "_id": "5be5e30434c31bce150d09fb",
+                                "name": "Lumen",
+                                "image": "tecnologia_lumen.png",
+                                "web": "https://lumen.laravel.com"
+                            },
+                            {
+                                "_id": "5be5e38434c31bce150d0a2b",
+                                "name": "MySQL",
+                                "image": "tecnologia_mysql.png",
+                                "web": "https://www.mysql.com"
+                            },
+                            {
+                                "_id": "5be5e3a434c31bce150d0a41",
+                                "name": "NPM",
+                                "image": "tecnologia_npm.png",
+                                "web": "https://www.npmjs.com"
+                            },
+                            {
+                                "_id": "5be5e49734c31bce150d0a9b",
+                                "name": "Sass",
+                                "image": "tecnologia_sass.png",
+                                "web": "https://sass-lang.com"
+                            },
+                            {
+                                "_id": "5be5e4dc34c31bce150d0ab6",
+                                "name": "Sourcetree",
+                                "image": "tecnologia_sourceTree.png",
+                                "web": "https://www.sourcetreeapp.com"
+                            },
+                            {
+                                "_id": "5be5e53d34c31bce150d0adc",
+                                "name": "Swagger",
+                                "image": "tecnologia_swagger.png",
+                                "web": "https://swagger.io"
+                            }
+                        ],
+                        "name": "Aplicación Web para el Sector Bancario",
+                        "description": "Desarrollo de aplicación web para fidelizar clientes para entidades bancarias.",
+                        "startDate": "2017-10-02T06:21:20.201Z",
+                        "endDate": "2018-02-01T22:21:20.201Z",
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Diseño y Desarrollo de APIs Rest con Laravel/Lumen"
+                            },
+                            {
+                                "text": "Maquetación CSS con Sass a través de laravel-mix"
+                            },
+                            {
+                                "text": "Documentación de APIs Rest con Swagger"
+                            },
+                            {
+                                "text": "Instalación y configuración de entorno de desarrollo"
+                            },
+                            {
+                                "text": "Gestión de código mediante Git Flow"
+                            },
+                            {
+                                "text": "Análisis de Requisitos"
+                            },
+                            {
+                                "text": "Planificación y estimación de tareas"
+                            },
+                            {
+                                "text": "Participación en diseño y modelado"
+                            }
+                        ]
+                    },
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be5e04e34c31bce150d08ee",
+                                "name": "CSS3",
+                                "image": "tecnologia_css3.png"
+                            },
+                            {
+                                "_id": "5be5e0fc34c31bce150d0941",
+                                "name": "Hibernate",
+                                "image": "tecnologia_hibernate.png",
+                                "web": "http://hibernate.org"
+                            },
+                            {
+                                "_id": "5be5e15634c31bce150d0963",
+                                "name": "Java",
+                                "image": "tecnologia_java.png",
+                                "web": "https://www.java.com"
+                            },
+                            {
+                                "_id": "5be5e16a34c31bce150d096a",
+                                "name": "JavaScript",
+                                "image": "tecnologia_javascript.png"
+                            },
+                            {
+                                "_id": "5be5e1f434c31bce150d09a4",
+                                "name": "JavaServer Faces",
+                                "image": "tecnologia_jsf.png"
+                            },
+                            {
+                                "_id": "5be9be2bb9aaf7a2194bfdb8",
+                                "name": "jQuery",
+                                "image": "tecnologia_jquery.png",
+                                "web": "https://jquery.com"
+                            },
+                            {
+                                "_id": "5be5e2b634c31bce150d09e4",
+                                "name": "Liquibase",
+                                "image": "tecnologia_liquibase.jpg"
+                            },
+                            {
+                                "_id": "5be5e35234c31bce150d0a18",
+                                "name": "Maven",
+                                "image": "tecnologia_maven.png",
+                                "web": "https://maven.apache.org"
+                            },
+                            {
+                                "_id": "5be5e40c34c31bce150d0a65",
+                                "name": "PostgreSQL",
+                                "image": "tecnologia_postgresql.png",
+                                "web": "https://www.postgresql.org"
+                            },
+                            {
+                                "_id": "5be5e41b34c31bce150d0a6d",
+                                "name": "PrimeFaces",
+                                "image": "tecnologia_primeFaces.png",
+                                "web": "https://www.primefaces.org"
+                            }
+                        ],
+                        "name": "Aplicación Web para el Sector Bancario",
+                        "description": "Desarrollo y mantenimiento de una aplicación web interna para una entidad bancaria.",
+                        "startDate": "2017-07-02T03:21:20.201Z",
+                        "endDate": "2017-10-02T06:21:20.201Z",
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Maquetación CSS"
+                            },
+                            {
+                                "text": "Corrección de defectos en Backend"
+                            },
+                            {
+                                "text": "Corrección de defectos en Frontend"
+                            },
+                            {
+                                "text": "Análisis de Requisitos"
+                            },
+                            {
+                                "text": "Planificación y Estimación de tareas"
+                            }
+                        ]
+                    },
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be5de8934c31bce150d0843",
+                                "name": "Bootstrap",
+                                "image": "tecnologia_bootstrap.png",
+                                "web": "https://getbootstrap.com"
+                            },
+                            {
+                                "_id": "5be5e04e34c31bce150d08ee",
+                                "name": "CSS3",
+                                "image": "tecnologia_css3.png"
+                            },
+                            {
+                                "_id": "5be5e08034c31bce150d0907",
+                                "name": "Doctrine",
+                                "image": "tecnologia_doctrine.png",
+                                "web": "https://www.doctrine-project.org"
+                            },
+                            {
+                                "_id": "5be5e0c034c31bce150d0928",
+                                "name": "Font Awesome",
+                                "image": "tecnologia_fontAwesome.png",
+                                "web": "https://fontawesome.com"
+                            },
+                            {
+                                "_id": "5be5e16a34c31bce150d096a",
+                                "name": "JavaScript",
+                                "image": "tecnologia_javascript.png"
+                            },
+                            {
+                                "_id": "5be9be2bb9aaf7a2194bfdb8",
+                                "name": "jQuery",
+                                "image": "tecnologia_jquery.png",
+                                "web": "https://jquery.com"
+                            },
+                            {
+                                "_id": "5be5e2b634c31bce150d09e4",
+                                "name": "Liquibase",
+                                "image": "tecnologia_liquibase.jpg"
+                            },
+                            {
+                                "_id": "5be5e38434c31bce150d0a2b",
+                                "name": "MySQL",
+                                "image": "tecnologia_mysql.png",
+                                "web": "https://www.mysql.com"
+                            },
+                            {
+                                "_id": "5be5e3c534c31bce150d0a4d",
+                                "name": "PHP",
+                                "image": "tecnologia_php.png",
+                                "web": "http://php.net"
+                            },
+                            {
+                                "_id": "5be5e49734c31bce150d0a9b",
+                                "name": "Sass",
+                                "image": "tecnologia_sass.png",
+                                "web": "https://sass-lang.com"
+                            },
+                            {
+                                "_id": "5be5e54934c31bce150d0ae1",
+                                "name": "Symfony",
+                                "image": "tecnologia_symfony.png",
+                                "web": "https://symfony.es"
+                            }
+                        ],
+                        "name": "Aplicación Web para el Sector Transporte",
+                        "description": "Desarrollo y mantenimiento de una aplicación web interna para gestión de incidencias relacionadas con transportes y su equipamiento.",
+                        "startDate": "2016-12-02T08:21:20.201Z",
+                        "endDate": "2017-07-02T03:21:20.201Z",
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Desarrollo de WebServices en PHP con NuSOAP"
+                            },
+                            {
+                                "text": "Maquetación CSS con Bootstrap"
+                            },
+                            {
+                                "text": "Corrección de defectos en Backend"
+                            },
+                            {
+                                "text": "Corrección de defectos en Frontend"
+                            },
+                            {
+                                "text": "Análisis de Requisitos"
+                            },
+                            {
+                                "text": "Planificación y Estimación de tareas"
+                            }
+                        ]
+                    },
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be5e04e34c31bce150d08ee",
+                                "name": "CSS3",
+                                "image": "tecnologia_css3.png"
+                            },
+                            {
+                                "_id": "5be5e0fc34c31bce150d0941",
+                                "name": "Hibernate",
+                                "image": "tecnologia_hibernate.png",
+                                "web": "http://hibernate.org"
+                            },
+                            {
+                                "_id": "5be5e15634c31bce150d0963",
+                                "name": "Java",
+                                "image": "tecnologia_java.png",
+                                "web": "https://www.java.com"
+                            },
+                            {
+                                "_id": "5be5e16a34c31bce150d096a",
+                                "name": "JavaScript",
+                                "image": "tecnologia_javascript.png"
+                            },
+                            {
+                                "_id": "5be5e1f434c31bce150d09a4",
+                                "name": "JavaServer Faces",
+                                "image": "tecnologia_jsf.png"
+                            },
+                            {
+                                "_id": "5be9be2bb9aaf7a2194bfdb8",
+                                "name": "jQuery",
+                                "image": "tecnologia_jquery.png",
+                                "web": "https://jquery.com"
+                            },
+                            {
+                                "_id": "5be5e2b634c31bce150d09e4",
+                                "name": "Liquibase",
+                                "image": "tecnologia_liquibase.jpg"
+                            },
+                            {
+                                "_id": "5be5e35234c31bce150d0a18",
+                                "name": "Maven",
+                                "image": "tecnologia_maven.png",
+                                "web": "https://maven.apache.org"
+                            },
+                            {
+                                "_id": "5be5e40c34c31bce150d0a65",
+                                "name": "PostgreSQL",
+                                "image": "tecnologia_postgresql.png",
+                                "web": "https://www.postgresql.org"
+                            },
+                            {
+                                "_id": "5be5e41b34c31bce150d0a6d",
+                                "name": "PrimeFaces",
+                                "image": "tecnologia_primeFaces.png",
+                                "web": "https://www.primefaces.org"
+                            }
+                        ],
+                        "name": "Aplicación Web para el Sector Bancario",
+                        "description": "Desarrollo y mantenimiento de una aplicación web interna para una entidad bancaria.",
+                        "startDate": "2016-10-25T06:44:20.201Z",
+                        "endDate": "2016-12-05T22:25:20.201Z",
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Maquetación CSS con Bootstrap"
+                            },
+                            {
+                                "text": "Desarrollo web con AngularJS"
+                            },
+                            {
+                                "text": "Desarrollo de servicios con AngularJS para consumir API de terceros"
+                            },
+                            {
+                                "text": "Análisis y Diseño de soluciones"
+                            },
+                            {
+                                "text": "Documentación de código"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "projects": []
+    },
+    {
+        "_id": "5c026ea38a9f6135cd2bb077",
+        "description": "Incorporación a plantilla tras 2 meses de buen trabajo previo como Desarrollador Web con AngularJS",
+        "company": {
+            "_id": "5bf82ea68a9f6135cd2b9695",
+            "name": "AUGE Digital",
+            "foundationDate": "2014-06-15T02:34:20.201Z",
+            "image": "empresa_augeDigital.png"
+        },
+        "startDate": "2016-07-02T03:21:20.201Z",
+        "endDate": "2016-10-24T06:43:20.201Z",
+        "projects": [
+            {
+                "technologies": [
+                    {
+                        "_id": "5be3374a34c31bce150d06b2",
+                        "name": "AngularJS",
+                        "image": "tecnologia_angularjs.png",
+                        "web": "https://angularjs.org"
+                    },
+                    {
+                        "_id": "5be5de8934c31bce150d0843",
+                        "name": "Bootstrap",
+                        "image": "tecnologia_bootstrap.png",
+                        "web": "https://getbootstrap.com"
+                    },
+                    {
+                        "_id": "5be5df2834c31bce150d0878",
+                        "name": "Bower",
+                        "image": "tecnologia_bower.png",
+                        "web": "https://bower.io"
+                    },
+                    {
+                        "_id": "5be5dfd634c31bce150d08b2",
+                        "name": "Brunch",
+                        "image": "tecnologia_brunch.png",
+                        "web": "https://brunch.io"
+                    },
+                    {
+                        "_id": "5be5e04e34c31bce150d08ee",
+                        "name": "CSS3",
+                        "image": "tecnologia_css3.png"
+                    },
+                    {
+                        "_id": "5be5e16a34c31bce150d096a",
+                        "name": "JavaScript",
+                        "image": "tecnologia_javascript.png"
+                    },
+                    {
+                        "_id": "5be9be2bb9aaf7a2194bfdb8",
+                        "name": "jQuery",
+                        "image": "tecnologia_jquery.png",
+                        "web": "https://jquery.com"
+                    },
+                    {
+                        "_id": "5be5e3a434c31bce150d0a41",
+                        "name": "NPM",
+                        "image": "tecnologia_npm.png",
+                        "web": "https://www.npmjs.com"
+                    }
+                ],
+                "name": "Portal del Investigador de Universitas XXI - Investigación",
+                "description": "Desarrollo del Frontend del Portal del Investigador de Universitas XXI - Investigación con AngularJS.",
+                "startDate": "2016-07-02T03:21:20.201Z",
+                "endDate": "2016-10-24T06:43:20.201Z",
+                "position": "Desarrollador Web",
+                "functions": [
+                    {
+                        "text": "Maquetación CSS con Bootstrap"
+                    },
+                    {
+                        "text": "Desarrollo web con AngularJS"
+                    },
+                    {
+                        "text": "Desarrollo de servicios con AngularJS para consumir API de terceros"
+                    },
+                    {
+                        "text": "Análisis y Diseño de soluciones"
+                    },
+                    {
+                        "text": "Documentación de código"
+                    }
+                ]
+            }
+        ],
+        "clients": []
+    },
+    {
+        "_id": "5c0270e28a9f6135cd2bb09d",
+        "company": {
+            "_id": "5bf82f5c8a9f6135cd2b96c8",
+            "name": "Aertis",
+            "foundationDate": "2006-06-07T02:26:20.200Z",
+            "image": "empresa_aertis.png",
+            "web": "http://www.aertis.es"
+        },
+        "startDate": "2016-05-10T01:29:20.201Z",
+        "endDate": "2016-07-10T03:29:20.201Z",
+        "clients": [
+            {
+                "company": {
+                    "_id": "5bf82ea68a9f6135cd2b9695",
+                    "name": "AUGE Digital",
+                    "foundationDate": "2014-06-15T02:34:20.201Z",
+                    "image": "empresa_augeDigital.png"
+                },
+                "startDate": "2016-05-10T01:29:20.201Z",
+                "endDate": "2016-07-10T03:29:20.201Z",
+                "description": "Participación en un proyecto de Desarrollo Web con AngularJS por parte de AUGE Digital.",
+                "projects": [
+                    {
+                        "technologies": [
+                            {
+                                "_id": "5be3374a34c31bce150d06b2",
+                                "name": "AngularJS",
+                                "image": "tecnologia_angularjs.png",
+                                "web": "https://angularjs.org"
+                            },
+                            {
+                                "_id": "5be5de8934c31bce150d0843",
+                                "name": "Bootstrap",
+                                "image": "tecnologia_bootstrap.png",
+                                "web": "https://getbootstrap.com"
+                            },
+                            {
+                                "_id": "5be5e04e34c31bce150d08ee",
+                                "name": "CSS3",
+                                "image": "tecnologia_css3.png"
+                            },
+                            {
+                                "_id": "5be5e16a34c31bce150d096a",
+                                "name": "JavaScript",
+                                "image": "tecnologia_javascript.png"
+                            },
+                            {
+                                "_id": "5be9be2bb9aaf7a2194bfdb8",
+                                "name": "jQuery",
+                                "image": "tecnologia_jquery.png",
+                                "web": "https://jquery.com"
+                            },
+                            {
+                                "_id": "5be5e3a434c31bce150d0a41",
+                                "name": "NPM",
+                                "image": "tecnologia_npm.png",
+                                "web": "https://www.npmjs.com"
+                            }
+                        ],
+                        "name": "Portal del Investigador de Universitas XXI - Investigación",
+                        "startDate": "2016-05-10T01:29:20.201Z",
+                        "endDate": "2016-07-10T03:29:20.201Z",
+                        "position": "Desarrollador Web",
+                        "functions": [
+                            {
+                                "text": "Maquetación CSS con Bootstrap"
+                            },
+                            {
+                                "text": "Desarrollo web con AngularJS"
+                            },
+                            {
+                                "text": "Desarrollo de servicios con AngularJS para consumir API de terceros"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "projects": []
+    },
+    {
+        "_id": "5c03cfb28a9f6135cd2bb189",
+        "description": "Desarrollo de aplicaciones web con tecnologías tales como PHP o Laravel y maquetación web con Bootstrap.",
+        "company": {
+            "_id": "5bf82ff38a9f6135cd2b96f2",
+            "name": "Innopro Advanced",
+            "foundationDate": "2009-06-11T02:30:20.200Z",
+            "image": "empresa_innopro.png"
+        },
+        "startDate": "2016-01-04T21:24:20.201Z",
+        "endDate": "2016-03-09T23:29:20.201Z",
+        "projects": [
+            {
+                "technologies": [
+                    {
+                        "_id": "5be5de8934c31bce150d0843",
+                        "name": "Bootstrap",
+                        "image": "tecnologia_bootstrap.png",
+                        "web": "https://getbootstrap.com"
+                    },
+                    {
+                        "_id": "5be5e04e34c31bce150d08ee",
+                        "name": "CSS3",
+                        "image": "tecnologia_css3.png"
+                    },
+                    {
+                        "_id": "5be5e16a34c31bce150d096a",
+                        "name": "JavaScript",
+                        "image": "tecnologia_javascript.png"
+                    },
+                    {
+                        "_id": "5be5e2ab34c31bce150d09e0",
+                        "name": "Laravel",
+                        "image": "tecnologia_laravel.png",
+                        "web": "https://laravel.com"
+                    },
+                    {
+                        "_id": "5be5e3c534c31bce150d0a4d",
+                        "name": "PHP",
+                        "image": "tecnologia_php.png",
+                        "web": "http://php.net"
+                    }
+                ],
+                "name": "Certificaciones TIC",
+                "description": "Aplicación web realizada con PHP para Media Interactiva",
+                "startDate": "2016-01-04T21:24:20.201Z",
+                "endDate": "2016-03-09T23:29:20.201Z",
+                "position": "Desarrollador Web",
+                "functions": [
+                    {
+                        "text": "Desarrollo web con PHP"
+                    },
+                    {
+                        "text": "Modificación de componentes en Laravel"
+                    },
+                    {
+                        "text": "Maquetación CSS con Bootstrap"
+                    },
+                    {
+                        "text": "Animación de contenidos con JavaScript"
+                    }
+                ]
+            }
+        ],
+        "clients": []
+    },
+    {
+        "_id": "5c03d3a58a9f6135cd2bb29a",
+        "description": "Realización de servicios relacionados con certificación de aplicaciones desarrolladas por otras empresas, así como realización de pruebas funcionales, automatización de pruebas con Selenium o revisiones de documentos técnicos.",
+        "company": {
+            "_id": "5bf824ef8a9f6135cd2b9432",
+            "name": "Sopra Steria",
+            "foundationDate": "1968-01-01T20:20:19.196Z",
+            "image": "empresa_sopra.png",
+            "web": "https://www.soprasteria.es"
+        },
+        "startDate": "2014-12-03T08:22:20.201Z",
+        "endDate": "2015-12-26T08:45:20.201Z",
+        "projects": [
+            {
+                "technologies": [
+                    {
+                        "_id": "5be5e11534c31bce150d0949",
+                        "name": "HP LoadRunner",
+                        "image": "tecnologia_hpLoadRunner.png"
+                    },
+                    {
+                        "_id": "5be5e17a34c31bce150d0974",
+                        "name": "Jenkins",
+                        "image": "tecnologia_jenkins.png",
+                        "web": "https://jenkins.io"
+                    },
+                    {
+                        "_id": "5be5e1c534c31bce150d098e",
+                        "name": "jMeter",
+                        "image": "tecnologia_jmeter.png",
+                        "web": "https://jmeter.apache.org"
+                    },
+                    {
+                        "_id": "5be5e33034c31bce150d0a0a",
+                        "name": "Mantis",
+                        "image": "tecnologia_mantis.png",
+                        "web": "https://www.mantisbt.org"
+                    },
+                    {
+                        "_id": "5be5e4a434c31bce150d0aa1",
+                        "name": "Selenium",
+                        "image": "tecnologia_selenium.png",
+                        "web": "https://www.seleniumhq.org/projects/webdriver"
+                    },
+                    {
+                        "_id": "5be5e4b234c31bce150d0aa6",
+                        "name": "SoapUI",
+                        "image": "tecnologia_soapui.png",
+                        "web": "https://www.soapui.org"
+                    },
+                    {
+                        "_id": "5be5e4ff34c31bce150d0ac1",
+                        "name": "SpiraTeam",
+                        "image": "tecnologia_spiraTeam.png",
+                        "web": "https://www.inflectra.com/SpiraTeam"
+                    }
+                ],
+                "name": "Gestión de Calidad sobre aplicaciones para la CMAOT",
+                "description": "Aseguramiento de la calidad sobre multitud de aplicaciones web realizadas para la Consejería de Medio Ambiente y Ordenación del Territorio",
+                "startDate": "2014-12-03T08:22:20.201Z",
+                "endDate": "2015-12-26T08:45:20.201Z",
+                "position": "Tester",
+                "functions": [
+                    {
+                        "text": "Realización de pruebas funcionales manuales"
+                    },
+                    {
+                        "text": "Realización de pruebas funcionales automatizadas con Selenium"
+                    },
+                    {
+                        "text": "Realización de pruebas de rendimiento con jMeter"
+                    },
+                    {
+                        "text": "Reporte de incidencias en Mantis"
+                    },
+                    {
+                        "text": "Soporte técnico a usuarios y desarrolladores"
+                    },
+                    {
+                        "text": "Soporte y revisión de tareas de otros compañeros"
+                    }
+                ]
+            }
+        ],
+        "clients": []
+    },
+    {
+        "_id": "5c03d48e8a9f6135cd2bb2da",
+        "description": "Prácticas no remuneradas de 150 horas como desarrollador con tecnologías Java2EE e interfaces de usuario con Oracle ADF, JSF y JBossSeam.",
+        "company": {
+            "_id": "5bf8314e8a9f6135cd2b974f",
+            "name": "Guadaltel",
+            "foundationDate": "1991-09-30T04:48:19.199Z",
+            "image": "empresa_guadaltel.png",
+            "web": "https://www.guadaltel.com"
+        },
+        "startDate": "2014-02-01T22:21:20.201Z",
+        "endDate": "2014-05-02T01:21:20.201Z",
+        "projects": [
+            {
+                "technologies": [
+                    {
+                        "_id": "5be5e0fc34c31bce150d0941",
+                        "name": "Hibernate",
+                        "image": "tecnologia_hibernate.png",
+                        "web": "http://hibernate.org"
+                    },
+                    {
+                        "_id": "5be5e15634c31bce150d0963",
+                        "name": "Java",
+                        "image": "tecnologia_java.png",
+                        "web": "https://www.java.com"
+                    },
+                    {
+                        "_id": "5be5e1f434c31bce150d09a4",
+                        "name": "JavaServer Faces",
+                        "image": "tecnologia_jsf.png"
+                    },
+                    {
+                        "_id": "5be5e35234c31bce150d0a18",
+                        "name": "Maven",
+                        "image": "tecnologia_maven.png",
+                        "web": "https://maven.apache.org"
+                    }
+                ],
+                "name": "Proyecto Interno de Investigación",
+                "startDate": "2014-02-01T22:21:20.201Z",
+                "endDate": "2014-05-02T01:21:20.201Z",
+                "position": "Desarrollador Web",
+                "functions": [
+                    {
+                        "text": "Desarrollo de Vistas y Controladores para interfaces de usuario"
+                    },
+                    {
+                        "text": "Investigación para desarrollo de PDFs autorrellenables"
+                    }
+                ]
+            }
+        ],
+        "clients": []
+    }
+]

@@ -1,64 +1,45 @@
-const ProfessionalExperience = require('../models/professionalExperience');
+const professionalExperiences = require('../data/professionalExperiences.json');
+
+function sortTechnologiesByName(technologies) {
+  return [...technologies].sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function sortProjectsByStartDate(projects) {
+  return [...projects].sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+}
+
+function mapProject(project) {
+  return {
+    ...project,
+    technologies: sortTechnologiesByName(project.technologies),
+  };
+}
+
+function mapClient(client) {
+  return {
+    ...client,
+    projects: sortProjectsByStartDate(client.projects.map(mapProject)),
+  };
+}
 
 function findAllProfessionalExperiences(req, res) {
-  ProfessionalExperience.find()
-    .populate({
-      path: 'company',
-    })
-    .populate({
-      path: 'projects.technologies',
-    })
-    .populate({
-      path: 'clients.company',
-    })
-    .populate({
-      path: 'clients.projects.technologies',
-    })
-    .exec((err, professionalExperiences) => {
-      if (err) {
-        return res.status(400).send(
-          JSON.stringify(
-            {
-              message: err,
-            },
-            null,
-            4,
-          ),
-        );
-      }
+  const result = professionalExperiences.map((experience) => {
+    const clone = { ...experience };
 
-      professionalExperiences.forEach((professionalExperience) => {
-        if (
-          professionalExperience.projects
-                    && professionalExperience.projects.length
-        ) {
-          professionalExperience.projects.forEach((project) => {
-            project.technologies.sort((a, b) => a.name.localeCompare(b.name));
-          });
+    if (clone.projects && clone.projects.length) {
+      clone.projects = sortProjectsByStartDate(clone.projects.map(mapProject));
+    }
 
-          professionalExperience.projects.sort((a, b) => b.startDate - a.startDate);
-        }
+    if (clone.clients && clone.clients.length) {
+      clone.clients = clone.clients.map(mapClient);
+    }
 
-        if (
-          professionalExperience.clients
-                    && professionalExperience.clients.length
-        ) {
-          professionalExperience.clients.forEach((client) => {
-            client.projects.forEach((project) => {
-              project.technologies.sort((a, b) => a.name.localeCompare(b.name));
-            });
+    return clone;
+  });
 
-            client.projects.sort((a, b) => b.startDate - a.startDate);
-          });
-        }
-      });
+  result.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
 
-      professionalExperiences.sort((a, b) => b.startDate - a.startDate);
-
-      return res
-        .status(200)
-        .send(JSON.stringify(professionalExperiences, null, 4));
-    });
+  return res.status(200).send(JSON.stringify(result, null, 4));
 }
 
 module.exports = {

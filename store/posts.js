@@ -28,6 +28,7 @@ export const actions = {
 
     return query
       .where(whereConditions)
+      .without(['body', 'toc', 'text', 'excerpt'])
       .sortBy('creationDate', 'desc')
       .fetch()
       .then((posts) => commit('setAll', posts));

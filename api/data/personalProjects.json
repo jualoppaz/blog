@@ -1,0 +1,653 @@
+[
+    {
+        "technologies": [
+            {
+                "_id": "5e247d14c0ac030cdc4da2e7",
+                "name": "Axios",
+                "image": "tecnologia_axios.png",
+                "web": "https://github.com/axios/axios"
+            },
+            {
+                "_id": "5fbd6e80152eedb2f31543ec",
+                "name": "Element",
+                "image": "tecnologia_element.png",
+                "web": "https://element.eleme.io/#/es"
+            },
+            {
+                "_id": "5fbeb5fb152eedb2f3b77372",
+                "name": "ESLint",
+                "image": "tecnologia_eslint.png",
+                "web": "https://eslint.org"
+            },
+            {
+                "_id": "5be5e0c034c31bce150d0928",
+                "name": "Font Awesome",
+                "image": "tecnologia_fontAwesome.png",
+                "web": "https://fontawesome.com"
+            },
+            {
+                "_id": "5be5e35e34c31bce150d0a1d",
+                "name": "MongoDB",
+                "image": "tecnologia_mongodb.png",
+                "web": "https://www.mongodb.com/es"
+            },
+            {
+                "_id": "5be5e36b34c31bce150d0a21",
+                "name": "Mongoose",
+                "image": "tecnologia_mongoose.png",
+                "web": "https://mongoosejs.com"
+            },
+            {
+                "_id": "5be5e39634c31bce150d0a34",
+                "name": "NodeJS",
+                "image": "tecnologia_nodejs.png",
+                "web": "https://nodejs.org"
+            },
+            {
+                "_id": "5fbd7120152eedb2f3168b8c",
+                "name": "Nuxt",
+                "image": "tecnologia_nuxt.png",
+                "web": "https://nuxtjs.org"
+            },
+            {
+                "_id": "5fbd7b28152eedb2f31b77ab",
+                "name": "nuxt/content",
+                "image": "tecnologia_nuxt-content.png",
+                "web": "https://content.nuxtjs.org"
+            },
+            {
+                "_id": "5be5e49734c31bce150d0a9b",
+                "name": "Sass",
+                "image": "tecnologia_sass.png",
+                "web": "https://sass-lang.com"
+            },
+            {
+                "_id": "5be5e5cd34c31bce150d0b0d",
+                "name": "VueJS",
+                "image": "tecnologia_vuejs.png",
+                "web": "https://vuejs.org"
+            }
+        ],
+        "_id": "5fbd4508152eedb2f300e874",
+        "name": "JMLP v2",
+        "image": "yo_2018.jpg",
+        "startDate": "2020-05-31T21:21:20.201Z",
+        "endDate": null,
+        "description": "Rediseño de mi página web personal con Nuxt haciendo uso de la renderización en servidor en modo Universal, manteniendo la estrategia SPA en el front. Se incorpora un blog en el que añadiré artículos, relacionados tanto con tecnologías como con mi principal hobby: la música procesional.",
+        "links": [
+            {
+                "type": "web",
+                "value": "http://www.juanmanuellopezpazos.es"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/blog"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5e247d14c0ac030cdc4da2e7",
+                "name": "Axios",
+                "image": "tecnologia_axios.png",
+                "web": "https://github.com/axios/axios"
+            },
+            {
+                "_id": "5fbd6e80152eedb2f31543ec",
+                "name": "Element",
+                "image": "tecnologia_element.png",
+                "web": "https://element.eleme.io/#/es"
+            },
+            {
+                "_id": "5fbeb5fb152eedb2f3b77372",
+                "name": "ESLint",
+                "image": "tecnologia_eslint.png",
+                "web": "https://eslint.org"
+            },
+            {
+                "_id": "5be5e0c034c31bce150d0928",
+                "name": "Font Awesome",
+                "image": "tecnologia_fontAwesome.png",
+                "web": "https://fontawesome.com"
+            },
+            {
+                "_id": "5fbea39a152eedb2f3ae46df",
+                "name": "Jest",
+                "image": "tecnologia_jest.png",
+                "web": "https://jestjs.io"
+            },
+            {
+                "_id": "5be5e2ab34c31bce150d09e0",
+                "name": "Laravel",
+                "image": "tecnologia_laravel.png",
+                "web": "https://laravel.com"
+            },
+            {
+                "_id": "5fbd7120152eedb2f3168b8c",
+                "name": "Nuxt",
+                "image": "tecnologia_nuxt.png",
+                "web": "https://nuxtjs.org"
+            },
+            {
+                "_id": "5be5e40c34c31bce150d0a65",
+                "name": "PostgreSQL",
+                "image": "tecnologia_postgresql.png",
+                "web": "https://www.postgresql.org"
+            },
+            {
+                "_id": "5be5e49734c31bce150d0a9b",
+                "name": "Sass",
+                "image": "tecnologia_sass.png",
+                "web": "https://sass-lang.com"
+            },
+            {
+                "_id": "5be5e53d34c31bce150d0adc",
+                "name": "Swagger",
+                "image": "tecnologia_swagger.png",
+                "web": "https://swagger.io"
+            },
+            {
+                "_id": "5be5e5cd34c31bce150d0b0d",
+                "name": "VueJS",
+                "image": "tecnologia_vuejs.png",
+                "web": "https://vuejs.org"
+            }
+        ],
+        "_id": "5fbe95d1152eedb2f3a76344",
+        "name": "ANHQV STATS",
+        "image": "proyecto_anhqv-stats.png",
+        "startDate": "2020-03-21T21:21:20.201Z",
+        "endDate": null,
+        "description": "Desarrollo de una aplicación web con información y estadísticas de la famosa serie de televisión \"Aquí no hay quien viva\". Con esta aplicación consolidaré mis conocimientos de Vue y Nuxt, así como de conceptos de SEO. Y en cuanto al Back la API está implementada con Laravel y documentada con Swagger.",
+        "links": [
+            {
+                "type": "web",
+                "value": "http://www.anhqv-stats.es"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/anhqv-stats-front"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/anhqv-stats-api"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be5ddca34c31bce150d0804",
+                "name": "Angular",
+                "image": "tecnologia_angular.png",
+                "web": "https://angular.io"
+            },
+            {
+                "_id": "5be3374a34c31bce150d06b2",
+                "name": "AngularJS",
+                "image": "tecnologia_angularjs.png",
+                "web": "https://angularjs.org"
+            },
+            {
+                "_id": "5be5de8934c31bce150d0843",
+                "name": "Bootstrap",
+                "image": "tecnologia_bootstrap.png",
+                "web": "https://getbootstrap.com"
+            },
+            {
+                "_id": "5fbeb5fb152eedb2f3b77372",
+                "name": "ESLint",
+                "image": "tecnologia_eslint.png",
+                "web": "https://eslint.org"
+            },
+            {
+                "_id": "5fbeba95152eedb2f3b9c230",
+                "name": "React",
+                "image": "tecnologia_react.png",
+                "web": "https://es.reactjs.org"
+            },
+            {
+                "_id": "5e247de7c0ac030cdc4da495",
+                "name": "single-spa",
+                "image": "tecnologia_single-spa.png",
+                "web": "https://single-spa.js.org"
+            },
+            {
+                "_id": "5be5e5cd34c31bce150d0b0d",
+                "name": "VueJS",
+                "image": "tecnologia_vuejs.png",
+                "web": "https://vuejs.org"
+            },
+            {
+                "_id": "5fbeb9c4152eedb2f3b95aec",
+                "name": "Webpack",
+                "image": "tecnologia_webpack.png",
+                "web": "https://webpack.js.org"
+            }
+        ],
+        "_id": "5fbebac1152eedb2f3b9d841",
+        "name": "Aplicación single-spa con paquetes de NPM",
+        "image": "tecnologia_single-spa.png",
+        "startDate": "2020-01-12T21:21:20.201Z",
+        "endDate": null,
+        "description": "Desarrollo de una aplicación web con micro-frontends desplegados a partir de paquetes de NPM. Dado que no había ningún ejemplo práctico en la documentación oficial de single-spa con este tipo de despliegue decidí realizarlo yo, consiguiendo que sea incluido en la propia documentación del framework como referencia.",
+        "links": [
+            {
+                "type": "web",
+                "value": "https://single-spa-with-npm-packages.herokuapp.com"
+            },
+            {
+                "type": "contribution",
+                "value": "https://single-spa.js.org/docs/separating-applications/#comparison"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/single-spa-login-example-with-npm-packages"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/single-spa-auth-app"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/single-spa-layout-app"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/single-spa-home-app"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/single-spa-angular-app"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/single-spa-vue-app"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/single-spa-react-app"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be3374a34c31bce150d06b2",
+                "name": "AngularJS",
+                "image": "tecnologia_angularjs.png",
+                "web": "https://angularjs.org"
+            },
+            {
+                "_id": "5be5df2834c31bce150d0878",
+                "name": "Bower",
+                "image": "tecnologia_bower.png",
+                "web": "https://bower.io"
+            },
+            {
+                "_id": "5be5dfd634c31bce150d08b2",
+                "name": "Brunch",
+                "image": "tecnologia_brunch.png",
+                "web": "https://brunch.io"
+            },
+            {
+                "_id": "5be5e27d34c31bce150d09cd",
+                "name": "JSHint",
+                "image": "tecnologia_jshint.png",
+                "web": "https://jshint.com"
+            },
+            {
+                "_id": "5be5e39634c31bce150d0a34",
+                "name": "NodeJS",
+                "image": "tecnologia_nodejs.png",
+                "web": "https://nodejs.org"
+            },
+            {
+                "_id": "5be5e3a434c31bce150d0a41",
+                "name": "NPM",
+                "image": "tecnologia_npm.png",
+                "web": "https://www.npmjs.com"
+            },
+            {
+                "_id": "5be5e49734c31bce150d0a9b",
+                "name": "Sass",
+                "image": "tecnologia_sass.png",
+                "web": "https://sass-lang.com"
+            }
+        ],
+        "_id": "5beddd260132314423283ab0",
+        "name": "CIDA",
+        "image": "tecnologia_brunch.png",
+        "startDate": "2017-02-01T21:21:20.201Z",
+        "endDate": "2017-11-30T21:21:20.201Z",
+        "description": "Desarrollo de una aplicación web realizada con AngularJS, la cual incluye una Integración Continua muy completa con la herramienta Brunch, de modo que sea pueda agilizar el desarrollo desde la compilación de assets hasta su despliegue optimizado en un sistema como Heroku.",
+        "links": [
+            {
+                "type": "web",
+                "value": "https://cida.herokuapp.com"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/cida"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be3374a34c31bce150d06b2",
+                "name": "AngularJS",
+                "image": "tecnologia_angularjs.png",
+                "web": "https://angularjs.org"
+            },
+            {
+                "_id": "5be5de8934c31bce150d0843",
+                "name": "Bootstrap",
+                "image": "tecnologia_bootstrap.png",
+                "web": "https://getbootstrap.com"
+            },
+            {
+                "_id": "5be5e35e34c31bce150d0a1d",
+                "name": "MongoDB",
+                "image": "tecnologia_mongodb.png",
+                "web": "https://www.mongodb.com/es"
+            },
+            {
+                "_id": "5be5e39634c31bce150d0a34",
+                "name": "NodeJS",
+                "image": "tecnologia_nodejs.png",
+                "web": "https://nodejs.org"
+            },
+            {
+                "_id": "5be5e42834c31bce150d0a72",
+                "name": "Pug",
+                "image": "tecnologia_pug.png",
+                "web": "https://pugjs.org"
+            }
+        ],
+        "_id": "5bede28c0132314423283c23",
+        "name": "JMLP",
+        "image": "yo_web4.jpg",
+        "startDate": "2016-03-01T21:21:20.201Z",
+        "endDate": "2020-06-27T21:21:20.201Z",
+        "description": "Desarrollo de mi página web personal para darme a conocer, donde se puede consultar mi currículum y mi expediente académico, entre otras cosas. Esta aplicación web no es igual que el resto, ya que ha sido realizada con la filosofía SPA (Single Page Application). Esto quiere decir que consta de una sola página con diferentes vistas, de modo que no se necesita recargar la página debido a que las vistas se encuentran en el cliente y no en el servidor.",
+        "links": [
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/jmlp"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be3374a34c31bce150d06b2",
+                "name": "AngularJS",
+                "image": "tecnologia_angularjs.png",
+                "web": "https://angularjs.org"
+            },
+            {
+                "_id": "5be5de8934c31bce150d0843",
+                "name": "Bootstrap",
+                "image": "tecnologia_bootstrap.png",
+                "web": "https://getbootstrap.com"
+            },
+            {
+                "_id": "5be5e35e34c31bce150d0a1d",
+                "name": "MongoDB",
+                "image": "tecnologia_mongodb.png",
+                "web": "https://www.mongodb.com/es"
+            },
+            {
+                "_id": "5be5e39634c31bce150d0a34",
+                "name": "NodeJS",
+                "image": "tecnologia_nodejs.png",
+                "web": "https://nodejs.org"
+            },
+            {
+                "_id": "5be5e42834c31bce150d0a72",
+                "name": "Pug",
+                "image": "tecnologia_pug.png",
+                "web": "https://pugjs.org"
+            }
+        ],
+        "_id": "5bf140658a9f6135cd2b4bb8",
+        "name": "Rayosol Toldos",
+        "image": "proyecto_rayosol.png",
+        "startDate": "2015-02-01T21:21:20.201Z",
+        "endDate": "2015-06-01T21:21:20.201Z",
+        "description": "Página web para la empresa Rayosol Toldos con el objetivo de mostrar los distintos modelos de toldos que fabrican e instalan,así como facilitar a los usuarios una forma de contacto inmediata mediante el envío de emails desde la propia página.",
+        "links": [
+            {
+                "type": "web",
+                "value": "http://www.rayosoltoldos.com"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be3374a34c31bce150d06b2",
+                "name": "AngularJS",
+                "image": "tecnologia_angularjs.png",
+                "web": "https://angularjs.org"
+            },
+            {
+                "_id": "5be5de8934c31bce150d0843",
+                "name": "Bootstrap",
+                "image": "tecnologia_bootstrap.png",
+                "web": "https://getbootstrap.com"
+            },
+            {
+                "_id": "5be5e0c034c31bce150d0928",
+                "name": "Font Awesome",
+                "image": "tecnologia_fontAwesome.png",
+                "web": "https://fontawesome.com"
+            },
+            {
+                "_id": "5be5e35e34c31bce150d0a1d",
+                "name": "MongoDB",
+                "image": "tecnologia_mongodb.png",
+                "web": "https://www.mongodb.com/es"
+            },
+            {
+                "_id": "5be5e39634c31bce150d0a34",
+                "name": "NodeJS",
+                "image": "tecnologia_nodejs.png",
+                "web": "https://nodejs.org"
+            },
+            {
+                "_id": "5be5e42834c31bce150d0a72",
+                "name": "Pug",
+                "image": "tecnologia_pug.png",
+                "web": "https://pugjs.org"
+            }
+        ],
+        "_id": "5bf143338a9f6135cd2b4c7e",
+        "name": "Complementos Marta Pazos",
+        "image": "proyecto_complementosMartaPazos.png",
+        "startDate": "2014-10-01T21:21:20.201Z",
+        "endDate": "2015-01-01T21:21:20.201Z",
+        "description": "Desarrollo de la página web de Complementos Marta Pazos la cual consta de: un amplio catálogo de productos, panel de administración de todo tipo de contenidos de la web como noticias o detalles de los productos, comercio electrónico integrando la API REST de Paypal con el carrito de compras y un diseño totalmente personalizado acorde con el oficio.",
+        "links": [
+            {
+                "type": "web",
+                "value": "http://complementosmartapazos.com"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be3374a34c31bce150d06b2",
+                "name": "AngularJS",
+                "image": "tecnologia_angularjs.png",
+                "web": "https://angularjs.org"
+            },
+            {
+                "_id": "5be5de8934c31bce150d0843",
+                "name": "Bootstrap",
+                "image": "tecnologia_bootstrap.png",
+                "web": "https://getbootstrap.com"
+            },
+            {
+                "_id": "5be5e0c034c31bce150d0928",
+                "name": "Font Awesome",
+                "image": "tecnologia_fontAwesome.png",
+                "web": "https://fontawesome.com"
+            },
+            {
+                "_id": "5be5e35e34c31bce150d0a1d",
+                "name": "MongoDB",
+                "image": "tecnologia_mongodb.png",
+                "web": "https://www.mongodb.com/es"
+            },
+            {
+                "_id": "5be5e39634c31bce150d0a34",
+                "name": "NodeJS",
+                "image": "tecnologia_nodejs.png",
+                "web": "https://nodejs.org"
+            },
+            {
+                "_id": "5be5e42834c31bce150d0a72",
+                "name": "Pug",
+                "image": "tecnologia_pug.png",
+                "web": "https://pugjs.org"
+            }
+        ],
+        "_id": "5bf1443f8a9f6135cd2b4ccb",
+        "name": "Pronostigol",
+        "image": "proyecto_pronostigol.png",
+        "startDate": "2014-05-01T21:21:20.201Z",
+        "description": "Aplicación web para consultar estadísticas relacionadas con los distintos sorteos de Loterías y Apuestas del Estado (LAE).",
+        "links": [
+            {
+                "type": "web",
+                "value": "http://pronostigol.es"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/pronostigol"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be5de8934c31bce150d0843",
+                "name": "Bootstrap",
+                "image": "tecnologia_bootstrap.png",
+                "web": "https://getbootstrap.com"
+            },
+            {
+                "_id": "5be5e06934c31bce150d08f6",
+                "name": "Django",
+                "image": "tecnologia_django.png",
+                "web": "https://www.djangoproject.com"
+            },
+            {
+                "_id": "5be5e12834c31bce150d0950",
+                "name": "HTML5",
+                "image": "tecnologia_html5.png"
+            },
+            {
+                "_id": "5be5e35e34c31bce150d0a1d",
+                "name": "MongoDB",
+                "image": "tecnologia_mongodb.png",
+                "web": "https://www.mongodb.com/es"
+            }
+        ],
+        "_id": "5bf145f58a9f6135cd2b4d41",
+        "name": "EatHub",
+        "image": "proyecto_eathub.png",
+        "startDate": "2014-02-01T21:21:20.201Z",
+        "endDate": "2014-09-01T21:21:20.201Z",
+        "description": "Aplicación web para crear, compartir y personalizar recetas. Proyecto realizado durante la asignatura ISPP (Ingeniería del Software y Práctica Profesional) del cuarto curso del Grado en Ingeniería Informática - Ingeniería del Software de la Universidad de Sevilla.",
+        "links": [
+            {
+                "type": "web",
+                "value": "http://eat-hub.herokuapp.com"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/EatHub"
+            }
+        ]
+    },
+    {
+        "technologies": [
+            {
+                "_id": "5be3374a34c31bce150d06b2",
+                "name": "AngularJS",
+                "image": "tecnologia_angularjs.png",
+                "web": "https://angularjs.org"
+            },
+            {
+                "_id": "5be5de8934c31bce150d0843",
+                "name": "Bootstrap",
+                "image": "tecnologia_bootstrap.png",
+                "web": "https://getbootstrap.com"
+            },
+            {
+                "_id": "5be5e0c034c31bce150d0928",
+                "name": "Font Awesome",
+                "image": "tecnologia_fontAwesome.png",
+                "web": "https://fontawesome.com"
+            },
+            {
+                "_id": "5be5e35e34c31bce150d0a1d",
+                "name": "MongoDB",
+                "image": "tecnologia_mongodb.png",
+                "web": "https://www.mongodb.com/es"
+            },
+            {
+                "_id": "5be5e39634c31bce150d0a34",
+                "name": "NodeJS",
+                "image": "tecnologia_nodejs.png",
+                "web": "https://nodejs.org"
+            },
+            {
+                "_id": "5be5e42834c31bce150d0a72",
+                "name": "Pug",
+                "image": "tecnologia_pug.png",
+                "web": "https://pugjs.org"
+            }
+        ],
+        "_id": "5bf147398a9f6135cd2b4d9a",
+        "name": "La Gloria",
+        "image": "proyecto_lagloria.png",
+        "startDate": "2013-12-01T21:21:20.201Z",
+        "endDate": "2014-09-01T21:21:20.201Z",
+        "description": "Página web para la empresa Caramelos La Gloria con el objetivo de mostrar un amplio catálogo de productos, todo ello con un diseño innovador y atractivo para los usuarios. Este proyecto fue presentado como Trabajo de Fin de Grado en el Grado en Ingeniería Informática - Ingeniería del Software.",
+        "links": [
+            {
+                "type": "web",
+                "value": "http://carameloslagloria.herokuapp.com"
+            },
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz/lagloria"
+            },
+            {
+                "type": "tfg_documentation",
+                "value": "/docs/memoria_tfg.pdf"
+            }
+        ]
+    },
+    {
+        "technologies": [],
+        "_id": "5bf148a68a9f6135cd2b4dfe",
+        "name": "Usuario activo en la comunidad de Desarolladores GitHub",
+        "image": "tecnologia_github.png",
+        "startDate": "2013-12-01T21:21:20.201Z",
+        "endDate": null,
+        "description": "En mi perfil de GitHub tengo publicados multitud de proyectos para tener copias de seguridad de los mismos y, además, para ayudar a otros usuarios con soluciones propuestas con distintas tecnologías.",
+        "links": [
+            {
+                "type": "repository",
+                "value": "https://github.com/jualoppaz"
+            }
+        ]
+    }
+]

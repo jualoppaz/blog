@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "5bf30d968a9f6135cd2b82d9",
+        "image": "formacionComplementaria_istqb.png",
+        "date": "2015-11-02T07:21:20.201Z",
+        "description": "Certificación ISTQB nivel Foundation",
+        "certification": "certificado_istqb.pdf"
+    },
+    {
+        "_id": "5bf30ddf8a9f6135cd2b82e7",
+        "image": "formacionComplementaria_hp_loadRunner.png",
+        "date": "2015-10-02T06:21:20.201Z",
+        "description": "Curso de 12 horas sobre la herramienta HP LoadRunner",
+        "certification": "certificado_hploadrunner.pdf"
+    },
+    {
+        "_id": "61edc10f2772a008470d4cf8",
+        "image": "formacionComplementaria_scrumMaster.png",
+        "date": "2021-11-15T07:21:20.201Z",
+        "description": "Certificación Scrum Master",
+        "certification": "certificado_scrumMaster.pdf"
+    }
+]

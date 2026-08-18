@@ -1,4 +1,4 @@
-const ev = require('express-validation');
+const { validate } = require('express-validation');
 const express = require('express');
 
 // Controllers
@@ -13,12 +13,9 @@ const professionalExperienceController = require('../controllers/professionalExp
 const validationsTechnology = require('../validations/technologyValidations');
 const validationsKnowledge = require('../validations/knowledgeValidations');
 
-module.exports = function index(router) {
-  ev.options({
-    status: 422,
-    statusText: 'Unprocessable Entity',
-  });
+const validationOptions = { statusCode: 422 };
 
+module.exports = function index(router) {
   const apiRouter = express.Router();
   const curriculum = express.Router();
 
@@ -27,7 +24,7 @@ module.exports = function index(router) {
   apiRouter
     .route('/technologies/:technology_id')
     .get(
-      ev(validationsTechnology.findTechnologyById),
+      validate(validationsTechnology.findTechnologyById, validationOptions),
       technologyController.show,
     );
 
@@ -36,7 +33,7 @@ module.exports = function index(router) {
   curriculum
     .route('/knowledge')
     .get(
-      ev(validationsKnowledge.findAllKnowledge),
+      validate(validationsKnowledge.findAllKnowledge, validationOptions),
       knowledgeController.index,
     );
 

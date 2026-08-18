@@ -3,8 +3,8 @@ Joi.objectId = require('joi-objectid')(Joi);
 
 module.exports = {
   findTechnologyById: {
-    params: {
+    params: Joi.object({
       technology_id: Joi.objectId().required(),
-    },
+    }),
   },
 };

@@ -786,7 +786,6 @@ export const getters = {
 
     const creditsNumber = credits.reduce((prev, current) => prev + current);
 
-
     return Math.round((totalMarks / creditsNumber) * 100) / 100;
   },
   getSubjectAverageByDegreeCourse: (state) => (degreeCourse) => {
@@ -824,7 +823,6 @@ export const getters = {
       .map((subject) => subject.creditos);
 
     const creditsNumber = credits.reduce((prev, current) => prev + current);
-
 
     return Math.round((totalMarks / creditsNumber) * 100) / 100;
   },
@@ -881,7 +879,6 @@ export const getters = {
       .map((subject) => subject.creditos);
 
     const creditsNumber = credits.reduce((prev, current) => prev + current);
-
 
     return Math.round((totalMarks / creditsNumber) * 100) / 100;
   },

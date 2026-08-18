@@ -20,7 +20,6 @@ function isMobile() {
   return window.innerWidth < constants.DEVICES.TABLET.MIN_WIDTH;
 }
 
-
 /**
  * Método que sirve para saber si nos encontramos en una tablet.
  *
@@ -30,7 +29,6 @@ function isTablet() {
   return window.innerWidth >= constants.DEVICES.TABLET.MIN_WIDTH
     && window.innerWidth < constants.DEVICES.DESKTOP.MIN_WIDTH;
 }
-
 
 /**
  * Método que sirve para saber si nos encontramos en un dispositivo de escritorio.

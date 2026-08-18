@@ -1,0 +1,483 @@
+[
+    {
+        "_id": "5be5de8934c31bce150d0843",
+        "name": "Bootstrap",
+        "image": "tecnologia_bootstrap.png",
+        "web": "https://getbootstrap.com"
+    },
+    {
+        "_id": "5be5e36b34c31bce150d0a21",
+        "name": "Mongoose",
+        "image": "tecnologia_mongoose.png",
+        "web": "https://mongoosejs.com"
+    },
+    {
+        "_id": "5be5e00e34c31bce150d08c9",
+        "name": "Coffee Script",
+        "image": "tecnologia_coffeeScript.png"
+    },
+    {
+        "_id": "5be5e0fc34c31bce150d0941",
+        "name": "Hibernate",
+        "image": "tecnologia_hibernate.png",
+        "web": "http://hibernate.org"
+    },
+    {
+        "_id": "5be5e33034c31bce150d0a0a",
+        "name": "Mantis",
+        "image": "tecnologia_mantis.png",
+        "web": "https://www.mantisbt.org"
+    },
+    {
+        "_id": "5be5e39634c31bce150d0a34",
+        "name": "NodeJS",
+        "image": "tecnologia_nodejs.png",
+        "web": "https://nodejs.org"
+    },
+    {
+        "_id": "5be5e4b234c31bce150d0aa6",
+        "name": "SoapUI",
+        "image": "tecnologia_soapui.png",
+        "web": "https://www.soapui.org"
+    },
+    {
+        "_id": "5be5e43b34c31bce150d0a78",
+        "name": "PyCharm",
+        "image": "tecnologia_pyCharm.png"
+    },
+    {
+        "_id": "5be5e45434c31bce150d0a84",
+        "name": "Python",
+        "image": "tecnologia_python.png",
+        "web": "https://www.python.org"
+    },
+    {
+        "_id": "5be3374a34c31bce150d06b2",
+        "name": "AngularJS",
+        "image": "tecnologia_angularjs.png",
+        "web": "https://angularjs.org"
+    },
+    {
+        "_id": "5be5e1c534c31bce150d098e",
+        "name": "jMeter",
+        "image": "tecnologia_jmeter.png",
+        "web": "https://jmeter.apache.org"
+    },
+    {
+        "_id": "5be5e29e34c31bce150d09db",
+        "name": "Laravel-Mix",
+        "image": "tecnologia_laravel-mix.png"
+    },
+    {
+        "_id": "5be5e3b134c31bce150d0a45",
+        "name": "Oracle",
+        "image": "tecnologia_oracle.png",
+        "web": "https://www.oracle.com/es/database"
+    },
+    {
+        "_id": "5be5e4ff34c31bce150d0ac1",
+        "name": "SpiraTeam",
+        "image": "tecnologia_spiraTeam.png",
+        "web": "https://www.inflectra.com/SpiraTeam"
+    },
+    {
+        "_id": "5be5e52034c31bce150d0ace",
+        "name": "Sublime Text",
+        "image": "tecnologia_sublimeText.png"
+    },
+    {
+        "_id": "5be5de7134c31bce150d083b",
+        "name": "Atom",
+        "image": "tecnologia_atom.png"
+    },
+    {
+        "_id": "5be5e35234c31bce150d0a18",
+        "name": "Maven",
+        "image": "tecnologia_maven.png",
+        "web": "https://maven.apache.org"
+    },
+    {
+        "_id": "5be5ddca34c31bce150d0804",
+        "name": "Angular",
+        "image": "tecnologia_angular.png",
+        "web": "https://angular.io"
+    },
+    {
+        "_id": "5be5df4a34c31bce150d0882",
+        "name": "Brackets",
+        "image": "tecnologia_brackets.png"
+    },
+    {
+        "_id": "5be5e12834c31bce150d0950",
+        "name": "HTML5",
+        "image": "tecnologia_html5.png"
+    },
+    {
+        "_id": "5be5e17a34c31bce150d0974",
+        "name": "Jenkins",
+        "image": "tecnologia_jenkins.png",
+        "web": "https://jenkins.io"
+    },
+    {
+        "_id": "5be5e1f434c31bce150d09a4",
+        "name": "JavaServer Faces",
+        "image": "tecnologia_jsf.png"
+    },
+    {
+        "_id": "5be5e27d34c31bce150d09cd",
+        "name": "JSHint",
+        "image": "tecnologia_jshint.png",
+        "web": "https://jshint.com"
+    },
+    {
+        "_id": "5be5e30434c31bce150d09fb",
+        "name": "Lumen",
+        "image": "tecnologia_lumen.png",
+        "web": "https://lumen.laravel.com"
+    },
+    {
+        "_id": "5be5e41b34c31bce150d0a6d",
+        "name": "PrimeFaces",
+        "image": "tecnologia_primeFaces.png",
+        "web": "https://www.primefaces.org"
+    },
+    {
+        "_id": "5be5e4a434c31bce150d0aa1",
+        "name": "Selenium",
+        "image": "tecnologia_selenium.png",
+        "web": "https://www.seleniumhq.org/projects/webdriver"
+    },
+    {
+        "_id": "5be5e5e434c31bce150d0b17",
+        "name": "WebStorm",
+        "image": "tecnologia_webStorm.png"
+    },
+    {
+        "_id": "5be5e0ea34c31bce150d0936",
+        "name": "GitHub",
+        "image": "tecnologia_github.png"
+    },
+    {
+        "_id": "5be5e1a834c31bce150d0981",
+        "name": "Jira",
+        "image": "tecnologia_jira.png",
+        "web": "https://es.atlassian.com/software/jira"
+    },
+    {
+        "_id": "5be5e2ab34c31bce150d09e0",
+        "name": "Laravel",
+        "image": "tecnologia_laravel.png",
+        "web": "https://laravel.com"
+    },
+    {
+        "_id": "5be5e08034c31bce150d0907",
+        "name": "Doctrine",
+        "image": "tecnologia_doctrine.png",
+        "web": "https://www.doctrine-project.org"
+    },
+    {
+        "_id": "5be5df2834c31bce150d0878",
+        "name": "Bower",
+        "image": "tecnologia_bower.png",
+        "web": "https://bower.io"
+    },
+    {
+        "_id": "5be5e35e34c31bce150d0a1d",
+        "name": "MongoDB",
+        "image": "tecnologia_mongodb.png",
+        "web": "https://www.mongodb.com/es"
+    },
+    {
+        "_id": "5be5e3a434c31bce150d0a41",
+        "name": "NPM",
+        "image": "tecnologia_npm.png",
+        "web": "https://www.npmjs.com"
+    },
+    {
+        "_id": "5be5e3f834c31bce150d0a5d",
+        "name": "PhpStorm",
+        "image": "tecnologia_phpStorm.png"
+    },
+    {
+        "_id": "5be5e0af34c31bce150d091d",
+        "name": "ExpressJS",
+        "image": "tecnologia_expressjs.png",
+        "web": "https://expressjs.com"
+    },
+    {
+        "_id": "5be5e16a34c31bce150d096a",
+        "name": "JavaScript",
+        "image": "tecnologia_javascript.png"
+    },
+    {
+        "_id": "5be5e11534c31bce150d0949",
+        "name": "HP LoadRunner",
+        "image": "tecnologia_hpLoadRunner.png"
+    },
+    {
+        "_id": "5be5e53d34c31bce150d0adc",
+        "name": "Swagger",
+        "image": "tecnologia_swagger.png",
+        "web": "https://swagger.io"
+    },
+    {
+        "_id": "5be5e54934c31bce150d0ae1",
+        "name": "Symfony",
+        "image": "tecnologia_symfony.png",
+        "web": "https://symfony.es"
+    },
+    {
+        "_id": "5be5e58d34c31bce150d0af7",
+        "name": "Ubuntu",
+        "image": "tecnologia_ubuntu.png"
+    },
+    {
+        "_id": "5be5e04e34c31bce150d08ee",
+        "name": "CSS3",
+        "image": "tecnologia_css3.png"
+    },
+    {
+        "_id": "5be5e42834c31bce150d0a72",
+        "name": "Pug",
+        "image": "tecnologia_pug.png",
+        "web": "https://pugjs.org"
+    },
+    {
+        "_id": "5be5e5cd34c31bce150d0b0d",
+        "name": "VueJS",
+        "image": "tecnologia_vuejs.png",
+        "web": "https://vuejs.org"
+    },
+    {
+        "_id": "5be5e03334c31bce150d08dd",
+        "name": "Composer",
+        "image": "tecnologia_composer.png",
+        "web": "https://getcomposer.org"
+    },
+    {
+        "_id": "5be5e09c34c31bce150d0916",
+        "name": "Eclipse",
+        "image": "tecnologia_eclipse.png"
+    },
+    {
+        "_id": "5be5e40c34c31bce150d0a65",
+        "name": "PostgreSQL",
+        "image": "tecnologia_postgresql.png",
+        "web": "https://www.postgresql.org"
+    },
+    {
+        "_id": "5be5e5a934c31bce150d0b01",
+        "name": "Visual Studio Code",
+        "image": "tecnologia_visualStudioCode.png"
+    },
+    {
+        "_id": "5be5dfd634c31bce150d08b2",
+        "name": "Brunch",
+        "image": "tecnologia_brunch.png",
+        "web": "https://brunch.io"
+    },
+    {
+        "_id": "5be5e28e34c31bce150d09d2",
+        "name": "JSON",
+        "image": "tecnologia_json.png"
+    },
+    {
+        "_id": "5be5e2b634c31bce150d09e4",
+        "name": "Liquibase",
+        "image": "tecnologia_liquibase.jpg"
+    },
+    {
+        "_id": "5be5e53034c31bce150d0ad6",
+        "name": "Subversion",
+        "image": "tecnologia_subversion.png",
+        "web": "https://subversion.apache.org"
+    },
+    {
+        "_id": "5be5e55d34c31bce150d0ae7",
+        "name": "TestNG",
+        "image": "tecnologia_testng.png",
+        "web": "https://testng.org"
+    },
+    {
+        "_id": "5be5e0c034c31bce150d0928",
+        "name": "Font Awesome",
+        "image": "tecnologia_fontAwesome.png",
+        "web": "https://fontawesome.com"
+    },
+    {
+        "_id": "5be5e0ce34c31bce150d092e",
+        "name": "Git",
+        "image": "tecnologia_git.png",
+        "web": "https://git-scm.com"
+    },
+    {
+        "_id": "5be5e14734c31bce150d095d",
+        "name": "Jade",
+        "image": "tecnologia_jade.png"
+    },
+    {
+        "_id": "5be5e47d34c31bce150d0a91",
+        "name": "Redmine",
+        "image": "tecnologia_redmine.png",
+        "web": "https://www.redmine.org"
+    },
+    {
+        "_id": "5be5e06934c31bce150d08f6",
+        "name": "Django",
+        "image": "tecnologia_django.png",
+        "web": "https://www.djangoproject.com"
+    },
+    {
+        "_id": "5be5e15634c31bce150d0963",
+        "name": "Java",
+        "image": "tecnologia_java.png",
+        "web": "https://www.java.com"
+    },
+    {
+        "_id": "5be5e38434c31bce150d0a2b",
+        "name": "MySQL",
+        "image": "tecnologia_mysql.png",
+        "web": "https://www.mysql.com"
+    },
+    {
+        "_id": "5be5e3c534c31bce150d0a4d",
+        "name": "PHP",
+        "image": "tecnologia_php.png",
+        "web": "http://php.net"
+    },
+    {
+        "_id": "5be5e49734c31bce150d0a9b",
+        "name": "Sass",
+        "image": "tecnologia_sass.png",
+        "web": "https://sass-lang.com"
+    },
+    {
+        "_id": "5be5e4dc34c31bce150d0ab6",
+        "name": "Sourcetree",
+        "image": "tecnologia_sourceTree.png",
+        "web": "https://www.sourcetreeapp.com"
+    },
+    {
+        "_id": "5be5e50d34c31bce150d0ac8",
+        "name": "Spring Framework",
+        "image": "tecnologia_spring.png",
+        "web": "https://spring.io"
+    },
+    {
+        "_id": "5be9be2bb9aaf7a2194bfdb8",
+        "name": "jQuery",
+        "image": "tecnologia_jquery.png",
+        "web": "https://jquery.com"
+    },
+    {
+        "_id": "5e247d14c0ac030cdc4da2e7",
+        "name": "Axios",
+        "image": "tecnologia_axios.png",
+        "web": "https://github.com/axios/axios"
+    },
+    {
+        "_id": "5be5e60934c31bce150d0b26",
+        "name": "Windows XP",
+        "image": "tecnologia_windowsxp.png"
+    },
+    {
+        "_id": "5e45a1a47c213e47b9d82f1a",
+        "name": "SystemJS",
+        "image": "tecnologia_systemjs.png",
+        "web": "https://github.com/systemjs/systemjs"
+    },
+    {
+        "_id": "5e247d4fc0ac030cdc4da374",
+        "name": "Electron",
+        "image": "tecnologia_electron.png",
+        "web": "https://electronjs.org"
+    },
+    {
+        "_id": "5e247f12c0ac030cdc4da727",
+        "name": "socket.io",
+        "image": "tecnologia_socket.io.png",
+        "web": "https://socket.io"
+    },
+    {
+        "_id": "5da31734b19008e58d776225",
+        "name": "Karma",
+        "image": "tecnologia_karma.png",
+        "web": "https://karma-runner.github.io/latest/index.html"
+    },
+    {
+        "_id": "5be5e5f534c31bce150d0b1f",
+        "name": "Windows 7",
+        "image": "tecnologia_windows7.png"
+    },
+    {
+        "_id": "5e247f8ec0ac030cdc4da851",
+        "name": "BackboneJS",
+        "image": "tecnologia_backbonejs.png",
+        "web": "https://backbonejs.org"
+    },
+    {
+        "_id": "5be5e63234c31bce150d0b35",
+        "name": "WordPress",
+        "image": "tecnologia_wordPress.png"
+    },
+    {
+        "_id": "5e247de7c0ac030cdc4da495",
+        "name": "single-spa",
+        "image": "tecnologia_single-spa.png",
+        "web": "https://single-spa.js.org"
+    },
+    {
+        "_id": "5da31719b19008e58d776219",
+        "name": "Jasmine",
+        "image": "tecnologia_jasmine.png",
+        "web": "https://jasmine.github.io/"
+    },
+    {
+        "_id": "5e247c3ec0ac030cdc4da11f",
+        "name": "Vuex",
+        "image": "tecnologia_vuex.png",
+        "web": "https://vuex.vuejs.org"
+    },
+    {
+        "_id": "5fbd6e80152eedb2f31543ec",
+        "name": "Element",
+        "image": "tecnologia_element.png",
+        "web": "https://element.eleme.io/#/es"
+    },
+    {
+        "_id": "5fbd7120152eedb2f3168b8c",
+        "name": "Nuxt",
+        "image": "tecnologia_nuxt.png",
+        "web": "https://nuxtjs.org"
+    },
+    {
+        "_id": "5fbd7b28152eedb2f31b77ab",
+        "name": "nuxt/content",
+        "image": "tecnologia_nuxt-content.png",
+        "web": "https://content.nuxtjs.org"
+    },
+    {
+        "_id": "5fbea39a152eedb2f3ae46df",
+        "name": "Jest",
+        "image": "tecnologia_jest.png",
+        "web": "https://jestjs.io"
+    },
+    {
+        "_id": "5fbeb5fb152eedb2f3b77372",
+        "name": "ESLint",
+        "image": "tecnologia_eslint.png",
+        "web": "https://eslint.org"
+    },
+    {
+        "_id": "5fbeb9c4152eedb2f3b95aec",
+        "name": "Webpack",
+        "image": "tecnologia_webpack.png",
+        "web": "https://webpack.js.org"
+    },
+    {
+        "_id": "5fbeba95152eedb2f3b9c230",
+        "name": "React",
+        "image": "tecnologia_react.png",
+        "web": "https://es.reactjs.org"
+    }
+]

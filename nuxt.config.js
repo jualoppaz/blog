@@ -3,8 +3,6 @@
 
 import es from './locales/es';
 
-require('dotenv').config();
-
 export default {
   publicRuntimeConfig: {
     axios: {
@@ -37,7 +35,6 @@ export default {
   */
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    'swagger-ui/dist/swagger-ui.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -60,8 +57,6 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
     '@nuxt/content',
     '@nuxtjs/style-resources',
     [
@@ -116,6 +111,13 @@ export default {
   */
   build: {
     transpile: [/^element-ui/, /^vue-adblock-detect/, /^vue-github-button/],
+    loaders: {
+      scss: {
+        sassOptions: {
+          silenceDeprecations: ['import', 'legacy-js-api'],
+        },
+      },
+    },
     /*
     ** You can extend webpack config here
     */
