@@ -32,6 +32,7 @@
     "axios": "0.29.0",
     "body-parser": "1.20.6",
     "element-ui": "2.15.14",
+    "esm": "^3.2.25",
     "express": "4.22.2",
     "express-validation": "4.1.1",
     "joi": "17.13.4",
