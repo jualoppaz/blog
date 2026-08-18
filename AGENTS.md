@@ -8,14 +8,14 @@ Blog personal y CV de Juan Manuel López Pazos, hecho en **Nuxt 2** (SSR) con Vu
 
 - `pages/`, `layouts/`, `components/`, `store/`, `plugins/`, `middleware/`: app Nuxt estándar.
 - `content/`: posts del blog en Markdown, gestionados con `@nuxt/content`.
-- `server-api/`: API Express independiente, registrada en Nuxt vía `serverMiddleware` en `nuxt.config.js`. **Renombrada desde `api/`** (ver sección de despliegue: Vercel trata `/api` de forma especial y auto-detecta cada `.js` dentro como función serverless independiente, lo cual rompía el despliegue).
+- `server-api/`: API Express independiente, registrada en Nuxt vía `serverMiddleware` en `nuxt.config.js`. **Renombrada desde `api/`** durante un intento de despliegue descartado (ver sección de despliegue) — se mantiene así aunque ya no sea estrictamente necesario con la solución final, para no volver a tocar nada que ya funciona.
   - `server-api/index.js`: entrypoint Express.
   - `server-api/router.js` + `server-api/routes/`: definición de rutas.
   - `server-api/controllers/`: lógica de cada recurso (companies, professionalExperience, technology, knowledge, personalProject, extraTraining).
   - `server-api/data/*.json`: **datos estáticos** que sustituyen a la antigua base de datos MongoDB (ver migración más abajo).
   - `server-api/validations/`: validaciones con `joi` / `express-validation`.
 - `locales/`: i18n (`es`), usado vía `import` ES module en `nuxt.config.js`.
-- `server.js` (raíz del proyecto): entrypoint de la función serverless de Vercel (ver sección 3 de despliegue). Es un servidor Node.js normal que llama a `.listen()` — Vercel lo detecta automáticamente por convención de nombre/ubicación, sin necesitar `vercel.json` ni scripts de empaquetado propios.
+- `vercel.json`: configura el despliegue en Vercel usando el builder oficial (aunque no activamente mantenido) `@nuxtjs/vercel-builder` — ver sección de despliegue.
 
 ## Historial de migración (contexto importante)
 
@@ -35,54 +35,41 @@ El proyecto originalmente usaba MongoDB (Heroku add-on) para servir los datos de
   - `NPM_CONFIG_PRODUCTION`: **activamente perjudicial** en Vercel, impide instalar devDependencies necesarias para el build de Nuxt.
 - La única variable de entorno necesaria es `BASE_URL` (debe incluir el prefijo `/api`, ver más abajo).
 
-### 3. Despliegue en Vercel: servidor Node.js nativo (`server.js`)
+### 3. Despliegue en Vercel: builder oficial `@nuxtjs/vercel-builder` (solución final)
 
-**Historia completa (por orden cronológico, para no repetir el mismo camino):**
+**Historia completa (por orden cronológico, para no repetir el mismo camino ni las mismas pruebas):**
 
-1. Se intentó usar el paquete legacy `@nuxtjs/vercel-builder` (última versión `0.25.0`, abril 2024, sin mantenimiento activo), la única opción "oficial" documentada históricamente para Nuxt 2 en Vercel. Tras muchas horas de debugging (ver "Incidencias ya resueltas" más abajo) se concluyó que ese builder es **fundamentalmente incompatible con Node ≥22** y además tiene un mecanismo de empaquetado de ficheros (`serverFiles`) frágil y manual que obligaba a listar uno a uno cada fichero/dependencia transitiva que Nuxt carga dinámicamente en runtime. Se abandonó.
-2. Se probó sustituirlo por un script de build propio (`scripts/vercel-build.js`) que generaba a mano la estructura **Build Output API v3** de Vercel usando `@vercel/nft` para el tracing de dependencias. Funcionaba perfectamente en local, pero en Vercel **entró en un bucle infinito de builds**: el proceso de `nuxt build` interno dejaba el event loop de Node vivo (webpack/chokidar no cierran todos sus handles), así que aunque nuestro script terminaba su trabajo con éxito, el proceso Node nunca salía — Vercel interpretaba esto como un build colgado y lo reintentaba desde cero indefinidamente. Se corrigió forzando `process.exit(0)`, pero el enfoque en su conjunto (generar `.vercel/output` a mano) era innecesariamente complejo y fue **abandonado también**, en favor de la opción más simple y 100% oficial descrita a continuación.
-3. **Solución final y actual**: usar el patrón oficial de Vercel ["Deploy a Node.js server"](https://vercel.com/docs/functions/runtimes/node-js#deploy-a-node.js-server) — un fichero `server.js` en la raíz del proyecto que llama a `.listen()`. Vercel lo detecta automáticamente (por convención de nombre/ubicación), gestiona él mismo el tracing de dependencias y el empaquetado, y no requiere ningún `vercel.json`, script de build propio, ni librería de terceros para el despliegue.
-
-**Cómo funciona `server.js`:**
-```js
-const { loadNuxt } = require('nuxt');
-
-async function start() {
-  const nuxt = await loadNuxt('start');
-  await nuxt.server.listen(); // sin argumentos: Nuxt lee process.env.PORT internamente
-}
-
-start().catch((err) => { console.error(err); process.exit(1); });
-```
-- Usa la API programática oficial de Nuxt (`loadNuxt('start')`) para arrancar la app ya compilada (requiere que `npm run build` se haya ejecutado antes — ver `vercel-build` script).
-- `nuxt.server.listen()` sin argumentos: Nuxt 2 (`@nuxt/config`) ya lee `process.env.PORT` por defecto para configurar el puerto interno; Vercel inyecta `PORT` automáticamente y enruta el tráfico a ese puerto interno.
-
-**`package.json` scripts relevantes:**
+1. **Intento 1 — `@nuxtjs/vercel-builder` "a pelo"**: se usó directamente sin ajustes finos. Aparecieron varios problemas de compatibilidad de Node (`esm`/`jiti` rotos bajo Node ≥24) y de `serverFiles` incompletos (`locales/`, `node-fetch-native` faltantes). Ver detalle en "Incidencias ya resueltas" (A-E). Se solucionaron uno a uno: fijar `engines.node` a `22.x` (versión con la que `jiti` funciona correctamente) y completar `serverFiles` en `vercel.json`.
+2. **Intento 2 — script de build propio con `@vercel/nft`**: ante la fragilidad percibida del builder legacy, se probó sustituirlo por un script propio (`scripts/vercel-build.js`, ya eliminado) que generaba a mano la estructura Build Output API v3 usando `@vercel/nft` para el tracing automático de dependencias. Funcionaba perfectamente en local, pero en Vercel **entró en un bucle infinito de builds** (causa: `nuxt build` deja el event loop de Node vivo por handles de webpack/chokidar sin cerrar, así que aunque el script terminaba con éxito el proceso nunca salía, y Vercel reintentaba el build indefinidamente). Se corrigió forzando `process.exit(0)`, pero el enfoque se consideró innecesariamente complejo para el problema real.
+3. **Intento 3 — patrón oficial "Node.js server" (`server.js` + `.listen()`)**: se probó el patrón zero-config más simple documentado por Vercel (un `server.js` en la raíz que Vercel detecta y captura solo). Para que funcionase hubo que cambiar el Framework Preset del proyecto a "Other" (si no, la integración zero-config de Nuxt.js de Vercel ignora el `server.js` y ejecuta su propio flujo, esperando encontrar un `dist/` estático que nunca se genera). Al usar "Other" surgió un problema nuevo: Vercel también auto-detecta cualquier `.js` dentro de una carpeta `/api` como función serverless independiente — de ahí el renombrado `api/` → `server-api/`. **Se descartó este enfoque** por decisión explícita: se prefirió volver a una solución más simple usando exclusivamente el builder oficial/histórico de Vercel para Nuxt, sin entrypoints ni servidores custom.
+4. **Solución final y actual — volver a `@nuxtjs/vercel-builder`, ya con todos los fixes de compatibilidad aplicados**: `vercel.json` usa el builder con `serverFiles` actualizado a la carpeta renombrada:
 ```json
-"scripts": {
-  "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
-  "vercel-build": "npm run build"
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["server-api/**", "locales/**"]
+      }
+    }
+  ]
 }
 ```
-Vercel ejecuta automáticamente `npm run vercel-build` (si existe) antes de capturar `server.js`, generando `.nuxt/dist/` (el build de Nuxt) que `loadNuxt('start')` necesita en runtime.
+No hay `server.js` ni `scripts/vercel-build.js` ni script `vercel-build` en `package.json` — el builder gestiona su propio flujo de build (`nuxt build --standalone`) y empaquetado internamente. Requisitos para que esto funcione (ya cumplidos en el repo):
+- `engines.node: "22.x"` en `package.json` (Node 24.x rompe el loader `jiti`/`esm` del launcher del builder).
+- `esm` y `jiti` como dependencias directas (no solo transitivas), para que el builder las incluya en el bundle.
+- `serverFiles` en `vercel.json` debe incluir explícitamente cualquier carpeta que Nuxt cargue dinámicamente en runtime y que el builder no rastree solo: `server-api/**` (antes `api/**`) y `locales/**`.
+- **Framework Preset del proyecto en Vercel debe ser "Other"** (no "Nuxt.js"), porque `vercel.json` con `builds` explícitos requiere que Vercel no aplique su propia integración zero-config de Nuxt.js por encima.
 
-**Por qué se renombró `api/` a `server-api/`:** con cualquier framework preset distinto de uno que Vercel reconozca de forma nativa (aquí usamos "Other"), Vercel aplica su convención "zero-config" clásica: **cualquier fichero `.js` dentro de una carpeta `/api` en la raíz del proyecto se trata como una función serverless independiente**. Nuestra carpeta `api/` (Express app montada como `serverMiddleware` de Nuxt) contenía ficheros como `router.js` o los `controllers/*.js`, que no son handlers `(req, res) => ...` válidos — Vercel intentaría convertirlos en funciones y el build fallaría o se comportaría de forma inesperada. La solución fue renombrar toda la carpeta a `server-api/` (fuera de la convención `/api`) y actualizar la única referencia de ruta de fichero en `nuxt.config.js` (`serverMiddleware: [{ path: '/api', handler: '@/server-api/index.js' }]` — el `path: '/api'` es la URL pública y se mantiene igual, solo cambió la ruta del fichero handler).
+**Verificado localmente (Node 22, `vercel build` vía CLI)**: el build se completa sin errores y genera un bundle con `server-api/**`, `locales/**` y `node-fetch-native` correctamente incluidos en `filePathMap`.
 
-**Cómo probar todo el flujo localmente antes de desplegar** (simula exactamente lo que Vercel hace: build + arrancar `server.js`):
-```bash
-npm run build
-PORT=3000 node server.js
-# en otra terminal (usar el mismo puerto que BASE_URL en .env, si no las llamadas
-# internas de axios fallan y aparece un error de serialización de axios/devalue):
-curl -i http://localhost:3000/
-curl -i http://localhost:3000/blog
-curl -i http://localhost:3000/curriculum
-curl -i http://localhost:3000/api/companies
-```
+**IMPORTANTE — nunca ejecutar `vercel build` (ni `vercel deploy`/`vercel --prod` desde CLI) directamente sobre el repo real de trabajo.** El builder `@nuxtjs/vercel-builder` reescribe/colapsa `package.json` como efecto secundario de su proceso interno (se ha visto renombrar `nuxt` → `@nuxt/core`, entre otras mutaciones) — esto ya ha ocurrido dos veces en esta migración. Si se necesita probar el build de Vercel localmente, hacerlo en una copia aislada del proyecto en otro directorio (con instalación de dependencias limpia, no copiada), nunca en el working directory real. Preferir siempre dejar que el propio Vercel (tras `git push`) ejecute el build en su infraestructura, y usar `vercel inspect --logs` / `vercel logs` para depurar.
 
 ## Incidencias ya resueltas (no repetir el diagnóstico)
 
-> **Nota**: las incidencias A-D de abajo ocurrieron mientras se usaba `@nuxtjs/vercel-builder` (ya abandonado, ver sección 3). Se documentan igualmente porque explican por qué se descartó ese builder, y porque el fix de la incidencia A (variable `BASE_URL`) sigue aplicando con el enfoque actual.
+> **Nota**: las incidencias A-E de abajo ocurrieron mientras se depuraba `@nuxtjs/vercel-builder` (la solución final y actual, ver sección 3). Sus fixes siguen aplicando. Las incidencias F y G documentan los dos intentos alternativos que se probaron y se descartaron (script de build propio, y patrón `server.js`).
 
 ### A. Crash SSR "circular reference" en `/curriculum`
 No era un problema real de referencia circular en Vue/devalue. La causa era que `store/curriculum.js` hacía llamadas axios sin el prefijo `/api` en la URL base. **Fix**: la variable de entorno `BASE_URL` debe ser `http://localhost:3000/api` en local, y en Vercel debe apuntar al dominio de producción **con el sufijo `/api`**. Si reaparece un error de serialización SSR, revisar primero esta variable antes de sospechar de datos circulares.
@@ -117,27 +104,23 @@ Por qué no otras versiones (estado de soporte de Node en Vercel, verificado ~ag
 
 Si en el futuro se actualiza `@nuxtjs/vercel-builder` a una versión más reciente que arregle esto, o se migra a un método de despliegue distinto (ver "Alternativas futuras" abajo), se podría reconsiderar subir a Node 24.x.
 
-### E. (Con `@nuxtjs/vercel-builder`, tras arreglar D) `Cannot find module '../package.json'` / launcher sigue fallando por ficheros faltantes
-Incluso arreglando el loader de `jiti`/`esm` con Node 22.x, el builder seguía fallando porque su `serverFiles` (configurado manualmente en `vercel.json`) no incluía TODOS los ficheros que Nuxt necesita en runtime: primero faltó `locales/**` (usado por `nuxt.config.js` vía `import es from './locales/es'`), luego faltó el paquete transitivo `node-fetch-native` (usado por `@nuxt/vue-app`, no listado como dependencia directa). Cada vez que se arreglaba un fichero/módulo faltante, aparecía el siguiente — patrón típico de un builder con tracing manual/incompleto de dependencias, en vez de tracing automático real.
+### E. `Cannot find module '../package.json'` / launcher sigue fallando por ficheros faltantes
+Incluso arreglando el loader de `jiti`/`esm` con Node 22.x, el builder seguía fallando porque su `serverFiles` (configurado manualmente en `vercel.json`) no incluía TODOS los ficheros que Nuxt necesita en runtime: primero faltó `locales/**` (usado por `nuxt.config.js` vía `import es from './locales/es'`), luego faltó el paquete transitivo `node-fetch-native` (usado por `@nuxt/vue-app`, no listado como dependencia directa). **Fix**: añadir `locales/**` a `serverFiles` en `vercel.json`, y `node-fetch-native` como dependencia directa en `package.json`.
 
-**Esto fue la señal que llevó a abandonar `@nuxtjs/vercel-builder`.**
+### F. (Intento descartado) Script de build propio con `@vercel/nft` en bucle infinito de builds
+Se probó sustituir `@nuxtjs/vercel-builder` por un script propio (`scripts/vercel-build.js`, ya eliminado) que generaba a mano la estructura Build Output API v3 usando `@vercel/nft` para el tracing de dependencias. Funcionaba perfectamente en local, pero en Vercel el build se repetía indefinidamente en bucle (visible en los logs como el mismo "Running npm run vercel-build" ejecutándose una y otra vez sin fin). Causa: `nuxt build` deja el event loop de Node vivo (webpack/chokidar no cierran todos sus handles al terminar), así que aunque el script terminaba su trabajo con éxito ("✔ Build Output API v3 generated"), el proceso de Node nunca salía — Vercel interpretaba esto como un build colgado y lo reintentaba desde cero repetidamente.
 
-### F. Script de build propio con `@vercel/nft` en bucle infinito de builds
-Se sustituyó `@nuxtjs/vercel-builder` por un script propio (`scripts/vercel-build.js`, ya eliminado) que generaba a mano la estructura Build Output API v3 usando `@vercel/nft` para el tracing de dependencias. Funcionaba perfectamente en local, pero en Vercel el build se repetía indefinidamente en bucle (visible en los logs como el mismo "Running npm run vercel-build" ejecutándose una y otra vez sin fin). Causa: `nuxt build` deja el event loop de Node vivo (webpack/chokidar no cierran todos sus handles al terminar), así que aunque el script terminaba su trabajo con éxito ("✔ Build Output API v3 generated"), el proceso de Node nunca salía — Vercel interpretaba esto como un build colgado y lo reintentaba desde cero repetidamente.
+Este enfoque se **descartó por decisión explícita** en favor de volver al builder oficial (sección 3), por resultar innecesariamente complejo para lo que se necesitaba.
 
-**Esto (sumado a la complejidad innecesaria de mantener nuestro propio Build Output API) llevó a abandonar también ese enfoque**, en favor del patrón oficial y mucho más simple descrito en la sección 3 de despliegue: un `server.js` en la raíz con `.listen()`, que Vercel captura automáticamente sin necesidad de generar nada a mano.
+### G. (Intento descartado) Patrón `server.js` + Vercel auto-detectando `api/` como funciones serverless independientes
+Se probó el patrón oficial "Node.js server" de Vercel (`server.js` en la raíz con `.listen()`), que requería cambiar el Framework Preset a "Other". Al hacerlo, Vercel empezó a aplicar su otra convención zero-config: tratar cada `.js` dentro de una carpeta `/api` en la raíz como una función serverless independiente. La carpeta `api/` (la API Express montada como `serverMiddleware` de Nuxt) tiene ficheros como `router.js` o los `controllers/*.js` que no son handlers `(req,res)=>...` válidos, causando fallos. Se renombró `api/` → `server-api/` como solución a esto.
 
-### G. Vercel auto-detectando `api/` como funciones serverless independientes
-Al pasar a "Other" como framework preset (necesario para que Vercel no aplique su integración zero-config de Nuxt.js, que ignoraba nuestro `server.js`), Vercel empezó a aplicar su otra convención zero-config: tratar cada `.js` dentro de una carpeta `/api` en la raíz como una función serverless independiente. Nuestra carpeta `api/` (la API Express montada como `serverMiddleware` de Nuxt) tiene ficheros como `router.js` o los `controllers/*.js` que no son handlers `(req,res)=>...` válidos, causando fallos. Solución: renombrar `api/` → `server-api/` (ver sección 3 de despliegue) y actualizar la única referencia de ruta de fichero en `nuxt.config.js`.
+Este enfoque también se **descartó por decisión explícita** en favor de volver al builder oficial (sección 3) — pero el renombrado `server-api/` se mantuvo (no aporta ni quita nada funcionalmente con el builder oficial, y evita otro cambio innecesario).
 
-## Estado actual de `package.json` relevante para el deploy
+## Estado actual de `package.json` / `vercel.json` relevante para el deploy
 
 ```json
-"scripts": {
-  "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
-  "vercel-build": "npm run build"
-  // ...resto de scripts
-},
+// package.json
 "dependencies": {
   "esm": "^3.2.25",
   "jiti": "^2.7.0",
@@ -149,8 +132,23 @@ Al pasar a "Other" como framework preset (necesario para que Vercel no aplique s
   "npm": ">=10"
 }
 ```
+```json
+// vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["server-api/**", "locales/**"]
+      }
+    }
+  ]
+}
+```
 
-`esm`, `jiti` y `node-fetch-native` se añadieron como dependencias directas cuando aún se usaba `@nuxtjs/vercel-builder`. Con el enfoque actual (servidor Node.js nativo `server.js`, capturado y empaquetado automáticamente por Vercel) probablemente ya no son estrictamente necesarias como directas, pero se han dejado así por precaución/no repetir regresiones. No hacen daño. `@vercel/nft` y `@nuxtjs/vercel-builder` (usados por enfoques ya abandonados) han sido eliminados de `package.json`.
+No hay script `vercel-build` en `package.json` — el builder `@nuxtjs/vercel-builder` gestiona su propio proceso de build internamente (`nuxt build --standalone`).
 
 ## Variables de entorno necesarias en Vercel
 
@@ -159,11 +157,11 @@ Solo una:
 
 No añadir `HOST`, `NODE_ENV` ni `NPM_CONFIG_PRODUCTION` (ver sección "Eliminación de Heroku").
 
-**Framework Preset en Vercel (Project Settings → General):** debe estar en **"Other"**, NO en "Nuxt.js". El preset "Nuxt.js" de Vercel usa su propia integración zero-config para Nuxt, que ignora nuestro `server.js` y nuestro `vercel-build` script (ver incidencia F/relacionada). Build Command / Output Directory / Install Command / Development Command deben quedar **vacíos/sin override** — Vercel detecta `server.js` y el script `vercel-build` de `package.json` automáticamente.
+**Framework Preset en Vercel (Project Settings → General):** debe estar en **"Other"**. Con `vercel.json` definiendo `builds` explícitamente, Vercel debe respetar esa configuración en vez de aplicar cualquier integración zero-config propia (p. ej. la de "Nuxt.js"), que la ignoraría.
 
 ## Cómo probar cambios de Node/dependencias localmente antes de desplegar
 
-Dado lo frágil que puede ser este stack (Nuxt 2 en Vercel), **siempre verificar localmente con la misma versión de Node que se usará en Vercel antes de hacer commit/deploy**. La forma más fiel de probarlo es replicar exactamente lo que Vercel hace (ver sección 3 más arriba): `npm run build` y luego `PORT=3000 node server.js`, y comprobar con curl las rutas clave. El siguiente procedimiento adicional sigue siendo útil para descartar problemas de compatibilidad de Node en la instalación de dependencias/build de Nuxt en sí (independientemente del despliegue en Vercel):
+Dado lo frágil que puede ser este stack (Nuxt 2 en Vercel), **siempre verificar localmente con la misma versión de Node que se usará en Vercel antes de hacer commit/deploy**. **No usar `vercel build`/`vercel deploy` en el repo real** (ver aviso en la sección 3 sobre corrupción de `package.json`) — para probar el build completo del builder oficial, hacerlo en una copia aislada del proyecto en otro directorio. Para descartar simplemente problemas de compatibilidad de Node en la instalación de dependencias/build de Nuxt en sí (sin tocar el flujo de Vercel), basta con:
 
 ```bash
 # instalar una versión concreta de Node vía Homebrew, p. ej. Node 22
@@ -227,8 +225,8 @@ Si `jiti` falla bajo la versión de Node que se está probando, el deploy en Ver
 
 ## Alternativas futuras (si el enfoque actual deja de ser viable)
 
-El enfoque actual (servidor Node.js nativo `server.js`, capturado por Vercel sin configuración adicional, sección 3) ya resolvió los problemas de raíz de los dos intentos anteriores (`@nuxtjs/vercel-builder` y el script de build propio con `@vercel/nft`). Si en el futuro este enfoque también deja de funcionar (p. ej. Vercel deja de soportar el patrón "Node.js server", o Node 22.x deja de estar soportado), las opciones a evaluar, de menor a mayor esfuerzo:
-1. Actualizar `engines.node` a la siguiente versión LTS soportada por Vercel en su momento (el patrón `server.js` + `.listen()` no depende de shims frágiles como `jiti`/`esm`, así que subir de versión de Node debería ser mucho menos problemático que con el builder abandonado).
-2. Revisar la documentación vigente de Vercel sobre despliegue de servidores Node.js (`/docs/functions/runtimes/node-js`), por si el patrón de detección cambia.
-3. Como último recurso, y solo si se acepta perder SSR: migrar a `nuxt generate` (sitio estático) + funciones serverless independientes para las rutas de `/api` (habría que volver a usar la carpeta `/api` para eso, ya que en ese escenario sí sería la convención deseada).
+El enfoque actual (`@nuxtjs/vercel-builder`, sección 3) es el builder histórico/oficial de Vercel para Nuxt 2, ya con todos los problemas de compatibilidad conocidos resueltos (Node 22.x, `serverFiles` completos, `esm`/`jiti` como dependencias directas). Se probaron y descartaron dos alternativas más "modernas" (script de build propio con `@vercel/nft`, patrón `server.js`) por no aportar beneficio real frente a la complejidad añadida — ver incidencias F y G. Si en el futuro este enfoque deja de funcionar (p. ej. Node 22.x deja de estar soportado, o el builder deja de ser instalable), las opciones a evaluar, de menor a mayor esfuerzo:
+1. Revisar si hay una versión más reciente de `@nuxtjs/vercel-builder` que solucione problemas de compatibilidad con versiones de Node más nuevas.
+2. Reconsiderar el patrón oficial "Node.js server" (`server.js` + `.listen()`, incidencia G) — el problema que llevó a descartarlo (`api/` auto-detectada como funciones) ya tiene solución conocida (`server-api/`), así que sería más rápido de retomar si hiciera falta.
+3. Como último recurso, y solo si se acepta perder SSR: migrar a `nuxt generate` (sitio estático) + funciones serverless independientes para las rutas de `/api`.
 4. Migración completa a Nuxt 3/4 (Vue 3), que sí tiene soporte nativo y mantenido para Vercel — descartado por ahora por ser un esfuerzo mucho mayor (reescritura de módulos incompatibles como `element-ui`, `nuxt-i18n`, `@nuxt/content` v1, `vuex`, etc.), pero sería la solución "correcta" a largo plazo dado que Nuxt 2 alcanzó su EOL.
