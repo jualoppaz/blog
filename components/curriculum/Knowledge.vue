@@ -145,37 +145,16 @@ export default {
     LoadingText,
   },
   async fetch() {
-    console.log('[SSR] curriculum: programmingLanguages START');
-    await this.$store.dispatch('curriculum/getProgrammingLanguages');
-    console.log('[SSR] curriculum: programmingLanguages OK');
-
-    console.log('[SSR] curriculum: frameworks START');
-    await this.$store.dispatch('curriculum/getFrameworks');
-    console.log('[SSR] curriculum: frameworks OK');
-
-    console.log('[SSR] curriculum: webDesignFrameworks START');
-    await this.$store.dispatch('curriculum/getWebDesignFrameworks');
-    console.log('[SSR] curriculum: webDesignFrameworks OK');
-
-    console.log('[SSR] curriculum: templateEngines START');
-    await this.$store.dispatch('curriculum/getTemplateEngines');
-    console.log('[SSR] curriculum: templateEngines OK');
-
-    console.log('[SSR] curriculum: databases START');
-    await this.$store.dispatch('curriculum/getDatabases');
-    console.log('[SSR] curriculum: databases OK');
-
-    console.log('[SSR] curriculum: versionControlSystems START');
-    await this.$store.dispatch('curriculum/getVersionControlSystems');
-    console.log('[SSR] curriculum: versionControlSystems OK');
-
-    console.log('[SSR] curriculum: projectManagementTools START');
-    await this.$store.dispatch('curriculum/getProjectManagementTools');
-    console.log('[SSR] curriculum: projectManagementTools OK');
-
-    console.log('[SSR] curriculum: configurationManagementTools START');
-    await this.$store.dispatch('curriculum/getConfigurationManagementTools');
-    console.log('[SSR] curriculum: configurationManagementTools OK');
+    Promise.all([
+      this.$store.dispatch('curriculum/getProgrammingLanguages'),
+      this.$store.dispatch('curriculum/getFrameworks'),
+      this.$store.dispatch('curriculum/getWebDesignFrameworks'),
+      this.$store.dispatch('curriculum/getTemplateEngines'),
+      this.$store.dispatch('curriculum/getDatabases'),
+      this.$store.dispatch('curriculum/getVersionControlSystems'),
+      this.$store.dispatch('curriculum/getProjectManagementTools'),
+      this.$store.dispatch('curriculum/getConfigurationManagementTools'),
+    ]);
   },
   data() {
     return {
