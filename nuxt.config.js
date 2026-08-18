@@ -8,7 +8,7 @@ import es from './locales/es';
 // VERCEL_URL la define Vercel automáticamente en cada deployment.
 const serverBaseURL = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}/api`
-  : (process.env.BASE_URL || 'http://localhost:3000/api');
+  : 'http://localhost:3000/api';
 
 export default {
   publicRuntimeConfig: {
