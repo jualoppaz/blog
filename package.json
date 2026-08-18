@@ -36,6 +36,7 @@
     "express": "4.22.2",
     "express-validation": "4.1.1",
     "jiti": "^2.7.0",
+    "node-fetch-native": "1.6.7",
     "joi": "17.13.4",
     "joi-objectid": "4.0.2",
     "nuxt": "2.18.1",
