@@ -121,7 +121,15 @@ async function main() {
   console.log('\n✔ Build Output API v3 generated at .vercel/output');
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+main()
+  .then(() => {
+    // `npm run build` (nuxt build) can leave webpack/chokidar handles open
+    // in some environments, keeping the event loop alive indefinitely even
+    // though the build already finished successfully. Force exit so Vercel
+    // doesn't think the build command hung and retry it forever.
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
