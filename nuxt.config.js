@@ -130,7 +130,7 @@ export default {
     middleware: ['scroll-top'],
   },
   serverMiddleware: [
-    { path: '/api', handler: '@/api/index.js' },
+    { path: '/api', handler: '@/server-api/index.js' },
   ],
   moment: {
     defaultLocale: 'es',
