@@ -51,7 +51,7 @@ El proyecto originalmente usaba MongoDB (Heroku add-on) para servir los datos de
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["server-api/**", "locales/**"]
+        "serverFiles": ["server-api/**", "locales/**", "content/**"]
       }
     }
   ]
@@ -60,7 +60,7 @@ El proyecto originalmente usaba MongoDB (Heroku add-on) para servir los datos de
 No hay `server.js` ni `scripts/vercel-build.js` ni script `vercel-build` en `package.json` — el builder gestiona su propio flujo de build (`nuxt build --standalone`) y empaquetado internamente. Requisitos para que esto funcione (ya cumplidos en el repo):
 - `engines.node: "22.x"` en `package.json` (Node 24.x rompe el loader `jiti`/`esm` del launcher del builder).
 - `esm` y `jiti` como dependencias directas (no solo transitivas), para que el builder las incluya en el bundle.
-- `serverFiles` en `vercel.json` debe incluir explícitamente cualquier carpeta que Nuxt cargue dinámicamente en runtime y que el builder no rastree solo: `server-api/**` (antes `api/**`) y `locales/**`.
+- `serverFiles` en `vercel.json` debe incluir explícitamente cualquier carpeta que Nuxt cargue dinámicamente en runtime y que el builder no rastree solo: `server-api/**` (antes `api/**`), `locales/**` y `content/**` (los `.md` que lee `@nuxt/content` en runtime).
 - **Framework Preset del proyecto en Vercel debe ser "Other"** (no "Nuxt.js"), porque `vercel.json` con `builds` explícitos requiere que Vercel no aplique su propia integración zero-config de Nuxt.js por encima.
 
 **Verificado localmente (Node 22, `vercel build` vía CLI)**: el build se completa sin errores y genera un bundle con `server-api/**`, `locales/**` y `node-fetch-native` correctamente incluidos en `filePathMap`.
@@ -117,6 +117,9 @@ Se probó el patrón oficial "Node.js server" de Vercel (`server.js` en la raíz
 
 Este enfoque también se **descartó por decisión explícita** en favor de volver al builder oficial (sección 3) — pero el renombrado `server-api/` se mantuvo (no aporta ni quita nada funcionalmente con el builder oficial, y evita otro cambio innecesario).
 
+### H. Tras volver al builder: `Error: /posts not found` (contenido de `@nuxt/content` no incluido)
+Al recuperar `@nuxtjs/vercel-builder`, se restauró `serverFiles: ["server-api/**", "locales/**"]` tal cual estaba antes de los intentos F/G, sin recordar que `content/**` (los `.md` que `@nuxt/content` lee dinámicamente en runtime, incluida `content/posts/`) también hace falta explícitamente en `serverFiles` — no es un módulo de `node_modules` que el builder rastree por dependencias, sino ficheros de datos sueltos en el repo. **Fix**: añadir `content/**` a `serverFiles` en `vercel.json`.
+
 ## Estado actual de `package.json` / `vercel.json` relevante para el deploy
 
 ```json
@@ -141,7 +144,7 @@ Este enfoque también se **descartó por decisión explícita** en favor de volv
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["server-api/**", "locales/**"]
+        "serverFiles": ["server-api/**", "locales/**", "content/**"]
       }
     }
   ]
