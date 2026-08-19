@@ -2,20 +2,20 @@
   <div class="knowledge-list">
     <h1 class="knowledge-list-title">
       <slot name="title" />
-      <el-row :gutter="20">
-        <el-col
-          v-for="item in items"
-          :key="item.id"
-          :sm="{
-            span: 8
-          }"
-        >
-          <KnowledgeItem
-            :item="item"
-          />
-        </el-col>
-      </el-row>
     </h1>
+    <el-row :gutter="20">
+      <el-col
+        v-for="item in items"
+        :key="item.id"
+        :sm="{
+          span: 8
+        }"
+      >
+        <KnowledgeItem
+          :item="item"
+        />
+      </el-col>
+    </el-row>
   </div>
 </template>
 

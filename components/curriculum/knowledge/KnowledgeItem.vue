@@ -17,6 +17,7 @@
         :text-inside="true"
         :format="getFormat"
         :status="getStatus(item.level)"
+        text-color="#FFFFFF"
       />
     </div>
   </div>
