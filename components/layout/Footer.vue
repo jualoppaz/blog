@@ -4,7 +4,7 @@
       {{ copyrightText }}
     </div>
     <div id="author">
-      👨‍💻 <a href="http://www.juanmanuellopezpazos.es" target="_blank" :title="authorTitle" rel="nofollow">{{ authorText }}</a>
+      👨‍💻 <a href="https://www.juanmanuellopezpazos.es" target="_blank" :title="authorTitle" rel="nofollow">{{ authorText }}</a>
     </div>
   </div>
 </template>

@@ -4,4 +4,4 @@ Disallow:
 User-agent: *
 Disallow:
 
-Sitemap: http://www.juanmanuellopezpazos.es/sitemap.xml
+Sitemap: https://www.juanmanuellopezpazos.es/sitemap.xml

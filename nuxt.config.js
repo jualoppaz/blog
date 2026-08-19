@@ -146,7 +146,7 @@ export default {
     locales: ['es'],
   },
   sitemap: {
-    hostname: 'http://www.juanmanuellopezpazos.es',
+    hostname: 'https://www.juanmanuellopezpazos.es',
     routes: async () => {
       // eslint-disable-next-line global-require
       const { $content } = require('@nuxt/content');

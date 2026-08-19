@@ -6,13 +6,13 @@ metas: {
   description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube.",
   author: 'Juan Manuel López Pazos',
   keywords: "blog, dailymotion, youtube, chasco, monetización, vídeos",
-  canonical_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo",
+  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo",
   og_title: "Sin que sirva de precedente: me rindo",
   og_type: "article",
   article_published_time: "2020-12-02T21:40:15.000Z",
   article_author: "https://www.facebook.com/jualoppaz",
   og_image: "/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg",
-  og_url: "http://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo",
+  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo",
   og_description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube.",
   og_site_name: BLOG - JMLP,
   twitter_site: "@LopezPazos14",
@@ -27,7 +27,7 @@ creationDate: '2020-12-02T21:40:15.000Z'
 
 ## Me rindo: vuelvo a Youtube
 
-Como ya indiqué meses atrás en esta [entrada](http://www.juanmanuellopezpazos.es/blog/posts/2020-06-06-mi-primer-post-en-mi-blog-con-nuxt-content "Mi primer post con @nuxt/content") tomé la decisión de migrar paulatinamente mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") de **Youtube** a **Dailymotion** debido a las continuas reclamaciones de derechos de autor absurdas. Sin embargo, tras los últimos acontecimientos en **Dailymotion** he comprobado que la política de reclamaciones de derechos es igual, o puede que hasta peor que en **Youtube**.
+Como ya indiqué meses atrás en esta [entrada](https://www.juanmanuellopezpazos.es/blog/posts/2020-06-06-mi-primer-post-en-mi-blog-con-nuxt-content "Mi primer post con @nuxt/content") tomé la decisión de migrar paulatinamente mi [canal](https://www.youtube.com/c/JuanManuelLopezPazos "Canal de Juan Manuel López Pazos en Youtube") de **Youtube** a **Dailymotion** debido a las continuas reclamaciones de derechos de autor absurdas. Sin embargo, tras los últimos acontecimientos en **Dailymotion** he comprobado que la política de reclamaciones de derechos es igual, o puede que hasta peor que en **Youtube**.
 
 <advertisement></advertisement>
 
