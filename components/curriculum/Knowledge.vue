@@ -145,7 +145,7 @@ export default {
     LoadingText,
   },
   async fetch() {
-    Promise.all([
+    return Promise.all([
       this.$store.dispatch('curriculum/getProgrammingLanguages'),
       this.$store.dispatch('curriculum/getFrameworks'),
       this.$store.dispatch('curriculum/getWebDesignFrameworks'),
