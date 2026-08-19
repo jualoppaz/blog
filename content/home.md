@@ -1,12 +1,11 @@
 ---
-title: Web personal de Juan Manuel López Pazos
+title: Blog personal de Juan Manuel López Pazos
 tags: []
 metas:
   description: "Bienvenido a la web personal de Juan Manuel López Pazos ✅ Aquí encontrarás mi Curriculum, así como un blog con multitud de artículos relacionados con tecnologías y frameworks, así como vídeos de música procesional."
   author: Juan Manuel López Pazos
   keywords: blog
   canonical_url: https://www.juanmanuellopezpazos.es/
-  og_title: Blog personal de Juan Manuel López Pazos
   og_type: website
   og_image: /images/yo_2018.jpg
   og_url: https://www.juanmanuellopezpazos.es/
@@ -15,7 +14,6 @@ metas:
   twitter_site: "@LopezPazos14"
   twitter_card: summary,
   twitter_image: /images/yo_2018.jpg
-  twitter_title: Web personal de Juan Manuel López Pazos
   twitter_description: "Bienvenido a la web personal de Juan Manuel López Pazos ✅ Aquí encontrarás mi Curriculum, así como un blog con multitud de artículos relacionados con tecnologías y frameworks, así como vídeos de música procesional."
 published: true
 ---

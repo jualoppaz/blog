@@ -1,5 +1,4 @@
 import Vue from 'vue';
+import VueSocialSharing from 'vue-social-sharing';
 
-const SocialSharing = require('vue-social-sharing');
-
-Vue.use(SocialSharing);
+Vue.use(VueSocialSharing);

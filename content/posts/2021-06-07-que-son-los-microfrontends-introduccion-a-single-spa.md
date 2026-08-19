@@ -2,25 +2,22 @@
 title: "¿Qué son los microfrontends? Introducción a single-spa"
 image: /images/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa.jpg
 tags: ['technologies']
-metas: { 
-  description: "En este artículo se explica qué son los microfrontends y cómo implementarlos con single-spa, así como la aportación que he realizado a la comunidad.",
-  author: 'Juan Manuel López Pazos',
-  keywords: "nuxt, microfrontends, single-spa, paquetes npm, webpack, vue",
-  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa",
-  og_title: "¿Qué son los microfrontends? Introducción a single-spa",
-  og_type: "article",
-  article_published_time: "2021-02-08T21:40:15.000Z",
-  article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "/images/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa.jpg",
-  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa",
-  og_description: "En este artículo se explica qué son los microfrontends y cómo implementarlos con single-spa, así como la aportación que he realizado a la comunidad.",
-  og_site_name: BLOG - JMLP,
-  twitter_site: "@LopezPazos14",
-  twitter_card: summary,
-  twitter_image: "/images/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa.jpg",
-  twitter_title: "¿Qué son los microfrontends? Introducción a single-spa",
+metas:
+  description: "En este artículo se explica qué son los microfrontends y cómo implementarlos con single-spa, así como la aportación que he realizado a la comunidad."
+  author: 'Juan Manuel López Pazos'
+  keywords: "nuxt, microfrontends, single-spa, paquetes npm, webpack, vue"
+  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa"
+  og_type: "article"
+  article_published_time: "2021-02-08T21:40:15.000Z"
+  article_author: "https://www.facebook.com/jualoppaz"
+  og_image: "/images/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa.jpg"
+  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa"
+  og_description: "En este artículo se explica qué son los microfrontends y cómo implementarlos con single-spa, así como la aportación que he realizado a la comunidad."
+  og_site_name: BLOG - JMLP
+  twitter_site: "@LopezPazos14"
+  twitter_card: summary
+  twitter_image: "/images/blog/posts/2021-06-07-que-son-los-microfrontends-introduccion-a-single-spa.jpg"
   twitter_description: "En este artículo se explica qué son los microfrontends y cómo implementarlos con single-spa, así como la aportación que he realizado a la comunidad."
-}
 comparisionTableData: [
   {
     feature: 'Repositorios separados',

@@ -2,25 +2,22 @@
 title: "Mi primer módulo de Nuxt: nuxt-youtube-subscribe-module"
 image: /images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg
 tags: ['technologies']
-metas: { 
-  description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube.",
-  author: 'Juan Manuel López Pazos',
-  keywords: "nuxt, youtube, suscripción, google, adsense, google adsense, botón suscripción youtube con nuxt",
-  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module",
-  og_title: "Mi primer módulo de Nuxt: nuxt-youtube-subscribe-module",
-  og_type: "article",
-  article_published_time: "2021-02-08T21:40:15.000Z",
-  article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg",
-  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module",
-  og_description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube.",
-  og_site_name: BLOG - JMLP,
-  twitter_site: "@LopezPazos14",
-  twitter_card: summary,
-  twitter_image: "/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg",
-  twitter_title: "Mi primer módulo de Nuxt: nuxt-youtube-subscribe-module",
+metas:
+  description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube."
+  author: 'Juan Manuel López Pazos'
+  keywords: "nuxt, youtube, suscripción, google, adsense, google adsense, botón suscripción youtube con nuxt"
+  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module"
+  og_type: "article"
+  article_published_time: "2021-02-08T21:40:15.000Z"
+  article_author: "https://www.facebook.com/jualoppaz"
+  og_image: "/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg"
+  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module"
+  og_description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube."
+  og_site_name: BLOG - JMLP
+  twitter_site: "@LopezPazos14"
+  twitter_card: summary
+  twitter_image: "/images/blog/posts/2021-02-08-mi-primer-modulo-de-nuxt-nuxt-youtube-subscribe-module.jpg"
   twitter_description: "En este artículo se explica cómo ha sido el desarrollo de un módulo para Nuxt, con el cual se consigue incluir el botón oficial de suscripción a un canal de Youtube."
-}
 published: true
 creationDate: '2021-02-08T21:40:15.000Z'
 ---

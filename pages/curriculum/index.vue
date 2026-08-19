@@ -57,7 +57,6 @@ export default {
         author: 'Juan Manuel López Pazos',
         keywords: 'curriculum, juan manuel lopez pazos, ingeniero software, programador frontend, desarrollador frontend, desarrollador vue, microfrontends, micro frontends, micro-frontends',
         canonical_url: 'https://www.juanmanuellopezpazos.es/curriculum',
-        og_title: 'Currículum de Juan Manuel López Pazos',
         og_type: 'website',
         og_image: '/images/yo_2018.jpg',
         og_url: 'https://www.juanmanuellopezpazos.es/curriculum',
@@ -66,7 +65,6 @@ export default {
         twitter_site: '@LopezPazos14',
         twitter_card: 'summary',
         twitter_image: '/images/yo_2018.jpg',
-        twitter_title: 'Currículum de Juan Manuel López Pazos',
         twitter_description: 'Currículum de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás el currículum de Juan Manuel López Pazos, Graduado en Ingeniería de Software.',
       },
     };

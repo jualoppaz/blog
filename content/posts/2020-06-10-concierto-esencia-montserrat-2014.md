@@ -3,25 +3,22 @@ title: Concierto de Esencia en la capilla de Montserrat (29/03/2014)
 image: /images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg
 description: Este es el texto de la descripción
 tags: ['holy_week', 'esencia']
-metas: { 
-  description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
-  author: "Juan Manuel López Pazos",
-  keywords: "blog, youtube, dailymotion, esencia, esencia sevilla, banda esencia, esencia montserrat, esencia concierto montserrat, tres caidas triana, triana, alberto escámez, alberto escámez lópez, julio vera, josé julio vera cuder, zueco ramos, pascual zueco ramos, ramón montoya, ramón montoya molina, bienvenido puelles, bienvenido puelles oliver, soledad de san pablo, cristo del amor, lanzada, caído vas por triana, evocación, virgen de la salud, conversión del buen ladrón, marcha real, concierto esencia capilla montserrat",
-  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014",
-  og_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
-  og_type: "article",
-  article_published_time: "2020-06-10T21:40:15.000Z",
-  article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
-  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014",
-  og_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas.",
-  og_site_name: BLOG - JMLP,
-  twitter_site: "@LopezPazos14",
-  twitter_card: summary,
-  twitter_image: "/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg",
-  twitter_title: "Concierto de Esencia en la capilla de Montserrat (29/03/2014)",
+metas:
+  description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas."
+  author: "Juan Manuel López Pazos"
+  keywords: "blog, youtube, dailymotion, esencia, esencia sevilla, banda esencia, esencia montserrat, esencia concierto montserrat, tres caidas triana, triana, alberto escámez, alberto escámez lópez, julio vera, josé julio vera cuder, zueco ramos, pascual zueco ramos, ramón montoya, ramón montoya molina, bienvenido puelles, bienvenido puelles oliver, soledad de san pablo, cristo del amor, lanzada, caído vas por triana, evocación, virgen de la salud, conversión del buen ladrón, marcha real, concierto esencia capilla montserrat"
+  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014"
+  og_type: "article"
+  article_published_time: "2020-06-10T21:40:15.000Z"
+  article_author: "https://www.facebook.com/jualoppaz"
+  og_image: "/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg"
+  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-06-10-concierto-esencia-montserrat-2014"
+  og_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas."
+  og_site_name: BLOG - JMLP
+  twitter_site: "@LopezPazos14"
+  twitter_card: summary
+  twitter_image: "/images/blog/posts/2014-03-29-cartel-concierto-montserrat.jpg"
   twitter_description: "En este artículo recordamos el concierto de Esencia en la capilla de Montserrat del año 2014. Se añaden vídeos de las marchas interpretadas."
-}
 published: true
 creationDate: '2020-06-10T21:40:15.000Z'
 ---

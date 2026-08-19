@@ -74,6 +74,7 @@
     >
       <social-share
         :title="shareText"
+        :doc-title="doc.title"
         :seo-config="doc.metas"
       />
     </el-row>

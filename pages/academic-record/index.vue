@@ -59,7 +59,6 @@ export default {
         author: 'Juan Manuel López Pazos',
         keywords: 'expediente academico, juan manuel lopez pazos, ingeniero software, programador frontend, desarrollador frontend, desarrollador vue, microfrontends, micro frontends, micro-frontends',
         canonical_url: 'https://www.juanmanuellopezpazos.es/expediente-academico',
-        og_title: 'Expediente académico de Juan Manuel López Pazos',
         og_type: 'website',
         og_image: '/images/yo_2018.jpg',
         og_url: 'https://www.juanmanuellopezpazos.es/expediente-academico',
@@ -68,7 +67,6 @@ export default {
         twitter_site: '@LopezPazos14',
         twitter_card: 'summary',
         twitter_image: '/images/yo_2018.jpg',
-        twitter_title: 'Expediente académico de Juan Manuel López Pazos',
         twitter_description: 'Expediente académico de Juan Manuel López Pazos 👨‍💻 Aquí encontrarás mi expediente académico en mis estudios del Grado en Ingeniería de Software por la Universidad de Sevilla.',
       },
     };

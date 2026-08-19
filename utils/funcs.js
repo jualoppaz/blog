@@ -87,11 +87,11 @@ function getCommonMetas(doc) {
   }
 
   // Open Graph metas
-  if (metas.og_title) {
+  if (doc.title) {
     obj.meta.push({
       hid: 'og:title',
       property: 'og:title',
-      content: metas.og_title,
+      content: doc.title,
     });
   }
   if (metas.og_type) {
@@ -166,11 +166,11 @@ function getCommonMetas(doc) {
       content: metas.twitter_image,
     });
   }
-  if (metas.twitter_title) {
+  if (doc.title) {
     obj.meta.push({
       hid: 'twitter:title',
       name: 'twitter:title',
-      content: metas.twitter_title,
+      content: doc.title,
     });
   }
   if (metas.twitter_description) {

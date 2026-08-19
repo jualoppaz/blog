@@ -2,25 +2,22 @@
 title: "Sin que sirva de precedente: me rindo"
 image: /images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg
 tags: ['holy_week']
-metas: { 
-  description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube.",
-  author: 'Juan Manuel López Pazos',
-  keywords: "blog, dailymotion, youtube, chasco, monetización, vídeos",
-  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo",
-  og_title: "Sin que sirva de precedente: me rindo",
-  og_type: "article",
-  article_published_time: "2020-12-02T21:40:15.000Z",
-  article_author: "https://www.facebook.com/jualoppaz",
-  og_image: "/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg",
-  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo",
-  og_description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube.",
-  og_site_name: BLOG - JMLP,
-  twitter_site: "@LopezPazos14",
-  twitter_card: summary,
-  twitter_image: "/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg",
-  twitter_title: "Sin que sirva de precedente: me rindo",
+metas:
+  description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube."
+  author: 'Juan Manuel López Pazos'
+  keywords: "blog, dailymotion, youtube, chasco, monetización, vídeos"
+  canonical_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo"
+  og_type: "article"
+  article_published_time: "2020-12-02T21:40:15.000Z"
+  article_author: "https://www.facebook.com/jualoppaz"
+  og_image: "/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg"
+  og_url: "https://www.juanmanuellopezpazos.es/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo"
+  og_description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube."
+  og_site_name: BLOG - JMLP
+  twitter_site: "@LopezPazos14"
+  twitter_card: summary
+  twitter_image: "/images/blog/posts/2020-12-02-sin-que-sirva-de-precedente-me-rindo.jpg"
   twitter_description: "Tras varios meses me he llevado mi primer chasco con Dailymotion ▶️ Doy marcha atrás y vuelvo a Youtube."
-}
 published: true
 creationDate: '2020-12-02T21:40:15.000Z'
 ---
